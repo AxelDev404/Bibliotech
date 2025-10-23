@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/cookie/Documents/Practice/learn-next/frontend/src/app/gestione-libri/page.jsx"],"sourcesContent":["'use client';\n\nexport default function GestioneLibri(){\n\n    return(\n\n        <div>\n\n        </div>\n    );\n\n}"],"names":[],"mappings":";;;;;AAAA;;AAEe,SAAS;IAEpB,qBAEI,8OAAC;;;;;AAKT","debugId":null}}]
+}

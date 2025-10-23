@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/cookie/Documents/Practice/learn-next/frontend/src/app/page.jsx"],"sourcesContent":["\n\n\nexport default function Home() {\n  return (\n    <div className=\" bg-white\">\n  \n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAGe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;;;;;;AAInB","debugId":null}}]
+}

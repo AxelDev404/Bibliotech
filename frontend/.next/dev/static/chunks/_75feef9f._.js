@@ -1,0 +1,1561 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/src/components/SideBar.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>SideBar
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+;
+;
+function SideBar() {
+    _s();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(61);
+    if ($[0] !== "82ae3a50520320711ee9391cc133ba87162ec65de8fce1d72ef5331b50070f75") {
+        for(let $i = 0; $i < 61; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "82ae3a50520320711ee9391cc133ba87162ec65de8fce1d72ef5331b50070f75";
+    }
+    const [isSidebarOpen, setIsSidebarOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    let t0;
+    if ($[1] !== isSidebarOpen) {
+        t0 = ({
+            "SideBar[toggleSidebar]": ()=>setIsSidebarOpen(!isSidebarOpen)
+        })["SideBar[toggleSidebar]"];
+        $[1] = isSidebarOpen;
+        $[2] = t0;
+    } else {
+        t0 = $[2];
+    }
+    const toggleSidebar = t0;
+    const t1 = `fixed left-0 top-0 h-screen bg-slate-900 border-r border-slate-800 shadow-lg flex flex-col transition-all duration-300 z-40
+                ${isSidebarOpen ? "w-60" : "w-16"}`;
+    const t2 = `text-white font-semibold text-lg transition-all duration-200 ${isSidebarOpen ? "opacity-100" : "opacity-0 hidden"}`;
+    let t3;
+    if ($[3] !== t2) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+            href: "#",
+            className: t2,
+            children: "ODA"
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 28,
+            columnNumber: 10
+        }, this);
+        $[3] = t2;
+        $[4] = t3;
+    } else {
+        t3 = $[4];
+    }
+    let t4;
+    if ($[5] !== isSidebarOpen) {
+        t4 = isSidebarOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CloseIcon, {}, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 36,
+            columnNumber: 26
+        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuIcon, {}, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 36,
+            columnNumber: 42
+        }, this);
+        $[5] = isSidebarOpen;
+        $[6] = t4;
+    } else {
+        t4 = $[6];
+    }
+    let t5;
+    if ($[7] !== t4 || $[8] !== toggleSidebar) {
+        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+            onClick: toggleSidebar,
+            className: "text-gray-300 hover:text-white",
+            children: t4
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 44,
+            columnNumber: 10
+        }, this);
+        $[7] = t4;
+        $[8] = toggleSidebar;
+        $[9] = t5;
+    } else {
+        t5 = $[9];
+    }
+    let t6;
+    if ($[10] !== t3 || $[11] !== t5) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex items-center justify-between px-4 h-20 border-b border-slate-800",
+            children: [
+                t3,
+                t5
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 53,
+            columnNumber: 10
+        }, this);
+        $[10] = t3;
+        $[11] = t5;
+        $[12] = t6;
+    } else {
+        t6 = $[12];
+    }
+    let t7;
+    if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DashboardIcon, {
+            titleAccess: "Dashboard"
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 62,
+            columnNumber: 10
+        }, this);
+        $[13] = t7;
+    } else {
+        t7 = $[13];
+    }
+    let t8;
+    if ($[14] !== isSidebarOpen) {
+        t8 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "px-3",
+            children: "Dashboard"
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 69,
+            columnNumber: 27
+        }, this);
+        $[14] = isSidebarOpen;
+        $[15] = t8;
+    } else {
+        t8 = $[15];
+    }
+    let t9;
+    if ($[16] !== t8) {
+        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-white hover:bg-blue-700 w-full",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                className: "w-full text-left h-12 flex items-center",
+                children: [
+                    t7,
+                    t8
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/SideBar.jsx",
+                lineNumber: 77,
+                columnNumber: 126
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 77,
+            columnNumber: 10
+        }, this);
+        $[16] = t8;
+        $[17] = t9;
+    } else {
+        t9 = $[17];
+    }
+    let t10;
+    if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
+        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FormatListBulletedIcon, {
+            titleAccess: "Gestione documenti"
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 85,
+            columnNumber: 11
+        }, this);
+        $[18] = t10;
+    } else {
+        t10 = $[18];
+    }
+    let t11;
+    if ($[19] !== isSidebarOpen) {
+        t11 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "px-3",
+            children: "Gestione documenti"
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 92,
+            columnNumber: 28
+        }, this);
+        $[19] = isSidebarOpen;
+        $[20] = t11;
+    } else {
+        t11 = $[20];
+    }
+    let t12;
+    if ($[21] !== t11) {
+        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-white hover:bg-blue-700 w-full",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                className: "w-full text-left h-12 flex items-center",
+                children: [
+                    t10,
+                    t11
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/SideBar.jsx",
+                lineNumber: 100,
+                columnNumber: 127
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 100,
+            columnNumber: 11
+        }, this);
+        $[21] = t11;
+        $[22] = t12;
+    } else {
+        t12 = $[22];
+    }
+    let t13;
+    if ($[23] === Symbol.for("react.memo_cache_sentinel")) {
+        t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FindInPageIcon, {
+            titleAccess: "Cerca documenti"
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 108,
+            columnNumber: 11
+        }, this);
+        $[23] = t13;
+    } else {
+        t13 = $[23];
+    }
+    let t14;
+    if ($[24] !== isSidebarOpen) {
+        t14 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "px-3",
+            children: "Cerca documenti"
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 115,
+            columnNumber: 28
+        }, this);
+        $[24] = isSidebarOpen;
+        $[25] = t14;
+    } else {
+        t14 = $[25];
+    }
+    let t15;
+    if ($[26] !== t14) {
+        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-white hover:bg-blue-700 w-full",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                className: "w-full text-left h-12 flex items-center",
+                children: [
+                    t13,
+                    t14
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/SideBar.jsx",
+                lineNumber: 123,
+                columnNumber: 127
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 123,
+            columnNumber: 11
+        }, this);
+        $[26] = t14;
+        $[27] = t15;
+    } else {
+        t15 = $[27];
+    }
+    let t16;
+    if ($[28] === Symbol.for("react.memo_cache_sentinel")) {
+        t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(NoteAddIcon, {
+            titleAccess: "carica documento"
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 131,
+            columnNumber: 11
+        }, this);
+        $[28] = t16;
+    } else {
+        t16 = $[28];
+    }
+    let t17;
+    if ($[29] !== isSidebarOpen) {
+        t17 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "px-3",
+            children: "Carica documento"
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 138,
+            columnNumber: 28
+        }, this);
+        $[29] = isSidebarOpen;
+        $[30] = t17;
+    } else {
+        t17 = $[30];
+    }
+    let t18;
+    if ($[31] !== t17) {
+        t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-white hover:bg-blue-700 w-full",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                className: "w-full text-left h-12 flex items-center",
+                children: [
+                    t16,
+                    t17
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/SideBar.jsx",
+                lineNumber: 146,
+                columnNumber: 127
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 146,
+            columnNumber: 11
+        }, this);
+        $[31] = t17;
+        $[32] = t18;
+    } else {
+        t18 = $[32];
+    }
+    let t19;
+    if ($[33] !== t12 || $[34] !== t15 || $[35] !== t18 || $[36] !== t9) {
+        t19 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex flex-col items-start gap-6 p-4 text-sm text-gray-300 flex-1 overflow-y-auto",
+            children: [
+                t9,
+                t12,
+                t15,
+                t18
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 154,
+            columnNumber: 11
+        }, this);
+        $[33] = t12;
+        $[34] = t15;
+        $[35] = t18;
+        $[36] = t9;
+        $[37] = t19;
+    } else {
+        t19 = $[37];
+    }
+    let t20;
+    if ($[38] === Symbol.for("react.memo_cache_sentinel")) {
+        t20 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SettingsIcon, {
+            sx: {
+                fontSize: 20
+            }
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 165,
+            columnNumber: 11
+        }, this);
+        $[38] = t20;
+    } else {
+        t20 = $[38];
+    }
+    let t21;
+    if ($[39] !== isSidebarOpen) {
+        t21 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "px-3",
+            children: "Impostazioni"
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 174,
+            columnNumber: 28
+        }, this);
+        $[39] = isSidebarOpen;
+        $[40] = t21;
+    } else {
+        t21 = $[40];
+    }
+    let t22;
+    if ($[41] !== t21) {
+        t22 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+            className: "flex items-center gap-4 font-light rounded-md px-2 h-12 w-full text-left text-white hover:text-white hover:bg-blue-700",
+            children: [
+                t20,
+                t21
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 182,
+            columnNumber: 11
+        }, this);
+        $[41] = t21;
+        $[42] = t22;
+    } else {
+        t22 = $[42];
+    }
+    let t23;
+    if ($[43] === Symbol.for("react.memo_cache_sentinel")) {
+        t23 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(LogoutIcon, {
+            sx: {
+                fontSize: 20
+            }
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 190,
+            columnNumber: 11
+        }, this);
+        $[43] = t23;
+    } else {
+        t23 = $[43];
+    }
+    let t24;
+    if ($[44] !== isSidebarOpen) {
+        t24 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "px-3",
+            children: "Logout"
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 199,
+            columnNumber: 28
+        }, this);
+        $[44] = isSidebarOpen;
+        $[45] = t24;
+    } else {
+        t24 = $[45];
+    }
+    let t25;
+    if ($[46] !== t24) {
+        t25 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+            className: "flex items-center gap-4 font-light rounded-md px-2 h-12 w-full text-left text-white hover:text-white hover:bg-blue-700",
+            children: [
+                t23,
+                t24
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 207,
+            columnNumber: 11
+        }, this);
+        $[46] = t24;
+        $[47] = t25;
+    } else {
+        t25 = $[47];
+    }
+    let t26;
+    if ($[48] !== t22 || $[49] !== t25) {
+        t26 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "p-4 mt-auto",
+            children: [
+                t22,
+                t25
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 215,
+            columnNumber: 11
+        }, this);
+        $[48] = t22;
+        $[49] = t25;
+        $[50] = t26;
+    } else {
+        t26 = $[50];
+    }
+    let t27;
+    if ($[51] !== t1 || $[52] !== t19 || $[53] !== t26 || $[54] !== t6) {
+        t27 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: t1,
+            children: [
+                t6,
+                t19,
+                t26
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 224,
+            columnNumber: 11
+        }, this);
+        $[51] = t1;
+        $[52] = t19;
+        $[53] = t26;
+        $[54] = t6;
+        $[55] = t27;
+    } else {
+        t27 = $[55];
+    }
+    const t28 = isSidebarOpen ? "13rem" : "3.2rem";
+    let t29;
+    if ($[56] !== t28) {
+        t29 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex-1 p-2 overflow-y-auto transition-all duration-300",
+            style: {
+                marginLeft: t28
+            }
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 236,
+            columnNumber: 11
+        }, this);
+        $[56] = t28;
+        $[57] = t29;
+    } else {
+        t29 = $[57];
+    }
+    let t30;
+    if ($[58] !== t27 || $[59] !== t29) {
+        t30 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex h-screen",
+            children: [
+                t27,
+                t29
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 246,
+            columnNumber: 11
+        }, this);
+        $[58] = t27;
+        $[59] = t29;
+        $[60] = t30;
+    } else {
+        t30 = $[60];
+    }
+    return t30;
+}
+_s(SideBar, "hhELji5FF40EWubpyG3MvXv6UnA=");
+_c = SideBar;
+var _c;
+__turbopack_context__.k.register(_c, "SideBar");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/AppWrapper.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>AppWrapper
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-redux/dist/react-redux.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$Authentication$2f$authSlice$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/Authentication/authSlice.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+;
+;
+;
+;
+function AppWrapper(t0) {
+    _s();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
+    if ($[0] !== "a2cfd63ab8e1595d0413391824a8330b72271005924886b4d27547311ae86171") {
+        for(let $i = 0; $i < 11; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "a2cfd63ab8e1595d0413391824a8330b72271005924886b4d27547311ae86171";
+    }
+    const { children } = t0;
+    const dispatch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDispatch"])();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
+    const { user, checked } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSelector"])(_AppWrapperUseSelector);
+    let t1;
+    let t2;
+    if ($[1] !== checked || $[2] !== dispatch) {
+        t1 = ({
+            "AppWrapper[useEffect()]": ()=>{
+                if (!checked) {
+                    dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$Authentication$2f$authSlice$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CheckUserAPI"])());
+                }
+            }
+        })["AppWrapper[useEffect()]"];
+        t2 = [
+            checked,
+            dispatch
+        ];
+        $[1] = checked;
+        $[2] = dispatch;
+        $[3] = t1;
+        $[4] = t2;
+    } else {
+        t1 = $[3];
+        t2 = $[4];
+    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t1, t2);
+    let t3;
+    let t4;
+    if ($[5] !== checked || $[6] !== router || $[7] !== user) {
+        t3 = ({
+            "AppWrapper[useEffect()]": ()=>{
+                if (checked && !user) {
+                    router.replace("/");
+                }
+            }
+        })["AppWrapper[useEffect()]"];
+        t4 = [
+            checked,
+            user,
+            router
+        ];
+        $[5] = checked;
+        $[6] = router;
+        $[7] = user;
+        $[8] = t3;
+        $[9] = t4;
+    } else {
+        t3 = $[8];
+        t4 = $[9];
+    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t3, t4);
+    if (!checked) {
+        let t5;
+        if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+            t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex justify-center items-center min-h-screen bg-slate-900",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/AppWrapper.jsx",
+                    lineNumber: 69,
+                    columnNumber: 88
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/AppWrapper.jsx",
+                lineNumber: 69,
+                columnNumber: 12
+            }, this);
+            $[10] = t5;
+        } else {
+            t5 = $[10];
+        }
+        return t5;
+    }
+    return user ? children : null;
+}
+_s(AppWrapper, "6HMFfKTgtBcGIR4jJQOmyEFI40g=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDispatch"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSelector"]
+    ];
+});
+_c = AppWrapper;
+function _AppWrapperUseSelector(state) {
+    return state.auth;
+}
+var _c;
+__turbopack_context__.k.register(_c, "AppWrapper");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/PrivateRoute.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>PrivateRoute
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-redux/dist/react-redux.mjs [app-client] (ecmascript)");
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+;
+function PrivateRoute(t0) {
+    _s();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(1);
+    if ($[0] !== "364677d63cf4ada345e8833d4c52e4f49158a9e35ce110b5ff7c3ba378d43400") {
+        for(let $i = 0; $i < 1; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "364677d63cf4ada345e8833d4c52e4f49158a9e35ce110b5ff7c3ba378d43400";
+    }
+    const { children } = t0;
+    const { user, checked } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSelector"])(_PrivateRouteUseSelector);
+    if (!checked) {
+        return null;
+    }
+    return user ? children : null;
+}
+_s(PrivateRoute, "cH3vEDCKm2O5t46oYhxra2ICq4Q=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSelector"]
+    ];
+});
+_c = PrivateRoute;
+function _PrivateRouteUseSelector(state) {
+    return state.auth;
+}
+var _c;
+__turbopack_context__.k.register(_c, "PrivateRoute");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/app/dashboard/page.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>DashBoard
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SideBar$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/SideBar.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AppWrapper$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/AppWrapper.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$PrivateRoute$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/PrivateRoute.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-redux/dist/react-redux.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$Authentication$2f$authSlice$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/Authentication/authSlice.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-hot-toast/dist/index.mjs [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+;
+;
+;
+;
+;
+;
+;
+function DashBoard() {
+    _s();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(8);
+    if ($[0] !== "a3e76130326b57aa18cbfc2b208b097a413721bce91a5b91e61e9bf6943485ae") {
+        for(let $i = 0; $i < 8; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "a3e76130326b57aa18cbfc2b208b097a413721bce91a5b91e61e9bf6943485ae";
+    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSelector"])(_DashBoardUseSelector);
+    const dispatch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDispatch"])();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
+    let t0;
+    if ($[1] !== dispatch || $[2] !== router) {
+        t0 = ({
+            "DashBoard[HandleLogOut]": async ()=>{
+                await dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$Authentication$2f$authSlice$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LogOutAPI"])()).unwrap();
+                router.replace("/");
+            }
+        })["DashBoard[HandleLogOut]"];
+        $[1] = dispatch;
+        $[2] = router;
+        $[3] = t0;
+    } else {
+        t0 = $[3];
+    }
+    const HandleLogOut = t0;
+    let t1;
+    let t2;
+    if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SideBar$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            fileName: "[project]/src/app/dashboard/page.jsx",
+            lineNumber: 40,
+            columnNumber: 10
+        }, this);
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+            className: "text-2xl",
+            children: "Hello, Dashboard! "
+        }, void 0, false, {
+            fileName: "[project]/src/app/dashboard/page.jsx",
+            lineNumber: 41,
+            columnNumber: 10
+        }, this);
+        $[4] = t1;
+        $[5] = t2;
+    } else {
+        t1 = $[4];
+        t2 = $[5];
+    }
+    let t3;
+    if ($[6] !== HandleLogOut) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AppWrapper$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$PrivateRoute$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "min-h-screen bg-white text-black",
+                    children: [
+                        t1,
+                        t2,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: {
+                                "DashBoard[<button>.onClick]": ()=>HandleLogOut()
+                            }["DashBoard[<button>.onClick]"],
+                            className: "text-black",
+                            children: "LogOut"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/dashboard/page.jsx",
+                            lineNumber: 50,
+                            columnNumber: 94
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/app/dashboard/page.jsx",
+                    lineNumber: 50,
+                    columnNumber: 36
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/dashboard/page.jsx",
+                lineNumber: 50,
+                columnNumber: 22
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/app/dashboard/page.jsx",
+            lineNumber: 50,
+            columnNumber: 10
+        }, this);
+        $[6] = HandleLogOut;
+        $[7] = t3;
+    } else {
+        t3 = $[7];
+    }
+    return t3;
+}
+_s(DashBoard, "YbdGa8/H5b/60X0mijIR/KdwDxU=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSelector"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDispatch"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
+    ];
+});
+_c = DashBoard;
+function _DashBoardUseSelector(state) {
+    return state.auth;
+}
+var _c;
+__turbopack_context__.k.register(_c, "DashBoard");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/node_modules/next/navigation.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+module.exports = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/navigation.js [app-client] (ecmascript)");
+}),
+"[project]/node_modules/goober/dist/goober.modern.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "css",
+    ()=>u,
+    "extractCss",
+    ()=>r,
+    "glob",
+    ()=>b,
+    "keyframes",
+    ()=>h,
+    "setup",
+    ()=>m,
+    "styled",
+    ()=>w
+]);
+let e = {
+    data: ""
+}, t = (t)=>{
+    if ("object" == typeof window) {
+        let e = (t ? t.querySelector("#_goober") : window._goober) || Object.assign(document.createElement("style"), {
+            innerHTML: " ",
+            id: "_goober"
+        });
+        return e.nonce = window.__nonce__, e.parentNode || (t || document.head).appendChild(e), e.firstChild;
+    }
+    return t || e;
+}, r = (e)=>{
+    let r = t(e), l = r.data;
+    return r.data = "", l;
+}, l = /(?:([\u0080-\uFFFF\w-%@]+) *:? *([^{;]+?);|([^;}{]*?) *{)|(}\s*)/g, a = /\/\*[^]*?\*\/|  +/g, n = /\n+/g, o = (e, t)=>{
+    let r = "", l = "", a = "";
+    for(let n in e){
+        let c = e[n];
+        "@" == n[0] ? "i" == n[1] ? r = n + " " + c + ";" : l += "f" == n[1] ? o(c, n) : n + "{" + o(c, "k" == n[1] ? "" : t) + "}" : "object" == typeof c ? l += o(c, t ? t.replace(/([^,])+/g, (e)=>n.replace(/([^,]*:\S+\([^)]*\))|([^,])+/g, (t)=>/&/.test(t) ? t.replace(/&/g, e) : e ? e + " " + t : t)) : n) : null != c && (n = /^--/.test(n) ? n : n.replace(/[A-Z]/g, "-$&").toLowerCase(), a += o.p ? o.p(n, c) : n + ":" + c + ";");
+    }
+    return r + (t && a ? t + "{" + a + "}" : a) + l;
+}, c = {}, s = (e)=>{
+    if ("object" == typeof e) {
+        let t = "";
+        for(let r in e)t += r + s(e[r]);
+        return t;
+    }
+    return e;
+}, i = (e, t, r, i, p)=>{
+    let u = s(e), d = c[u] || (c[u] = ((e)=>{
+        let t = 0, r = 11;
+        for(; t < e.length;)r = 101 * r + e.charCodeAt(t++) >>> 0;
+        return "go" + r;
+    })(u));
+    if (!c[d]) {
+        let t = u !== e ? e : ((e)=>{
+            let t, r, o = [
+                {}
+            ];
+            for(; t = l.exec(e.replace(a, ""));)t[4] ? o.shift() : t[3] ? (r = t[3].replace(n, " ").trim(), o.unshift(o[0][r] = o[0][r] || {})) : o[0][t[1]] = t[2].replace(n, " ").trim();
+            return o[0];
+        })(e);
+        c[d] = o(p ? {
+            ["@keyframes " + d]: t
+        } : t, r ? "" : "." + d);
+    }
+    let f = r && c.g ? c.g : null;
+    return r && (c.g = c[d]), ((e, t, r, l)=>{
+        l ? t.data = t.data.replace(l, e) : -1 === t.data.indexOf(e) && (t.data = r ? e + t.data : t.data + e);
+    })(c[d], t, i, f), d;
+}, p = (e, t, r)=>e.reduce((e, l, a)=>{
+        let n = t[a];
+        if (n && n.call) {
+            let e = n(r), t = e && e.props && e.props.className || /^go/.test(e) && e;
+            n = t ? "." + t : e && "object" == typeof e ? e.props ? "" : o(e, "") : !1 === e ? "" : e;
+        }
+        return e + l + (null == n ? "" : n);
+    }, "");
+function u(e) {
+    let r = this || {}, l = e.call ? e(r.p) : e;
+    return i(l.unshift ? l.raw ? p(l, [].slice.call(arguments, 1), r.p) : l.reduce((e, t)=>Object.assign(e, t && t.call ? t(r.p) : t), {}) : l, t(r.target), r.g, r.o, r.k);
+}
+let d, f, g, b = u.bind({
+    g: 1
+}), h = u.bind({
+    k: 1
+});
+function m(e, t, r, l) {
+    o.p = t, d = e, f = r, g = l;
+}
+function w(e, t) {
+    let r = this || {};
+    return function() {
+        let l = arguments;
+        function a(n, o) {
+            let c = Object.assign({}, n), s = c.className || a.className;
+            r.p = Object.assign({
+                theme: f && f()
+            }, c), r.o = / *go\d+/.test(s), c.className = u.apply(r, l) + (s ? " " + s : ""), t && (c.ref = o);
+            let i = e;
+            return e[0] && (i = c.as || e, delete c.as), g && i[0] && g(c), d(i, c);
+        }
+        return t ? t(a) : a;
+    };
+}
+;
+}),
+"[project]/node_modules/react-hot-toast/dist/index.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "CheckmarkIcon",
+    ()=>L,
+    "ErrorIcon",
+    ()=>C,
+    "LoaderIcon",
+    ()=>F,
+    "ToastBar",
+    ()=>N,
+    "ToastIcon",
+    ()=>$,
+    "Toaster",
+    ()=>Fe,
+    "default",
+    ()=>zt,
+    "resolveValue",
+    ()=>h,
+    "toast",
+    ()=>n,
+    "useToaster",
+    ()=>w,
+    "useToasterStore",
+    ()=>V
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/goober/dist/goober.modern.js [app-client] (ecmascript)");
+"use client";
+var Z = (e)=>typeof e == "function", h = (e, t)=>Z(e) ? e(t) : e;
+var W = (()=>{
+    let e = 0;
+    return ()=>(++e).toString();
+})(), E = (()=>{
+    let e;
+    return ()=>{
+        if (e === void 0 && typeof window < "u") {
+            let t = matchMedia("(prefers-reduced-motion: reduce)");
+            e = !t || t.matches;
+        }
+        return e;
+    };
+})();
+;
+var re = 20, k = "default";
+var H = (e, t)=>{
+    let { toastLimit: o } = e.settings;
+    switch(t.type){
+        case 0:
+            return {
+                ...e,
+                toasts: [
+                    t.toast,
+                    ...e.toasts
+                ].slice(0, o)
+            };
+        case 1:
+            return {
+                ...e,
+                toasts: e.toasts.map((r)=>r.id === t.toast.id ? {
+                        ...r,
+                        ...t.toast
+                    } : r)
+            };
+        case 2:
+            let { toast: s } = t;
+            return H(e, {
+                type: e.toasts.find((r)=>r.id === s.id) ? 1 : 0,
+                toast: s
+            });
+        case 3:
+            let { toastId: a } = t;
+            return {
+                ...e,
+                toasts: e.toasts.map((r)=>r.id === a || a === void 0 ? {
+                        ...r,
+                        dismissed: !0,
+                        visible: !1
+                    } : r)
+            };
+        case 4:
+            return t.toastId === void 0 ? {
+                ...e,
+                toasts: []
+            } : {
+                ...e,
+                toasts: e.toasts.filter((r)=>r.id !== t.toastId)
+            };
+        case 5:
+            return {
+                ...e,
+                pausedAt: t.time
+            };
+        case 6:
+            let i = t.time - (e.pausedAt || 0);
+            return {
+                ...e,
+                pausedAt: void 0,
+                toasts: e.toasts.map((r)=>({
+                        ...r,
+                        pauseDuration: r.pauseDuration + i
+                    }))
+            };
+    }
+}, v = [], j = {
+    toasts: [],
+    pausedAt: void 0,
+    settings: {
+        toastLimit: re
+    }
+}, f = {}, Y = (e, t = k)=>{
+    f[t] = H(f[t] || j, e), v.forEach(([o, s])=>{
+        o === t && s(f[t]);
+    });
+}, _ = (e)=>Object.keys(f).forEach((t)=>Y(e, t)), Q = (e)=>Object.keys(f).find((t)=>f[t].toasts.some((o)=>o.id === e)), S = (e = k)=>(t)=>{
+        Y(t, e);
+    }, se = {
+    blank: 4e3,
+    error: 4e3,
+    success: 2e3,
+    loading: 1 / 0,
+    custom: 4e3
+}, V = (e = {}, t = k)=>{
+    let [o, s] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(f[t] || j), a = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(f[t]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(()=>(a.current !== f[t] && s(f[t]), v.push([
+            t,
+            s
+        ]), ()=>{
+            let r = v.findIndex(([l])=>l === t);
+            r > -1 && v.splice(r, 1);
+        }), [
+        t
+    ]);
+    let i = o.toasts.map((r)=>{
+        var l, g, T;
+        return {
+            ...e,
+            ...e[r.type],
+            ...r,
+            removeDelay: r.removeDelay || ((l = e[r.type]) == null ? void 0 : l.removeDelay) || (e == null ? void 0 : e.removeDelay),
+            duration: r.duration || ((g = e[r.type]) == null ? void 0 : g.duration) || (e == null ? void 0 : e.duration) || se[r.type],
+            style: {
+                ...e.style,
+                ...(T = e[r.type]) == null ? void 0 : T.style,
+                ...r.style
+            }
+        };
+    });
+    return {
+        ...o,
+        toasts: i
+    };
+};
+var ie = (e, t = "blank", o)=>({
+        createdAt: Date.now(),
+        visible: !0,
+        dismissed: !1,
+        type: t,
+        ariaProps: {
+            role: "status",
+            "aria-live": "polite"
+        },
+        message: e,
+        pauseDuration: 0,
+        ...o,
+        id: (o == null ? void 0 : o.id) || W()
+    }), P = (e)=>(t, o)=>{
+        let s = ie(t, e, o);
+        return S(s.toasterId || Q(s.id))({
+            type: 2,
+            toast: s
+        }), s.id;
+    }, n = (e, t)=>P("blank")(e, t);
+n.error = P("error");
+n.success = P("success");
+n.loading = P("loading");
+n.custom = P("custom");
+n.dismiss = (e, t)=>{
+    let o = {
+        type: 3,
+        toastId: e
+    };
+    t ? S(t)(o) : _(o);
+};
+n.dismissAll = (e)=>n.dismiss(void 0, e);
+n.remove = (e, t)=>{
+    let o = {
+        type: 4,
+        toastId: e
+    };
+    t ? S(t)(o) : _(o);
+};
+n.removeAll = (e)=>n.remove(void 0, e);
+n.promise = (e, t, o)=>{
+    let s = n.loading(t.loading, {
+        ...o,
+        ...o == null ? void 0 : o.loading
+    });
+    return typeof e == "function" && (e = e()), e.then((a)=>{
+        let i = t.success ? h(t.success, a) : void 0;
+        return i ? n.success(i, {
+            id: s,
+            ...o,
+            ...o == null ? void 0 : o.success
+        }) : n.dismiss(s), a;
+    }).catch((a)=>{
+        let i = t.error ? h(t.error, a) : void 0;
+        i ? n.error(i, {
+            id: s,
+            ...o,
+            ...o == null ? void 0 : o.error
+        }) : n.dismiss(s);
+    }), e;
+};
+;
+var ce = 1e3, w = (e, t = "default")=>{
+    let { toasts: o, pausedAt: s } = V(e, t), a = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(new Map).current, i = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])((c, m = ce)=>{
+        if (a.has(c)) return;
+        let p = setTimeout(()=>{
+            a.delete(c), r({
+                type: 4,
+                toastId: c
+            });
+        }, m);
+        a.set(c, p);
+    }, []);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (s) return;
+        let c = Date.now(), m = o.map((p)=>{
+            if (p.duration === 1 / 0) return;
+            let R = (p.duration || 0) + p.pauseDuration - (c - p.createdAt);
+            if (R < 0) {
+                p.visible && n.dismiss(p.id);
+                return;
+            }
+            return setTimeout(()=>n.dismiss(p.id, t), R);
+        });
+        return ()=>{
+            m.forEach((p)=>p && clearTimeout(p));
+        };
+    }, [
+        o,
+        s,
+        t
+    ]);
+    let r = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])(S(t), [
+        t
+    ]), l = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])(()=>{
+        r({
+            type: 5,
+            time: Date.now()
+        });
+    }, [
+        r
+    ]), g = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])((c, m)=>{
+        r({
+            type: 1,
+            toast: {
+                id: c,
+                height: m
+            }
+        });
+    }, [
+        r
+    ]), T = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])(()=>{
+        s && r({
+            type: 6,
+            time: Date.now()
+        });
+    }, [
+        s,
+        r
+    ]), d = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])((c, m)=>{
+        let { reverseOrder: p = !1, gutter: R = 8, defaultPosition: z } = m || {}, O = o.filter((u)=>(u.position || z) === (c.position || z) && u.height), K = O.findIndex((u)=>u.id === c.id), B = O.filter((u, I)=>I < K && u.visible).length;
+        return O.filter((u)=>u.visible).slice(...p ? [
+            B + 1
+        ] : [
+            0,
+            B
+        ]).reduce((u, I)=>u + (I.height || 0) + R, 0);
+    }, [
+        o
+    ]);
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        o.forEach((c)=>{
+            if (c.dismissed) i(c.id, c.removeDelay);
+            else {
+                let m = a.get(c.id);
+                m && (clearTimeout(m), a.delete(c.id));
+            }
+        });
+    }, [
+        o,
+        i
+    ]), {
+        toasts: o,
+        handlers: {
+            updateHeight: g,
+            startPause: l,
+            endPause: T,
+            calculateOffset: d
+        }
+    };
+};
+;
+;
+;
+;
+;
+var de = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["keyframes"]`
+from {
+  transform: scale(0) rotate(45deg);
+	opacity: 0;
+}
+to {
+ transform: scale(1) rotate(45deg);
+  opacity: 1;
+}`, me = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["keyframes"]`
+from {
+  transform: scale(0);
+  opacity: 0;
+}
+to {
+  transform: scale(1);
+  opacity: 1;
+}`, le = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["keyframes"]`
+from {
+  transform: scale(0) rotate(90deg);
+	opacity: 0;
+}
+to {
+  transform: scale(1) rotate(90deg);
+	opacity: 1;
+}`, C = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["styled"])("div")`
+  width: 20px;
+  opacity: 0;
+  height: 20px;
+  border-radius: 10px;
+  background: ${(e)=>e.primary || "#ff4b4b"};
+  position: relative;
+  transform: rotate(45deg);
+
+  animation: ${de} 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    forwards;
+  animation-delay: 100ms;
+
+  &:after,
+  &:before {
+    content: '';
+    animation: ${me} 0.15s ease-out forwards;
+    animation-delay: 150ms;
+    position: absolute;
+    border-radius: 3px;
+    opacity: 0;
+    background: ${(e)=>e.secondary || "#fff"};
+    bottom: 9px;
+    left: 4px;
+    height: 2px;
+    width: 12px;
+  }
+
+  &:before {
+    animation: ${le} 0.15s ease-out forwards;
+    animation-delay: 180ms;
+    transform: rotate(90deg);
+  }
+`;
+;
+var Te = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["keyframes"]`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`, F = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["styled"])("div")`
+  width: 12px;
+  height: 12px;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-radius: 100%;
+  border-color: ${(e)=>e.secondary || "#e0e0e0"};
+  border-right-color: ${(e)=>e.primary || "#616161"};
+  animation: ${Te} 1s linear infinite;
+`;
+;
+var ge = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["keyframes"]`
+from {
+  transform: scale(0) rotate(45deg);
+	opacity: 0;
+}
+to {
+  transform: scale(1) rotate(45deg);
+	opacity: 1;
+}`, he = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["keyframes"]`
+0% {
+	height: 0;
+	width: 0;
+	opacity: 0;
+}
+40% {
+  height: 0;
+	width: 6px;
+	opacity: 1;
+}
+100% {
+  opacity: 1;
+  height: 10px;
+}`, L = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["styled"])("div")`
+  width: 20px;
+  opacity: 0;
+  height: 20px;
+  border-radius: 10px;
+  background: ${(e)=>e.primary || "#61d345"};
+  position: relative;
+  transform: rotate(45deg);
+
+  animation: ${ge} 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    forwards;
+  animation-delay: 100ms;
+  &:after {
+    content: '';
+    box-sizing: border-box;
+    animation: ${he} 0.2s ease-out forwards;
+    opacity: 0;
+    animation-delay: 200ms;
+    position: absolute;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-color: ${(e)=>e.secondary || "#fff"};
+    bottom: 6px;
+    left: 6px;
+    height: 10px;
+    width: 6px;
+  }
+`;
+var be = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["styled"])("div")`
+  position: absolute;
+`, Se = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["styled"])("div")`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20px;
+  min-height: 20px;
+`, Ae = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["keyframes"]`
+from {
+  transform: scale(0.6);
+  opacity: 0.4;
+}
+to {
+  transform: scale(1);
+  opacity: 1;
+}`, Pe = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["styled"])("div")`
+  position: relative;
+  transform: scale(0.6);
+  opacity: 0.4;
+  min-width: 20px;
+  animation: ${Ae} 0.3s 0.12s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    forwards;
+`, $ = ({ toast: e })=>{
+    let { icon: t, type: o, iconTheme: s } = e;
+    return t !== void 0 ? typeof t == "string" ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"](Pe, null, t) : t : o === "blank" ? null : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"](Se, null, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"](F, {
+        ...s
+    }), o !== "loading" && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"](be, null, o === "error" ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"](C, {
+        ...s
+    }) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"](L, {
+        ...s
+    })));
+};
+var Re = (e)=>`
+0% {transform: translate3d(0,${e * -200}%,0) scale(.6); opacity:.5;}
+100% {transform: translate3d(0,0,0) scale(1); opacity:1;}
+`, Ee = (e)=>`
+0% {transform: translate3d(0,0,-1px) scale(1); opacity:1;}
+100% {transform: translate3d(0,${e * -150}%,-1px) scale(.6); opacity:0;}
+`, ve = "0%{opacity:0;} 100%{opacity:1;}", De = "0%{opacity:1;} 100%{opacity:0;}", Oe = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["styled"])("div")`
+  display: flex;
+  align-items: center;
+  background: #fff;
+  color: #363636;
+  line-height: 1.3;
+  will-change: transform;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.05);
+  max-width: 350px;
+  pointer-events: auto;
+  padding: 8px 10px;
+  border-radius: 8px;
+`, Ie = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["styled"])("div")`
+  display: flex;
+  justify-content: center;
+  margin: 4px 10px;
+  color: inherit;
+  flex: 1 1 auto;
+  white-space: pre-line;
+`, ke = (e, t)=>{
+    let s = e.includes("top") ? 1 : -1, [a, i] = E() ? [
+        ve,
+        De
+    ] : [
+        Re(s),
+        Ee(s)
+    ];
+    return {
+        animation: t ? `${(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["keyframes"])(a)} 0.35s cubic-bezier(.21,1.02,.73,1) forwards` : `${(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["keyframes"])(i)} 0.4s forwards cubic-bezier(.06,.71,.55,1)`
+    };
+}, N = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["memo"](({ toast: e, position: t, style: o, children: s })=>{
+    let a = e.height ? ke(e.position || t || "top-center", e.visible) : {
+        opacity: 0
+    }, i = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"]($, {
+        toast: e
+    }), r = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"](Ie, {
+        ...e.ariaProps
+    }, h(e.message, e));
+    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"](Oe, {
+        className: e.className,
+        style: {
+            ...a,
+            ...o,
+            ...e.style
+        }
+    }, typeof s == "function" ? s({
+        icon: i,
+        message: r
+    }) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], null, i, r));
+});
+;
+;
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["setup"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"]);
+var we = ({ id: e, className: t, style: o, onHeightUpdate: s, children: a })=>{
+    let i = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"]({
+        "we.useCallback[i]": (r)=>{
+            if (r) {
+                let l = {
+                    "we.useCallback[i].l": ()=>{
+                        let g = r.getBoundingClientRect().height;
+                        s(e, g);
+                    }
+                }["we.useCallback[i].l"];
+                l(), new MutationObserver(l).observe(r, {
+                    subtree: !0,
+                    childList: !0,
+                    characterData: !0
+                });
+            }
+        }
+    }["we.useCallback[i]"], [
+        e,
+        s
+    ]);
+    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"]("div", {
+        ref: i,
+        className: t,
+        style: o
+    }, a);
+}, Me = (e, t)=>{
+    let o = e.includes("top"), s = o ? {
+        top: 0
+    } : {
+        bottom: 0
+    }, a = e.includes("center") ? {
+        justifyContent: "center"
+    } : e.includes("right") ? {
+        justifyContent: "flex-end"
+    } : {};
+    return {
+        left: 0,
+        right: 0,
+        display: "flex",
+        position: "absolute",
+        transition: E() ? void 0 : "all 230ms cubic-bezier(.21,1.02,.73,1)",
+        transform: `translateY(${t * (o ? 1 : -1)}px)`,
+        ...s,
+        ...a
+    };
+}, Ce = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$goober$2f$dist$2f$goober$2e$modern$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["css"]`
+  z-index: 9999;
+  > * {
+    pointer-events: auto;
+  }
+`, D = 16, Fe = ({ reverseOrder: e, position: t = "top-center", toastOptions: o, gutter: s, children: a, toasterId: i, containerStyle: r, containerClassName: l })=>{
+    let { toasts: g, handlers: T } = w(o, i);
+    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"]("div", {
+        "data-rht-toaster": i || "",
+        style: {
+            position: "fixed",
+            zIndex: 9999,
+            top: D,
+            left: D,
+            right: D,
+            bottom: D,
+            pointerEvents: "none",
+            ...r
+        },
+        className: l,
+        onMouseEnter: T.startPause,
+        onMouseLeave: T.endPause
+    }, g.map((d)=>{
+        let c = d.position || t, m = T.calculateOffset(d, {
+            reverseOrder: e,
+            gutter: s,
+            defaultPosition: t
+        }), p = Me(c, m);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"](we, {
+            id: d.id,
+            key: d.id,
+            onHeightUpdate: T.updateHeight,
+            className: d.visible ? Ce : "",
+            style: p
+        }, d.type === "custom" ? h(d.message, d) : a ? a(d) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"](N, {
+            toast: d,
+            position: c
+        }));
+    }));
+};
+var zt = n;
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+]);
+
+//# sourceMappingURL=_75feef9f._.js.map

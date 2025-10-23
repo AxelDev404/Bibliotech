@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///Users/cookie/Documents/Practice/learn-next/frontend/src/store/store.js"],"sourcesContent":["'use client';\n\nimport { configureStore } from \"@reduxjs/toolkit\";\n\nconst store = configureStore({\n\n    reducer : {\n\n\n\n    },\n});\n\n\nexport default store;\n"],"names":[],"mappings":";;;;AAEA;AAFA;;AAIA,MAAM,QAAQ,IAAA,6MAAc,EAAC;IAEzB,SAAU,CAIV;AACJ;uCAGe","debugId":null}},
+    {"offset": {"line": 25, "column": 0}, "map": {"version":3,"sources":["file:///Users/cookie/Documents/Practice/learn-next/frontend/src/store/ReduxProvider.jsx"],"sourcesContent":["'use client';\n\nimport { Provider } from \"react-redux\";\nimport store from \"./store\";\n\nexport default function ReduxProvider({ children }) {\n  return <Provider store={store}>{children}</Provider>;\n}\n\n"],"names":[],"mappings":";;;;;AAEA;AACA;AAHA;;;;AAKe,SAAS,cAAc,EAAE,QAAQ,EAAE;IAChD,qBAAO,8OAAC,qKAAQ;QAAC,OAAO,gIAAK;kBAAG;;;;;;AAClC","debugId":null}}]
+}
