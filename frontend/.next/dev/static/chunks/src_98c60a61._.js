@@ -23,11 +23,11 @@ var _s = __turbopack_context__.k.signature();
 function AppWrapper(t0) {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(6);
-    if ($[0] !== "3590299a713e61cb5111e99ab2cf06b472f0000a84125331e9c617708aef9bb2") {
+    if ($[0] !== "f53b9a93d9c89cc3956f900244cb663626d616ed6a5a6a79aa146b87af717368") {
         for(let $i = 0; $i < 6; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "3590299a713e61cb5111e99ab2cf06b472f0000a84125331e9c617708aef9bb2";
+        $[0] = "f53b9a93d9c89cc3956f900244cb663626d616ed6a5a6a79aa146b87af717368";
     }
     const { children } = t0;
     const dispatch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDispatch"])();
@@ -70,13 +70,13 @@ function AppWrapper(t0) {
         let t3;
         if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
             t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex justify-center items-center min-h-screen bg-rose-900",
+                className: "flex justify-center items-center min-h-screen bg-black",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-rose-700"
+                    className: "animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-white"
                 }, void 0, false, {
                     fileName: "[project]/src/components/AppWrapper.jsx",
                     lineNumber: 55,
-                    columnNumber: 87
+                    columnNumber: 84
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/AppWrapper.jsx",
@@ -194,11 +194,11 @@ var _s = __turbopack_context__.k.signature();
 function SideBar() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(79);
-    if ($[0] !== "0d719acb70a118026ee8f54c36c2c7b6282f9483a2cc06d25c7a801b055825a5") {
+    if ($[0] !== "31efd7fdc73ef145499dcaa6ef4944b9d7a8cd6f3b6ab2553ebbe9c9cdfe47a6") {
         for(let $i = 0; $i < 79; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "0d719acb70a118026ee8f54c36c2c7b6282f9483a2cc06d25c7a801b055825a5";
+        $[0] = "31efd7fdc73ef145499dcaa6ef4944b9d7a8cd6f3b6ab2553ebbe9c9cdfe47a6";
     }
     const [isSidebarOpen, setIsSidebarOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     let t0;
@@ -229,7 +229,7 @@ function SideBar() {
         t1 = $[5];
     }
     const HandleLogOut = t1;
-    const t2 = `fixed left-0 top-0 h-screen bg-rose-950 border-r border-white shadow-lg flex flex-col transition-all duration-300 z-40 ${isSidebarOpen ? "w-60" : "w-16"}`;
+    const t2 = `fixed left-0 top-0 h-screen bg-black border border-white shadow-lg flex flex-col transition-all duration-300 z-40 ${isSidebarOpen ? "w-60" : "w-16"}`;
     const t3 = `text-white font-semibold text-lg transition-all duration-200 ${isSidebarOpen ? "opacity-100" : "opacity-0 hidden"}`;
     let t4;
     if ($[6] !== t3) {
@@ -339,7 +339,7 @@ function SideBar() {
     let t11;
     if ($[21] !== t10 || $[22] !== t8) {
         t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-white hover:bg-rose-900 w-full",
+            className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white w-full",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 onClick: t8,
                 className: "w-full text-left h-12 flex items-center",
@@ -350,7 +350,7 @@ function SideBar() {
             }, void 0, true, {
                 fileName: "[project]/src/components/SideBar.jsx",
                 lineNumber: 123,
-                columnNumber: 127
+                columnNumber: 124
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
@@ -404,7 +404,7 @@ function SideBar() {
     let t15;
     if ($[29] !== t12 || $[30] !== t14) {
         t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-white hover:bg-rose-900  w-full",
+            className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white  w-full",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 onClick: t12,
                 className: "w-full text-left h-12 flex items-center",
@@ -415,7 +415,7 @@ function SideBar() {
             }, void 0, true, {
                 fileName: "[project]/src/components/SideBar.jsx",
                 lineNumber: 157,
-                columnNumber: 128
+                columnNumber: 125
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
@@ -469,7 +469,7 @@ function SideBar() {
     let t19;
     if ($[37] !== t16 || $[38] !== t18) {
         t19 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-white hover:bg-rose-900  w-full",
+            className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white w-full",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 onClick: t16,
                 className: "w-full text-left h-12 flex items-center",
@@ -480,7 +480,7 @@ function SideBar() {
             }, void 0, true, {
                 fileName: "[project]/src/components/SideBar.jsx",
                 lineNumber: 191,
-                columnNumber: 128
+                columnNumber: 124
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
@@ -534,7 +534,7 @@ function SideBar() {
     let t23;
     if ($[45] !== t20 || $[46] !== t22) {
         t23 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-white hover:bg-rose-900  w-full",
+            className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white  w-full",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 onClick: t20,
                 className: "w-full text-left h-12 flex items-center",
@@ -545,7 +545,7 @@ function SideBar() {
             }, void 0, true, {
                 fileName: "[project]/src/components/SideBar.jsx",
                 lineNumber: 225,
-                columnNumber: 128
+                columnNumber: 125
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
@@ -614,7 +614,7 @@ function SideBar() {
     let t27;
     if ($[56] !== t26) {
         t27 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-            className: "flex items-center gap-4 font-light rounded-md px-2 h-12 w-full text-left text-white hover:text-white hover:bg-rose-900",
+            className: "flex items-center gap-4 font-light rounded-md px-2 h-12 w-full text-left text-white hover:text-black hover:bg-white",
             children: [
                 t25,
                 t26
@@ -673,7 +673,7 @@ function SideBar() {
     if ($[63] !== t28 || $[64] !== t30) {
         t31 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
             onClick: t28,
-            className: "flex items-center gap-4 font-light rounded-md px-2 h-12 w-full text-left text-white hover:text-white hover:bg-rose-900 ",
+            className: "flex items-center gap-4 font-light rounded-md px-2 h-12 w-full text-left text-white hover:text-black hover:bg-white ",
             children: [
                 t29,
                 t30
@@ -806,11 +806,11 @@ var _s = __turbopack_context__.k.signature();
 function Banner() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(18);
-    if ($[0] !== "feea2ce52540c97e9b5f2fc718092aabf75a01dc182ad813736a5230253e4c11") {
+    if ($[0] !== "77ee1d2cdcfa7d97c33792b5793d9c59403e23055feba97d1a5596e1faeb0aaf") {
         for(let $i = 0; $i < 18; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "feea2ce52540c97e9b5f2fc718092aabf75a01dc182ad813736a5230253e4c11";
+        $[0] = "77ee1d2cdcfa7d97c33792b5793d9c59403e23055feba97d1a5596e1faeb0aaf";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -881,7 +881,7 @@ function Banner() {
     let t5;
     if ($[6] !== user.username) {
         t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-            className: "text-sm text-slate-400 flex items-center gap-1",
+            className: "text-sm text-white flex items-center gap-1",
             children: [
                 t3,
                 t4,
@@ -890,7 +890,7 @@ function Banner() {
                 }, void 0, false, {
                     fileName: "[project]/src/components/Banner.jsx",
                     lineNumber: 74,
-                    columnNumber: 80
+                    columnNumber: 76
                 }, this)
             ]
         }, void 0, true, {
@@ -920,7 +920,7 @@ function Banner() {
     let t7;
     if ($[9] !== user.nome) {
         t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-            className: "text-sm text-slate-400",
+            className: "text-sm text-white",
             children: [
                 t6,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -929,7 +929,7 @@ function Banner() {
                 }, void 0, false, {
                     fileName: "[project]/src/components/Banner.jsx",
                     lineNumber: 89,
-                    columnNumber: 52
+                    columnNumber: 48
                 }, this)
             ]
         }, void 0, true, {
@@ -959,7 +959,7 @@ function Banner() {
     let t9;
     if ($[12] !== user.cognome) {
         t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-            className: "text-sm text-slate-400",
+            className: "text-sm text-white",
             children: [
                 t8,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -968,7 +968,7 @@ function Banner() {
                 }, void 0, false, {
                     fileName: "[project]/src/components/Banner.jsx",
                     lineNumber: 104,
-                    columnNumber: 52
+                    columnNumber: 48
                 }, this)
             ]
         }, void 0, true, {
@@ -984,7 +984,7 @@ function Banner() {
     let t10;
     if ($[14] !== t5 || $[15] !== t7 || $[16] !== t9) {
         t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "w-full h-20 bg-rose-950 border-b border-rose-950 shadow-md fixed",
+            className: "w-full h-20 bg-black border-white border  fixed",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "max-w-screen mx-auto px-6 h-full flex items-center justify-between",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -997,12 +997,12 @@ function Banner() {
                 }, void 0, true, {
                     fileName: "[project]/src/components/Banner.jsx",
                     lineNumber: 112,
-                    columnNumber: 177
+                    columnNumber: 160
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Banner.jsx",
                 lineNumber: 112,
-                columnNumber: 93
+                columnNumber: 76
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Banner.jsx",
@@ -1056,11 +1056,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Banner$
 ;
 function CercaLibro() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(3);
-    if ($[0] !== "60394d71b55684ad06251ecb91145a2f39ed851e55bf55d257816aff150fffd7") {
+    if ($[0] !== "ea3383c940d809319a24bf5b7e78dcc9206b5decb4311eb49972a4959864f584") {
         for(let $i = 0; $i < 3; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "60394d71b55684ad06251ecb91145a2f39ed851e55bf55d257816aff150fffd7";
+        $[0] = "ea3383c940d809319a24bf5b7e78dcc9206b5decb4311eb49972a4959864f584";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1078,7 +1078,7 @@ function CercaLibro() {
         t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AppWrapper$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$PrivateRoute$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex min-h-screen bg-white text-black",
+                    className: "flex min-h-screen bg-black text-white",
                     children: [
                         t0,
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {

@@ -16,7 +16,7 @@ export default function CaricaLibro(){
             
             <PrivateRoute>
 
-                <div className="flex min-h-screen bg-white text-black">
+                <div className="flex min-h-screen bg-black text-white">
                                    
                     <SideBar />
                 

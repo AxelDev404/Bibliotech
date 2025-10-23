@@ -31,25 +31,25 @@ export default function Banner(){
 
     return(
 
-        <div className="w-full h-20 bg-rose-950 border-b border-rose-950 shadow-md fixed">
+        <div className="w-full h-20 bg-black border-white border  fixed">
             
             <div className="max-w-screen mx-auto px-6 h-full flex items-center justify-between">
                 
                 <div className="flex items-center space-x-8">
         
-                    <p className="text-sm text-slate-400 flex items-center gap-1">
+                    <p className="text-sm text-white flex items-center gap-1">
                         <PersonIcon sx={{ fontSize: 25 , color : 'white'}} />
                         <span className="font-semibold text-white tracking-wide">: </span>
                         <span>{user.username}</span>
                     </p>
 
                     
-                    <p className="text-sm text-slate-400">
+                    <p className="text-sm text-white">
                         <span className="font-semibold text-white tracking-wide ">Nome:</span>
                         <span className="ml-1">{user.nome}</span>
                     </p>
                     
-                    <p className="text-sm text-slate-400">
+                    <p className="text-sm text-white">
                         <span className="font-semibold text-white tracking-wide ">Cognome:</span>
                         <span className="ml-1">{user.cognome}</span>
                     </p>

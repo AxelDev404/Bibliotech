@@ -37,7 +37,7 @@ export default function SideBar(){
 
         <div className="flex h-screen">
            
-            <div  className={`fixed left-0 top-0 h-screen bg-rose-950 border-r border-white shadow-lg flex flex-col transition-all duration-300 z-40 ${isSidebarOpen ? 'w-60' : 'w-16'}`}>
+            <div  className={`fixed left-0 top-0 h-screen bg-black border border-white shadow-lg flex flex-col transition-all duration-300 z-40 ${isSidebarOpen ? 'w-60' : 'w-16'}`}>
                 
                 <div className="flex items-center justify-between px-4 h-20 border-b border-white">
                     <a  className={`text-white font-semibold text-lg transition-all duration-200 ${isSidebarOpen ? 'opacity-100' : 'opacity-0 hidden'}`}>
@@ -52,28 +52,28 @@ export default function SideBar(){
             
                 <div className="flex flex-col items-start gap-6 p-4 text-sm text-gray-300 flex-1 overflow-y-auto">
 
-                    <div className="flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-white hover:bg-rose-900 w-full">
+                    <div className="flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white w-full">
                         <button onClick={() => router.replace('dashboard')}  className="w-full text-left h-12 flex items-center">
                             <DashboardIcon titleAccess='Dashboard'/>
                             {isSidebarOpen && <span className="px-3">Dashboard</span>}
                         </button>
                     </div>
                     
-                    <div className="flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-white hover:bg-rose-900  w-full">
+                    <div className="flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white  w-full">
                         <button onClick={() => router.replace('gestione-libri')} className="w-full text-left h-12 flex items-center">
                             <FormatListBulletedIcon titleAccess='Gestione documenti' />
                             {isSidebarOpen && <span className="px-3">Gestione libri</span>}
                         </button>
                     </div>
                     
-                    <div className="flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-white hover:bg-rose-900  w-full">
+                    <div className="flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white w-full">
                         <button onClick={() => router.replace('cerca-libro')}  className="w-full text-left h-12 flex items-center">
                             <AutoStoriesIcon titleAccess='Cerca documenti'/>
                             {isSidebarOpen && <span className="px-3">Cerca libro</span>}
                         </button>
                     </div>
 
-                    <div className="flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-white hover:bg-rose-900  w-full">
+                    <div className="flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white  w-full">
                         <button  onClick={() => router.replace('carica-libro')} className="w-full text-left h-12 flex items-center">
                             <ImportContactsIcon titleAccess='carica documento' />
                             {isSidebarOpen && <span className="px-3">Carica libro</span>}
@@ -85,12 +85,12 @@ export default function SideBar(){
                 
                 <div className="p-4 mt-auto">
                     
-                    <button   className="flex items-center gap-4 font-light rounded-md px-2 h-12 w-full text-left text-white hover:text-white hover:bg-rose-900">
+                    <button   className="flex items-center gap-4 font-light rounded-md px-2 h-12 w-full text-left text-white hover:text-black hover:bg-white">
                         <SettingsIcon sx={{fontSize : 20}} />
                         {isSidebarOpen && <span className="px-3">Impostazioni</span>}
                     </button>
                     
-                    <button  onClick={() => HandleLogOut()}  className="flex items-center gap-4 font-light rounded-md px-2 h-12 w-full text-left text-white hover:text-white hover:bg-rose-900 ">
+                    <button  onClick={() => HandleLogOut()}  className="flex items-center gap-4 font-light rounded-md px-2 h-12 w-full text-left text-white hover:text-black hover:bg-white ">
                         <LogoutIcon  sx={{fontSize :20}}/>
                         {isSidebarOpen && <span className="px-3">Logout</span>}
                     </button>
