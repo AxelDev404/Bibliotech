@@ -1,1691 +1,10 @@
-[00:00:00.574] Server  LOG      ✓ Ready in 347ms
-[00:00:03.863] Server  ERROR    ⨯ ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-
-./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[00:00:04.281] Browser ERROR   uncaughtError: Error: ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[00:00:04.431] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:04.431] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:04.431] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:04.431] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:06.012] Server  ERROR    ⨯ ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-
-./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[00:00:06.082] Browser ERROR   uncaughtError: Error: ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[00:00:06.211] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:06.211] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:06.211] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:06.211] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:06.217] Server  ERROR    ⨯ ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-
-./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[00:00:06.277] Browser ERROR   uncaughtError: Error: ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[00:00:06.413] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:06.414] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:06.414] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:06.414] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:06.821] Server  ERROR    ⨯ ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-
-./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[00:00:06.888] Browser ERROR   uncaughtError: Error: ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[00:00:07.023] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:07.023] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:07.023] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:07.023] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:07.085] Server  ERROR    ⨯ ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-
-./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[00:00:07.147] Browser ERROR   uncaughtError: Error: ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[00:00:07.285] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:07.285] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:07.285] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:07.285] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:07.315] Server  ERROR    ⨯ ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-
-./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[00:00:07.374] Browser ERROR   uncaughtError: Error: ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[00:00:07.509] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:07.509] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:07.509] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:07.509] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:11.026] Server  ERROR    ⨯ ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-
-./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[00:00:11.087] Browser ERROR   uncaughtError: Error: ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[00:00:11.223] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:11.223] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:11.223] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:11.223] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:12.474] Server  ERROR    ⨯ ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-
-./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[00:00:12.547] Browser ERROR   uncaughtError: Error: ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[00:00:12.684] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:12.684] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:12.684] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:12.684] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:15.608] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:15.776] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:15.776] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:15.776] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-client] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:15.776] Browser ERROR   ./src/components/Banner.jsx:10:1
-Export Avatar doesn't exist in target module
-   8 |
-   9 |
-> 10 | import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem , Avatar} from "@heroui/dropdown"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 |
-  12 |
-  13 |
-
-The export Avatar was not found in module [project]/node_modules/@heroui/dropdown/dist/index.mjs [app-ssr] (ecmascript).
-Did you mean to import useDropdown?
-All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:00:46.190] Server  LOG      ✓ Compiled in 83ms
-[00:00:58.722] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:59.013] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:59.290] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:46.224] Server  LOG      ✓ Compiled in 57ms
-[00:01:49.351] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:49.564] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:59.931] Server  LOG      ✓ Compiled in 16ms
-[00:03:03.723] Server  LOG      ✓ Compiled in 19ms
-[00:03:04.003] Browser ERROR   ./src/components/Banner.jsx:68:5
-Parsing ecmascript source code failed
-  66 |     </div>
-  67 |   );
-> 68 |     );
-     |     ^
-  69 |
-  70 | }
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:03:04.003] Browser ERROR   ./src/components/Banner.jsx:68:5
-Parsing ecmascript source code failed
-  66 |     </div>
-  67 |   );
-> 68 |     );
-     |     ^
-  69 |
-  70 | }
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:03:17.195] Server  LOG      ✓ Compiled in 43ms
-[00:04:19.126] Server  LOG      ✓ Compiled in 16ms
-[00:04:20.002] Browser ERROR   ./src/components/Banner.jsx:70:5
-Parsing ecmascript source code failed
-  68 |     </div>
-  69 |   );
-> 70 |     );
-     |     ^
-  71 |
-  72 | }
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:04:20.002] Browser ERROR   ./src/components/Banner.jsx:70:5
-Parsing ecmascript source code failed
-  68 |     </div>
-  69 |   );
-> 70 |     );
-     |     ^
-  71 |
-  72 | }
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:04:22.295] Server  ERROR    ⨯ ./src/components/Banner.jsx:70:5
-Parsing ecmascript source code failed
-  68 |     </div>
-  69 |   );
-> 70 |     );
-     |     ^
-  71 |
-  72 | }
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[00:04:22.388] Browser ERROR   uncaughtError: Error: ./src/components/Banner.jsx:70:5
-Parsing ecmascript source code failed
-  68 |     </div>
-  69 |   );
-> 70 |     );
-     |     ^
-  71 |
-  72 | }
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[00:04:22.524] Browser ERROR   ./src/components/Banner.jsx:70:5
-Parsing ecmascript source code failed
-  68 |     </div>
-  69 |   );
-> 70 |     );
-     |     ^
-  71 |
-  72 | }
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:04:22.524] Browser ERROR   ./src/components/Banner.jsx:70:5
-Parsing ecmascript source code failed
-  68 |     </div>
-  69 |   );
-> 70 |     );
-     |     ^
-  71 |
-  72 | }
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/components/Banner.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/components/Banner.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[00:04:26.419] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:41.292] Server  LOG      ✓ Compiled in 70ms
-[00:04:43.974] Server  LOG      ✓ Compiled in 31ms
-[00:06:18.752] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:14:11.777] Server  LOG      ✓ Compiled in 69ms
-[01:14:11.913] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:14:12.322] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:00.617] Server  LOG      ✓ Ready in 386ms
+[00:00:03.065] Server  LOG     0
+[00:00:03.616] Server  LOG     0
+[00:00:03.708] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.877] Browser LOG     0
+[00:00:03.877] Browser LOG     0
+[00:00:03.877] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -1722,1064 +41,302 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[01:14:23.837] Server  LOG      ✓ Compiled in 18ms
-[01:16:17.847] Server  LOG      ✓ Compiled in 27ms
-[01:16:40.105] Server  LOG      ✓ Compiled in 18ms
-[01:16:50.805] Server  LOG      ✓ Compiled in 32ms
-[01:17:30.816] Server  LOG      ✓ Compiled in 27ms
-[01:17:34.253] Server  LOG      ✓ Compiled in 24ms
-[01:17:41.064] Server  LOG      ✓ Compiled in 14ms
-[01:19:02.540] Server  LOG      ✓ Compiled in 34ms
-[01:19:05.591] Server  LOG      ✓ Compiled in 17ms
-[01:19:07.492] Server  LOG      ✓ Compiled in 23ms
-[01:19:17.994] Server  LOG      ✓ Compiled in 15ms
-[01:19:20.397] Server  LOG      ✓ Compiled in 16ms
-[01:19:30.580] Server  LOG      ✓ Compiled in 41ms
-[01:19:32.022] Server  LOG      ✓ Compiled in 13ms
-[01:19:41.912] Server  LOG      ✓ Compiled in 16ms
-[01:19:52.641] Server  LOG      ✓ Compiled in 27ms
-[01:19:57.860] Server  LOG      ✓ Compiled in 13ms
-[01:19:58.878] Server  LOG      ✓ Compiled in 16ms
-[01:20:01.743] Server  LOG      ✓ Compiled in 9ms
-[01:20:03.197] Server  LOG      ✓ Compiled in 21ms
-[01:28:55.651] Server  LOG      ✓ Compiled in 27ms
-[01:33:45.401] Server  LOG      ✓ Compiled in 38ms
-[01:33:53.365] Server  LOG      ✓ Compiled in 26ms
-[01:38:50.944] Server  LOG      ✓ Compiled in 33ms
-[01:43:09.829] Server  LOG      ✓ Compiled in 19ms
-[01:43:31.780] Server  LOG      ✓ Compiled in 15ms
-[01:44:08.105] Server  LOG      ✓ Compiled in 19ms
-[02:04:05.643] Server  LOG      ✓ Compiled in 58ms
-[02:04:10.961] Server  LOG      ✓ Compiled in 14ms
-[02:04:15.027] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:04:52.765] Server  LOG      ✓ Compiled in 30ms
-[02:05:03.338] Server  LOG      ✓ Compiled in 12ms
-[02:05:35.682] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:05:35.788] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.jsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className={" bg-white text-white"}
--                           cz-shortcut-listen="true"
-                          >
-                  ...
-
-[02:06:17.045] Server  LOG      ✓ Compiled in 32ms
-[02:06:32.436] Server  LOG      ✓ Compiled in 25ms
-[02:07:09.256] Server  LOG      ✓ Compiled in 32ms
-[02:07:11.945] Server  LOG      ✓ Compiled in 32ms
-[02:07:43.899] Server  LOG      ✓ Compiled in 24ms
-[02:08:08.182] Server  LOG      ✓ Compiled in 39ms
-[02:08:10.583] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:08:10.689] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.jsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className={" bg-white text-white"}
--                           cz-shortcut-listen="true"
-                          >
-                  ...
-
-[02:08:10.761] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:08:20.918] Server  LOG      ✓ Compiled in 25ms
-[02:08:28.346] Server  LOG      ✓ Compiled in 12ms
-[02:12:29.638] Server  LOG      ✓ Compiled in 15ms
-[02:12:33.284] Server  LOG      ✓ Compiled in 39ms
-[02:12:38.528] Server  LOG      ✓ Compiled in 36ms
-[02:13:05.633] Server  LOG      ✓ Compiled in 41ms
-[02:13:23.024] Server  LOG      ✓ Compiled in 38ms
-[02:13:52.419] Server  LOG      ✓ Compiled in 29ms
-[02:13:56.138] Server  LOG      ✓ Compiled in 33ms
-[02:14:02.821] Server  LOG      ✓ Compiled in 22ms
-[02:14:08.410] Server  LOG      ✓ Compiled in 14ms
-[02:14:16.931] Server  LOG      ✓ Compiled in 28ms
-[02:14:19.189] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:14:19.298] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.jsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className={" bg-white text-white"}
--                           cz-shortcut-listen="true"
-                          >
-                  ...
-
-[02:14:26.726] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:14:26.875] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:14:31.163] Server  LOG      ✓ Compiled in 29ms
-[02:14:34.258] Server  LOG      ✓ Compiled in 29ms
-[02:14:44.513] Server  LOG      ✓ Compiled in 27ms
-[02:14:47.666] Server  LOG      ✓ Compiled in 28ms
-[02:14:51.671] Server  LOG      ✓ Compiled in 29ms
-[02:15:06.827] Server  LOG      ✓ Compiled in 17ms
-[02:15:15.134] Server  LOG      ✓ Compiled in 30ms
-[02:15:27.432] Server  LOG      ✓ Compiled in 28ms
-[02:15:30.714] Server  LOG      ✓ Compiled in 23ms
-[02:15:43.954] Server  LOG      ✓ Compiled in 34ms
-[02:15:50.280] Server  LOG      ✓ Compiled in 17ms
-[02:15:53.060] Server  LOG      ✓ Compiled in 23ms
-[02:16:07.232] Server  LOG      ✓ Compiled in 21ms
-[02:16:10.132] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:16:10.238] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.jsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className={" bg-white text-white"}
--                           cz-shortcut-listen="true"
-                          >
-                  ...
-
-[02:16:35.850] Server  LOG      ✓ Compiled in 16ms
-[02:16:38.343] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:16:38.925] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:16:48.027] Server  LOG      ✓ Compiled in 29ms
-[02:16:57.293] Server  LOG      ✓ Compiled in 40ms
-[02:17:07.517] Server  LOG      ✓ Compiled in 18ms
-[02:17:12.993] Server  LOG      ✓ Compiled in 34ms
-[02:17:21.759] Server  LOG      ✓ Compiled in 22ms
-[02:17:26.143] Server  LOG      ✓ Compiled in 29ms
-[02:17:30.303] Server  LOG      ✓ Compiled in 19ms
-[02:17:34.518] Server  LOG      ✓ Compiled in 24ms
-[02:17:37.862] Server  LOG      ✓ Compiled in 32ms
-[02:17:48.194] Server  LOG      ✓ Compiled in 29ms
-[02:17:57.728] Server  LOG      ✓ Compiled in 28ms
-[02:18:10.915] Server  LOG      ✓ Compiled in 26ms
-[02:18:18.698] Server  LOG      ✓ Compiled in 15ms
-[02:18:25.796] Server  LOG      ✓ Compiled in 28ms
-[02:18:28.720] Server  LOG      ✓ Compiled in 27ms
-[02:18:35.107] Server  LOG      ✓ Compiled in 37ms
-[02:18:43.377] Server  LOG      ✓ Compiled in 29ms
-[02:18:50.671] Server  LOG      ✓ Compiled in 31ms
-[02:18:55.220] Server  LOG      ✓ Compiled in 37ms
-[02:19:03.233] Server  LOG      ✓ Compiled in 24ms
-[02:19:11.061] Server  LOG      ✓ Compiled in 20ms
-[02:19:22.794] Server  LOG      ✓ Compiled in 32ms
-[02:19:31.580] Server  LOG      ✓ Compiled in 19ms
-[02:19:36.718] Server  LOG      ✓ Compiled in 40ms
-[02:23:48.105] Server  LOG      ✓ Compiled in 30ms
-[02:23:48.319] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'count')
-[02:24:14.459] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[02:24:14.542] Server  LOG      ✓ Compiled in 28ms
-[02:24:14.645] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:24:20.184] Server  LOG      ✓ Compiled in 27ms
-[02:24:27.878] Server  LOG      ✓ Compiled in 29ms
-[02:24:28.280] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'count')
-[02:25:22.604] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[02:25:22.671] Server  LOG      ✓ Compiled in 23ms
-[02:25:22.766] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:25:23.320] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.jsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className={" bg-white text-white"}
--                           cz-shortcut-listen="true"
-                          >
-                  ...
-
-[02:25:23.320] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'count')
-[02:25:27.625] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:25:27.771] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'count')
-[02:25:28.129] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:25:28.239] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'count')
-[02:25:28.303] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:25:28.420] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'count')
-[02:25:28.560] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:25:28.661] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'count')
-[02:25:28.722] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:25:28.838] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'count')
-[02:25:36.166] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[02:25:36.225] Server  LOG      ✓ Compiled in 28ms
-[02:25:36.315] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:25:37.817] Server  LOG      ✓ Compiled in 29ms
-[02:26:24.169] Server  LOG      ✓ Compiled in 17ms
-[02:26:27.643] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:26:28.165] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:26:28.308] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:26:28.469] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:26:36.331] Server  LOG      ✓ Compiled in 37ms
-[02:26:37.050] Browser ERROR   uncaughtError: TypeError: Cannot destructure property 'count' of '(0 , __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__.useSelector)(...)' as it is undefined.
-[02:26:39.805] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[02:26:39.843] Server  LOG      ✓ Compiled in 31ms
-[02:26:39.874] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:26:58.688] Server  LOG      ✓ Compiled in 18ms
-[02:26:59.261] Browser ERROR   unhandledRejection: TypeError: Cannot read properties of undefined (reading 'count')
-[02:27:00.936] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:27:01.079] Browser ERROR   unhandledRejection: TypeError: Cannot read properties of undefined (reading 'count')
-[02:27:01.456] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:27:01.522] Browser ERROR   unhandledRejection: TypeError: Cannot read properties of undefined (reading 'count')
-[02:27:01.581] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:27:01.724] Browser ERROR   unhandledRejection: TypeError: Cannot read properties of undefined (reading 'count')
-[02:27:04.576] Server  LOG      ✓ Compiled in 10ms
-[02:28:39.243] Server  LOG      ✓ Compiled in 14ms
-[02:28:42.125] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:28:42.658] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:28:42.776] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:28:42.949] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:28:43.119] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:28:55.070] Server  LOG      ✓ Compiled in 27ms
-[02:28:55.318] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'count')
-[02:28:58.235] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[02:28:58.273] Server  LOG      ✓ Compiled in 14ms
-[02:28:58.307] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:29:52.908] Server  LOG      ✓ Compiled in 31ms
-[02:29:55.952] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:29:56.425] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:29:56.538] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:30:01.259] Server  LOG      ✓ Compiled in 20ms
-[02:30:01.621] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'count')
-[02:30:03.992] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[02:30:04.031] Server  LOG      ✓ Compiled in 30ms
-[02:30:04.077] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:30:15.504] Server  LOG      ✓ Compiled in 52ms
-[02:30:16.319] Browser LOG     undefined
-[02:30:16.319] Browser LOG     undefined
-[02:30:16.907] Server  LOG      ✓ Compiled in 46ms
-[02:30:17.274] Browser LOG     undefined
-[02:30:17.274] Browser LOG     undefined
-[02:30:25.402] Server  LOG     0
-[02:30:25.526] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:30:25.694] Browser LOG     0
-[02:30:25.694] Browser LOG     0
-[02:30:25.694] Browser LOG     0
-[02:30:25.694] Browser LOG     0
-[02:30:25.694] Browser LOG     undefined
-[02:30:25.694] Browser LOG     undefined
-[02:30:36.142] Server  LOG      ✓ Compiled in 36ms
-[02:30:36.319] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'count')
-[02:31:21.457] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[02:31:21.475] Server  LOG     0
-[02:31:21.494] Server  LOG      ✓ Compiled in 17ms
-[02:31:21.579] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:31:22.323] Browser LOG     0
-[02:31:22.323] Browser LOG     0
-[02:31:22.323] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.jsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className={" bg-white text-white"}
--                           cz-shortcut-listen="true"
-                          >
-                  ...
-
-[02:31:22.323] Browser LOG     0
-[02:31:22.323] Browser LOG     0
-[02:31:22.323] Browser LOG     undefined
-[02:31:22.323] Browser LOG     undefined
-[02:32:53.459] Server  LOG     0
-[02:32:53.581] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:32:53.773] Browser LOG     0
-[02:32:53.773] Browser LOG     0
-[02:32:53.773] Browser LOG     0
-[02:32:53.773] Browser LOG     0
-[02:32:53.773] Browser LOG     1
-[02:32:53.773] Browser LOG     1
-[02:32:54.239] Server  LOG     0
-[02:32:54.373] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:32:54.523] Browser LOG     0
-[02:32:54.523] Browser LOG     0
-[02:32:54.523] Browser LOG     0
-[02:32:54.523] Browser LOG     0
-[02:32:54.523] Browser LOG     1
-[02:32:54.523] Browser LOG     1
-[02:32:54.584] Server  LOG     0
-[02:32:54.699] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:32:54.864] Browser LOG     0
-[02:32:54.864] Browser LOG     0
-[02:32:54.864] Browser LOG     0
-[02:32:54.864] Browser LOG     0
-[02:32:54.864] Browser LOG     1
-[02:32:54.864] Browser LOG     1
-[02:37:00.768] Server  LOG      ✓ Compiled in 27ms
-[02:37:15.332] Server  LOG      ✓ Compiled in 72ms
-[02:37:16.319] Browser LOG     1
-[02:37:16.319] Browser LOG     1
-[02:37:32.968] Server  LOG      ✓ Compiled in 54ms
-[02:37:33.318] Browser LOG     1
-[02:37:33.318] Browser LOG     1
-[02:37:54.614] Server  LOG      ✓ Compiled in 20ms
-[02:38:21.321] Server  LOG      ✓ Compiled in 19ms
-[02:38:26.108] Server  LOG      ✓ Compiled in 8ms
-[02:38:32.042] Server  LOG      ✓ Compiled in 24ms
-[02:38:35.150] Server  LOG      ✓ Compiled in 19ms
-[02:38:41.992] Server  LOG      ✓ Compiled in 19ms
-[02:38:42.318] Browser LOG     1
-[02:38:42.318] Browser LOG     1
-[02:38:45.259] Server  LOG      ✓ Compiled in 32ms
-[02:38:45.661] Browser LOG     1
-[02:38:45.661] Browser LOG     1
-[02:39:31.348] Server  LOG      ✓ Compiled in 25ms
-[02:39:31.869] Browser LOG     1
-[02:39:31.869] Browser LOG     1
-[02:40:18.891] Server  LOG      ✓ Compiled in 46ms
-[02:40:19.319] Browser LOG     1
-[02:40:19.319] Browser LOG     1
-[02:40:26.321] Server  LOG      ✓ Compiled in 48ms
-[02:40:27.319] Browser LOG     1
-[02:40:27.320] Browser LOG     1
-[02:41:04.377] Server  LOG      ✓ Compiled in 19ms
-[02:41:04.798] Browser LOG     1
-[02:41:04.798] Browser LOG     1
-[02:41:17.750] Server  LOG      ✓ Compiled in 19ms
-[02:41:18.130] Browser LOG     1
-[02:41:18.130] Browser LOG     1
-[02:41:20.387] Server  LOG      ✓ Compiled in 46ms
-[02:41:20.757] Browser LOG     1
-[02:41:20.757] Browser LOG     1
-[02:41:24.401] Server  LOG      ✓ Compiled in 37ms
-[02:41:24.728] Browser LOG     1
-[02:41:24.728] Browser LOG     1
-[02:41:31.462] Server  LOG      ✓ Compiled in 19ms
-[02:41:31.794] Browser LOG     1
-[02:41:31.794] Browser LOG     1
-[02:41:38.835] Server  LOG      ✓ Compiled in 24ms
-[02:41:39.325] Browser LOG     1
-[02:41:39.325] Browser LOG     1
-[02:41:46.356] Server  LOG      ✓ Compiled in 14ms
-[02:41:46.755] Browser LOG     1
-[02:41:46.755] Browser LOG     1
-[02:42:01.359] Server  LOG      ✓ Compiled in 24ms
-[02:42:01.881] Browser LOG     1
-[02:42:01.881] Browser LOG     1
-[02:42:09.626] Server  LOG     0
-[02:42:09.724] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:42:09.808] Browser LOG     0
-[02:42:09.808] Browser LOG     0
-[02:42:09.808] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.jsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className={" bg-white text-white"}
--                           cz-shortcut-listen="true"
-                          >
-                  ...
-
-[02:42:09.808] Browser LOG     0
-[02:42:09.808] Browser LOG     0
-[02:42:09.808] Browser LOG     1
-[02:42:09.808] Browser LOG     1
-[02:42:09.822] Server  LOG     0
-[02:42:09.872] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:42:09.986] Browser LOG     0
-[02:42:09.986] Browser LOG     0
-[02:42:09.986] Browser LOG     0
-[02:42:09.986] Browser LOG     0
-[02:42:09.986] Browser LOG     1
-[02:42:09.986] Browser LOG     1
-[02:42:10.328] Server  LOG     0
-[02:42:10.389] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:42:10.503] Browser LOG     0
-[02:42:10.503] Browser LOG     0
-[02:42:10.504] Browser LOG     0
-[02:42:10.504] Browser LOG     0
-[02:42:10.504] Browser LOG     1
-[02:42:10.504] Browser LOG     1
-[02:42:10.918] Server  LOG     0
-[02:42:10.984] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:42:11.127] Browser LOG     0
-[02:42:11.127] Browser LOG     0
-[02:42:11.127] Browser LOG     0
-[02:42:11.127] Browser LOG     0
-[02:42:11.127] Browser LOG     1
-[02:42:11.127] Browser LOG     1
-[02:42:11.182] Server  LOG     0
-[02:42:11.242] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:42:11.360] Browser LOG     0
-[02:42:11.360] Browser LOG     0
-[02:42:11.360] Browser LOG     0
-[02:42:11.360] Browser LOG     0
-[02:42:11.360] Browser LOG     1
-[02:42:11.360] Browser LOG     1
-[02:42:11.536] Server  LOG     0
-[02:42:11.598] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:42:11.740] Browser LOG     0
-[02:42:11.740] Browser LOG     0
-[02:42:11.740] Browser LOG     0
-[02:42:11.740] Browser LOG     0
-[02:42:11.740] Browser LOG     1
-[02:42:11.740] Browser LOG     1
-[02:42:11.912] Server  LOG     0
-[02:42:11.975] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:42:12.089] Browser LOG     0
-[02:42:12.089] Browser LOG     0
-[02:42:12.089] Browser LOG     0
-[02:42:12.089] Browser LOG     0
-[02:42:12.089] Browser LOG     1
-[02:42:12.089] Browser LOG     1
-[02:42:12.389] Server  LOG     0
-[02:42:12.452] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:42:12.567] Browser LOG     0
-[02:42:12.567] Browser LOG     0
-[02:42:12.567] Browser LOG     0
-[02:42:12.567] Browser LOG     0
-[02:42:12.567] Browser LOG     1
-[02:42:12.567] Browser LOG     1
-[02:42:13.293] Server  LOG     0
-[02:42:13.352] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:42:13.490] Browser LOG     0
-[02:42:13.490] Browser LOG     0
-[02:42:13.490] Browser LOG     0
-[02:42:13.490] Browser LOG     0
-[02:42:13.490] Browser LOG     1
-[02:42:13.490] Browser LOG     1
-[02:43:20.048] Server  LOG      ✓ Compiled in 34ms
-[02:43:20.319] Browser LOG     1
-[02:43:20.319] Browser LOG     1
-[02:43:30.686] Server  LOG      ✓ Compiled in 12ms
-[02:43:31.319] Browser ERROR   ./src/app/dashboard/page.jsx:74:113
-Parsing ecmascript source code failed
-  72 |
-  73 |                                 <div className="w-72 h-32 bg-rose-900 text-white rounded-lg flex flex-col items-center justify-center ">
-> 74 |                                     <span className="text-2xl mb-1"><SwipeRightIcon sx={{ fontSize : 50}}/>/span>
-     |                                                                                                                 ^
-  75 |                                     <p className="text-3xl font-bold">N</p>
-  76 |                                     <p className="text-sm mt-1">Presiti in corso</p>
-  77 |                                 </div>
-
-Unexpected token. Did you mean `{'>'}` or `&gt;`?
-
-Import traces:
-  Client Component Browser:
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[02:43:31.319] Browser ERROR   ./src/app/dashboard/page.jsx:74:113
-Parsing ecmascript source code failed
-  72 |
-  73 |                                 <div className="w-72 h-32 bg-rose-900 text-white rounded-lg flex flex-col items-center justify-center ">
-> 74 |                                     <span className="text-2xl mb-1"><SwipeRightIcon sx={{ fontSize : 50}}/>/span>
-     |                                                                                                                 ^
-  75 |                                     <p className="text-3xl font-bold">N</p>
-  76 |                                     <p className="text-sm mt-1">Presiti in corso</p>
-  77 |                                 </div>
-
-Unexpected token. Did you mean `{'>'}` or `&gt;`?
-
-Import traces:
-  Client Component Browser:
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[02:43:38.319] Browser ERROR   ./src/app/dashboard/page.jsx:74:113
-Parsing ecmascript source code failed
-  72 |
-  73 |                                 <div className="w-72 h-32 bg-rose-900 text-white rounded-lg flex flex-col items-center justify-center ">
-> 74 |                                     <span className="text-2xl mb-1"><SwipeRightIcon sx={{ fontSize : 50}}/>/span>
-     |                                                                                                                 ^
-  75 |                                     <p className="text-3xl font-bold">N</p>
-  76 |                                     <p className="text-sm mt-1">Presiti in corso</p>
-  77 |                                 </div>
-
-Unexpected token. Did you mean `{'>'}` or `&gt;`?
-
-Import traces:
-  Client Component Browser:
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[02:43:38.319] Browser ERROR   ./src/app/dashboard/page.jsx:74:113
-Parsing ecmascript source code failed
-  72 |
-  73 |                                 <div className="w-72 h-32 bg-rose-900 text-white rounded-lg flex flex-col items-center justify-center ">
-> 74 |                                     <span className="text-2xl mb-1"><SwipeRightIcon sx={{ fontSize : 50}}/>/span>
-     |                                                                                                                 ^
-  75 |                                     <p className="text-3xl font-bold">N</p>
-  76 |                                     <p className="text-sm mt-1">Presiti in corso</p>
-  77 |                                 </div>
-
-Unexpected token. Did you mean `{'>'}` or `&gt;`?
-
-Import traces:
-  Client Component Browser:
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[02:43:45.040] Server  ERROR    ⨯ ./src/app/dashboard/page.jsx:74:113
-Parsing ecmascript source code failed
-  72 |
-  73 |                                 <div className="w-72 h-32 bg-rose-900 text-white rounded-lg flex flex-col items-center justify-center ">
-> 74 |                                     <span className="text-2xl mb-1"><SwipeRightIcon sx={{ fontSize : 50}}/>/span>
-     |                                                                                                                 ^
-  75 |                                     <p className="text-3xl font-bold">N</p>
-  76 |                                     <p className="text-sm mt-1">Presiti in corso</p>
-  77 |                                 </div>
-
-Unexpected token. Did you mean `{'>'}` or `&gt;`?
-
-Import traces:
-  Client Component Browser:
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[02:43:45.129] Browser ERROR   uncaughtError: Error: ./src/app/dashboard/page.jsx:74:113
-Parsing ecmascript source code failed
-  72 |
-  73 |                                 <div className="w-72 h-32 bg-rose-900 text-white rounded-lg flex flex-col items-center justify-center ">
-> 74 |                                     <span className="text-2xl mb-1"><SwipeRightIcon sx={{ fontSize : 50}}/>/span>
-     |                                                                                                                 ^
-  75 |                                     <p className="text-3xl font-bold">N</p>
-  76 |                                     <p className="text-sm mt-1">Presiti in corso</p>
-  77 |                                 </div>
-
-Unexpected token. Did you mean `{'>'}` or `&gt;`?
-
-Import traces:
-  Client Component Browser:
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-
-[02:43:45.267] Browser ERROR   ./src/app/dashboard/page.jsx:74:113
-Parsing ecmascript source code failed
-  72 |
-  73 |                                 <div className="w-72 h-32 bg-rose-900 text-white rounded-lg flex flex-col items-center justify-center ">
-> 74 |                                     <span className="text-2xl mb-1"><SwipeRightIcon sx={{ fontSize : 50}}/>/span>
-     |                                                                                                                 ^
-  75 |                                     <p className="text-3xl font-bold">N</p>
-  76 |                                     <p className="text-sm mt-1">Presiti in corso</p>
-  77 |                                 </div>
-
-Unexpected token. Did you mean `{'>'}` or `&gt;`?
-
-Import traces:
-  Client Component Browser:
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[02:43:45.267] Browser ERROR   ./src/app/dashboard/page.jsx:74:113
-Parsing ecmascript source code failed
-  72 |
-  73 |                                 <div className="w-72 h-32 bg-rose-900 text-white rounded-lg flex flex-col items-center justify-center ">
-> 74 |                                     <span className="text-2xl mb-1"><SwipeRightIcon sx={{ fontSize : 50}}/>/span>
-     |                                                                                                                 ^
-  75 |                                     <p className="text-3xl font-bold">N</p>
-  76 |                                     <p className="text-sm mt-1">Presiti in corso</p>
-  77 |                                 </div>
-
-Unexpected token. Did you mean `{'>'}` or `&gt;`?
-
-Import traces:
-  Client Component Browser:
-    ./src/app/dashboard/page.jsx [Client Component Browser]
-    ./src/app/dashboard/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/dashboard/page.jsx [Client Component SSR]
-    ./src/app/dashboard/page.jsx [Server Component]
-[02:43:54.952] Server  LOG     0
-[02:43:55.015] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:43:55.176] Browser LOG     0
-[02:43:55.176] Browser LOG     0
-[02:43:55.176] Browser LOG     0
-[02:43:55.176] Browser LOG     0
-[02:43:55.176] Browser LOG     1
-[02:43:55.176] Browser LOG     1
-[02:44:41.414] Server  LOG     0
-[02:44:41.477] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:44:41.550] Browser LOG     0
-[02:44:41.550] Browser LOG     0
-[02:44:41.550] Browser LOG     0
-[02:44:41.550] Browser LOG     0
-[02:44:41.550] Browser LOG     1
-[02:44:41.550] Browser LOG     1
-[02:44:41.562] Server  LOG     0
-[02:44:41.613] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:44:41.700] Browser LOG     0
-[02:44:41.700] Browser LOG     0
-[02:44:41.700] Browser LOG     0
-[02:44:41.700] Browser LOG     0
-[02:44:41.700] Browser LOG     1
-[02:44:41.700] Browser LOG     1
-[02:44:41.712] Server  LOG     0
-[02:44:41.764] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:44:41.882] Browser LOG     0
-[02:44:41.882] Browser LOG     0
-[02:44:41.882] Browser LOG     0
-[02:44:41.882] Browser LOG     0
-[02:44:41.882] Browser LOG     1
-[02:44:41.882] Browser LOG     1
-[02:44:52.370] Server  LOG      ✓ Compiled in 33ms
-[02:44:54.872] Server  LOG      ✓ Compiled in 14ms
-[02:45:16.897] Server  LOG      ✓ Compiled in 29ms
-[02:45:57.442] Server  LOG      ✓ Compiled in 29ms
-[02:46:12.944] Server  LOG      ✓ Compiled in 37ms
-[02:46:26.094] Browser LOG     1
-[02:46:26.094] Browser LOG     1
-[02:46:26.094] Browser LOG     1
-[02:46:26.094] Browser LOG     1
-[02:46:26.094] Browser LOG     1
-[02:46:26.094] Browser LOG     1
-[02:47:02.798] Server  LOG     0
-[02:47:02.868] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:47:02.910] Browser LOG     0
-[02:47:02.910] Browser LOG     0
-[02:47:02.910] Browser LOG     0
-[02:47:02.910] Browser LOG     0
-[02:47:02.923] Server  LOG     0
-[02:47:02.974] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:47:03.088] Browser LOG     0
-[02:47:03.088] Browser LOG     0
-[02:47:03.088] Browser LOG     0
-[02:47:03.088] Browser LOG     0
-[02:47:03.088] Browser LOG     1
-[02:47:03.088] Browser LOG     1
-[02:49:45.661] Server  LOG      ✓ Compiled in 41ms
-[02:49:46.318] Browser LOG     1
-[02:49:46.319] Browser LOG     1
-[02:50:07.865] Server  LOG      ✓ Compiled in 39ms
-[02:50:08.263] Browser LOG     1
-[02:50:08.264] Browser LOG     1
-[02:50:20.321] Server  LOG      ✓ Compiled in 26ms
-[02:50:20.819] Browser LOG     1
-[02:50:20.820] Browser LOG     1
-[02:50:32.247] Server  LOG      ✓ Compiled in 40ms
-[02:50:32.555] Browser LOG     1
-[02:50:32.555] Browser LOG     1
-[02:50:35.057] Server  LOG      ✓ Compiled in 17ms
-[02:50:35.133] Browser LOG     1
-[02:50:35.133] Browser LOG     1
-[02:50:37.354] Server  LOG      ✓ Compiled in 17ms
-[02:50:37.430] Browser LOG     1
-[02:50:37.430] Browser LOG     1
-[02:50:40.147] Server  LOG      ✓ Compiled in 20ms
-[02:50:40.319] Browser LOG     1
-[02:50:40.319] Browser LOG     1
-[02:50:42.854] Server  LOG      ✓ Compiled in 28ms
-[02:50:42.932] Browser LOG     1
-[02:50:42.932] Browser LOG     1
-[02:51:11.293] Server  LOG      ✓ Compiled in 23ms
-[02:51:11.667] Browser LOG     1
-[02:51:11.667] Browser LOG     1
-[02:51:41.957] Server  LOG      ✓ Compiled in 16ms
-[02:51:42.320] Browser LOG     1
-[02:51:42.320] Browser LOG     1
-[02:51:52.618] Server  LOG      ✓ Compiled in 28ms
-[02:51:52.941] Browser LOG     1
-[02:51:52.941] Browser LOG     1
-[02:52:08.225] Server  LOG      ✓ Compiled in 47ms
-[02:52:08.319] Browser LOG     1
-[02:52:08.319] Browser LOG     1
-[02:52:12.195] Server  LOG      ✓ Compiled in 24ms
-[02:56:47.576] Browser LOG     1
-[02:56:47.576] Browser LOG     1
-[02:56:51.068] Browser LOG     1
-[02:56:51.068] Browser LOG     1
-[02:56:51.068] Browser LOG     1
-[02:56:51.068] Browser LOG     1
-[02:56:51.068] Browser LOG     1
-[02:56:51.068] Browser LOG     1
-[02:56:51.898] Browser LOG     1
-[02:56:51.898] Browser LOG     1
-[02:56:51.898] Browser LOG     1
-[02:56:51.898] Browser LOG     1
-[02:56:51.898] Browser LOG     1
-[02:56:51.898] Browser LOG     1
-[02:56:52.609] Browser LOG     1
-[02:56:52.609] Browser LOG     1
-[02:56:52.609] Browser LOG     1
-[02:56:52.609] Browser LOG     1
-[02:56:52.609] Browser LOG     1
-[02:56:52.609] Browser LOG     1
-[02:56:54.341] Browser LOG     1
-[02:56:54.341] Browser LOG     1
-[02:56:54.341] Browser LOG     1
-[02:56:54.341] Browser LOG     1
-[02:56:54.341] Browser LOG     1
-[02:56:54.341] Browser LOG     1
-[03:01:56.365] Server  LOG      ✓ Compiled in 56ms
-[03:01:57.318] Browser LOG     1
-[03:01:57.318] Browser LOG     1
-[03:02:17.753] Browser LOG     1
-[03:02:17.753] Browser LOG     1
-[03:02:17.753] Browser LOG     1
-[03:02:17.753] Browser LOG     1
-[03:02:17.753] Browser LOG     1
-[03:02:17.753] Browser LOG     1
-[03:02:18.540] Browser LOG     1
-[03:02:18.540] Browser LOG     1
-[03:02:18.540] Browser LOG     1
-[03:02:18.540] Browser LOG     1
-[03:02:18.540] Browser LOG     1
-[03:02:18.540] Browser LOG     1
-[03:02:19.948] Server  LOG     0
-[03:02:20.031] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:02:20.176] Browser LOG     0
-[03:02:20.176] Browser LOG     0
-[03:02:20.176] Browser LOG     0
-[03:02:20.176] Browser LOG     0
-[03:02:20.176] Browser LOG     1
-[03:02:20.176] Browser LOG     1
-[03:02:35.993] Server  LOG      ✓ Compiled in 19ms
-[03:02:36.319] Browser LOG     1
-[03:02:36.319] Browser LOG     1
-[03:03:00.310] Server  LOG      ✓ Compiled in 35ms
-[03:03:00.829] Browser LOG     1
-[03:03:00.829] Browser LOG     1
-[03:03:07.814] Server  LOG      ✓ Compiled in 25ms
-[03:03:08.319] Browser LOG     1
-[03:03:08.319] Browser LOG     1
-[03:03:39.473] Server  LOG      ✓ Compiled in 29ms
-[03:03:39.979] Browser LOG     1
-[03:03:39.979] Browser LOG     1
-[03:03:44.569] Server  LOG      ✓ Compiled in 32ms
-[03:03:45.318] Browser LOG     1
-[03:03:45.318] Browser LOG     1
-[03:03:55.816] Server  LOG      ✓ Compiled in 20ms
-[03:03:56.317] Browser LOG     1
-[03:03:56.317] Browser LOG     1
-[03:04:46.909] Browser LOG     1
-[03:04:46.909] Browser LOG     1
-[03:04:46.909] Browser LOG     1
-[03:04:46.909] Browser LOG     1
-[03:04:46.909] Browser LOG     1
-[03:04:46.909] Browser LOG     1
-[03:04:47.717] Browser LOG     1
-[03:04:47.717] Browser LOG     1
-[03:04:47.717] Browser LOG     1
-[03:04:47.717] Browser LOG     1
-[03:04:47.717] Browser LOG     1
-[03:04:47.717] Browser LOG     1
-[03:05:25.825] Server  LOG     0
-[03:05:25.904] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:05:26.056] Browser LOG     0
-[03:05:26.056] Browser LOG     0
-[03:05:26.056] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.jsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className={" bg-white text-white"}
--                           cz-shortcut-listen="true"
-                          >
-                  ...
-
-[03:05:26.056] Browser LOG     0
-[03:05:26.056] Browser LOG     0
-[03:05:26.056] Browser LOG     1
-[03:05:26.056] Browser LOG     1
-[03:05:26.352] Server  LOG     0
-[03:05:26.422] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:05:26.503] Browser LOG     0
-[03:05:26.503] Browser LOG     0
-[03:05:26.503] Browser LOG     0
-[03:05:26.503] Browser LOG     0
-[03:05:26.503] Browser LOG     1
-[03:05:26.503] Browser LOG     1
-[03:05:26.518] Server  LOG     0
-[03:05:26.572] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:05:26.668] Browser LOG     0
-[03:05:26.669] Browser LOG     0
-[03:05:26.669] Browser LOG     0
-[03:05:26.669] Browser LOG     0
-[03:05:26.669] Browser LOG     1
-[03:05:26.669] Browser LOG     1
-[03:05:26.682] Server  LOG     0
-[03:05:26.732] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:05:26.849] Browser LOG     0
-[03:05:26.849] Browser LOG     0
-[03:05:26.849] Browser LOG     0
-[03:05:26.849] Browser LOG     0
-[03:05:26.849] Browser LOG     1
-[03:05:26.849] Browser LOG     1
-[03:05:26.865] Server  LOG     0
-[03:05:26.915] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:05:27.036] Browser LOG     0
-[03:05:27.036] Browser LOG     0
-[03:05:27.036] Browser LOG     0
-[03:05:27.036] Browser LOG     0
-[03:05:27.037] Browser LOG     1
-[03:05:27.037] Browser LOG     1
-[03:05:29.882] Browser LOG     1
-[03:05:29.882] Browser LOG     1
-[03:05:29.882] Browser LOG     1
-[03:05:29.882] Browser LOG     1
-[03:05:29.882] Browser LOG     1
-[03:05:29.882] Browser LOG     1
-[03:05:47.628] Server  LOG      ✓ Compiled in 28ms
-[03:05:53.677] Server  LOG      ✓ Compiled in 18ms
-[03:05:56.069] Server  LOG     0
-[03:05:56.136] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:05:56.289] Browser LOG     0
-[03:05:56.289] Browser LOG     0
-[03:05:56.289] Browser LOG     0
-[03:05:56.289] Browser LOG     0
-[03:05:56.289] Browser LOG     1
-[03:05:56.289] Browser LOG     1
-[03:06:04.394] Server  LOG      ✓ Compiled in 25ms
-[03:06:17.237] Server  LOG      ✓ Compiled in 16ms
-[03:06:20.834] Server  LOG     0
-[03:06:20.911] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:06:20.999] Browser LOG     0
-[03:06:20.999] Browser LOG     0
-[03:06:20.999] Browser LOG     0
-[03:06:20.999] Browser LOG     0
-[03:06:20.999] Browser LOG     1
-[03:06:20.999] Browser LOG     1
-[03:06:21.012] Server  LOG     0
-[03:06:21.060] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:06:21.158] Browser LOG     0
-[03:06:21.158] Browser LOG     0
-[03:06:21.158] Browser LOG     0
-[03:06:21.158] Browser LOG     0
-[03:06:21.158] Browser LOG     1
-[03:06:21.158] Browser LOG     1
-[03:06:21.174] Server  LOG     0
-[03:06:21.224] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:06:21.341] Browser LOG     0
-[03:06:21.341] Browser LOG     0
-[03:06:21.341] Browser LOG     0
-[03:06:21.341] Browser LOG     0
-[03:06:21.341] Browser LOG     1
-[03:06:21.341] Browser LOG     1
-[03:06:26.840] Server  LOG      ✓ Compiled in 29ms
-[03:14:31.431] Browser LOG     1
-[03:14:31.431] Browser LOG     1
-[03:14:31.431] Browser LOG     1
-[03:14:31.431] Browser LOG     1
-[03:14:31.431] Browser LOG     1
-[03:14:31.431] Browser LOG     1
+[00:00:03.877] Browser LOG     0
+[00:00:03.877] Browser LOG     0
+[00:00:03.877] Browser LOG     1
+[00:00:03.877] Browser LOG     1
+[00:00:05.193] Server  LOG     0
+[00:00:05.260] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.365] Browser LOG     0
+[00:00:05.365] Browser LOG     0
+[00:00:05.365] Browser LOG     0
+[00:00:05.365] Browser LOG     0
+[00:00:05.365] Browser LOG     1
+[00:00:05.365] Browser LOG     1
+[00:00:05.382] Server  LOG     0
+[00:00:05.434] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.532] Browser LOG     0
+[00:00:05.532] Browser LOG     0
+[00:00:05.532] Browser LOG     0
+[00:00:05.532] Browser LOG     0
+[00:00:05.532] Browser LOG     1
+[00:00:05.532] Browser LOG     1
+[00:00:05.548] Server  LOG     0
+[00:00:05.600] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.685] Browser LOG     0
+[00:00:05.685] Browser LOG     0
+[00:00:05.685] Browser LOG     0
+[00:00:05.685] Browser LOG     0
+[00:00:05.685] Browser LOG     1
+[00:00:05.685] Browser LOG     1
+[00:00:05.697] Server  LOG     0
+[00:00:05.754] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.837] Browser LOG     0
+[00:00:05.838] Browser LOG     0
+[00:00:05.838] Browser LOG     0
+[00:00:05.838] Browser LOG     0
+[00:00:05.838] Browser LOG     1
+[00:00:05.838] Browser LOG     1
+[00:00:05.851] Server  LOG     0
+[00:00:05.899] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.972] Browser LOG     0
+[00:00:05.972] Browser LOG     0
+[00:00:05.972] Browser LOG     0
+[00:00:05.972] Browser LOG     0
+[00:00:05.972] Browser LOG     1
+[00:00:05.972] Browser LOG     1
+[00:00:05.985] Server  LOG     0
+[00:00:06.034] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.116] Browser LOG     0
+[00:00:06.116] Browser LOG     0
+[00:00:06.116] Browser LOG     0
+[00:00:06.116] Browser LOG     0
+[00:00:06.116] Browser LOG     1
+[00:00:06.116] Browser LOG     1
+[00:00:06.133] Server  LOG     0
+[00:00:06.186] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.271] Browser LOG     0
+[00:00:06.271] Browser LOG     0
+[00:00:06.271] Browser LOG     0
+[00:00:06.271] Browser LOG     0
+[00:00:06.271] Browser LOG     1
+[00:00:06.271] Browser LOG     1
+[00:00:06.285] Server  LOG     0
+[00:00:06.336] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.407] Browser LOG     0
+[00:00:06.407] Browser LOG     0
+[00:00:06.407] Browser LOG     0
+[00:00:06.407] Browser LOG     0
+[00:00:06.407] Browser LOG     1
+[00:00:06.407] Browser LOG     1
+[00:00:06.418] Server  LOG     0
+[00:00:06.465] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.580] Browser LOG     0
+[00:00:06.580] Browser LOG     0
+[00:00:06.580] Browser LOG     0
+[00:00:06.580] Browser LOG     0
+[00:00:06.580] Browser LOG     1
+[00:00:06.580] Browser LOG     1
+[00:00:06.594] Server  LOG     0
+[00:00:06.646] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.761] Browser LOG     0
+[00:00:06.761] Browser LOG     0
+[00:00:06.761] Browser LOG     0
+[00:00:06.761] Browser LOG     0
+[00:00:06.761] Browser LOG     1
+[00:00:06.761] Browser LOG     1
+[00:00:06.996] Server  LOG     0
+[00:00:07.060] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.175] Browser LOG     0
+[00:00:07.175] Browser LOG     0
+[00:00:07.175] Browser LOG     0
+[00:00:07.175] Browser LOG     0
+[00:00:07.175] Browser LOG     1
+[00:00:07.175] Browser LOG     1
+[00:00:07.291] Server  LOG     0
+[00:00:07.364] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.507] Browser LOG     0
+[00:00:07.507] Browser LOG     0
+[00:00:07.507] Browser LOG     0
+[00:00:07.507] Browser LOG     0
+[00:00:07.507] Browser LOG     1
+[00:00:07.507] Browser LOG     1
+[00:00:07.527] Server  LOG     0
+[00:00:07.583] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.697] Browser LOG     0
+[00:00:07.697] Browser LOG     0
+[00:00:07.697] Browser LOG     0
+[00:00:07.697] Browser LOG     0
+[00:00:07.697] Browser LOG     1
+[00:00:07.697] Browser LOG     1
+[00:00:07.760] Server  LOG     0
+[00:00:07.816] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.929] Browser LOG     0
+[00:00:07.929] Browser LOG     0
+[00:00:07.929] Browser LOG     0
+[00:00:07.929] Browser LOG     0
+[00:00:07.929] Browser LOG     1
+[00:00:07.929] Browser LOG     1
+[00:01:07.114] Server  LOG     0
+[00:01:07.184] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:07.226] Browser LOG     0
+[00:01:07.226] Browser LOG     0
+[00:01:07.226] Browser LOG     0
+[00:01:07.226] Browser LOG     0
+[00:01:07.240] Server  LOG     0
+[00:01:07.298] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:07.392] Browser LOG     0
+[00:01:07.392] Browser LOG     0
+[00:01:07.392] Browser LOG     0
+[00:01:07.392] Browser LOG     0
+[00:01:07.392] Browser LOG     1
+[00:01:07.392] Browser LOG     1
+[00:01:07.405] Server  LOG     0
+[00:01:07.463] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:07.548] Browser LOG     0
+[00:01:07.548] Browser LOG     0
+[00:01:07.548] Browser LOG     0
+[00:01:07.548] Browser LOG     0
+[00:01:07.548] Browser LOG     1
+[00:01:07.548] Browser LOG     1
+[00:01:07.560] Server  LOG     0
+[00:01:07.607] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:07.718] Browser LOG     0
+[00:01:07.719] Browser LOG     0
+[00:01:07.719] Browser LOG     0
+[00:01:07.719] Browser LOG     0
+[00:01:07.719] Browser LOG     1
+[00:01:07.719] Browser LOG     1
+[00:01:17.265] Browser LOG     1
+[00:01:17.265] Browser LOG     1
+[00:01:17.265] Browser LOG     1
+[00:01:17.265] Browser LOG     1
+[00:01:17.265] Browser LOG     1
+[00:01:17.265] Browser LOG     1
+[00:01:18.307] Browser LOG     1
+[00:01:18.307] Browser LOG     1
+[00:01:18.307] Browser LOG     1
+[00:01:18.307] Browser LOG     1
+[00:01:18.307] Browser LOG     1
+[00:01:18.307] Browser LOG     1
+[00:01:23.812] Server  LOG     0
+[00:01:23.871] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:23.948] Browser LOG     0
+[00:01:23.948] Browser LOG     0
+[00:01:23.948] Browser LOG     0
+[00:01:23.948] Browser LOG     0
+[00:01:23.959] Server  LOG     0
+[00:01:24.011] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:24.098] Browser LOG     0
+[00:01:24.098] Browser LOG     0
+[00:01:24.098] Browser LOG     0
+[00:01:24.098] Browser LOG     0
+[00:01:24.111] Server  LOG     0
+[00:01:24.161] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:24.259] Browser LOG     0
+[00:01:24.259] Browser LOG     0
+[00:01:24.259] Browser LOG     0
+[00:01:24.259] Browser LOG     0
+[00:01:24.271] Server  LOG     0
+[00:01:24.327] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:24.432] Browser LOG     0
+[00:01:24.432] Browser LOG     0
+[00:01:24.432] Browser LOG     0
+[00:01:24.432] Browser LOG     0
+[00:01:25.089] Browser LOG     1
+[00:01:25.089] Browser LOG     1
+[00:01:26.454] Server  LOG     0
+[00:01:26.517] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:26.587] Browser LOG     0
+[00:01:26.587] Browser LOG     0
+[00:01:26.587] Browser LOG     0
+[00:01:26.587] Browser LOG     0
+[00:01:26.587] Browser LOG     1
+[00:01:26.587] Browser LOG     1
+[00:01:26.599] Server  LOG     0
+[00:01:26.647] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:26.762] Browser LOG     0
+[00:01:26.762] Browser LOG     0
+[00:01:26.762] Browser LOG     0
+[00:01:26.762] Browser LOG     0
+[00:01:26.762] Browser LOG     1
+[00:01:26.762] Browser LOG     1
+[00:01:26.811] Server  LOG     0
+[00:01:26.874] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:26.948] Browser LOG     0
+[00:01:26.948] Browser LOG     0
+[00:01:26.948] Browser LOG     0
+[00:01:26.948] Browser LOG     0
+[00:01:26.948] Browser LOG     1
+[00:01:26.948] Browser LOG     1
+[00:01:26.961] Server  LOG     0
+[00:01:27.012] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:27.120] Browser LOG     0
+[00:01:27.120] Browser LOG     0
+[00:01:27.120] Browser LOG     0
+[00:01:27.120] Browser LOG     0
+[00:01:27.120] Browser LOG     1
+[00:01:27.120] Browser LOG     1
+[00:01:27.133] Server  LOG     0
+[00:01:27.183] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:27.272] Browser LOG     0
+[00:01:27.272] Browser LOG     0
+[00:01:27.272] Browser LOG     0
+[00:01:27.272] Browser LOG     0
+[00:01:27.272] Browser LOG     1
+[00:01:27.272] Browser LOG     1
+[00:01:27.284] Server  LOG     0
+[00:01:27.340] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:27.482] Browser LOG     0
+[00:01:27.482] Browser LOG     0
+[00:01:27.482] Browser LOG     0
+[00:01:27.482] Browser LOG     0
+[00:01:27.482] Browser LOG     1
+[00:01:27.482] Browser LOG     1
+[00:02:21.985] Server  LOG     0
+[00:02:22.051] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:22.156] Browser LOG     0
+[00:02:22.156] Browser LOG     0
+[00:02:22.156] Browser LOG     0
+[00:02:22.156] Browser LOG     0
+[00:02:22.156] Browser LOG     1
+[00:02:22.156] Browser LOG     1
+[00:02:22.170] Server  LOG     0
+[00:02:22.231] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:22.364] Browser LOG     0
+[00:02:22.364] Browser LOG     0
+[00:02:22.364] Browser LOG     0
+[00:02:22.364] Browser LOG     0
+[00:02:22.364] Browser LOG     1
+[00:02:22.364] Browser LOG     1
+[00:02:22.379] Server  LOG     0
+[00:02:22.433] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:22.545] Browser LOG     0
+[00:02:22.545] Browser LOG     0
+[00:02:22.545] Browser LOG     0
+[00:02:22.545] Browser LOG     0
+[00:02:22.545] Browser LOG     1
+[00:02:22.545] Browser LOG     1
+[00:02:22.560] Server  LOG     0
+[00:02:22.613] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:22.704] Browser LOG     0
+[00:02:22.704] Browser LOG     0
+[00:02:22.704] Browser LOG     0
+[00:02:22.704] Browser LOG     0
+[00:02:22.704] Browser LOG     1
+[00:02:22.704] Browser LOG     1
+[00:02:22.717] Server  LOG     0
+[00:02:22.769] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:22.840] Browser LOG     0
+[00:02:22.840] Browser LOG     0
+[00:02:22.840] Browser LOG     0
+[00:02:22.840] Browser LOG     0
+[00:02:22.840] Browser LOG     1
+[00:02:22.840] Browser LOG     1
+[00:02:22.852] Server  LOG     0
+[00:02:22.900] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:23.018] Browser LOG     0
+[00:02:23.018] Browser LOG     0
+[00:02:23.018] Browser LOG     0
+[00:02:23.018] Browser LOG     0
+[00:02:23.018] Browser LOG     1
+[00:02:23.018] Browser LOG     1
+[00:04:43.235] Server  LOG      ✓ Compiled in 66ms
+[00:04:44.026] Browser LOG     1
+[00:04:44.026] Browser LOG     1
+[00:04:50.770] Server  LOG     0
+[00:04:50.856] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:51.014] Browser LOG     0
+[00:04:51.014] Browser LOG     0
+[00:04:51.014] Browser LOG     0
+[00:04:51.015] Browser LOG     0
+[00:04:51.015] Browser LOG     1
+[00:04:51.015] Browser LOG     1
+[00:05:52.671] Browser LOG     1
+[00:05:52.671] Browser LOG     1
+[00:05:53.763] Browser LOG     1
+[00:05:53.763] Browser LOG     1
+[00:05:53.763] Browser LOG     1
+[00:05:53.763] Browser LOG     1
+[00:05:53.763] Browser LOG     1
+[00:05:53.763] Browser LOG     1
