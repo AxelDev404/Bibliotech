@@ -26,5 +26,37 @@ class TesseraBiblioteca(models.Model):
 
     utente = models.ForeignKey(settings.AUTH_USER_MODEL , on_delete=models.CASCADE , blank=False , null=False , related_name='tesserabiblioteca_utente')
 
+    
     def __str__(self):
         return str(self.id_tessera)
+    
+
+    def save(self, *args, **kwargs):
+
+        
+        if len(self.nome_tesserato) < 2 or len(self.nome_tesserato) > 20:
+
+            raise ValidationError("Nome non valido")
+        
+
+        if len(self.cognome_tesserato) < 2 or len(self.cognome_tesserato) > 50:
+            
+            raise ValidationError("Cognome non valido")
+        
+
+        if len(self.codice_fiscale) != 11:
+            
+            raise ValidationError("Codice fiscale non valido")
+        
+
+        if len(self.telefono) != 10:
+
+            raise ValidationError("Numero di telefono non valido")
+        
+
+        if len(self.indirizzo) < 5 or len(self.indirizzo) > 120:
+            
+            raise ValidationError("L indirizzo non è valido") 
+
+
+        return super().save(*args, **kwargs)

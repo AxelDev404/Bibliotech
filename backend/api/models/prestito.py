@@ -30,10 +30,3 @@ class Prestito(models.Model):
     def __str__(self):
         return str(self.id_prestito)
     
-
-    def save(self , *args, **kwargs):
-
-
-        
-
-        return super().save(*args, **kwargs)

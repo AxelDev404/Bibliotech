@@ -40,13 +40,13 @@ export default function Home() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-black">
+    <div className="flex justify-center items-center min-h-screen bg-gradient-to-l from-rose-950  to-rose-950">
      
       <Toaster position="bottom-right" reverseOrder={false} />
 
-      <div className="w-full max-w-md bg-black border-white  border rounded-3xl shadow-md p-10 flex flex-col items-center transition-all duration-300 hover:shadow-lg">
+      <div className="w-full max-w-md bg-white border-white  border rounded-3xl shadow-md p-10 flex flex-col items-center transition-all duration-300 hover:shadow-lg">
      
-        <h1 className="text-3xl font-extralight mb-8 text-white tracking-tight">
+        <h1 className="text-3xl font-extralight mb-8 text-black tracking-tight">
           Benvenuto in <span className="font-extralight">BiblioTech</span>
         </h1>
 
@@ -72,7 +72,7 @@ export default function Home() {
 
           </div>
 
-          <button  type="submit"  className="mt-5 py-3 w-full bg-white text-black font-medium rounded-xl hover:bg-slate-600 active:scale-[0.98] transition-all duration-200 shadow-sm">
+          <button  type="submit"  className="mt-5 py-3 w-full bg-gray-200 text-black font-medium rounded-xl hover:bg-rose-400 active:scale-[0.98] transition-all duration-200 shadow-sm">
             Accedi
           </button>
         

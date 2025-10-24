@@ -191,14 +191,15 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
 function SideBar() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(79);
-    if ($[0] !== "31efd7fdc73ef145499dcaa6ef4944b9d7a8cd6f3b6ab2553ebbe9c9cdfe47a6") {
+    if ($[0] !== "c9c343a4598a3cf849fd0f66b18dc9f9c5fc7067a8f65bc35c50b6594b3c2592") {
         for(let $i = 0; $i < 79; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "31efd7fdc73ef145499dcaa6ef4944b9d7a8cd6f3b6ab2553ebbe9c9cdfe47a6";
+        $[0] = "c9c343a4598a3cf849fd0f66b18dc9f9c5fc7067a8f65bc35c50b6594b3c2592";
     }
     const [isSidebarOpen, setIsSidebarOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     let t0;
@@ -229,7 +230,7 @@ function SideBar() {
         t1 = $[5];
     }
     const HandleLogOut = t1;
-    const t2 = `fixed left-0 top-0 h-screen bg-black border border-white shadow-lg flex flex-col transition-all duration-300 z-40 ${isSidebarOpen ? "w-60" : "w-16"}`;
+    const t2 = `fixed left-0 top-0 h-screen bg-gradient-to-b from-rose-950 via-rose-900 to-rose-950  border-white shadow-lg flex flex-col transition-all duration-300 z-40 ${isSidebarOpen ? "w-60" : "w-16"}`;
     const t3 = `text-white font-semibold text-lg transition-all duration-200 ${isSidebarOpen ? "opacity-100" : "opacity-0 hidden"}`;
     let t4;
     if ($[6] !== t3) {
@@ -238,7 +239,7 @@ function SideBar() {
             children: "BIBLIOTECH"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 64,
+            lineNumber: 65,
             columnNumber: 10
         }, this);
         $[6] = t3;
@@ -250,11 +251,11 @@ function SideBar() {
     if ($[8] !== isSidebarOpen) {
         t5 = isSidebarOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Close$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 72,
+            lineNumber: 73,
             columnNumber: 26
         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 72,
+            lineNumber: 73,
             columnNumber: 42
         }, this);
         $[8] = isSidebarOpen;
@@ -270,7 +271,7 @@ function SideBar() {
             children: t5
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 80,
+            lineNumber: 81,
             columnNumber: 10
         }, this);
         $[10] = t5;
@@ -289,7 +290,7 @@ function SideBar() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 89,
+            lineNumber: 90,
             columnNumber: 10
         }, this);
         $[13] = t4;
@@ -314,7 +315,7 @@ function SideBar() {
             titleAccess: "Dashboard"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 108,
+            lineNumber: 109,
             columnNumber: 10
         }, this);
         $[18] = t9;
@@ -328,7 +329,7 @@ function SideBar() {
             children: "Dashboard"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 115,
+            lineNumber: 116,
             columnNumber: 28
         }, this);
         $[19] = isSidebarOpen;
@@ -349,12 +350,12 @@ function SideBar() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/SideBar.jsx",
-                lineNumber: 123,
+                lineNumber: 124,
                 columnNumber: 124
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 123,
+            lineNumber: 124,
             columnNumber: 11
         }, this);
         $[21] = t10;
@@ -379,7 +380,7 @@ function SideBar() {
             titleAccess: "Gestione documenti"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 142,
+            lineNumber: 143,
             columnNumber: 11
         }, this);
         $[26] = t13;
@@ -393,7 +394,7 @@ function SideBar() {
             children: "Gestione libri"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 149,
+            lineNumber: 150,
             columnNumber: 28
         }, this);
         $[27] = isSidebarOpen;
@@ -414,12 +415,12 @@ function SideBar() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/SideBar.jsx",
-                lineNumber: 157,
+                lineNumber: 158,
                 columnNumber: 125
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 157,
+            lineNumber: 158,
             columnNumber: 11
         }, this);
         $[29] = t12;
@@ -444,7 +445,7 @@ function SideBar() {
             titleAccess: "Cerca documenti"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 176,
+            lineNumber: 177,
             columnNumber: 11
         }, this);
         $[34] = t17;
@@ -458,7 +459,7 @@ function SideBar() {
             children: "Cerca libro"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 183,
+            lineNumber: 184,
             columnNumber: 28
         }, this);
         $[35] = isSidebarOpen;
@@ -479,12 +480,12 @@ function SideBar() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/SideBar.jsx",
-                lineNumber: 191,
+                lineNumber: 192,
                 columnNumber: 124
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 191,
+            lineNumber: 192,
             columnNumber: 11
         }, this);
         $[37] = t16;
@@ -509,7 +510,7 @@ function SideBar() {
             titleAccess: "carica documento"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 210,
+            lineNumber: 211,
             columnNumber: 11
         }, this);
         $[42] = t21;
@@ -523,7 +524,7 @@ function SideBar() {
             children: "Carica libro"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 217,
+            lineNumber: 218,
             columnNumber: 28
         }, this);
         $[43] = isSidebarOpen;
@@ -544,12 +545,12 @@ function SideBar() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/SideBar.jsx",
-                lineNumber: 225,
+                lineNumber: 226,
                 columnNumber: 125
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 225,
+            lineNumber: 226,
             columnNumber: 11
         }, this);
         $[45] = t20;
@@ -570,7 +571,7 @@ function SideBar() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 234,
+            lineNumber: 235,
             columnNumber: 11
         }, this);
         $[48] = t11;
@@ -589,7 +590,7 @@ function SideBar() {
             }
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 245,
+            lineNumber: 246,
             columnNumber: 11
         }, this);
         $[53] = t25;
@@ -603,7 +604,7 @@ function SideBar() {
             children: "Impostazioni"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 254,
+            lineNumber: 255,
             columnNumber: 28
         }, this);
         $[54] = isSidebarOpen;
@@ -621,7 +622,7 @@ function SideBar() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 262,
+            lineNumber: 263,
             columnNumber: 11
         }, this);
         $[56] = t26;
@@ -647,7 +648,7 @@ function SideBar() {
             }
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 280,
+            lineNumber: 281,
             columnNumber: 11
         }, this);
         $[60] = t29;
@@ -661,7 +662,7 @@ function SideBar() {
             children: "Logout"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 289,
+            lineNumber: 290,
             columnNumber: 28
         }, this);
         $[61] = isSidebarOpen;
@@ -680,7 +681,7 @@ function SideBar() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 297,
+            lineNumber: 298,
             columnNumber: 11
         }, this);
         $[63] = t28;
@@ -699,7 +700,7 @@ function SideBar() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 306,
+            lineNumber: 307,
             columnNumber: 11
         }, this);
         $[66] = t27;
@@ -719,7 +720,7 @@ function SideBar() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 315,
+            lineNumber: 316,
             columnNumber: 11
         }, this);
         $[69] = t2;
@@ -740,7 +741,7 @@ function SideBar() {
             }
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 327,
+            lineNumber: 328,
             columnNumber: 11
         }, this);
         $[74] = t34;
@@ -758,7 +759,7 @@ function SideBar() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 337,
+            lineNumber: 338,
             columnNumber: 11
         }, this);
         $[76] = t33;
@@ -806,11 +807,11 @@ var _s = __turbopack_context__.k.signature();
 function Banner() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(18);
-    if ($[0] !== "77ee1d2cdcfa7d97c33792b5793d9c59403e23055feba97d1a5596e1faeb0aaf") {
+    if ($[0] !== "cb6fd742ee3e0df439493b98ddafe9301d571798af9493c2e5388f66d49cf4b5") {
         for(let $i = 0; $i < 18; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "77ee1d2cdcfa7d97c33792b5793d9c59403e23055feba97d1a5596e1faeb0aaf";
+        $[0] = "cb6fd742ee3e0df439493b98ddafe9301d571798af9493c2e5388f66d49cf4b5";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -881,7 +882,7 @@ function Banner() {
     let t5;
     if ($[6] !== user.username) {
         t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-            className: "text-sm text-white flex items-center gap-1",
+            className: "text-sm text-white flex items-left gap-1",
             children: [
                 t3,
                 t4,
@@ -890,7 +891,7 @@ function Banner() {
                 }, void 0, false, {
                     fileName: "[project]/src/components/Banner.jsx",
                     lineNumber: 74,
-                    columnNumber: 76
+                    columnNumber: 74
                 }, this)
             ]
         }, void 0, true, {
@@ -984,9 +985,9 @@ function Banner() {
     let t10;
     if ($[14] !== t5 || $[15] !== t7 || $[16] !== t9) {
         t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "w-full h-20 bg-black border-white border  fixed",
+            className: "w-full h-20 bg-gradient-to-l from-rose-950 via-rose-900 to-rose-950 fixed",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "max-w-screen mx-auto px-6 h-full flex items-center justify-between",
+                className: "max-w-screen mx-auto px-6 h-full flex items-left justify-left",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex items-center space-x-8",
                     children: [
@@ -997,12 +998,12 @@ function Banner() {
                 }, void 0, true, {
                     fileName: "[project]/src/components/Banner.jsx",
                     lineNumber: 112,
-                    columnNumber: 160
+                    columnNumber: 181
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Banner.jsx",
                 lineNumber: 112,
-                columnNumber: 76
+                columnNumber: 102
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Banner.jsx",

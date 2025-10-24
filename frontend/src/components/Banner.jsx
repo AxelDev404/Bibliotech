@@ -6,6 +6,8 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import BusinessIcon from '@mui/icons-material/Business';
 import PersonIcon from '@mui/icons-material/Person';
 
+
+
 export default function Banner(){
 
     const [time, setTime] = useState(
@@ -31,13 +33,13 @@ export default function Banner(){
 
     return(
 
-        <div className="w-full h-20 bg-black border-white border  fixed">
+        <div className="w-full h-20 bg-gradient-to-l from-rose-950 via-rose-900 to-rose-950 fixed">
             
-            <div className="max-w-screen mx-auto px-6 h-full flex items-center justify-between">
+            <div className="max-w-screen mx-auto px-6 h-full flex items-left justify-left">
                 
                 <div className="flex items-center space-x-8">
         
-                    <p className="text-sm text-white flex items-center gap-1">
+                    <p className="text-sm text-white flex items-left gap-1">
                         <PersonIcon sx={{ fontSize: 25 , color : 'white'}} />
                         <span className="font-semibold text-white tracking-wide">: </span>
                         <span>{user.username}</span>
