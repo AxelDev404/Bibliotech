@@ -14,6 +14,7 @@ import { useState , useEffect } from "react";
 import { getCountStatAPI } from "@/features/Libri/libriSlice";
 import { getCountStatPostazioniAPI } from "@/features/Postazioni/postazioniSlice";
 import { getCountStatTessereBibliotecaAPI } from "@/features/TessereBiblioteca/tessere_bibliotecaSlice";
+import { getCountStatPresititAttiviAPI , getCountStatPresititiSaldatiAPI } from "@/features/Prestiti/prestitiSlice";
 
 
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
@@ -28,6 +29,7 @@ export default function DashBoard()
     const { count , status , error} = useSelector((state) => state.libri); 
     const { count_postazioni , status : statusCountPostazioni , error : errorCountPostazioni } = useSelector((state) => state.postazioni);
     const { count_tessere_biblioteca , status : statusCountTessere , error : errorCountTessere} = useSelector((state) => state.tessere_bibilioteca)
+    const { count_presiti_attivi , count_prestiti_saldati , status : statusCountPrestiti , error : errorCountPrestiti } = useSelector((state) => state.prestiti); 
 
     const dispatch = useDispatch();
 
@@ -37,6 +39,8 @@ export default function DashBoard()
         dispatch(getCountStatAPI());
         dispatch(getCountStatPostazioniAPI());
         dispatch(getCountStatTessereBibliotecaAPI());
+        dispatch(getCountStatPresititAttiviAPI());
+        dispatch(getCountStatPresititiSaldatiAPI());
     },[dispatch])
 
 
@@ -85,13 +89,13 @@ export default function DashBoard()
 
                                     <div className="w-72 h-32 bg-white text-black rounded-lg flex flex-col items-center justify-center flex-shrink-0 shadow-md hover:shadow-lg hover:bg-rose-900 hover:text-white  transition-shadow">
                                         <SwipeRightIcon sx={{ fontSize: 50 }} />
-                                        <p className="text-3xl font-thin">N</p>
+                                        <p className="text-3xl font-thin">{count_presiti_attivi}</p>
                                         <p className="text-sm mt-1">Presiti in corso</p>
                                     </div>
 
                                     <div className="w-72 h-32 bg-white text-black rounded-lg flex flex-col items-center justify-center flex-shrink-0 shadow-md hover:shadow-lg hover:bg-rose-900 hover:text-white  transition-shadow">
                                         <SwipeLeftIcon sx={{ fontSize: 50 }} />
-                                        <p className="text-3xl font-thin">N</p>
+                                        <p className="text-3xl font-thin">{count_prestiti_saldati}</p>
                                         <p className="text-sm mt-1">Presiti saldati</p>
                                     </div>
 

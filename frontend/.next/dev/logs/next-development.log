@@ -801,3 +801,613 @@ It can also happen if the client has a browser extension installed which messes 
 [01:30:31.893] Browser LOG     1
 [01:30:31.893] Browser LOG     1
 [01:30:31.893] Browser LOG     1
+[01:37:34.671] Server  LOG      ✓ Compiled in 12ms
+[01:37:35.446] Browser ERROR   ./src/store/store.js:8:62
+Parsing ecmascript source code failed
+   6 | import postazioniSlice from '@/features/Postazioni/postazioniSlice'
+   7 | import tessere_bibliotecaSlice from '@/features/TessereBiblioteca/tessere_bibliotecaSlice';
+>  8 | import prestitiSlice from '@/features/Prestiti/prestitiSlice':
+     |                                                              ^
+   9 |
+  10 | const store = configureStore({
+  11 |
+
+Expected ';', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./src/store/store.js [Client Component Browser]
+    ./src/store/ReduxProvider.jsx [Client Component Browser]
+    ./src/store/ReduxProvider.jsx [Server Component]
+    ./src/app/layout.jsx [Server Component]
+
+  Client Component SSR:
+    ./src/store/store.js [Client Component SSR]
+    ./src/store/ReduxProvider.jsx [Client Component SSR]
+    ./src/store/ReduxProvider.jsx [Server Component]
+    ./src/app/layout.jsx [Server Component]
+[01:37:35.701] Server  LOG     0
+[01:37:35.782] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:37:36.449] Browser LOG     0
+[01:37:36.449] Browser LOG     0
+[01:37:36.449] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className={" bg-white text-white"}
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[01:37:36.449] Browser LOG     0
+[01:37:36.449] Browser LOG     0
+[01:37:36.449] Browser LOG     0
+[01:37:36.449] Browser LOG     0
+[01:37:36.449] Browser LOG     0
+[01:37:36.449] Browser LOG     0
+[01:37:36.449] Browser LOG     1
+[01:37:36.449] Browser LOG     1
+[01:37:45.008] Server  LOG      ✓ Compiled in 11ms
+[01:37:45.446] Browser LOG     0
+[01:37:45.446] Browser LOG     0
+[01:37:45.446] Browser LOG     0
+[01:37:45.446] Browser LOG     0
+[01:37:45.446] Browser LOG     0
+[01:37:45.446] Browser LOG     0
+[01:37:45.446] Browser LOG     1
+[01:37:45.446] Browser LOG     1
+[01:37:45.446] Browser LOG     1
+[01:37:45.446] Browser LOG     1
+[01:39:40.149] Server  LOG      ✓ Compiled in 19ms
+[01:39:40.180] Server  LOG     0
+[01:39:40.247] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:39:40.446] Browser LOG     0
+[01:39:40.446] Browser LOG     0
+[01:39:40.446] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className={" bg-white text-white"}
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[01:39:40.446] Browser LOG     0
+[01:39:40.446] Browser LOG     0
+[01:39:40.446] Browser LOG     0
+[01:39:40.446] Browser LOG     0
+[01:39:40.446] Browser LOG     1
+[01:39:40.446] Browser LOG     1
+[01:39:40.446] Browser LOG     1
+[01:39:40.446] Browser LOG     1
+[01:40:26.425] Server  LOG      ✓ Compiled in 13ms
+[01:40:27.445] Browser LOG     0
+[01:40:27.445] Browser LOG     0
+[01:40:27.445] Browser LOG     0
+[01:40:27.445] Browser LOG     0
+[01:40:27.445] Browser LOG     1
+[01:40:27.445] Browser LOG     1
+[01:40:27.445] Browser LOG     1
+[01:40:27.445] Browser LOG     1
+[01:40:27.445] Browser LOG     1
+[01:40:27.445] Browser LOG     1
+[01:41:06.701] Server  LOG      ✓ Compiled in 14ms
+[01:41:07.446] Browser LOG     0
+[01:41:07.446] Browser LOG     0
+[01:41:07.446] Browser LOG     0
+[01:41:07.446] Browser LOG     0
+[01:41:07.446] Browser LOG     0
+[01:41:07.446] Browser LOG     0
+[01:41:07.446] Browser LOG     1
+[01:41:07.446] Browser LOG     1
+[01:41:07.446] Browser LOG     1
+[01:41:07.446] Browser LOG     1
+[01:41:16.238] Server  LOG      ✓ Compiled in 12ms
+[01:41:16.445] Browser LOG     0
+[01:41:16.446] Browser LOG     0
+[01:41:16.446] Browser LOG     0
+[01:41:16.446] Browser LOG     0
+[01:41:16.446] Browser LOG     0
+[01:41:16.446] Browser LOG     0
+[01:41:16.446] Browser LOG     1
+[01:41:16.446] Browser LOG     1
+[01:41:16.446] Browser LOG     1
+[01:41:16.446] Browser LOG     1
+[01:41:29.477] Server  LOG      ✓ Compiled in 13ms
+[01:41:30.446] Browser LOG     0
+[01:41:30.446] Browser LOG     0
+[01:41:30.446] Browser LOG     0
+[01:41:30.446] Browser LOG     0
+[01:41:30.446] Browser LOG     0
+[01:41:30.446] Browser LOG     0
+[01:41:30.446] Browser LOG     0
+[01:41:30.446] Browser LOG     0
+[01:41:30.446] Browser LOG     1
+[01:41:30.446] Browser LOG     1
+[01:41:53.026] Server  LOG      ✓ Compiled in 8ms
+[01:41:53.445] Browser LOG     0
+[01:41:53.445] Browser LOG     0
+[01:41:53.445] Browser LOG     0
+[01:41:53.445] Browser LOG     0
+[01:41:53.445] Browser LOG     0
+[01:41:53.445] Browser LOG     0
+[01:41:53.445] Browser LOG     1
+[01:41:53.445] Browser LOG     1
+[01:41:53.445] Browser LOG     1
+[01:41:53.445] Browser LOG     1
+[01:41:57.751] Server  LOG      ✓ Compiled in 11ms
+[01:41:58.446] Browser LOG     0
+[01:41:58.446] Browser LOG     0
+[01:41:58.446] Browser LOG     0
+[01:41:58.446] Browser LOG     0
+[01:41:58.446] Browser LOG     0
+[01:41:58.446] Browser LOG     0
+[01:41:58.446] Browser LOG     0
+[01:41:58.446] Browser LOG     0
+[01:41:58.446] Browser LOG     1
+[01:41:58.446] Browser LOG     1
+[01:42:29.331] Server  LOG      ✓ Compiled in 8ms
+[01:42:30.446] Browser LOG     0
+[01:42:30.446] Browser LOG     0
+[01:42:30.446] Browser LOG     0
+[01:42:30.446] Browser LOG     0
+[01:42:30.446] Browser LOG     1
+[01:42:30.446] Browser LOG     1
+[01:42:30.446] Browser LOG     1
+[01:42:30.446] Browser LOG     1
+[01:42:30.446] Browser LOG     1
+[01:42:30.446] Browser LOG     1
+[01:42:37.492] Server  LOG      ✓ Compiled in 8ms
+[01:42:38.446] Browser LOG     0
+[01:42:38.446] Browser LOG     0
+[01:42:38.446] Browser LOG     0
+[01:42:38.446] Browser LOG     0
+[01:42:38.446] Browser LOG     0
+[01:42:38.446] Browser LOG     0
+[01:42:38.446] Browser LOG     0
+[01:42:38.446] Browser LOG     0
+[01:42:38.446] Browser LOG     1
+[01:42:38.446] Browser LOG     1
+[01:42:52.355] Server  LOG      ✓ Compiled in 10ms
+[01:42:53.445] Browser LOG     0
+[01:42:53.445] Browser LOG     0
+[01:42:53.445] Browser LOG     0
+[01:42:53.445] Browser LOG     0
+[01:42:53.445] Browser LOG     1
+[01:42:53.445] Browser LOG     1
+[01:42:53.445] Browser LOG     1
+[01:42:53.445] Browser LOG     1
+[01:42:53.445] Browser LOG     1
+[01:42:53.445] Browser LOG     1
+[01:43:05.544] Server  LOG      ✓ Compiled in 12ms
+[01:43:06.445] Browser LOG     0
+[01:43:06.446] Browser LOG     0
+[01:43:06.446] Browser LOG     0
+[01:43:06.446] Browser LOG     0
+[01:43:06.446] Browser LOG     0
+[01:43:06.446] Browser LOG     0
+[01:43:06.446] Browser LOG     0
+[01:43:06.446] Browser LOG     0
+[01:43:06.446] Browser LOG     1
+[01:43:06.446] Browser LOG     1
+[01:43:42.948] Server  LOG      ✓ Compiled in 9ms
+[01:43:43.446] Browser LOG     0
+[01:43:43.446] Browser LOG     0
+[01:43:43.446] Browser LOG     0
+[01:43:43.446] Browser LOG     0
+[01:43:43.446] Browser LOG     0
+[01:43:43.446] Browser LOG     0
+[01:43:43.446] Browser LOG     0
+[01:43:43.446] Browser LOG     0
+[01:43:43.446] Browser LOG     1
+[01:43:43.446] Browser LOG     1
+[01:44:55.581] Server  LOG      ✓ Compiled in 20ms
+[01:44:56.445] Browser LOG     0
+[01:44:56.445] Browser LOG     0
+[01:44:56.445] Browser LOG     0
+[01:44:56.445] Browser LOG     0
+[01:44:56.445] Browser LOG     0
+[01:44:56.445] Browser LOG     0
+[01:44:56.445] Browser LOG     1
+[01:44:56.445] Browser LOG     1
+[01:44:56.445] Browser LOG     1
+[01:44:56.445] Browser LOG     1
+[01:45:00.242] Server  LOG      ✓ Compiled in 9ms
+[01:45:00.445] Browser LOG     0
+[01:45:00.445] Browser LOG     0
+[01:45:00.445] Browser LOG     0
+[01:45:00.445] Browser LOG     0
+[01:45:00.445] Browser LOG     0
+[01:45:00.445] Browser LOG     0
+[01:45:00.445] Browser LOG     1
+[01:45:00.445] Browser LOG     1
+[01:45:00.445] Browser LOG     1
+[01:45:00.445] Browser LOG     1
+[01:45:16.767] Server  LOG      ✓ Compiled in 10ms
+[01:45:17.448] Browser LOG     0
+[01:45:17.448] Browser LOG     0
+[01:45:17.448] Browser LOG     0
+[01:45:17.448] Browser LOG     0
+[01:45:17.448] Browser LOG     0
+[01:45:17.448] Browser LOG     0
+[01:45:17.448] Browser LOG     0
+[01:45:17.448] Browser LOG     0
+[01:45:17.448] Browser LOG     1
+[01:45:17.448] Browser LOG     1
+[01:45:33.950] Server  LOG      ✓ Compiled in 9ms
+[01:45:34.445] Browser LOG     0
+[01:45:34.445] Browser LOG     0
+[01:45:34.445] Browser LOG     0
+[01:45:34.445] Browser LOG     0
+[01:45:34.445] Browser LOG     0
+[01:45:34.445] Browser LOG     0
+[01:45:34.445] Browser LOG     1
+[01:45:34.445] Browser LOG     1
+[01:45:34.445] Browser LOG     1
+[01:45:34.445] Browser LOG     1
+[02:26:25.781] Server  LOG      ✓ Compiled in 11ms
+[02:26:26.446] Browser LOG     0
+[02:26:26.446] Browser LOG     0
+[02:26:26.446] Browser LOG     0
+[02:26:26.446] Browser LOG     0
+[02:26:26.446] Browser LOG     0
+[02:26:26.446] Browser LOG     0
+[02:26:26.446] Browser LOG     1
+[02:26:26.446] Browser LOG     1
+[02:26:26.446] Browser LOG     1
+[02:26:26.446] Browser LOG     1
+[02:26:33.995] Server  LOG      ✓ Compiled in 21ms
+[02:26:34.445] Browser LOG     0
+[02:26:34.445] Browser LOG     0
+[02:26:34.445] Browser LOG     0
+[02:26:34.445] Browser LOG     0
+[02:26:34.445] Browser LOG     0
+[02:26:34.445] Browser LOG     0
+[02:26:34.445] Browser LOG     0
+[02:26:34.445] Browser LOG     0
+[02:26:34.445] Browser LOG     1
+[02:26:34.445] Browser LOG     1
+[02:26:45.947] Server  LOG      ✓ Compiled in 8ms
+[02:26:46.446] Browser LOG     0
+[02:26:46.446] Browser LOG     0
+[02:26:46.446] Browser LOG     0
+[02:26:46.446] Browser LOG     0
+[02:26:46.446] Browser LOG     0
+[02:26:46.446] Browser LOG     0
+[02:26:46.446] Browser LOG     0
+[02:26:46.446] Browser LOG     0
+[02:26:46.446] Browser LOG     1
+[02:26:46.446] Browser LOG     1
+[02:27:11.634] Server  LOG      ✓ Compiled in 10ms
+[02:27:12.445] Browser LOG     0
+[02:27:12.445] Browser LOG     0
+[02:27:12.445] Browser LOG     0
+[02:27:12.445] Browser LOG     0
+[02:27:12.445] Browser LOG     1
+[02:27:12.445] Browser LOG     1
+[02:27:12.445] Browser LOG     1
+[02:27:12.445] Browser LOG     1
+[02:27:12.445] Browser LOG     1
+[02:27:12.445] Browser LOG     1
+[02:27:16.077] Server  LOG      ✓ Compiled in 12ms
+[02:27:16.446] Browser LOG     0
+[02:27:16.446] Browser LOG     0
+[02:27:16.446] Browser LOG     0
+[02:27:16.446] Browser LOG     0
+[02:27:16.446] Browser LOG     0
+[02:27:16.446] Browser LOG     0
+[02:27:16.446] Browser LOG     1
+[02:27:16.446] Browser LOG     1
+[02:27:16.446] Browser LOG     1
+[02:27:16.446] Browser LOG     1
+[02:27:33.044] Server  LOG      ✓ Compiled in 13ms
+[02:27:33.445] Browser LOG     0
+[02:27:33.445] Browser LOG     0
+[02:27:33.445] Browser LOG     0
+[02:27:33.445] Browser LOG     0
+[02:27:33.445] Browser LOG     1
+[02:27:33.445] Browser LOG     1
+[02:27:33.445] Browser LOG     1
+[02:27:33.445] Browser LOG     1
+[02:27:33.445] Browser LOG     1
+[02:27:33.445] Browser LOG     1
+[02:27:57.475] Server  LOG      ✓ Compiled in 11ms
+[02:27:58.445] Browser LOG     0
+[02:27:58.445] Browser LOG     0
+[02:27:58.445] Browser LOG     0
+[02:27:58.445] Browser LOG     0
+[02:27:58.445] Browser LOG     0
+[02:27:58.445] Browser LOG     0
+[02:27:58.445] Browser LOG     1
+[02:27:58.445] Browser LOG     1
+[02:27:58.445] Browser LOG     1
+[02:27:58.445] Browser LOG     1
+[02:28:04.001] Server  LOG      ✓ Compiled in 12ms
+[02:28:04.446] Browser LOG     0
+[02:28:04.446] Browser LOG     0
+[02:28:04.446] Browser LOG     0
+[02:28:04.446] Browser LOG     0
+[02:28:04.446] Browser LOG     1
+[02:28:04.446] Browser LOG     1
+[02:28:04.446] Browser LOG     1
+[02:28:04.446] Browser LOG     1
+[02:28:04.446] Browser LOG     1
+[02:28:04.446] Browser LOG     1
+[02:28:26.933] Server  LOG      ✓ Compiled in 10ms
+[02:28:27.446] Browser LOG     0
+[02:28:27.446] Browser LOG     0
+[02:28:27.446] Browser LOG     0
+[02:28:27.446] Browser LOG     0
+[02:28:27.446] Browser LOG     0
+[02:28:27.446] Browser LOG     0
+[02:28:27.446] Browser LOG     0
+[02:28:27.446] Browser LOG     0
+[02:28:27.446] Browser LOG     1
+[02:28:27.446] Browser LOG     1
+[02:28:32.777] Server  LOG      ✓ Compiled in 7ms
+[02:28:33.445] Browser LOG     0
+[02:28:33.445] Browser LOG     0
+[02:28:33.445] Browser LOG     0
+[02:28:33.445] Browser LOG     0
+[02:28:33.445] Browser LOG     0
+[02:28:33.445] Browser LOG     0
+[02:28:33.445] Browser LOG     1
+[02:28:33.445] Browser LOG     1
+[02:28:33.445] Browser LOG     1
+[02:28:33.445] Browser LOG     1
+[02:28:40.663] Server  LOG      ✓ Compiled in 15ms
+[02:28:41.446] Browser LOG     0
+[02:28:41.446] Browser LOG     0
+[02:28:41.446] Browser LOG     0
+[02:28:41.446] Browser LOG     0
+[02:28:41.446] Browser LOG     1
+[02:28:41.446] Browser LOG     1
+[02:28:41.446] Browser LOG     1
+[02:28:41.446] Browser LOG     1
+[02:28:41.446] Browser LOG     1
+[02:28:41.446] Browser LOG     1
+[02:29:06.656] Server  LOG      ✓ Compiled in 18ms
+[02:29:07.446] Browser LOG     0
+[02:29:07.446] Browser LOG     0
+[02:29:07.446] Browser LOG     0
+[02:29:07.446] Browser LOG     0
+[02:29:07.446] Browser LOG     1
+[02:29:07.446] Browser LOG     1
+[02:29:07.446] Browser LOG     1
+[02:29:07.446] Browser LOG     1
+[02:29:07.446] Browser LOG     1
+[02:29:07.446] Browser LOG     1
+[02:29:25.141] Server  LOG      ✓ Compiled in 11ms
+[02:29:25.446] Browser LOG     0
+[02:29:25.446] Browser LOG     0
+[02:29:25.446] Browser LOG     0
+[02:29:25.446] Browser LOG     0
+[02:29:25.446] Browser LOG     1
+[02:29:25.446] Browser LOG     1
+[02:29:25.446] Browser LOG     1
+[02:29:25.446] Browser LOG     1
+[02:29:25.446] Browser LOG     1
+[02:29:25.446] Browser LOG     1
+[02:29:43.977] Server  LOG      ✓ Compiled in 56ms
+[02:29:44.446] Browser LOG     1
+[02:29:44.446] Browser LOG     1
+[02:31:03.220] Server  LOG      ✓ Compiled in 29ms
+[02:31:03.446] Browser LOG     1
+[02:31:03.446] Browser LOG     1
+[02:31:03.446] Browser LOG     1
+[02:31:03.446] Browser LOG     1
+[02:31:03.446] Browser LOG     1
+[02:31:03.446] Browser LOG     1
+[02:31:03.446] Browser LOG     1
+[02:31:03.446] Browser LOG     1
+[02:31:03.446] Browser LOG     1
+[02:31:03.446] Browser LOG     1
+[02:31:11.419] Server  LOG      ✓ Compiled in 62ms
+[02:31:12.445] Browser LOG     1
+[02:31:12.446] Browser LOG     1
+[02:31:17.428] Server  LOG      ✓ Compiled in 42ms
+[02:31:18.446] Browser LOG     1
+[02:31:18.446] Browser LOG     1
+[02:31:22.899] Server  LOG      ✓ Compiled in 29ms
+[02:31:23.446] Browser LOG     1
+[02:31:23.446] Browser LOG     1
+[02:31:42.511] Server  LOG      ✓ Compiled in 47ms
+[02:31:43.446] Browser LOG     1
+[02:31:43.446] Browser LOG     1
+[02:31:43.446] Browser LOG     1
+[02:31:43.446] Browser LOG     1
+[02:31:43.446] Browser LOG     1
+[02:31:43.446] Browser LOG     1
+[02:31:43.446] Browser LOG     1
+[02:31:43.446] Browser LOG     1
+[02:31:43.446] Browser LOG     1
+[02:31:43.446] Browser LOG     1
+[02:31:43.446] Browser LOG     1
+[02:31:43.446] Browser LOG     1
+[02:31:51.302] Server  LOG     0
+[02:31:51.404] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:31:51.518] Browser LOG     0
+[02:31:51.518] Browser LOG     0
+[02:31:51.518] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className={" bg-white text-white"}
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[02:31:51.518] Browser LOG     0
+[02:31:51.518] Browser LOG     0
+[02:31:51.518] Browser LOG     1
+[02:31:51.518] Browser LOG     1
+[02:31:51.518] Browser LOG     1
+[02:31:51.518] Browser LOG     1
+[02:31:51.518] Browser LOG     1
+[02:31:51.518] Browser LOG     1
+[02:31:51.518] Browser LOG     1
+[02:31:51.518] Browser LOG     1
+[02:31:51.518] Browser LOG     1
+[02:31:51.518] Browser LOG     1
+[02:31:51.530] Server  LOG     0
+[02:31:51.580] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:31:51.684] Browser LOG     0
+[02:31:51.684] Browser LOG     0
+[02:31:51.684] Browser LOG     0
+[02:31:51.684] Browser LOG     0
+[02:31:51.684] Browser LOG     0
+[02:31:51.684] Browser LOG     0
+[02:31:51.684] Browser LOG     0
+[02:31:51.684] Browser LOG     0
+[02:31:51.684] Browser LOG     1
+[02:31:51.684] Browser LOG     1
+[02:31:51.684] Browser LOG     1
+[02:31:51.684] Browser LOG     1
+[02:31:51.697] Server  LOG     0
+[02:31:51.748] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:31:51.866] Browser LOG     0
+[02:31:51.866] Browser LOG     0
+[02:31:51.866] Browser LOG     0
+[02:31:51.866] Browser LOG     0
+[02:31:51.866] Browser LOG     0
+[02:31:51.866] Browser LOG     0
+[02:31:51.866] Browser LOG     0
+[02:31:51.866] Browser LOG     0
+[02:31:51.866] Browser LOG     1
+[02:31:51.866] Browser LOG     1
+[02:31:51.866] Browser LOG     1
+[02:31:51.866] Browser LOG     1
+[02:32:11.598] Server  LOG     0
+[02:32:11.663] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:32:11.712] Browser LOG     0
+[02:32:11.712] Browser LOG     0
+[02:32:11.712] Browser LOG     0
+[02:32:11.712] Browser LOG     0
+[02:32:11.726] Server  LOG     0
+[02:32:11.776] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:32:11.879] Browser LOG     0
+[02:32:11.879] Browser LOG     0
+[02:32:11.879] Browser LOG     0
+[02:32:11.879] Browser LOG     0
+[02:32:11.879] Browser LOG     0
+[02:32:11.879] Browser LOG     0
+[02:32:11.879] Browser LOG     0
+[02:32:11.879] Browser LOG     0
+[02:32:11.879] Browser LOG     1
+[02:32:11.879] Browser LOG     1
+[02:32:11.879] Browser LOG     1
+[02:32:11.879] Browser LOG     1
+[02:32:11.890] Server  LOG     0
+[02:32:11.939] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:32:12.032] Browser LOG     0
+[02:32:12.032] Browser LOG     0
+[02:32:12.032] Browser LOG     0
+[02:32:12.032] Browser LOG     0
+[02:32:12.032] Browser LOG     1
+[02:32:12.032] Browser LOG     1
+[02:32:12.032] Browser LOG     1
+[02:32:12.032] Browser LOG     1
+[02:32:12.032] Browser LOG     1
+[02:32:12.032] Browser LOG     1
+[02:32:12.032] Browser LOG     1
+[02:32:12.032] Browser LOG     1
+[02:32:12.032] Browser LOG     1
+[02:32:12.032] Browser LOG     1
+[02:32:12.044] Server  LOG     0
+[02:32:12.094] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:32:12.214] Browser LOG     0
+[02:32:12.214] Browser LOG     0
+[02:32:12.214] Browser LOG     0
+[02:32:12.214] Browser LOG     0
+[02:32:12.214] Browser LOG     1
+[02:32:12.214] Browser LOG     1
+[02:32:12.214] Browser LOG     1
+[02:32:12.214] Browser LOG     1
+[02:32:12.214] Browser LOG     1
+[02:32:12.214] Browser LOG     1
+[02:32:12.214] Browser LOG     1
+[02:32:12.214] Browser LOG     1

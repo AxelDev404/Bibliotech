@@ -2,6 +2,9 @@ import { createAsyncThunk , createSlice } from "@reduxjs/toolkit";
 import { fetchCountStatPostazioni } from "@/api/apiPostazioni";
 
 
+//-----------------------------------------------------------GESTIONE STATISTICA-----------------------------------------------------------//
+
+
 export const getCountStatPostazioniAPI = createAsyncThunk('postazioni/statistics/' , async(_ , {rejectWithValue}) => {
 
     try {
