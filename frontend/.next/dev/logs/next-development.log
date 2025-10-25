@@ -1,10 +1,25 @@
-[00:00:00.617] Server  LOG      ✓ Ready in 386ms
-[00:00:03.065] Server  LOG     0
-[00:00:03.616] Server  LOG     0
-[00:00:03.708] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:03.877] Browser LOG     0
-[00:00:03.877] Browser LOG     0
-[00:00:03.877] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:00.684] Server  LOG      ✓ Ready in 478ms
+[00:00:12.713] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:16.979] Browser LOG     0
+[00:00:16.979] Browser LOG     0
+[00:00:16.979] Browser LOG     0
+[00:00:16.979] Browser LOG     0
+[00:00:16.979] Browser LOG     1
+[00:00:16.979] Browser LOG     1
+[00:00:24.282] Browser LOG     1
+[00:00:24.282] Browser LOG     1
+[00:00:24.282] Browser LOG     1
+[00:00:24.282] Browser LOG     1
+[00:00:24.282] Browser LOG     1
+[00:00:24.282] Browser LOG     1
+[00:59:21.372] Server  LOG      ✓ Compiled in 22ms
+[00:59:21.417] Server  LOG     0
+[00:59:21.429] Server  LOG     0
+[00:59:21.443] Server  LOG     0
+[00:59:21.518] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:59:22.449] Browser LOG     0
+[00:59:22.449] Browser LOG     0
+[00:59:22.449] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -41,302 +56,748 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[00:00:03.877] Browser LOG     0
-[00:00:03.877] Browser LOG     0
-[00:00:03.877] Browser LOG     1
-[00:00:03.877] Browser LOG     1
-[00:00:05.193] Server  LOG     0
-[00:00:05.260] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:05.365] Browser LOG     0
-[00:00:05.365] Browser LOG     0
-[00:00:05.365] Browser LOG     0
-[00:00:05.365] Browser LOG     0
-[00:00:05.365] Browser LOG     1
-[00:00:05.365] Browser LOG     1
-[00:00:05.382] Server  LOG     0
-[00:00:05.434] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:05.532] Browser LOG     0
-[00:00:05.532] Browser LOG     0
-[00:00:05.532] Browser LOG     0
-[00:00:05.532] Browser LOG     0
-[00:00:05.532] Browser LOG     1
-[00:00:05.532] Browser LOG     1
-[00:00:05.548] Server  LOG     0
-[00:00:05.600] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:05.685] Browser LOG     0
-[00:00:05.685] Browser LOG     0
-[00:00:05.685] Browser LOG     0
-[00:00:05.685] Browser LOG     0
-[00:00:05.685] Browser LOG     1
-[00:00:05.685] Browser LOG     1
-[00:00:05.697] Server  LOG     0
-[00:00:05.754] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:05.837] Browser LOG     0
-[00:00:05.838] Browser LOG     0
-[00:00:05.838] Browser LOG     0
-[00:00:05.838] Browser LOG     0
-[00:00:05.838] Browser LOG     1
-[00:00:05.838] Browser LOG     1
-[00:00:05.851] Server  LOG     0
-[00:00:05.899] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:05.972] Browser LOG     0
-[00:00:05.972] Browser LOG     0
-[00:00:05.972] Browser LOG     0
-[00:00:05.972] Browser LOG     0
-[00:00:05.972] Browser LOG     1
-[00:00:05.972] Browser LOG     1
-[00:00:05.985] Server  LOG     0
-[00:00:06.034] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:06.116] Browser LOG     0
-[00:00:06.116] Browser LOG     0
-[00:00:06.116] Browser LOG     0
-[00:00:06.116] Browser LOG     0
-[00:00:06.116] Browser LOG     1
-[00:00:06.116] Browser LOG     1
-[00:00:06.133] Server  LOG     0
-[00:00:06.186] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:06.271] Browser LOG     0
-[00:00:06.271] Browser LOG     0
-[00:00:06.271] Browser LOG     0
-[00:00:06.271] Browser LOG     0
-[00:00:06.271] Browser LOG     1
-[00:00:06.271] Browser LOG     1
-[00:00:06.285] Server  LOG     0
-[00:00:06.336] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:06.407] Browser LOG     0
-[00:00:06.407] Browser LOG     0
-[00:00:06.407] Browser LOG     0
-[00:00:06.407] Browser LOG     0
-[00:00:06.407] Browser LOG     1
-[00:00:06.407] Browser LOG     1
-[00:00:06.418] Server  LOG     0
-[00:00:06.465] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:06.580] Browser LOG     0
-[00:00:06.580] Browser LOG     0
-[00:00:06.580] Browser LOG     0
-[00:00:06.580] Browser LOG     0
-[00:00:06.580] Browser LOG     1
-[00:00:06.580] Browser LOG     1
-[00:00:06.594] Server  LOG     0
-[00:00:06.646] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:06.761] Browser LOG     0
-[00:00:06.761] Browser LOG     0
-[00:00:06.761] Browser LOG     0
-[00:00:06.761] Browser LOG     0
-[00:00:06.761] Browser LOG     1
-[00:00:06.761] Browser LOG     1
-[00:00:06.996] Server  LOG     0
-[00:00:07.060] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:07.175] Browser LOG     0
-[00:00:07.175] Browser LOG     0
-[00:00:07.175] Browser LOG     0
-[00:00:07.175] Browser LOG     0
-[00:00:07.175] Browser LOG     1
-[00:00:07.175] Browser LOG     1
-[00:00:07.291] Server  LOG     0
-[00:00:07.364] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:07.507] Browser LOG     0
-[00:00:07.507] Browser LOG     0
-[00:00:07.507] Browser LOG     0
-[00:00:07.507] Browser LOG     0
-[00:00:07.507] Browser LOG     1
-[00:00:07.507] Browser LOG     1
-[00:00:07.527] Server  LOG     0
-[00:00:07.583] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:07.697] Browser LOG     0
-[00:00:07.697] Browser LOG     0
-[00:00:07.697] Browser LOG     0
-[00:00:07.697] Browser LOG     0
-[00:00:07.697] Browser LOG     1
-[00:00:07.697] Browser LOG     1
-[00:00:07.760] Server  LOG     0
-[00:00:07.816] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:07.929] Browser LOG     0
-[00:00:07.929] Browser LOG     0
-[00:00:07.929] Browser LOG     0
-[00:00:07.929] Browser LOG     0
-[00:00:07.929] Browser LOG     1
-[00:00:07.929] Browser LOG     1
-[00:01:07.114] Server  LOG     0
-[00:01:07.184] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:07.226] Browser LOG     0
-[00:01:07.226] Browser LOG     0
-[00:01:07.226] Browser LOG     0
-[00:01:07.226] Browser LOG     0
-[00:01:07.240] Server  LOG     0
-[00:01:07.298] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:07.392] Browser LOG     0
-[00:01:07.392] Browser LOG     0
-[00:01:07.392] Browser LOG     0
-[00:01:07.392] Browser LOG     0
-[00:01:07.392] Browser LOG     1
-[00:01:07.392] Browser LOG     1
-[00:01:07.405] Server  LOG     0
-[00:01:07.463] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:07.548] Browser LOG     0
-[00:01:07.548] Browser LOG     0
-[00:01:07.548] Browser LOG     0
-[00:01:07.548] Browser LOG     0
-[00:01:07.548] Browser LOG     1
-[00:01:07.548] Browser LOG     1
-[00:01:07.560] Server  LOG     0
-[00:01:07.607] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:07.718] Browser LOG     0
-[00:01:07.719] Browser LOG     0
-[00:01:07.719] Browser LOG     0
-[00:01:07.719] Browser LOG     0
-[00:01:07.719] Browser LOG     1
-[00:01:07.719] Browser LOG     1
-[00:01:17.265] Browser LOG     1
-[00:01:17.265] Browser LOG     1
-[00:01:17.265] Browser LOG     1
-[00:01:17.265] Browser LOG     1
-[00:01:17.265] Browser LOG     1
-[00:01:17.265] Browser LOG     1
-[00:01:18.307] Browser LOG     1
-[00:01:18.307] Browser LOG     1
-[00:01:18.307] Browser LOG     1
-[00:01:18.307] Browser LOG     1
-[00:01:18.307] Browser LOG     1
-[00:01:18.307] Browser LOG     1
-[00:01:23.812] Server  LOG     0
-[00:01:23.871] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:23.948] Browser LOG     0
-[00:01:23.948] Browser LOG     0
-[00:01:23.948] Browser LOG     0
-[00:01:23.948] Browser LOG     0
-[00:01:23.959] Server  LOG     0
-[00:01:24.011] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:24.098] Browser LOG     0
-[00:01:24.098] Browser LOG     0
-[00:01:24.098] Browser LOG     0
-[00:01:24.098] Browser LOG     0
-[00:01:24.111] Server  LOG     0
-[00:01:24.161] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:24.259] Browser LOG     0
-[00:01:24.259] Browser LOG     0
-[00:01:24.259] Browser LOG     0
-[00:01:24.259] Browser LOG     0
-[00:01:24.271] Server  LOG     0
-[00:01:24.327] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:24.432] Browser LOG     0
-[00:01:24.432] Browser LOG     0
-[00:01:24.432] Browser LOG     0
-[00:01:24.432] Browser LOG     0
-[00:01:25.089] Browser LOG     1
-[00:01:25.089] Browser LOG     1
-[00:01:26.454] Server  LOG     0
-[00:01:26.517] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:26.587] Browser LOG     0
-[00:01:26.587] Browser LOG     0
-[00:01:26.587] Browser LOG     0
-[00:01:26.587] Browser LOG     0
-[00:01:26.587] Browser LOG     1
-[00:01:26.587] Browser LOG     1
-[00:01:26.599] Server  LOG     0
-[00:01:26.647] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:26.762] Browser LOG     0
-[00:01:26.762] Browser LOG     0
-[00:01:26.762] Browser LOG     0
-[00:01:26.762] Browser LOG     0
-[00:01:26.762] Browser LOG     1
-[00:01:26.762] Browser LOG     1
-[00:01:26.811] Server  LOG     0
-[00:01:26.874] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:26.948] Browser LOG     0
-[00:01:26.948] Browser LOG     0
-[00:01:26.948] Browser LOG     0
-[00:01:26.948] Browser LOG     0
-[00:01:26.948] Browser LOG     1
-[00:01:26.948] Browser LOG     1
-[00:01:26.961] Server  LOG     0
-[00:01:27.012] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:27.120] Browser LOG     0
-[00:01:27.120] Browser LOG     0
-[00:01:27.120] Browser LOG     0
-[00:01:27.120] Browser LOG     0
-[00:01:27.120] Browser LOG     1
-[00:01:27.120] Browser LOG     1
-[00:01:27.133] Server  LOG     0
-[00:01:27.183] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:27.272] Browser LOG     0
-[00:01:27.272] Browser LOG     0
-[00:01:27.272] Browser LOG     0
-[00:01:27.272] Browser LOG     0
-[00:01:27.272] Browser LOG     1
-[00:01:27.272] Browser LOG     1
-[00:01:27.284] Server  LOG     0
-[00:01:27.340] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:27.482] Browser LOG     0
-[00:01:27.482] Browser LOG     0
-[00:01:27.482] Browser LOG     0
-[00:01:27.482] Browser LOG     0
-[00:01:27.482] Browser LOG     1
-[00:01:27.482] Browser LOG     1
-[00:02:21.985] Server  LOG     0
-[00:02:22.051] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:22.156] Browser LOG     0
-[00:02:22.156] Browser LOG     0
-[00:02:22.156] Browser LOG     0
-[00:02:22.156] Browser LOG     0
-[00:02:22.156] Browser LOG     1
-[00:02:22.156] Browser LOG     1
-[00:02:22.170] Server  LOG     0
-[00:02:22.231] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:22.364] Browser LOG     0
-[00:02:22.364] Browser LOG     0
-[00:02:22.364] Browser LOG     0
-[00:02:22.364] Browser LOG     0
-[00:02:22.364] Browser LOG     1
-[00:02:22.364] Browser LOG     1
-[00:02:22.379] Server  LOG     0
-[00:02:22.433] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:22.545] Browser LOG     0
-[00:02:22.545] Browser LOG     0
-[00:02:22.545] Browser LOG     0
-[00:02:22.545] Browser LOG     0
-[00:02:22.545] Browser LOG     1
-[00:02:22.545] Browser LOG     1
-[00:02:22.560] Server  LOG     0
-[00:02:22.613] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:22.704] Browser LOG     0
-[00:02:22.704] Browser LOG     0
-[00:02:22.704] Browser LOG     0
-[00:02:22.704] Browser LOG     0
-[00:02:22.704] Browser LOG     1
-[00:02:22.704] Browser LOG     1
-[00:02:22.717] Server  LOG     0
-[00:02:22.769] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:22.840] Browser LOG     0
-[00:02:22.840] Browser LOG     0
-[00:02:22.840] Browser LOG     0
-[00:02:22.840] Browser LOG     0
-[00:02:22.840] Browser LOG     1
-[00:02:22.840] Browser LOG     1
-[00:02:22.852] Server  LOG     0
-[00:02:22.900] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:23.018] Browser LOG     0
-[00:02:23.018] Browser LOG     0
-[00:02:23.018] Browser LOG     0
-[00:02:23.018] Browser LOG     0
-[00:02:23.018] Browser LOG     1
-[00:02:23.018] Browser LOG     1
-[00:04:43.235] Server  LOG      ✓ Compiled in 66ms
-[00:04:44.026] Browser LOG     1
-[00:04:44.026] Browser LOG     1
-[00:04:50.770] Server  LOG     0
-[00:04:50.856] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:51.014] Browser LOG     0
-[00:04:51.014] Browser LOG     0
-[00:04:51.014] Browser LOG     0
-[00:04:51.015] Browser LOG     0
-[00:04:51.015] Browser LOG     1
-[00:04:51.015] Browser LOG     1
-[00:05:52.671] Browser LOG     1
-[00:05:52.671] Browser LOG     1
-[00:05:53.763] Browser LOG     1
-[00:05:53.763] Browser LOG     1
-[00:05:53.763] Browser LOG     1
-[00:05:53.763] Browser LOG     1
-[00:05:53.763] Browser LOG     1
-[00:05:53.763] Browser LOG     1
+[00:59:22.449] Browser LOG     0
+[00:59:22.449] Browser LOG     0
+[00:59:22.449] Browser LOG     1
+[00:59:22.449] Browser LOG     1
+[00:59:42.322] Server  LOG      ✓ Compiled in 18ms
+[00:59:43.446] Browser LOG     0
+[00:59:43.446] Browser LOG     0
+[00:59:43.446] Browser LOG     0
+[00:59:43.446] Browser LOG     0
+[00:59:43.446] Browser LOG     1
+[00:59:43.446] Browser LOG     1
+[01:01:08.852] Server  LOG      ✓ Compiled in 21ms
+[01:01:09.446] Browser LOG     0
+[01:01:09.446] Browser LOG     0
+[01:01:09.446] Browser LOG     0
+[01:01:09.446] Browser LOG     0
+[01:01:09.446] Browser LOG     1
+[01:01:09.446] Browser LOG     1
+[01:01:22.678] Server  LOG      ✓ Compiled in 19ms
+[01:01:23.446] Browser ERROR   ./src/features/Postazioni/postazioniSlice.js:5:112
+Parsing ecmascript source code failed
+  3 |
+  4 |
+> 5 | export const getCountStatPostazioniAPI = createAsyncThunk('postazioni/statistics/' , async(_ , {rejectWithValue) => {})
+    |                                                                                                                ^
+  6 |
+  7 |
+  8 |
+
+Unexpected token `)`. Expected ... , *,  (, [, :, , ?, = or an identifier
+
+Import traces:
+  Client Component Browser:
+    ./src/features/Postazioni/postazioniSlice.js [Client Component Browser]
+    ./src/store/store.js [Client Component Browser]
+    ./src/store/ReduxProvider.jsx [Client Component Browser]
+    ./src/store/ReduxProvider.jsx [Server Component]
+    ./src/app/layout.jsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/Postazioni/postazioniSlice.js [Client Component SSR]
+    ./src/store/store.js [Client Component SSR]
+    ./src/store/ReduxProvider.jsx [Client Component SSR]
+    ./src/store/ReduxProvider.jsx [Server Component]
+    ./src/app/layout.jsx [Server Component]
+[01:01:23.446] Browser ERROR   ./src/features/Postazioni/postazioniSlice.js:5:112
+Parsing ecmascript source code failed
+  3 |
+  4 |
+> 5 | export const getCountStatPostazioniAPI = createAsyncThunk('postazioni/statistics/' , async(_ , {rejectWithValue) => {})
+    |                                                                                                                ^
+  6 |
+  7 |
+  8 |
+
+Unexpected token `)`. Expected ... , *,  (, [, :, , ?, = or an identifier
+
+Import traces:
+  Client Component Browser:
+    ./src/features/Postazioni/postazioniSlice.js [Client Component Browser]
+    ./src/store/store.js [Client Component Browser]
+    ./src/store/ReduxProvider.jsx [Client Component Browser]
+    ./src/store/ReduxProvider.jsx [Server Component]
+    ./src/app/layout.jsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/Postazioni/postazioniSlice.js [Client Component SSR]
+    ./src/store/store.js [Client Component SSR]
+    ./src/store/ReduxProvider.jsx [Client Component SSR]
+    ./src/store/ReduxProvider.jsx [Server Component]
+    ./src/app/layout.jsx [Server Component]
+[01:01:29.449] Browser LOG     0
+[01:01:29.449] Browser LOG     0
+[01:01:29.449] Browser LOG     0
+[01:01:29.449] Browser LOG     0
+[01:01:29.449] Browser LOG     1
+[01:01:29.449] Browser LOG     1
+[01:01:29.449] Browser LOG     1
+[01:01:29.449] Browser LOG     1
+[01:01:40.180] Server  LOG      ✓ Compiled in 9ms
+[01:01:40.446] Browser LOG     0
+[01:01:40.446] Browser LOG     0
+[01:01:40.446] Browser LOG     0
+[01:01:40.446] Browser LOG     0
+[01:01:40.446] Browser LOG     1
+[01:01:40.446] Browser LOG     1
+[01:01:51.299] Server  LOG      ✓ Compiled in 27ms
+[01:01:51.444] Browser LOG     0
+[01:01:51.444] Browser LOG     0
+[01:01:51.444] Browser LOG     0
+[01:01:51.444] Browser LOG     0
+[01:01:51.444] Browser LOG     1
+[01:01:51.444] Browser LOG     1
+[01:01:57.317] Server  LOG      ✓ Compiled in 11ms
+[01:01:57.446] Browser LOG     0
+[01:01:57.446] Browser LOG     0
+[01:01:57.446] Browser LOG     0
+[01:01:57.446] Browser LOG     0
+[01:01:57.446] Browser LOG     1
+[01:01:57.446] Browser LOG     1
+[01:02:15.699] Server  LOG      ✓ Compiled in 17ms
+[01:02:16.444] Browser LOG     0
+[01:02:16.445] Browser LOG     0
+[01:02:16.445] Browser LOG     0
+[01:02:16.445] Browser LOG     0
+[01:02:16.445] Browser LOG     1
+[01:02:16.445] Browser LOG     1
+[01:03:22.556] Server  LOG      ✓ Compiled in 9ms
+[01:03:23.446] Browser LOG     0
+[01:03:23.446] Browser LOG     0
+[01:03:23.446] Browser LOG     0
+[01:03:23.446] Browser LOG     0
+[01:03:23.446] Browser LOG     1
+[01:03:23.446] Browser LOG     1
+[01:03:31.918] Server  LOG      ✓ Compiled in 10ms
+[01:03:32.446] Browser LOG     0
+[01:03:32.446] Browser LOG     0
+[01:03:32.446] Browser LOG     0
+[01:03:32.446] Browser LOG     0
+[01:03:32.446] Browser LOG     1
+[01:03:32.446] Browser LOG     1
+[01:03:49.317] Server  LOG      ✓ Compiled in 21ms
+[01:03:50.445] Browser LOG     0
+[01:03:50.445] Browser LOG     0
+[01:03:50.445] Browser LOG     0
+[01:03:50.445] Browser LOG     0
+[01:03:50.445] Browser LOG     1
+[01:03:50.445] Browser LOG     1
+[01:04:08.986] Server  LOG      ✓ Compiled in 11ms
+[01:04:09.444] Browser LOG     0
+[01:04:09.444] Browser LOG     0
+[01:04:09.444] Browser LOG     0
+[01:04:09.444] Browser LOG     0
+[01:04:09.444] Browser LOG     1
+[01:04:09.444] Browser LOG     1
+[01:04:18.500] Server  LOG      ✓ Compiled in 14ms
+[01:04:19.445] Browser LOG     0
+[01:04:19.445] Browser LOG     0
+[01:04:19.445] Browser LOG     0
+[01:04:19.445] Browser LOG     0
+[01:04:19.445] Browser LOG     1
+[01:04:19.445] Browser LOG     1
+[01:04:59.065] Server  LOG      ✓ Compiled in 9ms
+[01:04:59.445] Browser LOG     0
+[01:04:59.446] Browser LOG     0
+[01:04:59.446] Browser LOG     0
+[01:04:59.446] Browser LOG     0
+[01:04:59.446] Browser LOG     1
+[01:04:59.446] Browser LOG     1
+[01:05:05.126] Server  LOG      ✓ Compiled in 10ms
+[01:05:05.446] Browser LOG     0
+[01:05:05.446] Browser LOG     0
+[01:05:05.446] Browser LOG     0
+[01:05:05.446] Browser LOG     0
+[01:05:05.446] Browser LOG     1
+[01:05:05.446] Browser LOG     1
+[01:05:22.119] Server  LOG      ✓ Compiled in 17ms
+[01:05:22.445] Browser LOG     0
+[01:05:22.445] Browser LOG     0
+[01:05:22.445] Browser LOG     0
+[01:05:22.445] Browser LOG     0
+[01:05:22.445] Browser LOG     1
+[01:05:22.445] Browser LOG     1
+[01:05:44.492] Server  LOG      ✓ Compiled in 16ms
+[01:05:45.446] Browser LOG     0
+[01:05:45.446] Browser LOG     0
+[01:05:45.446] Browser LOG     0
+[01:05:45.446] Browser LOG     0
+[01:05:45.446] Browser LOG     1
+[01:05:45.446] Browser LOG     1
+[01:06:20.970] Server  LOG      ✓ Compiled in 54ms
+[01:06:21.446] Browser LOG     1
+[01:06:21.446] Browser LOG     1
+[01:07:14.333] Server  LOG      ✓ Compiled in 76ms
+[01:07:15.446] Browser LOG     1
+[01:07:15.446] Browser LOG     1
+[01:07:15.446] Browser LOG     1
+[01:07:15.446] Browser LOG     1
+[01:07:15.446] Browser LOG     1
+[01:07:15.446] Browser LOG     1
+[01:07:17.525] Server  LOG      ✓ Compiled in 32ms
+[01:07:18.446] Browser LOG     1
+[01:07:18.446] Browser LOG     1
+[01:07:25.157] Server  LOG      ✓ Compiled in 30ms
+[01:07:25.446] Browser LOG     1
+[01:07:25.446] Browser LOG     1
+[01:07:38.765] Server  LOG      ✓ Compiled in 45ms
+[01:07:39.446] Browser LOG     1
+[01:07:39.446] Browser LOG     1
+[01:07:39.446] Browser LOG     1
+[01:07:39.446] Browser LOG     1
+[01:07:39.446] Browser LOG     1
+[01:07:39.446] Browser LOG     1
+[01:07:39.446] Browser LOG     1
+[01:07:39.446] Browser LOG     1
+[01:07:42.213] Server  LOG     0
+[01:07:42.300] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:42.453] Browser LOG     0
+[01:07:42.453] Browser LOG     0
+[01:07:42.453] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className={" bg-white text-white"}
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[01:07:42.453] Browser LOG     0
+[01:07:42.453] Browser LOG     0
+[01:07:42.453] Browser LOG     0
+[01:07:42.453] Browser LOG     0
+[01:07:42.453] Browser LOG     1
+[01:07:42.453] Browser LOG     1
+[01:07:42.472] Server  LOG     0
+[01:07:42.526] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:42.623] Browser LOG     0
+[01:07:42.623] Browser LOG     0
+[01:07:42.623] Browser LOG     0
+[01:07:42.623] Browser LOG     0
+[01:07:42.623] Browser LOG     1
+[01:07:42.623] Browser LOG     1
+[01:07:42.623] Browser LOG     1
+[01:07:42.623] Browser LOG     1
+[01:07:42.637] Server  LOG     0
+[01:07:42.686] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:42.802] Browser LOG     0
+[01:07:42.802] Browser LOG     0
+[01:07:42.802] Browser LOG     0
+[01:07:42.802] Browser LOG     0
+[01:07:42.802] Browser LOG     0
+[01:07:42.802] Browser LOG     0
+[01:07:42.802] Browser LOG     1
+[01:07:42.802] Browser LOG     1
+[01:15:23.158] Server  LOG      ✓ Compiled in 10ms
+[01:15:23.445] Browser LOG     0
+[01:15:23.445] Browser LOG     0
+[01:15:23.445] Browser LOG     0
+[01:15:23.445] Browser LOG     0
+[01:15:23.445] Browser LOG     0
+[01:15:23.445] Browser LOG     0
+[01:15:23.445] Browser LOG     1
+[01:15:23.445] Browser LOG     1
+[01:15:43.460] Server  LOG     0
+[01:15:43.553] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:43.732] Browser LOG     0
+[01:15:43.732] Browser LOG     0
+[01:15:43.732] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className={" bg-white text-white"}
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[01:15:43.732] Browser LOG     0
+[01:15:43.732] Browser LOG     0
+[01:15:43.732] Browser LOG     0
+[01:15:43.732] Browser LOG     0
+[01:15:43.732] Browser LOG     1
+[01:15:43.732] Browser LOG     1
+[01:15:43.749] Server  LOG     0
+[01:15:43.803] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:43.911] Browser LOG     0
+[01:15:43.911] Browser LOG     0
+[01:15:43.911] Browser LOG     0
+[01:15:43.911] Browser LOG     0
+[01:15:43.911] Browser LOG     0
+[01:15:43.911] Browser LOG     0
+[01:15:43.911] Browser LOG     1
+[01:15:43.911] Browser LOG     1
+[01:15:43.925] Server  LOG     0
+[01:15:43.983] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:44.098] Browser LOG     0
+[01:15:44.098] Browser LOG     0
+[01:15:44.098] Browser LOG     0
+[01:15:44.098] Browser LOG     0
+[01:15:44.098] Browser LOG     0
+[01:15:44.098] Browser LOG     0
+[01:15:44.098] Browser LOG     1
+[01:15:44.098] Browser LOG     1
+[01:15:44.348] Server  LOG     0
+[01:15:44.416] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:44.530] Browser LOG     0
+[01:15:44.530] Browser LOG     0
+[01:15:44.530] Browser LOG     0
+[01:15:44.530] Browser LOG     0
+[01:15:44.530] Browser LOG     1
+[01:15:44.530] Browser LOG     1
+[01:15:44.530] Browser LOG     1
+[01:15:44.530] Browser LOG     1
+[01:15:44.627] Server  LOG     0
+[01:15:44.693] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:44.693] Browser LOG     0
+[01:15:44.693] Browser LOG     0
+[01:15:44.788] Browser LOG     0
+[01:15:44.788] Browser LOG     0
+[01:15:44.788] Browser LOG     0
+[01:15:44.788] Browser LOG     0
+[01:15:44.788] Browser LOG     1
+[01:15:44.788] Browser LOG     1
+[01:15:44.801] Server  LOG     0
+[01:15:44.851] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:44.966] Browser LOG     0
+[01:15:44.966] Browser LOG     0
+[01:15:44.966] Browser LOG     0
+[01:15:44.966] Browser LOG     0
+[01:15:44.966] Browser LOG     1
+[01:15:44.966] Browser LOG     1
+[01:15:44.966] Browser LOG     1
+[01:15:44.966] Browser LOG     1
+[01:15:44.983] Server  LOG     0
+[01:15:45.035] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:45.139] Browser LOG     0
+[01:15:45.139] Browser LOG     0
+[01:15:45.139] Browser LOG     0
+[01:15:45.139] Browser LOG     0
+[01:15:45.139] Browser LOG     1
+[01:15:45.139] Browser LOG     1
+[01:15:45.139] Browser LOG     1
+[01:15:45.139] Browser LOG     1
+[01:15:45.154] Server  LOG     0
+[01:15:45.207] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:45.307] Browser LOG     0
+[01:15:45.307] Browser LOG     0
+[01:15:45.308] Browser LOG     0
+[01:15:45.308] Browser LOG     0
+[01:15:45.308] Browser LOG     0
+[01:15:45.308] Browser LOG     0
+[01:15:45.308] Browser LOG     1
+[01:15:45.308] Browser LOG     1
+[01:15:45.323] Server  LOG     0
+[01:15:45.375] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:45.489] Browser LOG     0
+[01:15:45.489] Browser LOG     0
+[01:15:45.489] Browser LOG     0
+[01:15:45.489] Browser LOG     0
+[01:15:45.489] Browser LOG     1
+[01:15:45.489] Browser LOG     1
+[01:15:45.489] Browser LOG     1
+[01:15:45.489] Browser LOG     1
+[01:15:45.764] Server  LOG     0
+[01:15:45.826] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:45.969] Browser LOG     0
+[01:15:45.969] Browser LOG     0
+[01:15:45.969] Browser LOG     0
+[01:15:45.969] Browser LOG     0
+[01:15:45.969] Browser LOG     0
+[01:15:45.969] Browser LOG     0
+[01:15:45.969] Browser LOG     1
+[01:15:45.969] Browser LOG     1
+[01:15:46.089] Server  LOG     0
+[01:15:46.174] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:46.292] Browser LOG     0
+[01:15:46.292] Browser LOG     0
+[01:15:46.292] Browser LOG     0
+[01:15:46.292] Browser LOG     0
+[01:15:46.292] Browser LOG     1
+[01:15:46.292] Browser LOG     1
+[01:15:46.292] Browser LOG     1
+[01:15:46.292] Browser LOG     1
+[01:15:46.514] Server  LOG     0
+[01:15:46.581] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:46.695] Browser LOG     0
+[01:15:46.695] Browser LOG     0
+[01:15:46.696] Browser LOG     0
+[01:15:46.696] Browser LOG     0
+[01:15:46.696] Browser LOG     1
+[01:15:46.696] Browser LOG     1
+[01:15:46.696] Browser LOG     1
+[01:15:46.696] Browser LOG     1
+[01:17:43.421] Server  LOG      ✓ Compiled in 28ms
+[01:17:43.448] Server  LOG     0
+[01:17:43.507] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:17:44.448] Browser LOG     0
+[01:17:44.448] Browser LOG     0
+[01:17:44.448] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className={" bg-white text-white"}
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[01:17:44.448] Browser LOG     0
+[01:17:44.448] Browser LOG     0
+[01:17:44.448] Browser LOG     1
+[01:17:44.448] Browser LOG     1
+[01:17:44.448] Browser LOG     1
+[01:17:44.448] Browser LOG     1
+[01:17:58.991] Server  LOG      ✓ Compiled in 8ms
+[01:17:59.445] Browser ERROR   ./src/store/store.js:16:29
+Parsing ecmascript source code failed
+  14 |         libri : libriSlice,
+  15 |         postazioni : postazioniSlice,
+> 16 |         tessere_bibilioteca ; tessere_bibliotecaSlice,
+     |                             ^
+  17 |
+  18 |     },
+  19 | });
+
+Unexpected token `;`. Expected ... , *,  (, [, :, , ?, = or an identifier
+
+Import traces:
+  Client Component Browser:
+    ./src/store/store.js [Client Component Browser]
+    ./src/store/ReduxProvider.jsx [Client Component Browser]
+    ./src/store/ReduxProvider.jsx [Server Component]
+    ./src/app/layout.jsx [Server Component]
+
+  Client Component SSR:
+    ./src/store/store.js [Client Component SSR]
+    ./src/store/ReduxProvider.jsx [Client Component SSR]
+    ./src/store/ReduxProvider.jsx [Server Component]
+    ./src/app/layout.jsx [Server Component]
+[01:17:59.445] Browser ERROR   ./src/store/store.js:16:29
+Parsing ecmascript source code failed
+  14 |         libri : libriSlice,
+  15 |         postazioni : postazioniSlice,
+> 16 |         tessere_bibilioteca ; tessere_bibliotecaSlice,
+     |                             ^
+  17 |
+  18 |     },
+  19 | });
+
+Unexpected token `;`. Expected ... , *,  (, [, :, , ?, = or an identifier
+
+Import traces:
+  Client Component Browser:
+    ./src/store/store.js [Client Component Browser]
+    ./src/store/ReduxProvider.jsx [Client Component Browser]
+    ./src/store/ReduxProvider.jsx [Server Component]
+    ./src/app/layout.jsx [Server Component]
+
+  Client Component SSR:
+    ./src/store/store.js [Client Component SSR]
+    ./src/store/ReduxProvider.jsx [Client Component SSR]
+    ./src/store/ReduxProvider.jsx [Server Component]
+    ./src/app/layout.jsx [Server Component]
+[01:18:03.449] Browser LOG     0
+[01:18:03.449] Browser LOG     0
+[01:18:03.449] Browser LOG     0
+[01:18:03.449] Browser LOG     0
+[01:18:03.449] Browser LOG     1
+[01:18:03.449] Browser LOG     1
+[01:18:03.449] Browser LOG     1
+[01:18:03.449] Browser LOG     1
+[01:18:03.449] Browser LOG     1
+[01:18:03.449] Browser LOG     1
+[01:20:00.170] Server  LOG      ✓ Compiled in 10ms
+[01:20:00.445] Browser LOG     0
+[01:20:00.445] Browser LOG     0
+[01:20:00.445] Browser LOG     0
+[01:20:00.445] Browser LOG     0
+[01:20:00.445] Browser LOG     1
+[01:20:00.445] Browser LOG     1
+[01:20:00.445] Browser LOG     1
+[01:20:00.445] Browser LOG     1
+[01:20:06.886] Server  LOG      ✓ Compiled in 8ms
+[01:20:07.446] Browser LOG     0
+[01:20:07.446] Browser LOG     0
+[01:20:07.446] Browser LOG     0
+[01:20:07.446] Browser LOG     0
+[01:20:07.446] Browser LOG     0
+[01:20:07.446] Browser LOG     0
+[01:20:07.446] Browser LOG     1
+[01:20:07.446] Browser LOG     1
+[01:20:34.510] Server  LOG      ✓ Compiled in 14ms
+[01:20:35.445] Browser LOG     0
+[01:20:35.445] Browser LOG     0
+[01:20:35.445] Browser LOG     0
+[01:20:35.445] Browser LOG     0
+[01:20:35.445] Browser LOG     1
+[01:20:35.445] Browser LOG     1
+[01:20:35.445] Browser LOG     1
+[01:20:35.445] Browser LOG     1
+[01:20:42.183] Server  LOG      ✓ Compiled in 9ms
+[01:20:42.446] Browser LOG     0
+[01:20:42.446] Browser LOG     0
+[01:20:42.446] Browser LOG     0
+[01:20:42.446] Browser LOG     0
+[01:20:42.446] Browser LOG     1
+[01:20:42.446] Browser LOG     1
+[01:20:42.446] Browser LOG     1
+[01:20:42.446] Browser LOG     1
+[01:20:49.890] Server  LOG      ✓ Compiled in 18ms
+[01:20:50.446] Browser LOG     0
+[01:20:50.446] Browser LOG     0
+[01:20:50.446] Browser LOG     0
+[01:20:50.446] Browser LOG     0
+[01:20:50.446] Browser LOG     1
+[01:20:50.446] Browser LOG     1
+[01:20:50.446] Browser LOG     1
+[01:20:50.446] Browser LOG     1
+[01:21:12.675] Server  LOG      ✓ Compiled in 7ms
+[01:21:13.446] Browser LOG     0
+[01:21:13.446] Browser LOG     0
+[01:21:13.446] Browser LOG     0
+[01:21:13.446] Browser LOG     0
+[01:21:13.446] Browser LOG     1
+[01:21:13.446] Browser LOG     1
+[01:21:13.446] Browser LOG     1
+[01:21:13.446] Browser LOG     1
+[01:21:20.492] Server  LOG      ✓ Compiled in 8ms
+[01:21:21.446] Browser LOG     0
+[01:21:21.446] Browser LOG     0
+[01:21:21.446] Browser LOG     0
+[01:21:21.446] Browser LOG     0
+[01:21:21.446] Browser LOG     1
+[01:21:21.446] Browser LOG     1
+[01:21:21.446] Browser LOG     1
+[01:21:21.446] Browser LOG     1
+[01:21:33.664] Server  LOG      ✓ Compiled in 11ms
+[01:21:34.446] Browser LOG     0
+[01:21:34.446] Browser LOG     0
+[01:21:34.446] Browser LOG     0
+[01:21:34.446] Browser LOG     0
+[01:21:34.446] Browser LOG     1
+[01:21:34.446] Browser LOG     1
+[01:21:34.446] Browser LOG     1
+[01:21:34.446] Browser LOG     1
+[01:21:48.723] Server  LOG      ✓ Compiled in 8ms
+[01:21:49.446] Browser LOG     0
+[01:21:49.446] Browser LOG     0
+[01:21:49.447] Browser LOG     0
+[01:21:49.447] Browser LOG     0
+[01:21:49.447] Browser LOG     1
+[01:21:49.447] Browser LOG     1
+[01:21:49.447] Browser LOG     1
+[01:21:49.447] Browser LOG     1
+[01:28:33.830] Server  LOG      ✓ Compiled in 39ms
+[01:28:34.446] Browser LOG     1
+[01:28:34.446] Browser LOG     1
+[01:29:30.281] Server  LOG      ✓ Compiled in 47ms
+[01:29:30.446] Browser ERROR   uncaughtError: ReferenceError: state is not defined
+[01:29:41.447] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:29:41.494] Server  LOG      ✓ Compiled in 45ms
+[01:29:41.531] Server  LOG     0
+[01:29:41.609] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:42.448] Browser LOG     0
+[01:29:42.448] Browser LOG     0
+[01:29:42.448] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className={" bg-white text-white"}
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[01:29:42.448] Browser LOG     0
+[01:29:42.448] Browser LOG     0
+[01:29:42.448] Browser LOG     1
+[01:29:42.448] Browser LOG     1
+[01:29:42.448] Browser LOG     1
+[01:29:42.448] Browser LOG     1
+[01:29:54.349] Server  LOG      ✓ Compiled in 42ms
+[01:29:54.445] Browser LOG     1
+[01:29:54.445] Browser LOG     1
+[01:30:09.294] Server  LOG      ✓ Compiled in 31ms
+[01:30:09.445] Browser LOG     1
+[01:30:09.445] Browser LOG     1
+[01:30:09.445] Browser LOG     1
+[01:30:09.445] Browser LOG     1
+[01:30:09.445] Browser LOG     1
+[01:30:09.445] Browser LOG     1
+[01:30:09.445] Browser LOG     1
+[01:30:09.445] Browser LOG     1
+[01:30:09.445] Browser LOG     1
+[01:30:09.445] Browser LOG     1
+[01:30:31.466] Server  LOG     0
+[01:30:31.536] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:31.682] Browser LOG     0
+[01:30:31.682] Browser LOG     0
+[01:30:31.682] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className={" bg-white text-white"}
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[01:30:31.682] Browser LOG     0
+[01:30:31.682] Browser LOG     0
+[01:30:31.682] Browser LOG     1
+[01:30:31.682] Browser LOG     1
+[01:30:31.682] Browser LOG     1
+[01:30:31.682] Browser LOG     1
+[01:30:31.682] Browser LOG     1
+[01:30:31.682] Browser LOG     1
+[01:30:31.697] Server  LOG     0
+[01:30:31.750] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:31.893] Browser LOG     0
+[01:30:31.893] Browser LOG     0
+[01:30:31.893] Browser LOG     0
+[01:30:31.893] Browser LOG     0
+[01:30:31.893] Browser LOG     0
+[01:30:31.893] Browser LOG     0
+[01:30:31.893] Browser LOG     1
+[01:30:31.893] Browser LOG     1
+[01:30:31.893] Browser LOG     1
+[01:30:31.893] Browser LOG     1
