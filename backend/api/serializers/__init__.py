@@ -1,5 +1,6 @@
 from .autore import AutoreGetSerializer
-from .libro import LibroManageSerializer
+from .libro import LibroManageSerializer , LibroStatisticSerializer
+from .tessera_biblioteca import TesseraBibStatSerializer , TesseraDetailSerializer
 
 __all__ = [
 
@@ -9,5 +10,11 @@ __all__ = [
 
     #LIBRO
 
-    'LibroManageSerializer'
+    'LibroManageSerializer',
+    'LibroStatisticSerializer',
+
+    #TESSERA BIBLIOTECA
+
+    'TesseraBibStatSerializer',
+    'TesseraDetailSerializer'
 ]

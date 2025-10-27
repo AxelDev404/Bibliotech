@@ -20,3 +20,13 @@ class LibroManageSerializer(serializers.ModelSerializer):
 
         fields = ('isbn' , 'titolo' , 'data_uscita' , 'editore' , 'formato' , 'lingua' , 'autore_libro' , 'postazione')
 
+
+
+class LibroStatisticSerializer(serializers.ModelSerializer):
+
+    class Meta:
+
+        model = Libro
+
+        fields = ('isbn' , 'titolo' , 'data_uscita' , 'editore' )
+

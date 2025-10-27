@@ -195,11 +195,11 @@ var _s = __turbopack_context__.k.signature();
 function SideBar() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(79);
-    if ($[0] !== "c9c343a4598a3cf849fd0f66b18dc9f9c5fc7067a8f65bc35c50b6594b3c2592") {
+    if ($[0] !== "ea9f0970f85fb0dec445f3907308df3f7bf5f147668a066f9fc01cd543fad2d7") {
         for(let $i = 0; $i < 79; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "c9c343a4598a3cf849fd0f66b18dc9f9c5fc7067a8f65bc35c50b6594b3c2592";
+        $[0] = "ea9f0970f85fb0dec445f3907308df3f7bf5f147668a066f9fc01cd543fad2d7";
     }
     const [isSidebarOpen, setIsSidebarOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     let t0;
@@ -302,7 +302,7 @@ function SideBar() {
     let t8;
     if ($[16] !== router) {
         t8 = ({
-            "SideBar[<button>.onClick]": ()=>router.replace("dashboard")
+            "SideBar[<button>.onClick]": ()=>router.replace("/dashboard")
         })["SideBar[<button>.onClick]"];
         $[16] = router;
         $[17] = t8;
@@ -367,7 +367,7 @@ function SideBar() {
     let t12;
     if ($[24] !== router) {
         t12 = ({
-            "SideBar[<button>.onClick]": ()=>router.replace("gestione-libri")
+            "SideBar[<button>.onClick]": ()=>router.replace("/gestione-libri")
         })["SideBar[<button>.onClick]"];
         $[24] = router;
         $[25] = t12;
@@ -432,7 +432,7 @@ function SideBar() {
     let t16;
     if ($[32] !== router) {
         t16 = ({
-            "SideBar[<button>.onClick]": ()=>router.replace("cerca-libro")
+            "SideBar[<button>.onClick]": ()=>router.replace("/cerca-libro")
         })["SideBar[<button>.onClick]"];
         $[32] = router;
         $[33] = t16;
@@ -497,7 +497,7 @@ function SideBar() {
     let t20;
     if ($[40] !== router) {
         t20 = ({
-            "SideBar[<button>.onClick]": ()=>router.replace("carica-libro")
+            "SideBar[<button>.onClick]": ()=>router.replace("/carica-libro")
         })["SideBar[<button>.onClick]"];
         $[40] = router;
         $[41] = t20;
@@ -1057,11 +1057,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Banner$
 ;
 function CaricaLibro() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(3);
-    if ($[0] !== "1c8f8b3b8ea9a7ea942862538f2639ca2420256eb29d2b967ab18d320eda9e5d") {
+    if ($[0] !== "3d56cd7b05f0c9f4ed0b75df35c335febf4c983f3c5f4e534954854e7dd63dcc") {
         for(let $i = 0; $i < 3; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1c8f8b3b8ea9a7ea942862538f2639ca2420256eb29d2b967ab18d320eda9e5d";
+        $[0] = "3d56cd7b05f0c9f4ed0b75df35c335febf4c983f3c5f4e534954854e7dd63dcc";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1079,7 +1079,7 @@ function CaricaLibro() {
         t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AppWrapper$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$PrivateRoute$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex min-h-screen bg-black text-white",
+                    className: "flex min-h-screen bg-white",
                     children: [
                         t0,
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1088,20 +1088,20 @@ function CaricaLibro() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Banner$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                     fileName: "[project]/src/app/carica-libro/page.jsx",
                                     lineNumber: 26,
-                                    columnNumber: 162
+                                    columnNumber: 151
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex flex-wrap gap-4 py-10 px-6"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/carica-libro/page.jsx",
                                     lineNumber: 26,
-                                    columnNumber: 172
+                                    columnNumber: 161
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/carica-libro/page.jsx",
                             lineNumber: 26,
-                            columnNumber: 95
+                            columnNumber: 84
                         }, this)
                     ]
                 }, void 0, true, {

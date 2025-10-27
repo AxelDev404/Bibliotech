@@ -16,7 +16,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
-import BackupTableIcon from '@mui/icons-material/BackupTable';
+import BadgeIcon from '@mui/icons-material/Badge';
 
 //-------------------ICONS-------------------//
 
@@ -54,29 +54,36 @@ export default function SideBar(){
                 <div className="flex flex-col items-start gap-6 p-4 text-sm text-gray-300 flex-1 overflow-y-auto">
 
                     <div className="flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white w-full">
-                        <button onClick={() => router.replace('dashboard')}  className="w-full text-left h-12 flex items-center">
+                        <button onClick={() => router.replace('/dashboard')}  className="w-full text-left h-12 flex items-center">
                             <DashboardIcon titleAccess='Dashboard'/>
                             {isSidebarOpen && <span className="px-3">Dashboard</span>}
                         </button>
                     </div>
                     
                     <div className="flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white  w-full">
-                        <button onClick={() => router.replace('gestione-libri')} className="w-full text-left h-12 flex items-center">
-                            <FormatListBulletedIcon titleAccess='Gestione documenti' />
+                        <button onClick={() => router.replace('/gestione-libri')} className="w-full text-left h-12 flex items-center">
+                            <FormatListBulletedIcon titleAccess='Gestione libri' />
                             {isSidebarOpen && <span className="px-3">Gestione libri</span>}
                         </button>
                     </div>
                     
                     <div className="flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white w-full">
-                        <button onClick={() => router.replace('cerca-libro')}  className="w-full text-left h-12 flex items-center">
-                            <AutoStoriesIcon titleAccess='Cerca documenti'/>
+                        <button onClick={() => router.replace('/cerca-libro')}  className="w-full text-left h-12 flex items-center">
+                            <AutoStoriesIcon titleAccess='Cerca libri'/>
                             {isSidebarOpen && <span className="px-3">Cerca libro</span>}
                         </button>
                     </div>
 
                     <div className="flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white  w-full">
-                        <button  onClick={() => router.replace('carica-libro')} className="w-full text-left h-12 flex items-center">
-                            <ImportContactsIcon titleAccess='carica documento' />
+                        <button  onClick={() => router.replace('/carica-tessera')} className="w-full text-left h-12 flex items-center">
+                            <BadgeIcon titleAccess='carica tesserato' />
+                            {isSidebarOpen && <span className="px-3">Registra tesserato</span>}
+                        </button>
+                    </div>
+
+                    <div className="flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white  w-full">
+                        <button  onClick={() => router.replace('/carica-libro')} className="w-full text-left h-12 flex items-center">
+                            <ImportContactsIcon titleAccess='carica libro' />
                             {isSidebarOpen && <span className="px-3">Carica libro</span>}
                         </button>
                     </div>

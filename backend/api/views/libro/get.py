@@ -24,7 +24,7 @@ import traceback
 import os
 
 from ...models.libro import Libro
-from ...serializers.libro import LibroManageSerializer
+from ...serializers.libro import LibroManageSerializer , LibroStatisticSerializer
 
 #ultimi_10 = MioModello.objects.order_by('-id')[:10]
 
@@ -50,6 +50,28 @@ def get_libri_table(request):
 
 
 @api_view(['GET'])
+def get_libro_pagina(request , isbn):
+
+    if request.method == 'GET':
+
+        try:
+
+            model = Libro.objects.get(isbn = isbn)
+            serializer = LibroManageSerializer(model)
+            
+            if not model:
+                return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)
+            else:
+                return Response(serializer.data , status=status.HTTP_200_OK)
+        
+        except Libro.DoesNotExist:
+            return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)
+        
+
+
+#GET STAT VIEW'S
+
+@api_view(['GET'])
 def get_totale_libri(request):
 
     if request.method == 'GET':
@@ -65,4 +87,24 @@ def get_totale_libri(request):
                 return Response({'count' : count} , status=status.HTTP_200_OK)
 
         except:
+            return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)
+        
+
+
+@api_view(['GET'])
+def get_ultimi_libri(request):
+
+    if request.method == 'GET':
+
+        try:
+
+            model = Libro.objects.order_by('-isbn')[:10]
+            serializer = LibroStatisticSerializer(model , many = True)
+
+            if not model.exists():
+                return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)
+            else:
+                return Response(serializer.data , status=status.HTTP_200_OK)
+
+        except Libro.DoesNotExist:
             return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)

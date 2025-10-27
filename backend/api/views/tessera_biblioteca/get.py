@@ -25,7 +25,10 @@ import os
 
 
 from ...models.tessera_biblioteca import TesseraBiblioteca
+from ...serializers.tessera_biblioteca import TesseraBibStatSerializer , TesseraDetailSerializer
 
+
+#GET STATISTICA VIEW
 
 @api_view(['GET'])
 def get_totale_tessere(request):
@@ -43,4 +46,49 @@ def get_totale_tessere(request):
                 return Response({'count' : count} , status=status.HTTP_200_OK)
 
         except:
+            return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)
+        
+
+
+@api_view(['GET'])
+def get_ultime_tessere(request):
+
+    if request.method == 'GET':
+
+        try:
+
+            model = TesseraBiblioteca.objects.order_by('-id_tessera')
+            serializer = TesseraBibStatSerializer(model , many = True)
+
+            if not model.exists():
+                return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)
+            
+            else:
+                return Response(serializer.data , status=status.HTTP_200_OK)
+        
+        except TesseraBiblioteca.DoesNotExist:
+            return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)
+        
+
+
+#GET DETAIL VIEW
+
+@api_view(['GET'])
+def get_detail_tessera_biblioteca(request , id_tessera):
+
+    if request.method == 'GET':
+
+        try:
+
+            model = TesseraBiblioteca.objects.get(id_tessera = id_tessera)
+            serializer = TesseraDetailSerializer(model)
+
+            if not model:
+                return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)
+            
+            else:
+                return Response(serializer.data , status=status.HTTP_200_OK)
+
+        
+        except TesseraBiblioteca.DoesNotExist:
             return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)
