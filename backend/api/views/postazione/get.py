@@ -25,7 +25,10 @@ import os
 
 
 from ...models.postazione import Postazione
+from ...serializers.postazione import SelectPostazioneSerializer
 
+
+#STATISTICA VIEW
 
 @api_view(['GET'])
 def get_totale_postazioni(request):
@@ -41,6 +44,27 @@ def get_totale_postazioni(request):
             
             else:
                 return Response({'count' : count} , status=status.HTTP_200_OK)
+
+        except Postazione.DoesNotExist:
+            return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)
+        
+
+
+#SELECTION HELPER VIEW
+@api_view(['GET'])
+def get_selection_postazione(request):
+
+    if request.method == 'GET':
+
+        try:
+
+            model = Postazione.objects.all()
+            serializer = SelectPostazioneSerializer(model ,  many=True)
+
+            if not model.exists():
+                return Response({'Message' , 'obj not found'})
+            else:
+                return Response(serializer.data , status=status.HTTP_200_OK)
 
         except Postazione.DoesNotExist:
             return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)

@@ -30,7 +30,7 @@ export default function InsertTesseraPage() {
                                     Inserisci Nuovo Tesserato
                                 </h1>
 
-                                <form className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <form className=" sm:grid-cols-2 gap-6">
 
                                     <div>
                                         <label className="block text-gray-700 mb-2">Nome</label>

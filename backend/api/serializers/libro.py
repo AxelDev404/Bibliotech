@@ -30,3 +30,12 @@ class LibroStatisticSerializer(serializers.ModelSerializer):
 
         fields = ('isbn' , 'titolo' , 'data_uscita' , 'editore' )
 
+
+
+class LibroPostSerializer(serializers.ModelSerializer):
+
+    class Meta:
+
+        model = Libro
+        
+        fields = ('isbn' , 'titolo' , 'data_uscita' , 'editore' , 'formato' , 'lingua' , 'postazione')

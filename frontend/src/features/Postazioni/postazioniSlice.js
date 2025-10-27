@@ -1,5 +1,5 @@
 import { createAsyncThunk , createSlice } from "@reduxjs/toolkit";  
-import { fetchCountStatPostazioni } from "@/api/apiPostazioni";
+import { fetchCountStatPostazioni , fetchHelperSelectionPostazioni } from "@/api/apiPostazioni";
 
 
 //-----------------------------------------------------------GESTIONE STATISTICA-----------------------------------------------------------//
@@ -16,6 +16,15 @@ export const getCountStatPostazioniAPI = createAsyncThunk('postazioni/statistics
     
         return rejectWithValue(err.response?.data || {"errore" : "Si è verificato un problema"});
     }
+
+})
+
+
+//-----------------------------------------------------------HELPER SELEZIONI-----------------------------------------------------------//
+
+
+export const getHelperSelectionPostazioni = createAsyncThunk('postazioni/helper-selection-postazioni/' , async(_ , {rejectWithValue}) => {
+    
 
 })
 

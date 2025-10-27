@@ -45,8 +45,6 @@ export default function InsertLibroPage() {
                             
                         </h1>
 
-                        
-
 
                         <div className=" text-left py-4">
                             
@@ -101,8 +99,6 @@ export default function InsertLibroPage() {
                         </div>
 
                         <hr />
-
-
 
 
                         {popupAutore.open && (
