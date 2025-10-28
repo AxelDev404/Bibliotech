@@ -30,46 +30,46 @@ export default function InsertTesseraPage() {
                                     Inserisci Nuovo Tesserato
                                 </h1>
 
-                                <form className=" sm:grid-cols-2 gap-6">
+                                <form className=" sm:grid-cols-2 gap-40">
 
-                                    <div>
+                                    <div className="mb-5">
                                         <label className="block text-gray-700 mb-2">Nome</label>
-                                        <input type="text" className="w-full border text-gray-700 border-gray-300 rounded px-3 py-2" />
+                                        <input type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
                                     </div>
 
-                                    <div>
+                                    <div className="mb-5">
                                         <label className="block text-gray-700 mb-2">Cognome</label>
-                                        <input type="text" className="w-full border text-gray-700 border-gray-300 rounded px-3 py-2" />
+                                        <input type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
                                     </div>
 
-                                    <div>
+                                    <div className="mb-5"> 
                                         <label className="block text-gray-700 mb-2">Codice Fiscale</label>
-                                        <input type="text" className="w-full border text-gray-700 border-gray-300 rounded px-3 py-2" />
+                                        <input type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
                                     </div>
 
-                                    <div>
+                                    <div className="mb-5">
                                         <label className="block text-gray-700 mb-2">Data di nascita</label>
-                                        <input type="date" className="w-full text-gray-700 border border-gray-300 rounded px-3 py-2" />
+                                        <input type="date" className="w-full text-gray-700 border bg-gray-100 border-gray-400 rounded px-3 py-2" />
                                     </div>
 
-                                    <div>
+                                    <div className="mb-5">
                                         <label className="block text-gray-700 mb-2">Telefono</label>
-                                        <input type="text" className="w-full border text-gray-700 border-gray-300 rounded px-3 py-2" />
+                                        <input type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
                                     </div>
 
-                                    <div>
+                                    <div className="mb-5">
                                         <label className="block text-gray-700 mb-2">Email</label>
-                                        <input type="email" className="w-full border text-gray-700 border-gray-300 rounded px-3 py-2" />
+                                        <input type="email" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
                                     </div>
 
-                                    <div>
+                                    <div className="mb-5">
                                         <label className="block text-gray-700 mb-2">Indirizzo</label>
-                                        <input type="text" className="w-full border text-gray-700 border-gray-300 rounded px-3 py-2" />
+                                        <input type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
                                     </div>
 
-                                    <div>
+                                    <div className="mb-5">
                                         <label className="block text-gray-700 mb-2">Utente Operatore</label>
-                                        <input type="text" className="w-full border text-gray-700 border-gray-300 rounded px-3 py-2" />
+                                        <input type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
                                     </div>
 
                                     <div className="mt-6 flex justify-center gap-4 col-span-full">

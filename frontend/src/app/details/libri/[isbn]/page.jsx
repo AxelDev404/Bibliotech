@@ -57,7 +57,7 @@ export default function LibroPage() {
 
                                         <div className="flex justify-between border-b pb-2">
                                             <h2 className="text-sm text-gray-500">Titolo</h2>
-                                            <p className="text-lg font-medium text-gray-900">{libro?.titolo || "----"}</p>
+                                            <input className="text-lg w-96 h-10 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-gray-100 " value={libro?.titolo || "----"} />
                                         </div>
 
                                         <div className="flex justify-between border-b pb-2">

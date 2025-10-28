@@ -1,5 +1,5 @@
 import { createAsyncThunk , createSlice, isRejectedWithValue } from "@reduxjs/toolkit";
-import { fetchTableLibri , fetchCountSatat, fetchLastInsertBookStat , fetchLibroDetailPage } from "@/api/apiLibri";
+import { fetchTableLibri , fetchCountSatat, fetchLastInsertBookStat , fetchLibroDetailPage , createLibro } from "@/api/apiLibri";
 
 
 
@@ -74,6 +74,24 @@ export const getLastInsertBookStatAPI = createAsyncThunk('libri/last_book_insert
 })
 
 
+//-----------------------------------------------------------INSERIMENTO LIBRI-----------------------------------------------------------//
+
+
+export const postLibroAPI = createAsyncThunk('libri/upload_book/' , async({formData} , {rejectWithValue}) => {
+
+    try {
+        
+        const response = await createLibro(formData);
+        return response.data;
+
+    } catch (err) {
+        
+        return rejectWithValue(err.response?.data || {"error" : "Si è verificato un problema"});
+    }
+
+
+})
+
 
 const libriSlice = createSlice({
 
@@ -88,6 +106,12 @@ const libriSlice = createSlice({
             state.libro = null;
             state.errorLibroDetail = null;
             state.statusLibroDetail = null;
+        },
+
+        clearErrorLibro : (state) => {
+            state.loading = false;
+            state.status = 'idle';
+            state.error = null;
         }
         
     },
@@ -176,9 +200,29 @@ const libriSlice = createSlice({
             state.error = action.payload || {detail : 'errore sconosciuto'};
         })
 
+
+        //THUNK POST LIBRO 
+
+        .addCase(postLibroAPI.pending , (state) => {
+            state.loading = true;
+            state.status = 'loading';
+        })
+
+        .addCase(postLibroAPI.fulfilled , (state , action) => {
+            state.loading = false;
+            state.status = 'succeeded';
+            state.items.push(action.payload);
+        })
+        
+        .addCase(postLibroAPI.rejected , (state , action) => {
+            state.loading = false;
+            state.status = 'failed';
+            state.error = action.payload || {detail : 'errore sconosciuto'};
+        })
+
     }
 
 });
 
-export const {clearLibro} = libriSlice.actions;
+export const {clearLibro , clearErrorLibro} = libriSlice.actions;
 export default libriSlice.reducer;

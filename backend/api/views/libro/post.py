@@ -23,8 +23,10 @@ from django.views.decorators.csrf import csrf_exempt
 import traceback
 import os
 
-from auth.auth import JWTAuthenticationFromCookie
+from ..auth.auth import JWTAuthenticationFromCookie
 
+from ...models.libro import Libro
+from ...serializers import LibroPostSerializer
 
 
 @authentication_classes([IsAuthenticated , JWTAuthenticationFromCookie])
@@ -33,4 +35,16 @@ def post_libro(request):
 
     if request.method == 'POST':
 
-        pass
+        try:
+
+            serializer = LibroPostSerializer(data=request.data)
+            
+            if serializer.is_valid():
+                serializer.save(utente = request.user)
+                return Response(serializer.data , status=status.HTTP_200_OK)
+
+        except Exception as e:
+
+            traceback.print_exc()
+            return Response({'Message' : 'Internal Server Error'} , status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            

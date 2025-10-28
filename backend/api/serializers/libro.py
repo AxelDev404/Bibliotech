@@ -38,4 +38,4 @@ class LibroPostSerializer(serializers.ModelSerializer):
 
         model = Libro
         
-        fields = ('isbn' , 'titolo' , 'data_uscita' , 'editore' , 'formato' , 'lingua' , 'postazione')
+        fields = ('isbn' , 'titolo', 'autore' , 'data_uscita' , 'editore' , 'formato' , 'lingua' , 'postazione')

@@ -1,6 +1,7 @@
 from django.urls import path
 
-from ..views.libro.get import get_libri_table , get_totale_libri , get_ultimi_libri , get_libro_pagina
+from ..views.libro.get import get_libri_table , get_totale_libri , get_ultimi_libri , get_libro_pagina 
+from ..views.libro.post import post_libro
 
 urlpatterns = [
 
@@ -13,6 +14,9 @@ urlpatterns = [
 
     #STATISTICA
     path('statistics-book/' , get_totale_libri , name='get_totale_libri'),
-    path('statistics-last-inserts-book/' , get_ultimi_libri , name='get_ultimi_libri')
+    path('statistics-last-inserts-book/' , get_ultimi_libri , name='get_ultimi_libri'),
 
+
+    #INSERIMENTO
+    path('upload-book/' , post_libro , name='post_libro'),
 ]

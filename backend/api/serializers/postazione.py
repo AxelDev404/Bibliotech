@@ -11,7 +11,9 @@ from ..models.postazione import Postazione
 
 class SelectPostazioneSerializer(serializers.ModelSerializer):
 
+    categoria_nome = serializers.CharField(source = 'categoria.nome_categoria' , read_only=True)
+
     class Meta:
 
         model = Postazione
-        fields = ('id_postazione' , 'posizione' , 'numerazione' , 'categoria')
+        fields = ('id_postazione' , 'posizione' , 'numerazione' , 'categoria_nome')
