@@ -2,7 +2,7 @@ from .autore import AutoreGetSerializer , AutorePostSerializer
 from .libro import LibroManageSerializer , LibroStatisticSerializer , LibroPostSerializer
 from .tessera_biblioteca import TesseraBibStatSerializer , TesseraDetailSerializer , TesseraBibliotecaPostSerializer
 from .postazione import SelectPostazioneSerializer , PostazionePostSerializer
-from .categoria import CategoriaPostSerializer
+from .categoria import CategoriaPostSerializer , CategoriaHlperSerializer
 
 __all__ = [
 
@@ -30,5 +30,6 @@ __all__ = [
 
     #CATEGORIA
 
-    'CategoriaPostSerializer'
+    'CategoriaPostSerializer',
+    'CategoriaHlperSerializer',
 ]

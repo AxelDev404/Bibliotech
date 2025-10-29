@@ -29,6 +29,10 @@ from .prestito.get import (
     get_totale_prestiti_attivi , get_totale_prestiti_saldati
 )
 
+from .categoria.get import (
+    get_categorie_helper
+)
+
 
 from .libro.post import (
     post_libro
@@ -50,6 +54,9 @@ from .autore.post import (
 from .postazione.post import (
     post_postazione
 )
+
+
+
 
 
 __all__ = [
@@ -77,6 +84,10 @@ __all__ = [
     #GET PRESTITO
 
     'get_totale_prestiti_attivi' , 'get_totale_prestiti_saldati',
+
+    #GET CATEGORIA
+
+    'get_categorie_helper',
 
     #POST LIBRO
     

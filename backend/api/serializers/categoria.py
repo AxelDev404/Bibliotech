@@ -15,3 +15,12 @@ class CategoriaPostSerializer(serializers.ModelSerializer):
         model = Categoria
 
         fields = ('nome_categoria' , 'descrizione')
+
+
+
+class CategoriaHlperSerializer(serializers.ModelSerializer):
+
+    class Meta:
+
+        model = Categoria
+        fields = ('id_categoria' , 'nome_categoria')

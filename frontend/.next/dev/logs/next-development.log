@@ -434,3 +434,36 @@ Import traces:
 [00:25:05.353] Server  LOG      ✓ Compiled in 169ms
 [00:25:11.460] Server  LOG      ✓ Compiled in 104ms
 [00:25:20.012] Server  LOG      ✓ Compiled in 78ms
+[00:58:25.903] Browser LOG     0
+[00:58:25.903] Browser LOG     0
+[00:58:25.903] Browser LOG     0
+[00:58:25.903] Browser LOG     0
+[00:58:25.903] Browser LOG     0
+[00:58:25.903] Browser LOG     0
+[00:58:25.903] Browser LOG     0
+[00:58:25.903] Browser LOG     0
+[00:58:25.903] Browser LOG     4
+[00:58:25.903] Browser LOG     4
+[00:58:25.903] Browser LOG     4
+[00:58:25.903] Browser LOG     4
+[00:58:25.903] Browser LOG     4
+[00:58:25.903] Browser LOG     4
+[00:58:25.903] Browser LOG     4
+[00:58:25.903] Browser LOG     4
+[00:58:25.903] Browser LOG     4
+[00:58:25.903] Browser LOG     4
+[00:58:25.903] Browser LOG     4
+[00:58:25.903] Browser LOG     4
+[00:58:25.903] Browser LOG     4
+[00:58:25.903] Browser LOG     4
+[00:58:25.903] Browser LOG     4
+[00:58:25.903] Browser LOG     4
+[00:58:25.903] Browser LOG     4
+[00:58:25.903] Browser LOG     4
+[01:13:48.758] Server  LOG      ✓ Compiled in 47ms
+[01:14:02.973] Server  LOG      ✓ Compiled in 24ms
+[01:15:57.445] Server  LOG      ✓ Compiled in 16ms
+[01:16:43.710] Server  LOG      ✓ Compiled in 35ms
+[01:16:44.219] Server  LOG      ✓ Compiled in 9ms
+[01:16:47.452] Server  LOG      ✓ Compiled in 14ms
+[01:17:17.700] Server  LOG      ✓ Compiled in 11ms

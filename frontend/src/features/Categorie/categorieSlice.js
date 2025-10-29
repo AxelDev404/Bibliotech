@@ -1,5 +1,23 @@
 import { createAsyncThunk , createSlice } from "@reduxjs/toolkit";
-import { createCategoria } from "@/api/apiCategorie";
+import { createCategoria , fetchCategoriaHelper} from "@/api/apiCategorie";
+
+
+//-----------------------------------------------------------HELPER CATEGORIA-----------------------------------------------------------//
+
+export const getHelperCategoriaSlectionAPI = createAsyncThunk('categorie/helper_selection_categorie/' , async(_ , {rejectWithValue}) => {
+
+    try {
+
+        const response = await fetchCategoriaHelper();
+        return response.data;
+        
+    } catch (err) {
+        
+        return rejectWithValue(err.response?.data || {"error" : "Si è verificato un problema"});
+    }
+
+})
+
 
 
 //-----------------------------------------------------------INSERIMENTO CATEGORIA-----------------------------------------------------------//
