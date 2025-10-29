@@ -6,8 +6,9 @@
   },
   "devToolsPanelSize": {
     "__nextjs-dev-tools-panel-size_segment-explorer": {
-      "width": 288,
+      "width": 808,
       "height": 821
     }
-  }
+  },
+  "scale": 1.1428571428571428
 }

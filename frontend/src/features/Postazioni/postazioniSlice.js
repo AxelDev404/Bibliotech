@@ -87,6 +87,25 @@ const postazioniSlice = createSlice({
         
         builder
 
+        //THUNK POST POSTAZIONE
+
+        .addCase(postPostazioneAPI.pending , (state) => {
+            state.requests.postazioni_post_items.postazioni_post_loading = true;
+            state.requests.postazioni_post_items.postazioni_post_status = 'loading';
+        })
+
+        .addCase(postPostazioneAPI.fulfilled , (state , action) => {
+            state.requests.postazioni_post_items.postazioni_post_loading = false;
+            state.requests.postazioni_post_items.postazioni_post_status = 'succeeded';
+            state.data.postazioni_post_items.push(action.payload);
+        })
+
+        .addCase(postPostazioneAPI.rejected , (state , action) => {
+            state.requests.postazioni_post_items.postazioni_post_loading = false;
+            state.requests.postazioni_post_items.postazioni_post_status = 'failed';
+            state.requests.postazioni_post_items.postazioni_post_error = action.payload || {detail : 'errore sconosciuto'};
+        })
+
         //THUNK GET GESTIONE STATISTICHE
         
         .addCase(getCountStatPostazioniAPI.pending , (state) => {

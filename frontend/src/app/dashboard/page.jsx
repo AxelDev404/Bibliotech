@@ -37,7 +37,6 @@ export default function DashBoard()
             count_postazioni : { statusCount, errorCount }
         }
 
-
     } = useSelector((state) => state.postazioni);
 
 
@@ -80,7 +79,7 @@ export default function DashBoard()
 
                             <div className="bg-gray-100 py-6 sm:py-8 rounded-2xl w-full overflow-x-auto">
                                
-                                <div className="max-w-screen-xl mx-auto flex flex-row flex-wrap gap-6 sm:gap-8 items-center justify-center px-4">
+                                <div className="max-w-screen-l mx-auto flex flex-row flex-wrap gap-6 sm:gap-8 items-center justify-center px-4">
                                     
                                     <div className="w-60 sm:w-72 h-28 sm:h-32 bg-white text-black rounded-lg flex flex-col items-center justify-center flex-shrink-0 shadow-md hover:shadow-lg hover:bg-rose-900 hover:text-white transition-all duration-300">
                                         <AutoStoriesIcon sx={{ fontSize: 50 }} />

@@ -117,3 +117,320 @@
 [00:00:09.618] Browser LOG     4
 [00:00:09.618] Browser LOG     4
 [00:00:09.618] Browser LOG     4
+[00:02:43.789] Server  LOG      ✓ Compiled in 97ms
+[00:02:44.704] Browser LOG     4
+[00:02:44.705] Browser LOG     4
+[00:02:56.375] Server  LOG      ✓ Compiled in 39ms
+[00:02:56.704] Browser LOG     4
+[00:02:56.704] Browser LOG     4
+[00:03:21.366] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. select
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.725] Browser LOG     4
+[00:03:23.726] Browser LOG     4
+[00:03:23.726] Browser LOG     4
+[00:03:23.726] Browser LOG     4
+[00:03:23.726] Browser LOG     4
+[00:03:23.726] Browser LOG     4
+[00:03:23.726] Browser LOG     4
+[00:03:25.783] Browser ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:27.305] Browser LOG     4
+[00:03:28.433] Browser ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
+[00:03:30.143] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:30.144] Browser LOG     4
+[00:03:41.966] Browser LOG     4
+[00:03:41.967] Browser LOG     4
+[00:03:41.967] Browser LOG     4
+[00:03:41.967] Browser LOG     4
+[00:03:41.967] Browser LOG     4
+[00:03:41.967] Browser LOG     4
+[00:03:41.967] Browser LOG     4
+[00:03:41.967] Browser LOG     4
+[00:03:41.967] Browser LOG     4
+[00:03:41.967] Browser LOG     4
+[00:03:41.967] Browser LOG     4
+[00:03:41.967] Browser LOG     4
+[00:03:41.967] Browser LOG     4
+[00:03:41.967] Browser LOG     4
+[00:03:41.967] Browser LOG     4
+[00:03:41.967] Browser LOG     4
+[00:03:41.967] Browser LOG     4
+[00:03:41.967] Browser LOG     4
+[00:04:40.193] Server  LOG      ✓ Compiled in 178ms
+[00:04:48.640] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:48.793] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. select
+[00:04:59.770] Server  LOG      ✓ Compiled in 125ms
+[00:05:16.565] Browser LOG     0
+[00:05:16.565] Browser LOG     0
+[00:05:16.565] Browser LOG     0
+[00:05:16.565] Browser LOG     0
+[00:05:16.565] Browser LOG     0
+[00:05:16.565] Browser LOG     0
+[00:05:16.565] Browser LOG     4
+[00:05:16.565] Browser LOG     4
+[00:05:16.565] Browser LOG     4
+[00:05:16.565] Browser LOG     4
+[00:05:16.565] Browser LOG     4
+[00:05:16.565] Browser LOG     4
+[00:05:16.565] Browser LOG     4
+[00:05:16.565] Browser LOG     4
+[00:05:16.565] Browser LOG     4
+[00:05:16.565] Browser LOG     4
+[00:05:16.565] Browser LOG     4
+[00:05:16.565] Browser LOG     4
+[00:05:16.565] Browser LOG     4
+[00:05:16.565] Browser LOG     4
+[00:05:16.565] Browser LOG     4
+[00:05:16.565] Browser LOG     4
+[00:05:16.565] Browser LOG     4
+[00:05:16.565] Browser LOG     4
+[00:06:23.908] Server  LOG      ✓ Compiled in 11ms
+[00:07:52.101] Server  LOG      ✓ Compiled in 33ms
+[00:08:17.596] Server  LOG      ✓ Compiled in 10ms
+[00:08:26.765] Server  LOG      ✓ Compiled in 15ms
+[00:08:31.757] Server  LOG      ✓ Compiled in 22ms
+[00:08:58.038] Server  LOG      ✓ Compiled in 13ms
+[00:09:11.699] Server  LOG      ✓ Compiled in 15ms
+[00:09:32.344] Server  LOG      ✓ Compiled in 13ms
+[00:10:04.550] Server  LOG      ✓ Compiled in 14ms
+[00:10:29.669] Server  LOG      ✓ Compiled in 11ms
+[00:10:46.100] Server  LOG      ✓ Compiled in 14ms
+[00:11:04.323] Server  LOG      ✓ Compiled in 137ms
+[00:11:19.587] Server  LOG      ✓ Compiled in 196ms
+[00:11:54.653] Server  LOG      ✓ Compiled in 242ms
+[00:12:30.422] Server  LOG      ✓ Compiled in 115ms
+[00:12:39.280] Server  LOG      ✓ Compiled in 126ms
+[00:12:44.469] Server  LOG      ✓ Compiled in 78ms
+[00:13:07.727] Server  LOG      ✓ Compiled in 150ms
+[00:13:32.381] Server  LOG      ✓ Compiled in 199ms
+[00:14:08.935] Server  LOG      ✓ Compiled in 140ms
+[00:14:20.919] Server  LOG      ✓ Compiled in 119ms
+[00:14:22.971] Server  LOG      ✓ Compiled in 141ms
+[00:14:45.582] Server  LOG      ✓ Compiled in 198ms
+[00:14:50.033] Server  LOG      ✓ Compiled in 62ms
+[00:15:05.860] Server  LOG      ✓ Compiled in 156ms
+[00:15:11.733] Server  LOG      ✓ Compiled in 89ms
+[00:15:18.782] Server  LOG      ✓ Compiled in 73ms
+[00:15:31.805] Server  LOG      ✓ Compiled in 120ms
+[00:15:47.536] Server  LOG      ✓ Compiled in 134ms
+[00:15:59.025] Server  LOG      ✓ Compiled in 129ms
+[00:16:17.390] Server  LOG      ✓ Compiled in 141ms
+[00:17:20.104] Server  LOG      ✓ Compiled in 25ms
+[00:17:20.705] Browser ERROR   ./src/app/carica-libro/page.jsx:221:96
+Parsing ecmascript source code failed
+  219 |         const payload = { ...formDataPostazioni , 
+  220 |
+> 221 |             posizione : formDataPostazioni.numerazione ? Number(formDataPostazioni.numerazione),
+      |                                                                                                ^
+  222 |         }
+  223 |
+  224 |         try {
+
+Expected ':', got ','
+
+Import traces:
+  Client Component Browser:
+    ./src/app/carica-libro/page.jsx [Client Component Browser]
+    ./src/app/carica-libro/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/carica-libro/page.jsx [Client Component SSR]
+    ./src/app/carica-libro/page.jsx [Server Component]
+[00:17:20.705] Browser ERROR   ./src/app/carica-libro/page.jsx:221:96
+Parsing ecmascript source code failed
+  219 |         const payload = { ...formDataPostazioni , 
+  220 |
+> 221 |             posizione : formDataPostazioni.numerazione ? Number(formDataPostazioni.numerazione),
+      |                                                                                                ^
+  222 |         }
+  223 |
+  224 |         try {
+
+Expected ':', got ','
+
+Import traces:
+  Client Component Browser:
+    ./src/app/carica-libro/page.jsx [Client Component Browser]
+    ./src/app/carica-libro/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/carica-libro/page.jsx [Client Component SSR]
+    ./src/app/carica-libro/page.jsx [Server Component]
+[00:17:24.704] Browser ERROR   ./src/app/carica-libro/page.jsx:222:9
+Parsing ecmascript source code failed
+  220 |
+  221 |             posizione : formDataPostazioni.numerazione ? Number(formDataPostazioni.numerazione)
+> 222 |         }
+      |         ^
+  223 |
+  224 |         try {
+  225 |             
+
+Expected ':', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/carica-libro/page.jsx [Client Component Browser]
+    ./src/app/carica-libro/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/carica-libro/page.jsx [Client Component SSR]
+    ./src/app/carica-libro/page.jsx [Server Component]
+[00:17:24.704] Browser ERROR   ./src/app/carica-libro/page.jsx:222:9
+Parsing ecmascript source code failed
+  220 |
+  221 |             posizione : formDataPostazioni.numerazione ? Number(formDataPostazioni.numerazione)
+> 222 |         }
+      |         ^
+  223 |
+  224 |         try {
+  225 |             
+
+Expected ':', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/carica-libro/page.jsx [Client Component Browser]
+    ./src/app/carica-libro/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/carica-libro/page.jsx [Client Component SSR]
+    ./src/app/carica-libro/page.jsx [Server Component]
+[00:18:32.033] Server  LOG      ✓ Compiled in 44ms
+[00:18:32.706] Browser ERROR   ./src/app/carica-libro/page.jsx:223:9
+Parsing ecmascript source code failed
+  221 |             posizione : formDataPostazioni.numerazione ? Number(formDataPostazioni.numerazione) : null,
+  222 |             categoria :
+> 223 |         }
+      |         ^
+  224 |
+  225 |         try {
+  226 |             
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/carica-libro/page.jsx [Client Component Browser]
+    ./src/app/carica-libro/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/carica-libro/page.jsx [Client Component SSR]
+    ./src/app/carica-libro/page.jsx [Server Component]
+[00:18:32.706] Browser ERROR   ./src/app/carica-libro/page.jsx:223:9
+Parsing ecmascript source code failed
+  221 |             posizione : formDataPostazioni.numerazione ? Number(formDataPostazioni.numerazione) : null,
+  222 |             categoria :
+> 223 |         }
+      |         ^
+  224 |
+  225 |         try {
+  226 |             
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/carica-libro/page.jsx [Client Component Browser]
+    ./src/app/carica-libro/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/carica-libro/page.jsx [Client Component SSR]
+    ./src/app/carica-libro/page.jsx [Server Component]
+[00:18:40.703] Browser ERROR   ./src/app/carica-libro/page.jsx:223:9
+Parsing ecmascript source code failed
+  221 |             posizione : formDataPostazioni.numerazione ? Number(formDataPostazioni.numerazione) : null,
+  222 |             categoria : 
+> 223 |         }
+      |         ^
+  224 |
+  225 |         try {
+  226 |             
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/carica-libro/page.jsx [Client Component Browser]
+    ./src/app/carica-libro/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/carica-libro/page.jsx [Client Component SSR]
+    ./src/app/carica-libro/page.jsx [Server Component]
+[00:19:47.067] Server  LOG      ✓ Compiled in 128ms
+[00:19:49.882] Server  LOG      ✓ Compiled in 96ms
+[00:19:54.321] Server  LOG      ✓ Compiled in 83ms
+[00:20:25.667] Server  LOG      ✓ Compiled in 102ms
+[00:20:30.125] Server  LOG      ✓ Compiled in 75ms
+[00:20:37.514] Server  LOG      ✓ Compiled in 63ms
+[00:20:49.288] Server  LOG      ✓ Compiled in 67ms
+[00:21:31.415] Server  LOG      ✓ Compiled in 167ms
+[00:22:12.456] Server  LOG      ✓ Compiled in 103ms
+[00:22:17.258] Server  LOG      ✓ Compiled in 79ms
+[00:22:39.084] Server  LOG      ✓ Compiled in 140ms
+[00:22:57.573] Server  LOG      ✓ Compiled in 167ms
+[00:23:57.783] Server  LOG      ✓ Compiled in 152ms
+[00:23:58.983] Server  LOG      ✓ Compiled in 82ms
+[00:24:02.468] Server  LOG      ✓ Compiled in 76ms
+[00:24:18.193] Server  LOG      ✓ Compiled in 140ms
+[00:25:05.353] Server  LOG      ✓ Compiled in 169ms
+[00:25:11.460] Server  LOG      ✓ Compiled in 104ms
+[00:25:20.012] Server  LOG      ✓ Compiled in 78ms

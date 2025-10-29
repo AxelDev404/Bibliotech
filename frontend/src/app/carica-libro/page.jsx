@@ -14,7 +14,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import SettingsIcon from '@mui/icons-material/Settings';
 
 import { useSelector , useDispatch } from "react-redux";
-import { getHelperSelectionPostazioni } from "@/features/Postazioni/postazioniSlice";
+import { getHelperSelectionPostazioni, postPostazioneAPI } from "@/features/Postazioni/postazioniSlice";
 import { postLibroAPI , clearErrorLibro } from "@/features/Libri/libriSlice";
 import { postCategoriaAPI } from "@/features/Categorie/categorieSlice";
 
@@ -181,6 +181,60 @@ export default function InsertLibroPage() {
         } catch (error) {
 
             console.log(formData , "error" , error);
+            toast.error("Azione rifiutata");
+        }
+
+    }
+
+
+    //--------------------------------------------------------------POST POSTAZIONE--------------------------------------------------------------//
+
+    //FARE UNA VIEW CON LA GET NOME ED PK DELLA CATEGORIA NON HAI LA SELECTT !!!!!!!!!
+
+    const initialStatePostazione = {
+
+        posizione : "",
+        numerazione : null,
+        categoria : null,
+        capacita : null
+    }
+
+
+    const [formDataPostazioni , setFomrDataPostazioni] = useState(initialStatePostazione);
+
+    const handleChangePostazioni = (e) => {
+
+        const {name , value} = e.target;
+
+        setFomrDataPostazioni({
+            ...formDataPostazioni,
+            [name] : value === "" ? null : value
+        })
+    }
+
+    //FARE UNA VIEW CON LA GET NOME ED PK DELLA CATEGORIA NON HAI LA SELECTT !!!!!!!!!
+
+    const handleSubmitPostazione = async(e) => {
+
+        e.preventDefault();
+
+        const payload = { ...formDataPostazioni , 
+
+            posizione : formDataPostazioni.numerazione ? Number(formDataPostazioni.numerazione) : null,
+            categoria : formDataPostazioni.categoria ? Number(formDataPostazioni.categoria) : null,
+            capacita : formDataPostazioni.capacita ? Number(formDataPostazioni.capacita) : null
+        };
+
+        try {
+            
+            await dispatch(postPostazioneAPI(payload)).unwrap();
+
+            setFomrDataPostazioni(initialStatePostazione);
+            toast.success("Postazione inserita");
+
+        } catch (error) {
+            
+            console.log(payload , "error : " , error);
             toast.error("Azione rifiutata");
         }
 
@@ -378,28 +432,32 @@ export default function InsertLibroPage() {
                                                     Aggiungi Nuova Postazione
                                                 </h2>
 
-                                                <form className="flex flex-col gap-4">
+                                                <form onSubmit={handleSubmitPostazione} className="flex flex-col gap-4">
                                                     
                                                     <label className="flex flex-col text-gray-700 text-sm">
                                                         Posizione
-                                                        <input type="text" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        <input name="posizione" value={formDataPostazioni.posizione} onChange={handleChangePostazioni} type="text" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
                                                     </label>
                                                     
                                                     <label className="flex flex-col text-gray-700 text-sm">
                                                         Numerazione
-                                                        <input type="number" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        <input  name="numerazione" value={formDataPostazioni.numerazione} onChange={handleChangePostazioni} type="number" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
                                                     </label>
 
                                                     <label className="flex flex-col text-gray-700 text-sm">
                                                         Categoria
-                                                        <select type="text" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400"> 
+                                                        <select name="categoria" value={formDataPostazioni.categoria} onChange={handleChangePostazioni} type="text" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400"> 
+                                                            
                                                             <option value="">Seleziona categoria</option>
+
+                                                            
+
                                                         </select>
                                                     </label>
 
                                                     <label className="flex flex-col text-gray-700 text-sm">
                                                         Capacità massima
-                                                        <input type="number" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        <input name="capacita" value={formDataPostazioni.capacita} onChange={handleChangePostazioni} type="number" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
                                                     </label>
 
                                                     <button  type="submit" className="mt-4 p-2 rounded-md border border-rose-500 text-white bg-rose-900 hover:bg-rose-800 transition-colors text-sm">
@@ -425,7 +483,7 @@ export default function InsertLibroPage() {
 
                                     <div className="mb-3">
                                         <label className="block text-gray-700 mb-2">Autore</label>
-                                        <select name="autore" value={formData.autore} onChange={handleChange} type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2">
+                                        <select name="autore" value={formData.autore ?? ""} onChange={handleChange} type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2">
 
                                             <option value="">Sleziona un autore</option>
 
@@ -464,7 +522,7 @@ export default function InsertLibroPage() {
                                     <div className="mb-3">
                                         <label className="block text-gray-700 mb-2">Postazione</label>
                                         
-                                        <select name="postazione" value={formData.postazione} onChange={handleChange} type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2"> 
+                                        <select name="postazione" value={formData.postazione ?? ""} onChange={handleChange} type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2"> 
                                             
                                             <option value="">Seleziona postazione</option>
 
