@@ -6,8 +6,60 @@ import PrivateRoute from "@/components/PrivateRoute";
 import Banner from "@/components/Banner";
 import SideBar from "@/components/SideBar";
 
+import { useSelector , useDispatch } from "react-redux";
+import { postTesseraBibliotecaAPI } from "@/features/TessereBiblioteca/tessere_bibliotecaSlice";
+import { useState } from "react";
+import {Toaster , toast} from "react-hot-toast";
+
 export default function InsertTesseraPage() {
-  const router = useRouter();
+
+    const {tessera_post_items  , tessera_post_status, tessera_post_error } = useSelector((state) => state.tessere_bibilioteca);
+    const dispatch = useDispatch();
+
+    const router = useRouter();
+
+    const initialState = {
+
+        nome_tesserato : "",
+        cognome_tesserato : "",
+        codice_fiscale : "",
+        data_nascita : "",
+        telefono : "",
+        email : "",
+        indirizzo : ""
+    }
+
+    const [formData , setFormData] = useState(initialState);
+
+    const handleChange = (e) =>{
+
+        const {name , value} = e.target;
+
+        setFormData({
+            ...formData,
+            [name] : value === "" ? null : value
+        })
+    }
+
+    const hanleSubmitTesseraBibilioteca = async(e) => {
+
+        e.preventDefault();
+
+        try {
+            
+            await dispatch(postTesseraBibliotecaAPI(formData)).unwrap();
+
+            setFormData(initialState);
+            toast.success("Tessera registrata");
+
+        } catch (error) {
+            console.log(formData , "error : " , error);
+            toast.error("Azione rifiutata");
+        }
+
+    }
+    
+
 
     return (
 
@@ -24,53 +76,52 @@ export default function InsertTesseraPage() {
                         <Banner />
 
                         <div className="min-h-screen flex justify-center">
-                        
+
+                            <Toaster position="bottom-right" reverseOrder={false} />
+                            
                             <div className="w-full max-w-8xl bg-white rounded-xl shadow p-8">
                                 <h1 className="text-2xl py-20 font-thin text-gray-800 mb-6 text-left">
                                     Inserisci Nuovo Tesserato
                                 </h1>
 
-                                <form className=" sm:grid-cols-2 gap-40">
+                                <form onSubmit={hanleSubmitTesseraBibilioteca} className=" sm:grid-cols-2 gap-40">
 
                                     <div className="mb-5">
                                         <label className="block text-gray-700 mb-2">Nome</label>
-                                        <input type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
+                                        <input name="nome_tesserato" value={formData.nome_tesserato} onChange={handleChange} type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
                                     </div>
 
                                     <div className="mb-5">
                                         <label className="block text-gray-700 mb-2">Cognome</label>
-                                        <input type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
+                                        <input name="cognome_tesserato" value={formData.cognome_tesserato} onChange={handleChange} type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
                                     </div>
 
                                     <div className="mb-5"> 
                                         <label className="block text-gray-700 mb-2">Codice Fiscale</label>
-                                        <input type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
+                                        <input name="codice_fiscale" value={formData.codice_fiscale} onChange={handleChange} type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
                                     </div>
 
                                     <div className="mb-5">
                                         <label className="block text-gray-700 mb-2">Data di nascita</label>
-                                        <input type="date" className="w-full text-gray-700 border bg-gray-100 border-gray-400 rounded px-3 py-2" />
+                                        <input name="data_nascita" value={formData.data_nascita} onChange={handleChange} type="date" className="w-full text-gray-700 border bg-gray-100 border-gray-400 rounded px-3 py-2" />
                                     </div>
 
                                     <div className="mb-5">
                                         <label className="block text-gray-700 mb-2">Telefono</label>
-                                        <input type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
+                                        <input name="telefono" value={formData.telefono}  onChange={handleChange} type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
                                     </div>
 
                                     <div className="mb-5">
                                         <label className="block text-gray-700 mb-2">Email</label>
-                                        <input type="email" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
+                                        <input name="email" value={formData.email} onChange={handleChange} type="email" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
                                     </div>
 
                                     <div className="mb-5">
                                         <label className="block text-gray-700 mb-2">Indirizzo</label>
-                                        <input type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
+                                        <input name="indirizzo" value={formData.indirizzo} onChange={handleChange} type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
                                     </div>
 
-                                    <div className="mb-5">
-                                        <label className="block text-gray-700 mb-2">Utente Operatore</label>
-                                        <input type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
-                                    </div>
+                               
 
                                     <div className="mt-6 flex justify-center gap-4 col-span-full">
                                         

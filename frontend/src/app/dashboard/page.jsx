@@ -26,7 +26,22 @@ export default function DashBoard()
 {
 
     const { last_insert_book , count , status , error} = useSelector((state) => state.libri); 
-    const { count_postazioni , status : statusCountPostazioni , error : errorCountPostazioni } = useSelector((state) => state.postazioni);
+
+
+
+    const { 
+        
+        data : {count_postazioni},
+
+        requests : {
+            count_postazioni : { statusCount, errorCount }
+        }
+
+
+    } = useSelector((state) => state.postazioni);
+
+
+
     const { last_tessere_biblioteca_insert , count_tessere_biblioteca , status : statusCountTessere , error : errorCountTessere} = useSelector((state) => state.tessere_bibilioteca)
     const { count_presiti_attivi , count_prestiti_saldati , status : statusCountPrestiti , error : errorCountPrestiti } = useSelector((state) => state.prestiti); 
 

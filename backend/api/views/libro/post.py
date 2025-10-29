@@ -29,8 +29,10 @@ from ...models.libro import Libro
 from ...serializers import LibroPostSerializer
 
 
-@authentication_classes([IsAuthenticated , JWTAuthenticationFromCookie])
+
 @api_view(['POST'])
+@authentication_classes([JWTAuthenticationFromCookie])
+@permission_classes([IsAuthenticated])
 def post_libro(request):
 
     if request.method == 'POST':
@@ -42,6 +44,9 @@ def post_libro(request):
             if serializer.is_valid():
                 serializer.save(utente = request.user)
                 return Response(serializer.data , status=status.HTTP_200_OK)
+            
+            else:
+                return Response(serializer.errors , status=status.HTTP_400_BAD_REQUEST)
 
         except Exception as e:
 

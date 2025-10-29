@@ -15,3 +15,10 @@ class AutoreGetSerializer(serializers.ModelSerializer):
         model = Autore
         fields = '__all__'
 
+
+class AutorePostSerializer(serializers.ModelSerializer):
+
+    class Meta:
+
+        model = Autore
+        fields = ('nome_autore' , 'cognome_autore')

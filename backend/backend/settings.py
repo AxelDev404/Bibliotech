@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-463&9if%f0(s8v9y811f9+0eowr-4*^-se@y@9b!z#g-3=%1!y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ "192.168.1.35",  "127.0.0.1", "localhost"]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
@@ -59,12 +59,14 @@ SIMPLE_JWT = {
     'TOKEN_TYPE_CLAIM': 'token_type',
     
     'JTI_CLAIM': 'jti',
-    #'TOKEN_USER_CLASS': 'rest_framework_simplejwt.models.TokenUser',
-    
-    #'SLIDING_TOKEN_REFRESH_EXP_CLAIM': 'refresh_exp',
-    #'SLIDING_TOKEN_LIFETIME': timedelta(minutes=5),
-    #'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=1),
+
 }
+
+CORS_ALLOW_CREDENTIALS = True
+SESSION_COOKIE_SAMESITE = None
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SAMESITE = None
+CSRF_COOKIE_SECURE = False
 
 # Application definition
 
@@ -79,7 +81,7 @@ INSTALLED_APPS = [
     'rest_framework', 
     'corsheaders',
     'rest_framework_simplejwt',
-
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -166,6 +168,7 @@ PASSWORD_HASHERS = [
 
 
 REST_FRAMEWORK = {
+    
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
@@ -208,7 +211,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000", "http://10.78.33.55:3000", "http://127.0.0.1:3000",
+    "http://localhost:3000", "http://10.78.33.55:3000", "http://127.0.0.1:3000",  "http://192.168.1.35:3000"
 ]
 
 
@@ -218,7 +221,6 @@ CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "http://10.78.33.55:3000",
-    "http://127.0.0.1:8000",
-    "http://localhost:8000",
+    "http://192.168.1.35:3000",
 ]
 

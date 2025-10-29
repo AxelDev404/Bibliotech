@@ -1,6 +1,7 @@
 from django.urls import path
 
 from ..views.postazione.get import get_totale_postazioni , get_selection_postazione
+from ..views.postazione.post import post_postazione
 
 urlpatterns = [
 
@@ -9,4 +10,7 @@ urlpatterns = [
 
     #HELPER API'S
     path('helper-selection-postazioni/' , get_selection_postazione , name='get_selection_postazioni'),
+
+    #CREAZIONE
+    path('upload-postazione/' , post_postazione , name='post_postazione'),
 ]

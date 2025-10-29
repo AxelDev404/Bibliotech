@@ -17,3 +17,13 @@ class SelectPostazioneSerializer(serializers.ModelSerializer):
 
         model = Postazione
         fields = ('id_postazione' , 'posizione' , 'numerazione' , 'categoria_nome')
+
+
+
+class PostazionePostSerializer(serializers.ModelSerializer):
+
+    class Meta:
+
+        model = Postazione
+
+        fields = ('posizione' , 'numerazione' , 'categoria' , 'capacita')

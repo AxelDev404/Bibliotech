@@ -14,9 +14,6 @@ from .libro.get import (
     get_libri_table , get_libro_pagina , get_totale_libri , get_ultimi_libri
 )
 
-from .libro.post import (
-    post_libro
-)
 
 from .tessera_biblioteca.get import (
     get_detail_tessera_biblioteca , get_totale_tessere , get_ultime_tessere
@@ -31,6 +28,29 @@ from .postazione.get import (
 from .prestito.get import (
     get_totale_prestiti_attivi , get_totale_prestiti_saldati
 )
+
+
+from .libro.post import (
+    post_libro
+)
+
+
+from .tessera_biblioteca.post import (
+    post_tessera_biblioteca
+)
+
+from .categoria.post import (
+    post_categoria
+)
+
+from .autore.post import (
+    post_autore
+)
+
+from .postazione.post import (
+    post_postazione
+)
+
 
 __all__ = [
 
@@ -62,4 +82,19 @@ __all__ = [
     
     'post_libro',
 
+    #POST TESSERA BIBLIOTECA
+
+    'post_tessera_biblioteca',
+
+    #POST CATEGORIA
+
+    'post_categoria',
+
+    #POST AUTORE 
+
+    'post_autore',
+
+    #POST POSTAZIONE
+
+    'post_postazione',
 ]

@@ -6,6 +6,8 @@ import libriSlice from '@/features/Libri/libriSlice';
 import postazioniSlice from '@/features/Postazioni/postazioniSlice'
 import tessere_bibliotecaSlice from '@/features/TessereBiblioteca/tessere_bibliotecaSlice';
 import prestitiSlice from '@/features/Prestiti/prestitiSlice';
+import autoriSlice from '@/features/Autori/autoriSlice';
+import categorieSlice from '@/features/Categorie/categorieSlice';
 
 const store = configureStore({
 
@@ -16,6 +18,8 @@ const store = configureStore({
         postazioni : postazioniSlice,
         tessere_bibilioteca : tessere_bibliotecaSlice,
         prestiti : prestitiSlice,
+        autori : autoriSlice,
+        categorie : categorieSlice,
 
     },
 });

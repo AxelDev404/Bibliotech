@@ -61,13 +61,7 @@ class Libro(models.Model):
             raise ValidationError("Formato non valido")
 
          
-        if self.lingua:
-            self.lingua.upper()
-
-        lingue = {'ITALIANO' , 'INGLESE' , 'RUSSO' , 'FRANCESE' , 'TEDESCO'}
-
-        if self.lingua not in lingue:
-            raise ValidationError("Lingua non valida")
+    
 
         
 

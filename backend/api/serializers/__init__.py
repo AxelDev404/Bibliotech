@@ -1,13 +1,15 @@
-from .autore import AutoreGetSerializer
+from .autore import AutoreGetSerializer , AutorePostSerializer
 from .libro import LibroManageSerializer , LibroStatisticSerializer , LibroPostSerializer
-from .tessera_biblioteca import TesseraBibStatSerializer , TesseraDetailSerializer
-from .postazione import SelectPostazioneSerializer
+from .tessera_biblioteca import TesseraBibStatSerializer , TesseraDetailSerializer , TesseraBibliotecaPostSerializer
+from .postazione import SelectPostazioneSerializer , PostazionePostSerializer
+from .categoria import CategoriaPostSerializer
 
 __all__ = [
 
     #AUTORE
 
     'AutoreGetSerializer',
+    'AutorePostSerializer',
 
     #LIBRO
 
@@ -19,8 +21,14 @@ __all__ = [
 
     'TesseraBibStatSerializer',
     'TesseraDetailSerializer',
+    'TesseraBibliotecaPostSerializer',
 
     #POSTAZIONE
 
-    'SelectPostazioneSerializer'
+    'SelectPostazioneSerializer',
+    'PostazionePostSerializer',
+
+    #CATEGORIA
+
+    'CategoriaPostSerializer'
 ]

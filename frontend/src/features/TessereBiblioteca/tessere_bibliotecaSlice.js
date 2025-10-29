@@ -1,5 +1,5 @@
 import { createAsyncThunk , createSlice } from "@reduxjs/toolkit";
-import { fetchCounStatTesseraBiblioteca , fetchLastTessereBibliotecaInsert , fetchDetailTesseraBiblioteca} from "@/api/apiTessereBiblioteca";
+import { fetchCounStatTesseraBiblioteca , fetchLastTessereBibliotecaInsert , fetchDetailTesseraBiblioteca , createTessersBiblioteca} from "@/api/apiTessereBiblioteca";
 
 
 //-----------------------------------------------------------GESTIONE STATISTICA-----------------------------------------------------------//
@@ -52,11 +52,47 @@ export const getDetailTesseraBiblioteca = createAsyncThunk('tessera-biblioteca/g
 })
 
 
+//-----------------------------------------------------------INSERIMENTO TESSERA-----------------------------------------------------------//
+
+
+export const postTesseraBibliotecaAPI = createAsyncThunk('tessere-biblioteca/upload_tessera/' , async(formData , {rejectWithValue})=>{
+
+    try {
+        
+        const response = await createTessersBiblioteca(formData);
+        return response.data;
+
+    } catch (err) {
+        
+        return rejectWithValue(err.response?.data || {"error" : "Si è verificato un problema"});
+    }
+
+})
+
+
+
 const tessere_bibliotecaSlice = createSlice({
 
     name : 'tessere_bibilioteca',
 
-    initialState : {tessera : null , statusTessera : null , errorTessera : null, loadingTessera : false , items : [] , last_tessere_biblioteca_insert : [] , count_tessere_biblioteca : 0 , status : 'idle' , error : null , loading : false},
+    initialState : {
+
+        //DETAIL PAGE
+        tessera : null , 
+        statusTessera : null , 
+        errorTessera : null, 
+        loadingTessera : false , 
+        
+        //GET STANDARD
+        items : [] ,status : 'idle' , error : null ,
+        
+        //QUERY GET
+        last_tessere_biblioteca_insert : [] , count_tessere_biblioteca : 0 ,  loading : false,
+
+        //INSERT DATA POST
+        tessera_post_items : [] , tessera_post_status : 'idle' , tessera_post_error : null , tessera_post_loading : false,
+
+    },
 
     reducers : {
         
@@ -135,6 +171,26 @@ const tessere_bibliotecaSlice = createSlice({
             state.statusTessera = 'failed';
             state.errorTessera = action.payload || {detail : 'errore sconosciuto'};
         })
+
+        //THUNK POST TESSERA BIBLIOTECA
+
+        .addCase(postTesseraBibliotecaAPI.pending , (state) => {
+            state.tessera_post_loading = true;
+            state.tessera_post_status = 'loading';
+        })
+
+        .addCase(postTesseraBibliotecaAPI.fulfilled , (state , action) => {
+            state.tessera_post_loading = false;
+            state.tessera_post_status = 'succeeded';
+            state.tessera_post_items.push(action.payload);
+        })
+
+        .addCase(postTesseraBibliotecaAPI.rejected , (state , action) => {
+            state.tessera_post_loading = false;
+            state.tessera_post_status = 'failed';
+            state.tessera_post_error = action.payload || {detail : 'errore sconosciuto'};
+        })
+
     }
 })
 

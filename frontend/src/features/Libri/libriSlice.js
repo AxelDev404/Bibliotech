@@ -77,7 +77,7 @@ export const getLastInsertBookStatAPI = createAsyncThunk('libri/last_book_insert
 //-----------------------------------------------------------INSERIMENTO LIBRI-----------------------------------------------------------//
 
 
-export const postLibroAPI = createAsyncThunk('libri/upload_book/' , async({formData} , {rejectWithValue}) => {
+export const postLibroAPI = createAsyncThunk('libri/upload_book/' , async(formData , {rejectWithValue}) => {
 
     try {
         

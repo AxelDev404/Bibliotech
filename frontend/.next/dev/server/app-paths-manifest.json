@@ -1,10 +1,4 @@
 {
-  "/carica-libro/page": "app/carica-libro/page.js",
-  "/carica-tessera/page": "app/carica-tessera/page.js",
-  "/cerca-libro/page": "app/cerca-libro/page.js",
   "/dashboard/page": "app/dashboard/page.js",
-  "/details/libri/[isbn]/page": "app/details/libri/[isbn]/page.js",
-  "/details/tessere-biblioteca/[id_tessera]/page": "app/details/tessere-biblioteca/[id_tessera]/page.js",
-  "/gestione-libri/page": "app/gestione-libri/page.js",
   "/page": "app/page.js"
 }
