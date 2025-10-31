@@ -140,7 +140,9 @@ export default function LibroPage() {
                             <div className="max-w-8xl py-20 w-full">
                             
                                 <h1 className="text-2xl font-thin text-gray-800 mb-6 text-left">
+                                    <ZoomInIcon sx={{fontSize : 40}}/>
                                     Dettagli Tesserato
+                                    <hr />
                                 </h1>
                                 
                                 <Toaster position="top-center" reverseOrder={false} />

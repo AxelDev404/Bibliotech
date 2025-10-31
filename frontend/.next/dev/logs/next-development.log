@@ -2321,3 +2321,989 @@ It can also happen if the client has a browser extension installed which messes 
 [00:51:34.919] Browser LOG     3
 [00:51:34.919] Browser LOG     3
 [00:51:34.919] Browser LOG     3
+[00:55:22.866] Server  LOG     0
+[00:55:22.963] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:55:23.002] Browser LOG     0
+[00:55:23.002] Browser LOG     0
+[00:55:23.002] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
+                        <RootLayout params={Promise}>
+                          <html lang="en">
+                            <body
+                              className={" bg-white text-white"}
+-                             cz-shortcut-listen="true"
+                            >
+                  ...
+
+[00:55:23.002] Browser LOG     0
+[00:55:23.002] Browser LOG     0
+[00:55:23.011] Server  LOG     0
+[00:55:23.063] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:55:23.206] Browser LOG     0
+[00:55:23.206] Browser LOG     0
+[00:55:23.206] Browser LOG     0
+[00:55:23.206] Browser LOG     0
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:23.206] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:24.648] Browser LOG     3
+[00:55:31.242] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:55:31.457] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:55:34.342] Browser LOG     0
+[00:55:34.342] Browser LOG     0
+[00:55:34.342] Browser LOG     0
+[00:55:34.342] Browser LOG     0
+[00:55:34.342] Browser LOG     0
+[00:55:34.342] Browser LOG     0
+[00:55:34.342] Browser LOG     0
+[00:55:34.342] Browser LOG     0
+[00:55:34.342] Browser LOG     0
+[00:55:34.342] Browser LOG     0
+[00:55:34.342] Browser LOG     3
+[00:55:34.342] Browser LOG     3
+[00:55:34.342] Browser LOG     3
+[00:55:34.342] Browser LOG     3
+[00:55:34.342] Browser LOG     3
+[00:55:34.342] Browser LOG     3
+[00:55:34.342] Browser LOG     3
+[00:55:34.342] Browser LOG     3
+[00:55:34.342] Browser LOG     3
+[00:55:34.342] Browser LOG     3
+[00:55:34.342] Browser LOG     3
+[00:55:34.342] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:55:48.105] Browser LOG     3
+[00:56:03.256] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:56:03.461] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:56:03.634] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:56:03.784] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:56:06.704] Browser LOG     0
+[00:56:06.704] Browser LOG     0
+[00:56:06.704] Browser LOG     0
+[00:56:06.704] Browser LOG     0
+[00:56:06.704] Browser LOG     0
+[00:56:06.704] Browser LOG     0
+[00:56:06.704] Browser LOG     3
+[00:56:06.704] Browser LOG     3
+[00:56:06.704] Browser LOG     3
+[00:56:06.704] Browser LOG     3
+[00:56:06.704] Browser LOG     3
+[00:56:06.704] Browser LOG     3
+[00:56:06.704] Browser LOG     3
+[00:56:06.704] Browser LOG     3
+[00:56:06.704] Browser LOG     3
+[00:56:06.704] Browser LOG     3
+[00:56:06.704] Browser LOG     3
+[00:56:06.704] Browser LOG     3
+[00:56:06.704] Browser LOG     3
+[00:56:06.704] Browser LOG     3
+[00:56:06.704] Browser LOG     3
+[00:56:06.704] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:14.965] Browser LOG     3
+[00:56:20.812] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:56:20.917] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:56:21.063] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:56:21.236] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:56:21.401] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:56:39.101] Browser LOG     0
+[00:56:39.101] Browser LOG     0
+[00:56:39.102] Browser LOG     0
+[00:56:39.102] Browser LOG     0
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:39.102] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:45.018] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:56:56.603] Browser LOG     3
+[00:57:34.185] Browser LOG     3
+[00:57:34.185] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:34.186] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:41.853] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:57:46.551] Browser LOG     3
+[00:58:18.798] Server  LOG      ✓ Compiled in 42ms
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:25.024] Browser LOG     3
+[00:58:35.245] Server  LOG      ✓ Compiled in 16ms
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:37.566] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:40.638] Browser LOG     3
+[00:58:56.640] Server  LOG      ✓ Compiled in 35ms
+[00:58:57.087] Browser LOG     3
+[00:58:57.087] Browser LOG     3
+[00:58:57.087] Browser LOG     3
+[00:58:57.087] Browser LOG     3
+[00:58:57.087] Browser LOG     3
+[00:58:57.087] Browser LOG     3
+[00:58:57.087] Browser LOG     3
+[00:58:57.087] Browser LOG     3
+[00:58:57.087] Browser LOG     3
+[00:58:57.087] Browser LOG     3
+[00:58:57.087] Browser LOG     3
+[00:58:57.087] Browser LOG     3
+[00:58:59.143] Browser LOG     3
+[00:58:59.143] Browser LOG     3
+[00:58:59.929] Server  LOG     0
+[00:59:00.010] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:59:00.183] Browser LOG     0
+[00:59:00.183] Browser LOG     0
+[00:59:00.183] Browser LOG     0
+[00:59:00.183] Browser LOG     0
+[00:59:00.183] Browser LOG     0
+[00:59:00.183] Browser LOG     0
+[00:59:00.183] Browser LOG     0
+[00:59:00.183] Browser LOG     0
+[00:59:00.183] Browser LOG     0
+[00:59:00.183] Browser LOG     0
+[00:59:00.183] Browser LOG     0
+[00:59:00.183] Browser LOG     0
+[00:59:00.183] Browser LOG     3
+[00:59:00.183] Browser LOG     3
+[00:59:00.183] Browser LOG     3
+[00:59:00.183] Browser LOG     3
+[00:59:00.183] Browser LOG     3
+[00:59:00.183] Browser LOG     3
+[00:59:00.183] Browser LOG     3
+[00:59:00.183] Browser LOG     3
+[00:59:00.183] Browser LOG     3
+[00:59:00.183] Browser LOG     3
+[00:59:00.263] Server  LOG     0
+[00:59:00.323] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:59:00.479] Browser LOG     0
+[00:59:00.479] Browser LOG     0
+[00:59:00.479] Browser LOG     0
+[00:59:00.479] Browser LOG     0
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:00.479] Browser LOG     3
+[00:59:21.108] Server  LOG      ✓ Compiled in 65ms
+[00:59:21.534] Browser LOG     3
+[00:59:21.534] Browser LOG     3
+[00:59:21.534] Browser LOG     3
+[00:59:21.534] Browser LOG     3
+[00:59:21.534] Browser LOG     3
+[00:59:21.534] Browser LOG     3
+[00:59:21.534] Browser LOG     3
+[00:59:21.534] Browser LOG     3
+[00:59:21.534] Browser LOG     3
+[00:59:21.534] Browser LOG     3
+[00:59:21.534] Browser LOG     3
+[00:59:21.534] Browser LOG     3
+[00:59:30.186] Server  LOG      ✓ Compiled in 59ms
+[00:59:30.508] Browser LOG     3
+[00:59:30.508] Browser LOG     3
+[00:59:30.508] Browser LOG     3
+[00:59:30.508] Browser LOG     3
+[00:59:30.508] Browser LOG     3
+[00:59:30.508] Browser LOG     3
+[00:59:30.508] Browser LOG     3
+[00:59:30.508] Browser LOG     3
+[00:59:30.508] Browser LOG     3
+[00:59:30.508] Browser LOG     3
+[00:59:30.508] Browser LOG     3
+[00:59:30.508] Browser LOG     3
+[00:59:43.309] Server  LOG      ✓ Compiled in 42ms
+[00:59:44.035] Browser LOG     3
+[00:59:44.035] Browser LOG     3
+[00:59:44.035] Browser LOG     3
+[00:59:44.035] Browser LOG     3
+[00:59:44.035] Browser LOG     3
+[00:59:44.035] Browser LOG     3
+[00:59:44.035] Browser LOG     3
+[00:59:44.035] Browser LOG     3
+[00:59:44.035] Browser LOG     3
+[00:59:44.035] Browser LOG     3
+[00:59:44.035] Browser LOG     3
+[00:59:44.035] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[00:59:47.230] Browser LOG     3
+[01:17:49.042] Server  LOG      ✓ Compiled in 14ms
+[01:17:51.203] Server  LOG      ✓ Compiled in 30ms
+[01:19:22.392] Server  LOG      ✓ Compiled in 28ms
+[01:19:22.547] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined
+[01:19:40.649] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:19:40.718] Server  LOG      ✓ Compiled in 23ms
+[01:19:40.796] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'autori_helper_Status')
+[01:19:40.902] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:19:41.549] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'autori_helper_Status')
+[01:19:56.458] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:19:56.517] Server  LOG      ✓ Compiled in 16ms
+[01:19:56.581] Server  ERROR    ⨯ ReferenceError: autore_helper_items is not defined
+[01:19:56.641] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:19:57.548] Browser ERROR   uncaughtError: ReferenceError: autore_helper_items is not defined
+[01:20:15.379] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:20:15.435] Server  LOG      ✓ Compiled in 22ms
+[01:20:15.490] Server  ERROR    ⨯ ReferenceError: autore_helper_items is not defined
+[01:20:15.567] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:20:16.548] Browser ERROR   uncaughtError: ReferenceError: autore_helper_items is not defined
+[01:20:22.291] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:20:22.349] Server  LOG      ✓ Compiled in 18ms
+[01:20:22.449] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:20:37.180] Server  LOG      ✓ Compiled in 18ms
+[01:20:41.683] Server  LOG      ✓ Compiled in 18ms
+[01:20:47.019] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:20:47.167] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:21:12.069] Server  LOG      ✓ Compiled in 15ms
+[01:21:23.572] Server  LOG      ✓ Compiled in 14ms
+[01:21:29.126] Server  LOG      ✓ Compiled in 16ms
+[01:21:33.459] Server  LOG      ✓ Compiled in 15ms
+[01:21:39.326] Server  LOG      ✓ Compiled in 17ms
+[01:21:53.186] Server  LOG      ✓ Compiled in 17ms
+[01:21:53.547] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'autore')
+[01:22:15.638] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:22:15.713] Server  LOG      ✓ Compiled in 14ms
+[01:22:15.841] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:16.547] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/details/l..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
+                        <RootLayout params={Promise}>
+                          <html lang="en">
+                            <body
+                              className={" bg-white text-white"}
+-                             cz-shortcut-listen="true"
+                            >
+                  ...
+
+[01:22:18.922] Server  LOG      ✓ Compiled in 13ms
+[01:24:04.622] Server  LOG      ✓ Compiled in 29ms
+[01:24:12.433] Server  LOG      ✓ Compiled in 20ms
+[01:24:26.449] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:24:26.550] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/details/l..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
+                        <RootLayout params={Promise}>
+                          <html lang="en">
+                            <body
+                              className={" bg-white text-white"}
+-                             cz-shortcut-listen="true"
+                            >
+                  ...
+
+[01:24:26.668] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:24:26.820] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:24:32.127] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:24:32.239] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:24:51.833] Server  LOG      ✓ Compiled in 16ms
+[01:24:57.039] Server  LOG      ✓ Compiled in 14ms
+[01:25:20.996] Server  LOG      ✓ Compiled in 17ms
+[01:25:24.464] Server  LOG      ✓ Compiled in 26ms
+[01:25:35.498] Server  LOG      ✓ Compiled in 14ms
+[01:25:38.667] Server  LOG      ✓ Compiled in 17ms
+[01:27:56.464] Server  LOG      ✓ Compiled in 41ms
+[01:28:05.576] Server  LOG      ✓ Compiled in 19ms
+[01:28:10.511] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:28:10.683] Browser ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set `onChange`.
+[01:28:14.304] Server  LOG      ✓ Compiled in 16ms
+[01:28:17.053] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:28:17.211] Browser ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set `onChange`.
+[01:32:48.913] Server  LOG      ✓ Compiled in 31ms
+[01:32:52.622] Server  LOG      ✓ Compiled in 32ms
+[01:32:53.548] Browser ERROR   ./src/app/details/libri/[isbn]/page.jsx:222:95
+Parsing ecmascript source code failed
+  220 |                                                 
+  221 |                                                 <select  name="" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 ">
+> 222 |                                                     <option value="">libroDetail?.autore ?? ""}</option>
+      |                                                                                               ^
+  223 |
+  224 |                                                     {Array.isArray(autore_helper_items) && autore_helper_items.map(autore => (
+  225 |                                                         <option key={autore.id_autore} value={autore.id_autore}>{autore.nome_autore}</option>
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/app/details/libri/[isbn]/page.jsx [Client Component Browser]
+    ./src/app/details/libri/[isbn]/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/details/libri/[isbn]/page.jsx [Client Component SSR]
+    ./src/app/details/libri/[isbn]/page.jsx [Server Component]
+[01:32:53.548] Browser ERROR   ./src/app/details/libri/[isbn]/page.jsx:222:95
+Parsing ecmascript source code failed
+  220 |                                                 
+  221 |                                                 <select  name="" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 ">
+> 222 |                                                     <option value="">libroDetail?.autore ?? ""}</option>
+      |                                                                                               ^
+  223 |
+  224 |                                                     {Array.isArray(autore_helper_items) && autore_helper_items.map(autore => (
+  225 |                                                         <option key={autore.id_autore} value={autore.id_autore}>{autore.nome_autore}</option>
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/app/details/libri/[isbn]/page.jsx [Client Component Browser]
+    ./src/app/details/libri/[isbn]/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/details/libri/[isbn]/page.jsx [Client Component SSR]
+    ./src/app/details/libri/[isbn]/page.jsx [Server Component]
+[01:33:02.515] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:33:02.684] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:33:02.851] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:33:02.998] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:33:03.141] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:33:07.145] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:33:07.263] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:33:07.437] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:35:53.525] Server  LOG      ✓ Compiled in 23ms
+[01:35:58.201] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:35:58.339] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:35:58.442] Browser ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set `onChange`.
+[01:35:58.512] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:35:58.658] Browser ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set `onChange`.
+[01:36:08.474] Browser LOG     0
+[01:36:08.474] Browser LOG     0
+[01:36:08.474] Browser LOG     0
+[01:36:08.474] Browser LOG     0
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:08.474] Browser LOG     3
+[01:36:10.322] Browser ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set `onChange`.
+[01:36:13.012] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:13.013] Browser LOG     3
+[01:36:14.124] Browser ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set `onChange`.
+[01:36:27.035] Server  LOG      ✓ Compiled in 29ms
+[01:37:00.704] Server  LOG      ✓ Compiled in 18ms
+[01:37:21.576] Server  LOG      ✓ Compiled in 16ms
+[01:37:26.712] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:37:26.817] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/details/l..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
+                        <RootLayout params={Promise}>
+                          <html lang="en">
+                            <body
+                              className={" bg-white text-white"}
+-                             cz-shortcut-listen="true"
+                            >
+                  ...
+
+[01:37:37.390] Server  LOG      ✓ Compiled in 13ms
+[01:37:42.094] Server  LOG      ✓ Compiled in 20ms
+[01:38:00.800] Browser LOG     0
+[01:38:00.800] Browser LOG     0
+[01:38:00.800] Browser LOG     0
+[01:38:00.800] Browser LOG     0
+[01:38:00.800] Browser LOG     0
+[01:38:00.800] Browser LOG     0
+[01:38:00.800] Browser LOG     0
+[01:38:00.800] Browser LOG     0
+[01:38:00.800] Browser LOG     0
+[01:38:00.800] Browser LOG     0
+[01:38:00.800] Browser LOG     0
+[01:38:00.800] Browser LOG     0
+[01:38:00.800] Browser LOG     3
+[01:38:00.800] Browser LOG     3
+[01:38:00.800] Browser LOG     3
+[01:38:00.800] Browser LOG     3
+[01:38:00.800] Browser LOG     3
+[01:38:00.800] Browser LOG     3
+[01:38:00.800] Browser LOG     3
+[01:38:00.800] Browser LOG     3
+[01:38:00.800] Browser LOG     3
+[01:38:00.800] Browser LOG     3
+[01:39:30.627] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:39:30.628] Browser LOG     3
+[01:40:29.715] Server  LOG      ✓ Compiled in 79ms
+[01:40:36.623] Server  LOG      ✓ Compiled in 56ms
+[01:40:45.248] Server  LOG      ✓ Compiled in 76ms
+[01:41:01.314] Server  LOG      ✓ Compiled in 101ms
+[01:41:21.814] Server  LOG      ✓ Compiled in 262ms
+[01:41:31.624] Server  LOG      ✓ Compiled in 67ms
+[01:41:35.647] Browser LOG     3
+[01:41:35.647] Browser LOG     3
+[01:41:35.647] Browser LOG     3
+[01:41:35.647] Browser LOG     3
+[01:41:35.647] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:35.648] Browser LOG     3
+[01:41:57.525] Server  LOG      ✓ Compiled in 29ms
+[01:41:57.956] Browser LOG     3
+[01:41:57.956] Browser LOG     3
+[01:42:08.465] Server  LOG      ✓ Compiled in 22ms
+[01:42:08.546] Browser LOG     3
+[01:42:08.546] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:44.821] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:42:53.799] Browser LOG     3
+[01:43:12.870] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:48:02.384] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:48:02.401] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/details/t..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
+                        <RootLayout params={Promise}>
+                          <html lang="en">
+                            <body
+                              className={" bg-white text-white"}
+-                             cz-shortcut-listen="true"
+                            >
+                  ...
+
+[01:48:02.473] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:48:59.969] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:49:00.142] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:49:00.293] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

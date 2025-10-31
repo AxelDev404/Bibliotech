@@ -84,7 +84,10 @@ export default function DashBoard()
                                 
                             <div className="py-10 w-full"></div>
                                 
-                            <h2 className="text-xl sm:text-2xl mb-4 px-2 sm:px-4 text-gray-800 font-light self-start">Dati in evidenza</h2>
+                            <h2 className="text-xl sm:text-2xl mb-4 px-2 sm:px-4 text-gray-800 font-light self-start">
+                                Dati in evidenza <hr />
+                                
+                            </h2>
 
                             <div className="bg-gray-100 py-6 sm:py-8 rounded-2xl w-full overflow-x-auto">
                                

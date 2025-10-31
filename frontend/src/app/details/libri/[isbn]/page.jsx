@@ -7,7 +7,8 @@ import { useSelector , useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
 import { useEffect , useState } from "react";
 
-import { getLibroDetailPageAPI , clearLibro, patchLibroAPI } from "@/features/Libri/libriSlice";
+import { getLibroDetailPageAPI , clearLibro, patchLibroAPI } from "@/features/Libri/libriSlice"
+import { getHelperAutoriAPI } from "@/features/Autori/autoriSlice";
 import AppWrapper from "@/components/AppWrapper";
 import PrivateRoute from "@/components/PrivateRoute";
 
@@ -28,10 +29,24 @@ export default function LibroPage() {
 
         requests : {
             libroDetail : {statusLibroDetail , errorLibroDetail},
-            book_patch_items : {book_patch_error}
+            book_patch_items : {book_patch_error},
         },    
     
     } = useSelector((state) => state.libri);
+
+
+    const {
+
+        data : {autore_helper_items},
+
+        requests : {
+
+            autore_helper_items : {autori_helper_Status}
+
+        }
+
+
+    } = useSelector((state) => state.autori);
 
     
     const dispatch = useDispatch();
@@ -118,9 +133,15 @@ export default function LibroPage() {
     useEffect(() => {
         
         if(isbn) dispatch(getLibroDetailPageAPI(isbn));
+        
         return () => dispatch(clearLibro());
 
     },[isbn , dispatch])
+
+
+    useEffect(() => {
+        dispatch(getHelperAutoriAPI());
+    },[dispatch])
 
 
     useEffect(() => {
@@ -194,8 +215,17 @@ export default function LibroPage() {
                                             </div>
 
                                             <div className="flex justify-between border-b pb-2 flex-col">
+
                                                 <h2 className="text-sm text-gray-500">Autore</h2>
-                                                <p className="text-md w-96 h-7 px-2   font-thin text-gray-900  ">{libroDetail?.autore_libro ?? ""} </p>
+                                                
+                                                <select readOnly={locked} value={libroDetail?.autore ?? ""} className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 ">
+                                                    <option value="">La modifica del autore è work in progress</option>
+                                                    {Array.isArray(autore_helper_items) && autore_helper_items.map(autore => (
+                                                        <option  key={autore.id_autore} value={autore.id_autore}>{autore.nome_autore}</option>
+                                                    ))}
+
+                                                </select>
+
                                             </div>
 
                                             <div className="flex justify-between border-b pb-2 flex-col">

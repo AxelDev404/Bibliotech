@@ -308,7 +308,7 @@ export default function InsertLibroPage() {
                             <div className="w-full max-w-8xl bg-white rounded-xl shadow p-8">
 
                                 <h1 className="text-2xl py-16 font-thin text-gray-600 mb-6 text-left">
-                                <SettingsIcon sx={{fontSize : 40}}/> Inserisci Nuovo Libro
+                                    <SettingsIcon sx={{fontSize : 40}}/> Inserisci Nuovo Libro
                                     <hr />
                                     
                                 </h1>

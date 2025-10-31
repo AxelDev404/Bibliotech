@@ -11,6 +11,8 @@ import { postTesseraBibliotecaAPI } from "@/features/TessereBiblioteca/tessere_b
 import { useState } from "react";
 import {Toaster , toast} from "react-hot-toast";
 
+import BadgeIcon from '@mui/icons-material/Badge';
+
 export default function InsertTesseraPage() {
 
     const {
@@ -88,8 +90,10 @@ export default function InsertTesseraPage() {
                             <Toaster position="top-center" reverseOrder={false} />
                             
                             <div className="w-full max-w-8xl bg-white rounded-xl shadow p-8">
-                                <h1 className="text-2xl py-20 font-thin text-gray-800 mb-6 text-left">
+                                <h1 className="text-2xl py-20 font-thin text-gray-600 mb-6 text-left">
+                                    <BadgeIcon sx={{fontSize : 40}}/>
                                     Inserisci Nuovo Tesserato
+                                    <hr />
                                 </h1>
 
                                 <form onSubmit={hanleSubmitTesseraBibilioteca} className=" sm:grid-cols-2 gap-40">
