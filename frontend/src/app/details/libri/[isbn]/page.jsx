@@ -14,6 +14,11 @@ import PrivateRoute from "@/components/PrivateRoute";
 import Banner from "@/components/Banner";
 import SideBar from "@/components/SideBar";
 
+import LockOpenIcon from '@mui/icons-material/LockOpen';
+import UndoIcon from '@mui/icons-material/Undo';
+import SaveAltIcon from '@mui/icons-material/SaveAlt';
+import ZoomInIcon from '@mui/icons-material/ZoomIn';
+import LockOutlineIcon from '@mui/icons-material/LockOutline';
 
 export default function LibroPage() {
   
@@ -46,6 +51,7 @@ export default function LibroPage() {
         lingua : ""
     }
 
+    const [locked , setLocked] = useState(true);
 
     const [formData , setFormData] = useState(initialState);
     const [saving , setSaving] = useState(false);
@@ -62,9 +68,9 @@ export default function LibroPage() {
     }
 
 
-    const handlePatch = async(e) => {
+    const handlePatch = async() => {
 
-        e.preventDefault();
+        //e.preventDefault();
 
         setSaving(true);
 
@@ -148,11 +154,44 @@ export default function LibroPage() {
                                 <Toaster position="top-center" reverseOrder={false} />
 
                                 <h1 className="text-2xl font-thin text-gray-800 mb-6 text-left">
+                                    <ZoomInIcon sx={{fontSize : 40}}/>
                                     Dettagli Libro
+                                    <hr />
                                 </h1>
 
                                 <div className="bg-white p-8 rounded-2xl transition-all duration-300 space-y-4">
-                                    <form onSubmit={handlePatch}>
+
+                                    <div>
+
+                                        <button onClick={() => router.back()} className="bg-rose-900 text-white px-2 py-2 rounded-md hover:bg-rose-800 transition">
+                                            <UndoIcon/>
+                                        </button>
+
+                                        <div className="py-2"></div>
+
+                                        
+                                        <button title="sblocca modifiche" type="button" onClick={() => {setLocked(false); toast.success("Modifiche abilitate");}} className="bg-green-700 text-white px-2 py-2 rounded-md hover:bg-green-400 transition">
+                                            <LockOpenIcon/>
+                                        </button>
+
+                                        <div className="py-2"></div>
+
+                                        <button title="blocca modifiche" type="button" onClick={() => {setLocked(true); toast.error("Modifiche diabilitate")}} className="bg-red-800 text-white px-2 py-2 rounded-md hover:bg-rose-800 transition">
+                                            <LockOutlineIcon/>
+                                        </button>
+
+
+                                        <div className="py-6 flex w-52 ">
+
+                                            <button type="button" onClick={() => handlePatch()} className="bg-rose-900 text-white px-2 py-2 rounded-md hover:bg-rose-800 transition">
+                                                <SaveAltIcon/>
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                    <form>
                                         
                                        
                                        
@@ -160,7 +199,7 @@ export default function LibroPage() {
                                         
                                             <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">Titolo</h2>
-                                                <input name="titolo" onChange={handleChange} type="text" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 " value={formData?.titolo ?? ""} />
+                                                <input readOnly={locked} name="titolo" onChange={handleChange} type="text" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 " value={formData?.titolo ?? ""} />
                                             </div>
 
                                             <div className="flex justify-between border-b pb-2 flex-col">
@@ -170,27 +209,27 @@ export default function LibroPage() {
 
                                             <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">ISBN</h2>
-                                                <input name="isbn" onChange={handleChange} type="text" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 " value={formData?.isbn ?? ""} />
+                                                <p className="text-md w-96 h-7 px-2   font-thin text-gray-900  ">{libroDetail?.isbn ?? ""} </p>
                                             </div>
 
                                             <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">Editore</h2>
-                                                <input name="editore" onChange={handleChange} type="text" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 " value={formData?.editore ?? ""} />
+                                                <input readOnly={locked} name="editore" onChange={handleChange} type="text" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 " value={formData?.editore ?? ""} />
                                             </div>
 
                                             <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">Data di uscita</h2>
-                                                <input name="data_uscita" onChange={handleChange} type="date" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 " value={formData?.data_uscita ?? ""} />
+                                                <input readOnly={locked} name="data_uscita" onChange={handleChange} type="date" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 " value={formData?.data_uscita ?? ""} />
                                             </div>
 
                                             <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">Formato</h2>
-                                                <input name="formato" onChange={handleChange} type="text" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 " value={formData?.formato ?? ""} />
+                                                <input readOnly={locked} name="formato" onChange={handleChange} type="text" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 " value={formData?.formato ?? ""} />
                                             </div>
 
                                             <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">Lingua</h2>
-                                                <input name="lingua" onChange={handleChange} type="text" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 " value={formData?.lingua ?? ""} />
+                                                <input readOnly={locked} name="lingua" onChange={handleChange} type="text" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 " value={formData?.lingua ?? ""} />
                                             </div>
 
                                             
@@ -200,27 +239,13 @@ export default function LibroPage() {
                                                 <p className="text-md w-96 h-7 px-2   font-thin text-gray-900  ">{libroDetail?.postazione ?? ""} </p>
                                             </div>
 
-                                            <div className="py-6 flex  flex-col w-52 ">
+                                          
 
-                                                <button type="submit" className="bg-rose-900 text-white px-6 py-2 rounded-md hover:bg-rose-800 transition">
-                                                    Salva
-                                                </button>
-
-                                                <div className="py-2"></div>
-
-                                                <button onClick={() => router.back()} className="bg-rose-900 text-white px-6 py-2 rounded-md hover:bg-rose-800 transition">
-                                                    Torna alla lista
-                                                </button>
-
-                                            </div>
-                                            
-                             
-                                            
-                                        
                                         </div>
                                     </form>
                                 </div>
 
+                                
                                 
 
                             </div>
