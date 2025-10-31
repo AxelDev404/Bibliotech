@@ -25,8 +25,15 @@ import TableChartIcon from '@mui/icons-material/TableChart';
 export default function DashBoard()
 {
 
-    const { last_insert_book , count , status , error} = useSelector((state) => state.libri); 
+    const { 
+   
+        data : {count},
 
+        requests : {
+            count : {count_status , count_error , count_loading }
+        },
+
+    } = useSelector((state) => state.libri); 
 
 
     const { 
@@ -40,10 +47,12 @@ export default function DashBoard()
     } = useSelector((state) => state.postazioni);
 
 
+    const { data : {count_tessere_biblioteca},  } = useSelector((state) => state.tessere_bibilioteca)
 
-    const { last_tessere_biblioteca_insert , count_tessere_biblioteca , status : statusCountTessere , error : errorCountTessere} = useSelector((state) => state.tessere_bibilioteca)
-    const { count_presiti_attivi , count_prestiti_saldati , status : statusCountPrestiti , error : errorCountPrestiti } = useSelector((state) => state.prestiti); 
+    const { data : {count_presiti_attivi , count_prestiti_saldati}  } = useSelector((state) => state.prestiti); 
 
+
+    
     const dispatch = useDispatch();
 
     console.log(count);

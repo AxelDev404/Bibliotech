@@ -55,7 +55,13 @@ from .postazione.post import (
     post_postazione
 )
 
+from .libro.patch import (
+    patch_libro
+)
 
+from .tessera_biblioteca.patch import (
+    patch_tessera_biblioteca
+)
 
 
 
@@ -108,4 +114,12 @@ __all__ = [
     #POST POSTAZIONE
 
     'post_postazione',
+
+    #PATCH LIBRO
+
+    'patch_libro',
+
+    #PATCH TESSERA BIBLIOTECA
+
+    'patch_tessera_biblioteca',
 ]

@@ -1,5 +1,5 @@
 import { createAsyncThunk , createSlice, isRejectedWithValue } from "@reduxjs/toolkit";
-import { fetchTableLibri , fetchCountSatat, fetchLastInsertBookStat , fetchLibroDetailPage , createLibro } from "@/api/apiLibri";
+import { fetchTableLibri , fetchCountSatat, fetchLastInsertBookStat , fetchLibroDetailPage , createLibro , modifyLibro } from "@/api/apiLibri";
 
 
 
@@ -92,26 +92,63 @@ export const postLibroAPI = createAsyncThunk('libri/upload_book/' , async(formDa
 
 })
 
+//-----------------------------------------------------------MODIFICA LIBRI-----------------------------------------------------------//
 
+
+export const patchLibroAPI = createAsyncThunk('libri/patch_book/' , async({isbn , updateData} , {rejectWithValue}) => {
+
+    try {
+        
+        
+        const response = await modifyLibro(isbn , updateData);
+        return response.data || response;
+
+    } catch (err) {
+        
+        return rejectWithValue(err.response?.data || {"error" : "Si è verificato un problema"});
+    }
+
+})
+  
 const libriSlice = createSlice({
 
     name : 'libri',
 
-    initialState : {libro : null , statusLibroDetail : null , errorLibroDetail : null, loadingDetail : false , items : [], last_insert_book : [] , count : 0 , status : 'idle' , error : null , loading : false},
+    initialState : {
+        
+        data : {
+
+            items : [],
+            book_patch_items : [],
+            libroDetail : [],
+            last_insert_book : [],
+            count : 0
+        },
+
+        requests : {
+
+            items : { status : 'idle' , error : null , loading : false},
+            libroDetail : {statusLibroDetail : null , errorLibroDetail : null, loadingDetail : false},
+            count : { count_status : 'idle' , count_error : null , count_loading : false},
+            last_insert_book : {last_insert_book_status : 'idle' , last_insert_book_error : null , last_insert_book_loading : false},
+            book_patch_items : { book_patch_status : 'idle' , book_patch_error : null , book_patch_loading : false}
+        }
+    },
 
     reducers : {
 
         clearLibro : (state) => {
-            state.loadingDetail = false;
-            state.libro = null;
-            state.errorLibroDetail = null;
-            state.statusLibroDetail = null;
+
+            state.requests.libroDetail.loadingDetail = false;
+            state.data.libroDetail = null;
+            state.requests.libroDetail.errorLibroDetail = null;
+            state.requests.libroDetail.statusLibroDetail = 'idle'; 
         },
 
         clearErrorLibro : (state) => {
-            state.loading = false;
-            state.status = 'idle';
-            state.error = null;
+            state.requests.items.loading = false;
+            state.requests.items.status = 'idle';
+            state.requests.items.error = null;
         }
         
     },
@@ -124,100 +161,125 @@ const libriSlice = createSlice({
         //THUNK GET GESTIONE LIBRI  
 
         .addCase(getTableLibriAPI.pending , (state) => {
-            state.status = 'loading';
-            state.loading = true;
+            state.requests.items.loading = 'loading';
+            state.requests.items.loading = true;
         })
 
         .addCase(getTableLibriAPI.fulfilled , (state , action) => {
-            state.loading = false;
-            state.status = 'succeeded';
-            state.items = action.payload;
+            state.requests.items.loading = false;
+            state.requests.items.status = 'succeeded';
+            state.data.items = action.payload;
         })
 
         .addCase(getTableLibriAPI.rejected , (state , action) => {
-            state.loading = false;
-            state.status = 'failed';
-            state.error = action.payload || {detail : 'errore sconosciuto'};
+            state.requests.items.loading = false;
+            state.requests.items.status = 'failed';
+            state.requests.items.error = action.payload || {detail : 'errore sconosciuto'};
         })
 
 
         //RICERCA LIBRI
 
         .addCase(getLibroDetailPageAPI.pending , (state) => {
-            state.loadingDetail = true;
-            state.statusLibroDetail = 'loading';
+            state.requests.libroDetail.loadingDetail = true;
+            state.requests.libroDetail.statusLibroDetail = 'loading';
         })
 
         .addCase(getLibroDetailPageAPI.fulfilled , (state , action) => {
-            state.loadingDetail = false;
-            state.statusLibroDetail = 'succeeded';
-            state.libro = action.payload;
+            state.requests.libroDetail.loadingDetail = false;
+            state.requests.libroDetail.statusLibroDetail = 'succeeded';
+            state.data.libroDetail = action.payload;
         })
 
         .addCase(getLibroDetailPageAPI.rejected , (state , action) => {
-            state.loadingDetail = false;
-            state.statusLibroDetail = 'failed';
-            state.errorLibroDetail = action.payload || {detail : 'errore sconosciuto'};
+            state.requests.libroDetail.loadingDetail = false;
+            state.requests.libroDetail.statusLibroDetail = 'failed';
+            state.requests.libroDetail.errorLibroDetail = action.payload || {detail : 'errore sconosciuto'};
         })
 
 
         //THUNK GET GESTIONE STATISTICHE
 
         .addCase(getCountStatAPI.pending , (state) => {
-            state.status = 'loading';
-            state.loading = true;
+            state.requests.count.count_status = 'loading';
+            state.requests.count.count_loading = true;
         })
 
         .addCase(getCountStatAPI.fulfilled , (state , action) => {
-            state.loading = false;
-            state.status = 'succeeded';
-            state.count = action.payload; 
+            state.requests.count.count_loading = false;
+            state.requests.count.count_status = 'succeeded';
+            state.data.count = action.payload; 
         })
 
         .addCase(getCountStatAPI.rejected , (state , action) => {
-            state.loading = false;
-            state.status = 'failed';
-            state.error = action.payload || {detail : 'errore sconosciuto'};
+            state.requests.count.count_loading = false;
+            state.requests.count.count_status = 'failed';
+            state.requests.count.count_error = action.payload || {detail : 'errore sconosciuto'};
         })
         
 
         //THUNK GET GESTIONE STATISTICHE ULTIMI INSERIMENTI
 
         .addCase(getLastInsertBookStatAPI.pending , (state) => {
-            state.loading = true;
-            state.status = 'loading';
+            state.requests.last_insert_book.last_insert_book_loading = true;
+            state.requests.last_insert_book.last_insert_book_status = 'loading';
         })
 
         .addCase(getLastInsertBookStatAPI.fulfilled , (state , action) => {
-            state.loading = false;
-            state.status = 'succeeded';
-            state.last_insert_book = action.payload;
+            state.requests.last_insert_book.last_insert_book_loading = false;
+            state.requests.last_insert_book.last_insert_book_status = 'succeeded';
+            state.data.last_insert_book = action.payload;
         })
 
         .addCase(getLastInsertBookStatAPI.rejected , (state , action) => {
-            state.loading = false;
-            state.status = 'failed';
-            state.error = action.payload || {detail : 'errore sconosciuto'};
+            state.requests.last_insert_book.last_insert_book_loading = false;
+            state.requests.last_insert_book.last_insert_book_status = 'failed';
+            state.requests.last_insert_book.last_insert_book_error = action.payload || {detail : 'errore sconosciuto'};
         })
 
 
         //THUNK POST LIBRO 
 
         .addCase(postLibroAPI.pending , (state) => {
-            state.loading = true;
-            state.status = 'loading';
+            state.requests.items.loading = true;
+            state.requests.items.status = 'loading';
         })
 
         .addCase(postLibroAPI.fulfilled , (state , action) => {
-            state.loading = false;
-            state.status = 'succeeded';
-            state.items.push(action.payload);
+            state.requests.items.loading = false;
+            state.requests.items.status = 'succeeded';
+            state.data.items.push(action.payload);
         })
         
         .addCase(postLibroAPI.rejected , (state , action) => {
-            state.loading = false;
-            state.status = 'failed';
-            state.error = action.payload || {detail : 'errore sconosciuto'};
+            state.requests.items.loading = false;
+            state.requests.items.status = 'failed';
+            state.requests.items.error = action.payload || {detail : 'errore sconosciuto'};
+        })
+
+
+        //PATCH LIBRO
+
+        .addCase(patchLibroAPI.pending , (state) => {
+            state.requests.book_patch_items.book_patch_loading = true;
+            state.requests.book_patch_items.book_patch_status = 'failed';
+        })
+
+        .addCase(patchLibroAPI.fulfilled , (state , action) => {
+            state.requests.book_patch_items.book_patch_loading = false;
+            state.requests.book_patch_items.book_patch_status = 'succeeded';
+            
+            const index = state.data.book_patch_items.findIndex( l => l.isbn === action.payload.isbn);
+
+            if(index !== -1){
+                state.data.book_patch_items[index] = {...state.data.book_patch_items[index] , ...action.payload};
+            }
+        })
+
+        .addCase(patchLibroAPI.rejected , (state , action) => {
+            state.requests.book_patch_items.book_patch_loading = false;
+            state.requests.book_patch_items.book_patch_status = 'failed';
+            state.requests.book_patch_items.book_patch_error = action.payload || {detail : 'errore sconosciuto'};
         })
 
     }

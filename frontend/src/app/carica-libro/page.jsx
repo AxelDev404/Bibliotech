@@ -1,8 +1,10 @@
 'use client';
 
+import { useSelector , useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import {Toaster , toast} from "react-hot-toast";
 
 import AppWrapper from "@/components/AppWrapper";
 import PrivateRoute from "@/components/PrivateRoute";
@@ -13,17 +15,26 @@ import AddBoxIcon from '@mui/icons-material/AddBox';
 import CloseIcon from "@mui/icons-material/Close";
 import SettingsIcon from '@mui/icons-material/Settings';
 
-import { useSelector , useDispatch } from "react-redux";
-import { getHelperSelectionPostazioni, postPostazioneAPI } from "@/features/Postazioni/postazioniSlice";
-import { postLibroAPI , clearErrorLibro } from "@/features/Libri/libriSlice";
-import { postCategoriaAPI } from "@/features/Categorie/categorieSlice";
 
-import {Toaster , toast} from "react-hot-toast";
-import { getHelperAutoriAPI, postAutoriAPI } from "@/features/Autori/autoriSlice";
+import { getHelperSelectionPostazioni, postPostazioneAPI , clearErrorPostazione } from "@/features/Postazioni/postazioniSlice";
+import { postLibroAPI , clearErrorLibro } from "@/features/Libri/libriSlice";
+import { postCategoriaAPI , clearCategorieError } from "@/features/Categorie/categorieSlice";
+import { getHelperCategoriaSlectionAPI } from "@/features/Categorie/categorieSlice";
+import { getHelperAutoriAPI, postAutoriAPI , clearErrorAutori } from "@/features/Autori/autoriSlice";
 
 export default function InsertLibroPage() {
  
-    const {postazioni_helper , postazioni_helperStatus , postazioni_helperError} = useSelector((state) => state.postazioni);
+    const {
+
+        data : {postazioni_helper_items , postazioni_post_items},
+
+        requests : {
+            postazioni_helper_items : {postazioni_helperStatus, postazioni_helperError},
+            postazioni_post_items : {postazioni_post_error}
+        },
+
+
+    } = useSelector((state) => state.postazioni);
     
     const {  
         
@@ -38,8 +49,28 @@ export default function InsertLibroPage() {
     } = useSelector((state) => state.autori);
 
 
-    const {items , error , status} = useSelector((state) => state.libri);
-    const {categoria_post_items , categoria_post_error , categoria_post_status } = useSelector((state) => state.categorie);
+    const {
+
+        data : {categoria_helper_items , categoria_post_items},
+
+        requests : {
+            categoria_helper_items : {categoria_helper_status , categoria_helper_error , categoria_helper_loading},
+            categoria_post_items : {categoria_post_error}
+        },
+
+    } = useSelector((state) => state.categorie);
+
+
+    const {
+        
+        data : {items},
+
+        requests :{
+            items : {error}
+        }
+
+    } = useSelector((state) => state.libri);
+   
  
     const dispatch = useDispatch();
     const router = useRouter();
@@ -132,9 +163,12 @@ export default function InsertLibroPage() {
         try {
             
             await dispatch(postCategoriaAPI(formDataCategoria)).unwrap();
+            dispatch(getHelperCategoriaSlectionAPI());
 
             setFormDataCategoria(initialStateCategoria);
             toast.success("Categoria inserita");
+
+            dispatch(clearCategorieError());
 
         } catch (error) {
             
@@ -174,9 +208,12 @@ export default function InsertLibroPage() {
         try {
             
             await dispatch(postAutoriAPI(fomrDataAutore)).unwrap();
+            dispatch(getHelperAutoriAPI());
             
             setFormDataAutore(initialStateAutore);
             toast.success("Autore inserito");
+
+            dispatch(clearErrorAutori());
 
         } catch (error) {
 
@@ -188,8 +225,6 @@ export default function InsertLibroPage() {
 
 
     //--------------------------------------------------------------POST POSTAZIONE--------------------------------------------------------------//
-
-    //FARE UNA VIEW CON LA GET NOME ED PK DELLA CATEGORIA NON HAI LA SELECTT !!!!!!!!!
 
     const initialStatePostazione = {
 
@@ -211,8 +246,7 @@ export default function InsertLibroPage() {
             [name] : value === "" ? null : value
         })
     }
-
-    //FARE UNA VIEW CON LA GET NOME ED PK DELLA CATEGORIA NON HAI LA SELECTT !!!!!!!!!
+    
 
     const handleSubmitPostazione = async(e) => {
 
@@ -220,7 +254,7 @@ export default function InsertLibroPage() {
 
         const payload = { ...formDataPostazioni , 
 
-            posizione : formDataPostazioni.numerazione ? Number(formDataPostazioni.numerazione) : null,
+            numerazione : formDataPostazioni.numerazione ? Number(formDataPostazioni.numerazione) : null,
             categoria : formDataPostazioni.categoria ? Number(formDataPostazioni.categoria) : null,
             capacita : formDataPostazioni.capacita ? Number(formDataPostazioni.capacita) : null
         };
@@ -231,6 +265,8 @@ export default function InsertLibroPage() {
 
             setFomrDataPostazioni(initialStatePostazione);
             toast.success("Postazione inserita");
+
+            dispatch(clearErrorPostazione());
 
         } catch (error) {
             
@@ -248,7 +284,8 @@ export default function InsertLibroPage() {
 
         dispatch(getHelperSelectionPostazioni());
         dispatch(getHelperAutoriAPI());
-
+        dispatch(getHelperCategoriaSlectionAPI());
+       
     },[dispatch])
 
 
@@ -341,7 +378,12 @@ export default function InsertLibroPage() {
                                             
                                             <motion.div  className="bg-white p-6 rounded-xl shadow-lg w-full max-w-xl relative" initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}exit={{ scale: 0.8, opacity: 0 }} transition={{ duration: 0.3 }}>
                                                 
-                                                <button className="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onClick={() => setPopUpAutore({ open: false })}>
+                                                <button className="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onClick={() => { 
+                                                    
+                                                    setPopUpAutore({ open: false });
+                                                    dispatch(clearErrorAutori());
+                                                
+                                                }}>
                                                     <CloseIcon />
                                                 </button>
                                                 
@@ -353,16 +395,20 @@ export default function InsertLibroPage() {
                                                     
                                                     <label className="flex flex-col text-gray-700 text-sm">
                                                         Nome Autore
-                                                        <input name="nome_autore" value={fomrDataAutore.nome_autore} onChange={handleChangeAutore} type="text" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        <input name="nome_autore" value={fomrDataAutore.nome_autore ?? ""} onChange={handleChangeAutore} type="text" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        {autore_post_error?.nome_autore && ( <p className="text-red-500 text-sm px-1 mt-1">{autore_post_error.nome_autore[0]}</p>)}
+
                                                     </label>
                                                     
                                                     <label className="flex flex-col text-gray-700 text-sm">
                                                         Cognome Autore
-                                                        <input name="cognome_autore" value={fomrDataAutore.cognome_autore} onChange={handleChangeAutore} type="text" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        <input name="cognome_autore" value={fomrDataAutore.cognome_autore ?? ""} onChange={handleChangeAutore} type="text" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        {autore_post_error?.cognome_autore && ( <p className="text-red-500 text-sm px-1 mt-1">{autore_post_error.cognome_autore[0]}</p>)}
+
                                                     </label>
 
                                                     <button  type="submit" className="mt-4 p-2 rounded-md border border-rose-500 text-white bg-rose-900 hover:bg-rose-800 transition-colors text-sm">
-                                                        Aggiungi Autore
+                                                        Salva Autore
                                                     </button>
                                                     
                                                 </form>
@@ -382,7 +428,13 @@ export default function InsertLibroPage() {
                                             
                                             <motion.div  className="bg-white p-6 rounded-xl shadow-lg w-full max-w-xl relative" initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}exit={{ scale: 0.8, opacity: 0 }} transition={{ duration: 0.3 }}>
                                                 
-                                                <button className="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onClick={() => setPopUpCategoria({ open: false })}>
+                                                <button className="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onClick={() => {
+                                                    
+                                                    setPopUpCategoria({ open: false }); 
+                                                    dispatch(clearCategorieError());
+                                                    
+                                                }}>
+
                                                     <CloseIcon />
                                                 </button>
                                                 
@@ -394,16 +446,20 @@ export default function InsertLibroPage() {
                                                     
                                                     <label className="flex flex-col text-gray-700 text-sm">
                                                         Nome Categoria
-                                                        <input name="nome_categoria" value={formDataCategoria.nome_categoria} onChange={handleChangeCategoria} type="text" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        <input name="nome_categoria" value={formDataCategoria.nome_categoria ?? ""} onChange={handleChangeCategoria} type="text" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        {categoria_post_error?.nome_categoria && ( <p className="text-red-500 text-sm px-1 mt-1">{categoria_post_error.nome_categoria[0]}</p>)}
+
                                                     </label>
                                                     
                                                     <label className="flex flex-col text-gray-700 text-sm">
                                                         Descrizione
-                                                        <input name="descrizione" value={formDataCategoria.descrizione} onChange={handleChangeCategoria} type="text" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        <input name="descrizione" value={formDataCategoria.descrizione ?? ""} onChange={handleChangeCategoria} type="text" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        {categoria_post_error?.descrizione && ( <p className="text-red-500 text-sm px-1 mt-1">{categoria_post_error.descrizione[0]}</p>)}
+
                                                     </label>
 
                                                     <button  type="submit" className="mt-4 p-2 rounded-md border border-rose-500 text-white bg-rose-900 hover:bg-rose-800 transition-colors text-sm">
-                                                        Salva
+                                                        Salva Categoria
                                                     </button>
                                                     
                                                 </form>
@@ -424,7 +480,11 @@ export default function InsertLibroPage() {
                                             
                                             <motion.div  className="bg-white p-6 rounded-xl shadow-lg w-full max-w-xl relative" initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}exit={{ scale: 0.8, opacity: 0 }} transition={{ duration: 0.3 }}>
                                                 
-                                                <button className="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onClick={() => setPopUpPostazione({ open: false })}>
+                                                <button className="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onClick={() => { 
+                                                    
+                                                    setPopUpPostazione({ open: false });
+                                                    dispatch(clearErrorPostazione());
+                                                }}>
                                                     <CloseIcon />
                                                 </button>
                                                 
@@ -436,32 +496,41 @@ export default function InsertLibroPage() {
                                                     
                                                     <label className="flex flex-col text-gray-700 text-sm">
                                                         Posizione
-                                                        <input name="posizione" value={formDataPostazioni.posizione} onChange={handleChangePostazioni} type="text" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        <input name="posizione" value={formDataPostazioni.posizione ?? ""} onChange={handleChangePostazioni} type="text" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        {postazioni_post_error?.posizione && ( <p className="text-red-500 text-sm px-1 mt-1">{postazioni_post_error.posizione[0]}</p>)}
+
                                                     </label>
                                                     
                                                     <label className="flex flex-col text-gray-700 text-sm">
                                                         Numerazione
-                                                        <input  name="numerazione" value={formDataPostazioni.numerazione} onChange={handleChangePostazioni} type="number" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        <input  name="numerazione" value={formDataPostazioni.numerazione ?? ""} onChange={handleChangePostazioni} type="number" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        {postazioni_post_error?.numerazione && ( <p className="text-red-500 text-sm px-1 mt-1">{postazioni_post_error.numerazione[0]}</p>)}
                                                     </label>
 
                                                     <label className="flex flex-col text-gray-700 text-sm">
                                                         Categoria
-                                                        <select name="categoria" value={formDataPostazioni.categoria} onChange={handleChangePostazioni} type="text" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400"> 
+                                                        <select name="categoria" value={formDataPostazioni.categoria ?? ""} onChange={handleChangePostazioni} type="text" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400"> 
                                                             
                                                             <option value="">Seleziona categoria</option>
 
+                                                            {Array.isArray(categoria_helper_items) && categoria_helper_items.map(cat => (
+                                                                
+                                                                <option key={cat.id_categoria} value={cat.id_categoria}>{cat.nome_categoria}</option>
+                                                            ))}
                                                             
 
                                                         </select>
+                                                        {postazioni_post_error?.categoria && ( <p className="text-red-500 text-sm px-1 mt-1">{postazioni_post_error.categoria[0]}</p>)}
                                                     </label>
 
                                                     <label className="flex flex-col text-gray-700 text-sm">
                                                         Capacità massima
-                                                        <input name="capacita" value={formDataPostazioni.capacita} onChange={handleChangePostazioni} type="number" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        <input name="capacita" value={formDataPostazioni.capacita ?? ""} onChange={handleChangePostazioni} type="number" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        {postazioni_post_error?.capacita && ( <p className="text-red-500 text-sm px-1 mt-1">{postazioni_post_error.capacita[0]}</p>)}
                                                     </label>
 
                                                     <button  type="submit" className="mt-4 p-2 rounded-md border border-rose-500 text-white bg-rose-900 hover:bg-rose-800 transition-colors text-sm">
-                                                        Aggiungi Autore
+                                                        Salva Postazione
                                                     </button>
                                                     
                                                 </form>
@@ -473,12 +542,14 @@ export default function InsertLibroPage() {
 
                                 </AnimatePresence>
                                 
-                                <Toaster position="bottom-right" reverseOrder={false} />
+                                <Toaster position="top-center" reverseOrder={false} />
                                 <form onSubmit={handleSubmitLibro} className=" sm:grid-cols-2 py-10 gap-6">
 
                                     <div className="mb-3">
                                         <label className="block text-gray-700 mb-2">Titolo</label>
                                         <input name="titolo" value={formData.titolo} onChange={handleChange} type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
+
+                                        {error?.titolo && ( <p className="text-red-500 text-sm px-1 mt-1">{error.titolo[0]}</p>)}
                                     </div>
 
                                     <div className="mb-3">
@@ -490,33 +561,44 @@ export default function InsertLibroPage() {
                                             {Array.isArray(autore_helper_items) && autore_helper_items.map(autori => (
                                                 <option key={autori.id_autore} value={autori.id_autore}>{autori.nome_autore} {autori.cognome_autore}</option>
                                             ))}
-
                                         </select>
+
+                                        {error?.autore && ( <p className="text-red-500 text-sm px-1 mt-1">{error.autore[0]}</p>)}
                                     </div>
 
                                     <div className="mb-3">
                                         <label className="block text-gray-700 mb-2">ISBN</label>
                                         <input name="isbn" value={formData.isbn} onChange={handleChange} type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
+                                        
+                                        {error?.isbn && ( <p className="text-red-500 text-sm px-1 mt-1">{error.isbn[0]}</p>)}
+
                                     </div>
 
                                     <div className="mb-3">
                                         <label className="block text-gray-700 mb-2">Editore</label>
                                         <input name="editore" value={formData.editore} onChange={handleChange} type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
+
+                                        {error?.editore && ( <p className="text-red-500 text-sm px-1 mt-1">{error.editore[0]}</p>)}
                                     </div>
 
                                     <div className="mb-4">
                                         <label className="block text-gray-700 mb-2">Data di uscita</label>
                                         <input name="data_uscita" value={formData.data_uscita} onChange={handleChange} type="date" className="w-full text-gray-700 border bg-gray-100 border-gray-400 rounded px-3 py-2" />
+                                         {error?.data_uscita && ( <p className="text-red-500 text-sm px-1 mt-1">{error.data_uscita[0]}</p>)}
                                     </div>
 
                                     <div className="mb-3">
                                         <label className="block text-gray-700 mb-2">Formato</label>
                                         <input name="formato" value={formData.formato} onChange={handleChange} type="text" style={{ textTransform: "uppercase" }} className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
+
+                                        {error?.formato && ( <p className="text-red-500 text-sm px-1 mt-1">{error.formato[0]}</p>)}
                                     </div>
 
                                     <div className="mb-3">
                                         <label className="block text-gray-700 mb-2">Lingua</label>
                                         <input name="lingua" value={formData.lingua} onChange={handleChange} type="text" style={{ textTransform: "uppercase" }} className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
+
+                                        {error?.lingua && ( <p className="text-red-500 text-sm px-1 mt-1">{error.lingua[0]}</p>)}
                                     </div>
 
                                     <div className="mb-3">
@@ -526,11 +608,12 @@ export default function InsertLibroPage() {
                                             
                                             <option value="">Seleziona postazione</option>
 
-                                            {Array.isArray(postazioni_helper) && postazioni_helper.map(postazioni => (
+                                            {Array.isArray(postazioni_helper_items) && postazioni_helper_items.map(postazioni => (
                                                 <option key={postazioni.id_postazione} value={postazioni.id_postazione}>{postazioni.id_postazione}/{postazioni.posizione}{postazioni.numerazione}: {postazioni.categoria_nome}</option>
                                             ))}    
                                             
                                         </select> 
+                                        {error?.postazione && ( <p className="text-red-500 text-sm px-1 mt-1">{error.postazione[0]}</p>)}
                                     </div>
 
 

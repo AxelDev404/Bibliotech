@@ -1,33 +1,131 @@
 'use client';
 
+
+import {Toaster , toast} from "react-hot-toast";
 import { useParams } from "next/navigation";
 import { useSelector , useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect , useState } from "react";
 
-import { getLibroDetailPageAPI , clearLibro } from "@/features/Libri/libriSlice";
+import { getLibroDetailPageAPI , clearLibro, patchLibroAPI } from "@/features/Libri/libriSlice";
 import AppWrapper from "@/components/AppWrapper";
 import PrivateRoute from "@/components/PrivateRoute";
 
 import Banner from "@/components/Banner";
 import SideBar from "@/components/SideBar";
 
+
 export default function LibroPage() {
   
-    const {libro , statusLibroDetail , errorLibroDetail} = useSelector((state) => state.libri);
+    const {
+        
+        data : {libroDetail , book_patch_items},
+
+        requests : {
+            libroDetail : {statusLibroDetail , errorLibroDetail},
+            book_patch_items : {book_patch_error}
+        },    
+    
+    } = useSelector((state) => state.libri);
+
+    
     const dispatch = useDispatch();
     const {isbn} = useParams();
 
     const router = useRouter();
     
 
-    useEffect(() => {
-        if(isbn) dispatch(getLibroDetailPageAPI(isbn));
+    //-----------------------------------------PATCH LIBRO-----------------------------------------//
 
+
+    const initialState = {
+        titolo : "",
+        data_uscita : "",
+        editore : "",
+        formato : "",
+        lingua : ""
+    }
+
+
+    const [formData , setFormData] = useState(initialState);
+    const [saving , setSaving] = useState(false);
+
+    const handleChange = (e) => {
+
+        const {name , value} = e.target;
+
+        setFormData({
+            ...formData,
+            [name] : value
+        })
+
+    }
+
+
+    const handlePatch = async(e) => {
+
+        e.preventDefault();
+
+        setSaving(true);
+
+        const updateData = Object.fromEntries(
+
+            Object.entries(formData).filter(([key , value]) => value !== libroDetail[key])
+
+        );
+        
+        
+        if(updateData.data_uscita){
+            updateData.data_uscita = new Date(updateData.data_uscita).toISOString().split("T")[0];
+        }
+
+        
+        if(Object.keys(updateData).length === 0){
+            toast.success("Nesuna modifica da fare");
+            return;
+        }
+
+        console.log(updateData);
+
+        setSaving(true);
+
+        try {
+
+            console.log({isbn, updateData});
+            await dispatch(patchLibroAPI({isbn : isbn , updateData: updateData})).unwrap();
+
+            toast.success("Libro aggiornato");
+
+                        
+        } catch (error) {
+            console.error(error); 
+            toast.error("Azione rifiutata");
+        
+        } finally{
+
+            setSaving(true);
+        }
+
+    }
+
+
+    useEffect(() => {
+        
+        if(isbn) dispatch(getLibroDetailPageAPI(isbn));
         return () => dispatch(clearLibro());
+
     },[isbn , dispatch])
-  
-  
+
+
+    useEffect(() => {
+        
+        if (libroDetail && Object.keys(libroDetail).length > 0) {
+            setFormData({ ...initialState, ...libroDetail });
+        }
+
+    }, [libroDetail]);
+
+
     return (
 
         <AppWrapper>
@@ -46,64 +144,84 @@ export default function LibroPage() {
                         <div className="min-h-screen bg-gray-100 py-10 px-6 flex flex-col items-between">
                     
                             <div className="max-w-8xl py-20 w-full">
-                            
+
+                                <Toaster position="top-center" reverseOrder={false} />
+
                                 <h1 className="text-2xl font-thin text-gray-800 mb-6 text-left">
                                     Dettagli Libro
                                 </h1>
 
                                 <div className="bg-white p-8 rounded-2xl transition-all duration-300 space-y-4">
-                                    
-                                    <div className="grid grid-cols-2 sm:grid-cols-2 gap-20">
+                                    <form onSubmit={handlePatch}>
+                                        
+                                       
+                                       
+                                        <div className="grid grid-cols-2 sm:grid-cols-2 gap-20 px-36">
+                                        
+                                            <div className="flex justify-between border-b pb-2 flex-col">
+                                                <h2 className="text-sm text-gray-500">Titolo</h2>
+                                                <input name="titolo" onChange={handleChange} type="text" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 " value={formData?.titolo ?? ""} />
+                                            </div>
 
-                                        <div className="flex justify-between border-b pb-2">
-                                            <h2 className="text-sm text-gray-500">Titolo</h2>
-                                            <input className="text-lg w-96 h-10 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-gray-100 " value={libro?.titolo || "----"} />
+                                            <div className="flex justify-between border-b pb-2 flex-col">
+                                                <h2 className="text-sm text-gray-500">Autore</h2>
+                                                <p className="text-md w-96 h-7 px-2   font-thin text-gray-900  ">{libroDetail?.autore_libro ?? ""} </p>
+                                            </div>
+
+                                            <div className="flex justify-between border-b pb-2 flex-col">
+                                                <h2 className="text-sm text-gray-500">ISBN</h2>
+                                                <input name="isbn" onChange={handleChange} type="text" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 " value={formData?.isbn ?? ""} />
+                                            </div>
+
+                                            <div className="flex justify-between border-b pb-2 flex-col">
+                                                <h2 className="text-sm text-gray-500">Editore</h2>
+                                                <input name="editore" onChange={handleChange} type="text" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 " value={formData?.editore ?? ""} />
+                                            </div>
+
+                                            <div className="flex justify-between border-b pb-2 flex-col">
+                                                <h2 className="text-sm text-gray-500">Data di uscita</h2>
+                                                <input name="data_uscita" onChange={handleChange} type="date" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 " value={formData?.data_uscita ?? ""} />
+                                            </div>
+
+                                            <div className="flex justify-between border-b pb-2 flex-col">
+                                                <h2 className="text-sm text-gray-500">Formato</h2>
+                                                <input name="formato" onChange={handleChange} type="text" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 " value={formData?.formato ?? ""} />
+                                            </div>
+
+                                            <div className="flex justify-between border-b pb-2 flex-col">
+                                                <h2 className="text-sm text-gray-500">Lingua</h2>
+                                                <input name="lingua" onChange={handleChange} type="text" className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 " value={formData?.lingua ?? ""} />
+                                            </div>
+
+                                            
+
+                                            <div className="flex justify-between border-b pb-2 flex-col">
+                                                <h2 className="text-sm text-gray-500">Postazione</h2>
+                                                <p className="text-md w-96 h-7 px-2   font-thin text-gray-900  ">{libroDetail?.postazione ?? ""} </p>
+                                            </div>
+
+                                            <div className="py-6 flex  flex-col w-52 ">
+
+                                                <button type="submit" className="bg-rose-900 text-white px-6 py-2 rounded-md hover:bg-rose-800 transition">
+                                                    Salva
+                                                </button>
+
+                                                <div className="py-2"></div>
+
+                                                <button onClick={() => router.back()} className="bg-rose-900 text-white px-6 py-2 rounded-md hover:bg-rose-800 transition">
+                                                    Torna alla lista
+                                                </button>
+
+                                            </div>
+                                            
+                             
+                                            
+                                        
                                         </div>
-
-                                        <div className="flex justify-between border-b pb-2">
-                                            <h2 className="text-sm text-gray-500">Autore</h2>
-                                            <p className="text-lg font-medium text-gray-900">{libro?.autore_libro || "----"}</p>
-                                        </div>
-
-                                        <div className="flex justify-between border-b pb-2">
-                                            <h2 className="text-sm text-gray-500">ISBN</h2>
-                                            <p className="text-lg font-medium text-gray-900">{libro?.isbn || "----"}</p>
-                                        </div>
-
-                                        <div className="flex justify-between border-b pb-2">
-                                            <h2 className="text-sm text-gray-500">Editore</h2>
-                                            <p className="text-lg font-medium text-gray-900">{libro?.editore || "----"}</p>
-                                        </div>
-
-                                        <div className="flex justify-between border-b pb-2">
-                                            <h2 className="text-sm text-gray-500">Data di uscita</h2>
-                                            <p className="text-lg font-medium text-gray-900">{libro?.data_uscita || "----"}</p>
-                                        </div>
-
-                                        <div className="flex justify-between border-b pb-2">
-                                            <h2 className="text-sm text-gray-500">Formato</h2>
-                                            <p className="text-lg font-medium text-gray-900">{libro?.formato || "----"}</p>
-                                        </div>
-
-                                        <div className="flex justify-between border-b pb-2">
-                                            <h2 className="text-sm text-gray-500">Lingua</h2>
-                                            <p className="text-lg font-medium text-gray-900">{libro?.lingua || "----"}</p>
-                                        </div>
-
-                                        <div className="flex justify-between border-b pb-2">
-                                            <h2 className="text-sm text-gray-500">Postazione</h2>
-                                            <p className="text-lg font-medium text-gray-900">{libro?.postazione || "----"}</p>
-                                        </div>
-
-                                    </div>
-
+                                    </form>
                                 </div>
 
-                                <div className="mt-3 text-left">
-                                    <button onClick={() => router.push('/dashboard')} className="bg-rose-900 text-white px-6 py-2 rounded-xl hover:bg-rose-800 transition">
-                                        Torna alla lista
-                                    </button>
-                                </div>
+                                
 
                             </div>
 

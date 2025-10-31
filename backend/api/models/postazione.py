@@ -16,7 +16,7 @@ class Postazione(models.Model):
     id_postazione = models.AutoField(primary_key=True , auto_created=True)
 
     posizione = models.CharField(max_length=2)
-    numerazione = models.PositiveIntegerField()
+    numerazione = models.PositiveIntegerField(validators=[MinValueValidator(0, message='la numerazione non può essere 0')])
     categoria = models.ForeignKey(Categoria , on_delete=models.CASCADE , blank=True , null=True , related_name='postazione_categoria')
 
     capacita = models.PositiveIntegerField()

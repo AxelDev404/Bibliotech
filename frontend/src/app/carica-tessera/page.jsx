@@ -13,7 +13,15 @@ import {Toaster , toast} from "react-hot-toast";
 
 export default function InsertTesseraPage() {
 
-    const {tessera_post_items  , tessera_post_status, tessera_post_error } = useSelector((state) => state.tessere_bibilioteca);
+    const {
+        
+        data : {tessera_post_items},
+
+        requests : {
+            tessera_post_items : {tessera_post_status, tessera_post_error }
+        }, 
+    
+    } = useSelector((state) => state.tessere_bibilioteca);
     const dispatch = useDispatch();
 
     const router = useRouter();
@@ -77,7 +85,7 @@ export default function InsertTesseraPage() {
 
                         <div className="min-h-screen flex justify-center">
 
-                            <Toaster position="bottom-right" reverseOrder={false} />
+                            <Toaster position="top-center" reverseOrder={false} />
                             
                             <div className="w-full max-w-8xl bg-white rounded-xl shadow p-8">
                                 <h1 className="text-2xl py-20 font-thin text-gray-800 mb-6 text-left">
@@ -89,6 +97,7 @@ export default function InsertTesseraPage() {
                                     <div className="mb-5">
                                         <label className="block text-gray-700 mb-2">Nome</label>
                                         <input name="nome_tesserato" value={formData.nome_tesserato} onChange={handleChange} type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
+                                        {tessera_post_error?.nome_tesserato && ( <p className="text-red-500 text-sm px-1 mt-1">{tessera_post_error.nome_tesserato[0]}</p>)}
                                     </div>
 
                                     <div className="mb-5">

@@ -36,3 +36,22 @@ class TesseraBibliotecaPostSerializer(serializers.ModelSerializer):
 
         model = TesseraBiblioteca
         fields = ('nome_tesserato' , 'cognome_tesserato' , 'codice_fiscale' , 'data_nascita' , 'telefono' , 'email' , 'indirizzo' )
+
+        extra_kwargs = {
+
+            'nome_tesserato' : {
+                
+                'error_messages' : {
+                    'blank' : "Il nome è obbligatorio"
+                }
+            }
+        }
+
+
+class TesseraBibliotecaPatchSerializer(serializers.ModelSerializer):
+
+    class Meta:
+
+        model = TesseraBiblioteca
+
+        fields = ('nome_tesserato' , 'cognome_tesserato' , 'codice_fiscale' , 'data_nascita' , 'telefono' , 'email' , 'indirizzo' )

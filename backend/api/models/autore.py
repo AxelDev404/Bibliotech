@@ -24,11 +24,11 @@ class Autore(models.Model):
     def save(self , *args, **kwargs):
         
         
-        if len(self.nome_autore) < 3 or len(self.nome_autore) > 20:
+        if len(self.nome_autore) < 2 or len(self.nome_autore) > 20:
             raise ValidationError("Nome non valido")
         
                 
-        if len(self.cognome_autore) < 3 or len(self.cognome_autore) > 50:
+        if len(self.cognome_autore) < 2 or len(self.cognome_autore) > 50:
             raise ValidationError("Cognome non validoo")
         
 

@@ -49,20 +49,7 @@ class Libro(models.Model):
         if len(self.editore) < 3 or len(self.editore) > 20:
 
             raise ValidationError("Editore non valido")
-        
-
-        if self.formato:
-            self.formato = self.formato.upper()
-
-        formati = {'PDF' , 'EPUB' , 'AUDIO'}
-
-        if self.formato not in formati:
-            
-            raise ValidationError("Formato non valido")
-
-         
     
-
         
 
         return super().save(*args, **kwargs)

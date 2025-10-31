@@ -1,5 +1,5 @@
 import { createAsyncThunk , createSlice } from "@reduxjs/toolkit";
-import { fetchCounStatTesseraBiblioteca , fetchLastTessereBibliotecaInsert , fetchDetailTesseraBiblioteca , createTessersBiblioteca} from "@/api/apiTessereBiblioteca";
+import { fetchCounStatTesseraBiblioteca , fetchLastTessereBibliotecaInsert , fetchDetailTesseraBiblioteca , createTessersBiblioteca , modifyTesseraBiblioteca} from "@/api/apiTessereBiblioteca";
 
 
 //-----------------------------------------------------------GESTIONE STATISTICA-----------------------------------------------------------//
@@ -70,6 +70,22 @@ export const postTesseraBibliotecaAPI = createAsyncThunk('tessere-biblioteca/upl
 })
 
 
+//-----------------------------------------------------------MODIFICA TESSERA-----------------------------------------------------------//
+
+
+export const patchTesseraBibliotecaAPI = createAsyncThunk('tessera-biblioteca/update_tessera_biblioteca/' , async({id_tessera , updateData} , {rejectWithValue})=> {
+
+    try {
+        
+        const response = await modifyTesseraBiblioteca(id_tessera , updateData);
+        return response.data || response;
+
+    } catch (err) {
+        
+        return rejectWithValue(err.response?.data || {"error" : "Si è verificato un problema"});
+    }
+})
+
 
 const tessere_bibliotecaSlice = createSlice({
 
@@ -77,30 +93,32 @@ const tessere_bibliotecaSlice = createSlice({
 
     initialState : {
 
-        //DETAIL PAGE
-        tessera : null , 
-        statusTessera : null , 
-        errorTessera : null, 
-        loadingTessera : false , 
-        
-        //GET STANDARD
-        items : [] ,status : 'idle' , error : null ,
-        
-        //QUERY GET
-        last_tessere_biblioteca_insert : [] , count_tessere_biblioteca : 0 ,  loading : false,
+        data : {
+            count_tessere_biblioteca : 0,
+            tessera_detail_item : [],
+            last_tessere_biblioteca_insert : [],
+            tessera_post_items : [],
+            tessera_patch_items : [],
+        },
 
-        //INSERT DATA POST
-        tessera_post_items : [] , tessera_post_status : 'idle' , tessera_post_error : null , tessera_post_loading : false,
+        requests : {
+
+            tessera_detail_item : { tessera_detail_status : 'idle' ,  tessera_detail_error : null, tessera_detail_loading : false },
+            count_tessere_biblioteca : { count_tessra_status : 'idle' , count_tessra_error : null ,count_tessra_loading : false},
+            last_tessere_biblioteca_insert : { last_tessere_biblioteca_status : 'idle' , last_tessere_biblioteca_error : null , last_tessere_biblioteca_loading : false},
+            tessera_post_items : {tessera_post_status : 'idle' , tessera_post_error : null , tessera_post_loading : false},
+            tessera_patch_items : { tessera_patch_status : 'idle' , tessera_patch_error : null , tessera_patch_loading : false}
+        }
 
     },
 
     reducers : {
         
         clearTessera : (state) => {
-            state.tessera = null;
-            state.errorTessera = null;
-            state.statusTessera = null;
-            state.loadingTessera = false;
+            state.data.tessera_detail_item = null;
+            state.requests.tessera_detail_item.tessera_detail_error = null;
+            state.requests.tessera_detail_item.tessera_detail_status = null;
+            state.requests.tessera_detail_item.tessera_detail_loading = false;
         }
 
     },
@@ -114,83 +132,107 @@ const tessere_bibliotecaSlice = createSlice({
         //THUNK GET GETSIONE STATISTICHE
 
         .addCase(getCountStatTessereBibliotecaAPI.pending , (state) => {
-            state.loading = true;
-            state.status = 'loading';
+            state.requests.count_tessere_biblioteca.count_tessra_loading = true;
+            state.requests.count_tessere_biblioteca.count_tessra_status = 'loading';
         })
 
         
         .addCase(getCountStatTessereBibliotecaAPI.fulfilled , (state , action) => {
-            state.loading = false;
-            state.status = 'succeeded';
-            state.count_tessere_biblioteca = action.payload;
+            state.requests.count_tessere_biblioteca.count_tessra_loading = false;
+            state.requests.count_tessere_biblioteca.count_tessra_status = 'succeeded';
+            state.data.count_tessere_biblioteca = action.payload;
         })
 
 
         .addCase(getCountStatTessereBibliotecaAPI.rejected , (state , action) => {
-            state.loading = false;
-            state.status = 'rejected';
-            state.error = action.payload || {detail : 'errore sconosciuto'};
+            state.requests.count_tessere_biblioteca.count_tessra_loading = false;
+            state.requests.count_tessere_biblioteca.count_tessra_status = 'rejected';
+            state.requests.count_tessere_biblioteca.count_tessra_error = action.payload || {detail : 'errore sconosciuto'};
         })
 
         
         //THUNK GET GETSIONE STATISTICHE ULTIMI INSERIMENTI
 
         .addCase(getLastTessereBibliotecaInsertAPI.pending , (state) => {
-            state.loading = true;
-            state.status = 'loading';
+            state.requests.last_tessere_biblioteca_insert.last_tessere_biblioteca_loading = true;
+            state.requests.last_tessere_biblioteca_insert.last_tessere_biblioteca_status = 'loading';
         })
         
         .addCase(getLastTessereBibliotecaInsertAPI.fulfilled , (state , action) => {
-            state.loading = false;
-            state.status = 'succeeded';
-            state.last_tessere_biblioteca_insert = action.payload;
+            state.requests.last_tessere_biblioteca_insert.last_tessere_biblioteca_loading = false;
+            state.requests.last_tessere_biblioteca_insert.last_tessere_biblioteca_status = 'succeeded';
+            state.data.last_tessere_biblioteca_insert = action.payload;
         })
         
         .addCase(getLastTessereBibliotecaInsertAPI.rejected , (state , action) => {
-            state.loading = false;
-            state.status = 'failed';
-            state.error = action.payload || {detail : 'errore sconosciuto'};
+            state.requests.last_tessere_biblioteca_insert.last_tessere_biblioteca_loading = false;
+            state.requests.last_tessere_biblioteca_insert.last_tessere_biblioteca_status = 'failed';
+            state.requests.last_tessere_biblioteca_insert.last_tessere_biblioteca_error = action.payload || {detail : 'errore sconosciuto'};
         })
 
 
         //THINK GET DI RICERCA 
 
         .addCase(getDetailTesseraBiblioteca.pending , (state) => {
-            state.loadingTessera = true;
-            state.statusTessera = 'loading';
+            state.requests.tessera_detail_item.tessera_detail_loading = true;
+            state.requests.tessera_detail_item.tessera_detail_status = 'loading';
         })
 
         .addCase(getDetailTesseraBiblioteca.fulfilled , (state , action) => {
-            state.loadingTessera = false;
-            state.statusTessera = 'succeeded';
-            state.tessera = action.payload;
+            state.requests.tessera_detail_item.tessera_detail_loading = false;
+            state.requests.tessera_detail_item.tessera_detail_status = 'succeeded';
+            state.data.tessera_detail_item = action.payload;
         })
 
         .addCase(getDetailTesseraBiblioteca.rejected , (state , action) => {
-            state.loadingTessera = false;
-            state.statusTessera = 'failed';
-            state.errorTessera = action.payload || {detail : 'errore sconosciuto'};
+            state.requests.tessera_detail_item.tessera_detail_loading = false;
+            state.requests.tessera_detail_item.tessera_detail_status = 'failed';
+            state.requests.tessera_detail_item.tessera_detail_error = action.payload || {detail : 'errore sconosciuto'};
         })
 
         //THUNK POST TESSERA BIBLIOTECA
 
         .addCase(postTesseraBibliotecaAPI.pending , (state) => {
-            state.tessera_post_loading = true;
-            state.tessera_post_status = 'loading';
+            state.requests.tessera_post_items.tessera_post_loading = true;
+            state.requests.tessera_post_items.tessera_post_status = 'loading';
         })
 
         .addCase(postTesseraBibliotecaAPI.fulfilled , (state , action) => {
-            state.tessera_post_loading = false;
-            state.tessera_post_status = 'succeeded';
-            state.tessera_post_items.push(action.payload);
+            state.requests.tessera_post_items.tessera_post_loading = false;
+            state.requests.tessera_post_items.tessera_post_status = 'succeeded';
+            state.data.tessera_post_items.push(action.payload);
         })
 
         .addCase(postTesseraBibliotecaAPI.rejected , (state , action) => {
-            state.tessera_post_loading = false;
-            state.tessera_post_status = 'failed';
-            state.tessera_post_error = action.payload || {detail : 'errore sconosciuto'};
+            state.requests.tessera_post_items.tessera_post_loading = false;
+            state.requests.tessera_post_items.tessera_post_status = 'failed';
+            state.requests.tessera_post_items.tessera_post_error = action.payload || {detail : 'errore sconosciuto'};
         })
 
+        //THUNK PATCH TESSERA BIBLIOTECA
+
+        .addCase(patchTesseraBibliotecaAPI.pending , (state) => {
+            state.requests.tessera_patch_items.tessera_patch_loading = true;
+            state.requests.tessera_patch_items.tessera_patch_status = 'loading';
+        })
+
+        .addCase(patchTesseraBibliotecaAPI.fulfilled , (state , action) => {
+            state.requests.tessera_patch_items.tessera_patch_loading = false;
+            state.requests.tessera_patch_items.tessera_patch_status = 'succeeded';
+            
+            const index = state.data.tessera_patch_items.findIndex( t => t.id_tessera === action.payload.id_tessera);
+
+            if (index !== -1){
+                state.data.tessera_patch_items[index] = {...state.data.tessera_patch_items[index] , ...action.payload};
+            }
+
+        })
+
+        .addCase(patchTesseraBibliotecaAPI.rejected , (state , action) => {
+            state.requests.tessera_patch_items.tessera_patch_loading = false;
+            state.requests.tessera_patch_items.tessera_patch_status = 'failed';
+            state.requests.tessera_patch_items.tessera_patch_error = action.payload || {detail : 'errore sconosciuto'};
+        })
     }
 })
 

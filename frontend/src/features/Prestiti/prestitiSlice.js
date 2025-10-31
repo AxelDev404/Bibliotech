@@ -40,7 +40,19 @@ const prestitiSlice = createSlice({
 
     name : 'prestiti',
 
-    initialState : {items : [] , count_presiti_attivi : 0 , count_prestiti_saldati : 0 , status : 'idle' , error : null , loading : false },
+    initialState : {
+        
+        data : {
+            count_presiti_attivi : 0,
+            count_prestiti_saldati : 0 
+        },
+
+        requests : {
+
+            count_presiti_attivi : { count_presiti_attivi_stauts : 'idle' , count_presiti_attivi_error : null , count_presiti_attivi_loading : false },
+            count_prestiti_saldati : { count_prestiti_saldati_status : 'idle' , count_prestiti_saldati_error : null , count_prestiti_saldati_loading : false }
+        }    
+    },
 
     reducers : {},
 
@@ -51,38 +63,40 @@ const prestitiSlice = createSlice({
         //THUNK GET GESTIONE STATSITICHE
 
         .addCase(getCountStatPresititAttiviAPI.pending , (state) => {
-            state.loading = true;
-            state.status = 'loading';
+
+            state.requests.count_presiti_attivi.count_presiti_attivi_loading = true;
+            state.requests.count_presiti_attivi.count_presiti_attivi_stauts = 'loading';
         })
 
         .addCase(getCountStatPresititAttiviAPI.fulfilled , (state , action) => {
-            state.loading = false;
-            state.status = 'succeeded';
-            state.count_presiti_attivi = action.payload;
+
+            state.requests.count_presiti_attivi.count_presiti_attivi_loading = false;
+            state.requests.count_presiti_attivi.count_presiti_attivi_stauts = 'succeeded';
+            state.data.count_presiti_attivi = action.payload;
         })
 
         .addCase(getCountStatPresititAttiviAPI.rejected , (state , action) => {
-            state.loading = false;
-            state.status = 'failed';
+            state.requests.count_presiti_attivi.count_presiti_attivi_loading = false;
+            state.requests.count_presiti_attivi.count_presiti_attivi_stauts = 'failed';
             state.error = action.payload || {detail : 'errore sconosciuto'};
         })
 
 
         .addCase(getCountStatPresititiSaldatiAPI.pending , (state) => {
-            state.loading = true;
-            state.status = 'loading';
+            state.requests.count_prestiti_saldati.count_prestiti_saldati_loading = true;
+            state.requests.count_prestiti_saldati.count_prestiti_saldati_status = 'loading';
         })
 
         .addCase(getCountStatPresititiSaldatiAPI.fulfilled , (state , action) => {
-            state.loading = false;
-            state.status = 'succeeded';
-            state.count_prestiti_saldati = action.payload;
+            state.requests.count_prestiti_saldati.count_prestiti_saldati_loading = false;
+            state.requests.count_prestiti_saldati.count_prestiti_saldati_status = 'succeeded';
+            state.data.count_prestiti_saldati = action.payload;
         })
 
         .addCase(getCountStatPresititiSaldatiAPI.rejected , (state , action) => {
-            state.loading = false;
-            state.status = 'failed';
-            state.error = action.payload || {detail : 'errore sconosciuto'};
+            state.requests.count_prestiti_saldati.count_prestiti_saldati_loading = false;
+            state.requests.count_prestiti_saldati.count_prestiti_saldati_status = 'failed';
+            state.requests.count_prestiti_saldati.count_prestiti_saldati_error = action.payload || {detail : 'errore sconosciuto'};
         })
     }
 })

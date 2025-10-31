@@ -2,6 +2,7 @@ from django.urls import path
 
 from ..views.libro.get import get_libri_table , get_totale_libri , get_ultimi_libri , get_libro_pagina 
 from ..views.libro.post import post_libro
+from ..views.libro.patch import patch_libro
 
 urlpatterns = [
 
@@ -19,4 +20,7 @@ urlpatterns = [
 
     #INSERIMENTO
     path('upload-book/' , post_libro , name='post_libro'),
+
+    #MODIFICA
+    path('patch-book/<str:isbn>/' , patch_libro , name='patch_libro'),
 ]

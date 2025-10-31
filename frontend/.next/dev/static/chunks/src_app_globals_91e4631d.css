@@ -48,6 +48,7 @@
     --color-rose-800: #a30037;
     --color-rose-900: #8b0836;
     --color-rose-950: #4d0218;
+    --color-slate-50: #f8fafc;
     --color-slate-500: #62748e;
     --color-gray-100: #f3f4f6;
     --color-gray-200: #e5e7eb;
@@ -61,7 +62,6 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: .25rem;
-    --breakpoint-xl: 80rem;
     --container-md: 28rem;
     --container-xl: 36rem;
     --text-xs: .75rem;
@@ -107,6 +107,7 @@
       --color-rose-800: lab(34.6481% 60.802 20.1957);
       --color-rose-900: lab(29.7104% 51.514 12.6253);
       --color-rose-950: lab(14.2323% 34.0086 9.80922);
+      --color-slate-50: lab(98.1434% -.369519 -1.05966);
       --color-slate-500: lab(48.0876% -2.03595 -16.5814);
       --color-gray-100: lab(96.1596% -.0823438 -1.13575);
       --color-gray-200: lab(91.6229% -.159115 -2.26791);
@@ -490,8 +491,8 @@
     display: none;
   }
 
-  .h-10 {
-    height: calc(var(--spacing) * 10);
+  .h-7 {
+    height: calc(var(--spacing) * 7);
   }
 
   .h-12 {
@@ -526,6 +527,10 @@
     width: calc(var(--spacing) * 16);
   }
 
+  .w-52 {
+    width: calc(var(--spacing) * 52);
+  }
+
   .w-60 {
     width: calc(var(--spacing) * 60);
   }
@@ -544,10 +549,6 @@
 
   .max-w-screen {
     max-width: 100vw;
-  }
-
-  .max-w-screen-xl {
-    max-width: var(--breakpoint-xl);
   }
 
   .max-w-xl {
@@ -764,6 +765,10 @@
     background-color: var(--color-rose-900);
   }
 
+  .bg-slate-50 {
+    background-color: var(--color-slate-50);
+  }
+
   .bg-white {
     background-color: var(--color-white);
   }
@@ -836,6 +841,10 @@
 
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
+  }
+
+  .px-36 {
+    padding-inline: calc(var(--spacing) * 36);
   }
 
   .py-2 {

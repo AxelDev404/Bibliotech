@@ -5,3 +5,5 @@ export const fetchLastTessereBibliotecaInsert = () => apiClient.get('tessere-bib
 export const fetchDetailTesseraBiblioteca = (id_tessera) => apiClient.get(`tessere-biblioteca/tessera-biblioteca-id/${id_tessera}/`);
 
 export const createTessersBiblioteca = (formData) => apiClient.post('tessere-biblioteca/upload-tessera-biblioteca/' , formData);
+
+export const modifyTesseraBiblioteca = (id_tessera , updateData) => apiClient.patch(`tessere-biblioteca/patch-tessera-biblioteca/${id_tessera}/` , updateData).then(res => res.data);

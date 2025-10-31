@@ -59,7 +59,15 @@ const autoriSlice = createSlice({
         }
     },
 
-    reducers : {},
+    reducers : {
+
+        clearErrorAutori : (state) => {
+            state.requests.autore_post_items.autore_post_loading = false;
+            state.requests.autore_post_items.autore_post_status = 'idle';
+            state.requests.autore_post_items.autore_post_error = null;
+        }
+
+    },
 
     extraReducers : (builder) => {
         builder
@@ -106,4 +114,5 @@ const autoriSlice = createSlice({
 
 });
 
+export const {clearErrorAutori} = autoriSlice.actions;
 export default autoriSlice.reducer;

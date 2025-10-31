@@ -80,7 +80,16 @@ const postazioniSlice = createSlice({
     
     },
 
-    reducers : {},
+    reducers : {
+
+        clearErrorPostazione : (state) => {
+
+            state.requests.postazioni_post_items.postazioni_post_loading = false;
+            state.requests.postazioni_post_items.postazioni_post_status = 'idle';
+            state.requests.postazioni_post_items.postazioni_post_error = null;
+        }
+
+    },
 
 
     extraReducers : (builder) => {
@@ -151,5 +160,5 @@ const postazioniSlice = createSlice({
     }
 })
 
-
+export const {clearErrorPostazione} = postazioniSlice.actions;
 export default postazioniSlice.reducer;

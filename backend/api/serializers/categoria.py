@@ -8,6 +8,16 @@ from rest_framework.validators import UniqueValidator
 from ..models.categoria import Categoria
 
 
+
+class CategoriaHlperSerializer(serializers.ModelSerializer):
+
+    class Meta:
+
+        model = Categoria
+        fields = ('id_categoria' , 'nome_categoria')
+
+
+
 class CategoriaPostSerializer(serializers.ModelSerializer):
 
     class Meta:
@@ -16,11 +26,42 @@ class CategoriaPostSerializer(serializers.ModelSerializer):
 
         fields = ('nome_categoria' , 'descrizione')
 
+        extra_kwargs = {
 
+            'nome_categoria' : {
 
-class CategoriaHlperSerializer(serializers.ModelSerializer):
+                'error_messages' : {
 
-    class Meta:
+                    'blank' : "Il nome categoria è obbligatorio"
+                }
+                
+            },
 
-        model = Categoria
-        fields = ('id_categoria' , 'nome_categoria')
+            'descrizione' : {
+                
+                'error_messages' : {
+                    'blank' : "La descrizione è obbligatoria"
+                }
+            }
+        }
+
+    
+    def validate(self, attrs):
+        
+        errori = {}
+
+        nome_categoria = attrs.get('nome_categoria')
+        descrizione = attrs.get('descrizione')
+
+        if len(nome_categoria) < 4:
+            errori['nome_categoria'] = "Il nome della categoria è troppo corto"
+
+        if len(descrizione) < 10:
+            errori['descrizione'] = "La descrizione è troppo corta deve contenere almeno 10 caratteri"
+
+        if errori:
+            raise serializers.ValidationError(errori)
+
+        
+        
+        return attrs

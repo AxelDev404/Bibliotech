@@ -10,7 +10,16 @@ import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 
 export default function StatisticBookTable(){
 
-    const {last_insert_book , error , status} = useSelector((state) => state.libri);
+    const {
+        
+        data : {last_insert_book} ,
+
+        requests : {
+            last_insert_book : {last_insert_book_status , last_insert_book_error}
+        }
+        
+    } = useSelector((state) => state.libri);
+    
     const dispactch = useDispatch();
 
     useEffect(() => {

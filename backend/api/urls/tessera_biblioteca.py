@@ -1,6 +1,7 @@
 from django.urls import path
 from ..views.tessera_biblioteca.get import get_totale_tessere , get_ultime_tessere , get_detail_tessera_biblioteca
 from ..views.tessera_biblioteca.post import post_tessera_biblioteca
+from ..views.tessera_biblioteca.patch import patch_tessera_biblioteca
 
 urlpatterns = [
 
@@ -13,5 +14,8 @@ urlpatterns = [
 
     #CREAZIONE 
     path('upload-tessera-biblioteca/' , post_tessera_biblioteca , name='post_tessera_biblioteca'),
+
+    #MODIFICA
+    path('patch-tessera-biblioteca/<int:id_tessera>/' , patch_tessera_biblioteca , name='patch_tessera_biblioteca'),
 ]
 
