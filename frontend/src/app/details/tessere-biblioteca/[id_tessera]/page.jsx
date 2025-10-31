@@ -17,6 +17,12 @@ import { getDetailTesseraBiblioteca , clearTessera , patchTesseraBibliotecaAPI }
 import Banner from "@/components/Banner";
 import SideBar from "@/components/SideBar";
 
+import LockOpenIcon from '@mui/icons-material/LockOpen';
+import UndoIcon from '@mui/icons-material/Undo';
+import SaveAltIcon from '@mui/icons-material/SaveAlt';
+import ZoomInIcon from '@mui/icons-material/ZoomIn';
+import LockOutlineIcon from '@mui/icons-material/LockOutline';
+
 export default function LibroPage() {
   
     const {
@@ -48,7 +54,7 @@ export default function LibroPage() {
 
 
     const [formData , setFormData] = useState(initialState);
-    const [isModify , setModify] = useState(true);
+    const [locked , setLocked] = useState(true);
     const [save , setSave] = useState(false);
 
     const handleChange = (e) => {
@@ -62,9 +68,9 @@ export default function LibroPage() {
     }
 
 
-    const handlePatch = async(e) => {
+    const handlePatch = async() => {
 
-        e.preventDefault();
+        //e.preventDefault();
 
         setSave(true);
 
@@ -143,66 +149,88 @@ export default function LibroPage() {
                                 
                                 <div className="bg-white p-8 rounded-2xl transition-all duration-300 space-y-4">
 
-                                    <form onSubmit={handlePatch}>
+                                    <div>
+
+                                        <button onClick={() => router.back()} className="bg-rose-900 text-white px-2 py-2 rounded-md hover:bg-rose-800 transition">
+                                            <UndoIcon/>
+                                        </button>
+
+                                        <div className="py-2"></div>
+
+                                        
+                                        <button title="sblocca modifiche" type="button" onClick={() => {setLocked(false); toast.success("Modifiche abilitate");}} className="bg-green-700 text-white px-2 py-2 rounded-md hover:bg-green-400 transition">
+                                            <LockOpenIcon/>
+                                        </button>
+
+                                        <div className="py-2"></div>
+
+                                        <button title="blocca modifiche" type="button" onClick={() => {setLocked(true); toast.error("Modifiche diabilitate")}} className="bg-red-800 text-white px-2 py-2 rounded-md hover:bg-rose-800 transition">
+                                            <LockOutlineIcon/>
+                                        </button>
+
+
+                                        <div className="py-6 flex w-52 ">
+
+                                            <button type="button" onClick={() => handlePatch()} className="bg-rose-900 text-white px-2 py-2 rounded-md hover:bg-rose-800 transition">
+                                                <SaveAltIcon/>
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                    <form >
                                     
                                         <div className="grid grid-cols-2 sm:grid-cols-2 gap-20">
 
-                                            <div className="flex justify-between border-b pb-2">
+                                            <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">ID</h2>
                                                 <p className="text-lg font-medium text-gray-900">{tessera_detail_item?.id_tessera || "----"}</p>
                                             </div>
 
-                                            <div className="flex justify-between border-b pb-2">
+                                            <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">Nome tesserato</h2>
-                                                <input type="text" name="nome_tesserato" onChange={handleChange} value={formData?.nome_tesserato ?? ""} className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 "/>
+                                                <input readOnly={locked} type="text" name="nome_tesserato" onChange={handleChange} value={formData?.nome_tesserato ?? ""} className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 "/>
                                             </div>
 
-                                            <div className="flex justify-between border-b pb-2">
+                                            <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">Cognome tesserato</h2>
-                                                <input type="text" name="cognome_tesserato" onChange={handleChange} value={formData?.cognome_tesserato ?? ""} className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 "/>
+                                                <input readOnly={locked} type="text" name="cognome_tesserato" onChange={handleChange} value={formData?.cognome_tesserato ?? ""} className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 "/>
                                             </div>
 
-                                            <div className="flex justify-between border-b pb-2">
+                                            <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">Codice Fiscale</h2>
-                                                <input type="text" name="codice_fiscale" onChange={handleChange} value={formData?.codice_fiscale ?? ""} className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 "/>
+                                                <input readOnly={locked} type="text" name="codice_fiscale" onChange={handleChange} value={formData?.codice_fiscale ?? ""} className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 "/>
                                             </div>
 
-                                            <div className="flex justify-between border-b pb-2">
+                                            <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">Data di nascita</h2>
-                                                <input type="date" name="data_nascita" onChange={handleChange} value={formData?.data_nascita ?? ""} className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 "/>
+                                                <input readOnly={locked} type="date" name="data_nascita" onChange={handleChange} value={formData?.data_nascita ?? ""} className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 "/>
                                             </div>
 
-                                            <div className="flex justify-between border-b pb-2">
+                                            <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">Telefono</h2>
-                                                <input type="text" name="telefono" onChange={handleChange} value={formData?.telefono ?? ""} className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 "/>
+                                                <input readOnly={locked} type="text" name="telefono" onChange={handleChange} value={formData?.telefono ?? ""} className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 "/>
                                             </div>
 
-                                            <div className="flex justify-between border-b pb-2">
+                                            <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">Email</h2>
-                                                <input type="text" name="email" onChange={handleChange} value={formData?.email ?? ""} className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 "/>
+                                                <input readOnly={locked} type="text" name="email" onChange={handleChange} value={formData?.email ?? ""} className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 "/>
                                             </div>
 
-                                            <div className="flex justify-between border-b pb-2">
+                                            <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">Indirizzo</h2>
-                                                <input type="text" name="indirizzo" onChange={handleChange} value={formData?.indirizzo ?? ""} className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 "/>
+                                                <input readOnly={locked} type="text" name="indirizzo" onChange={handleChange} value={formData?.indirizzo ?? ""} className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 "/>
                                             </div>
 
-                                            <div className="flex justify-between border-b pb-2">
+                                            <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">Registrato dall'operatore </h2>
                                                 <p className="text-lg font-medium text-gray-900">{tessera_detail_item?.utente_operatore || "----"}</p>
                                             </div>
 
                                             <div className="py-6 flex  flex-col w-52 ">
 
-                                                <button type="submit" className="bg-rose-900 text-white px-6 py-2 rounded-md hover:bg-rose-800 transition">
-                                                    Salva
-                                                </button>
-
-                                                <div className="py-2"></div>
-
-                                                <button onClick={() => router.back()} className="bg-rose-900 text-white px-6 py-2 rounded-md hover:bg-rose-800 transition">
-                                                    Torna alla lista
-                                                </button>
+                                           
 
                                             </div>
                                         

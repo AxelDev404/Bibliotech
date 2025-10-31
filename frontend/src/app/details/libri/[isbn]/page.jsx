@@ -195,7 +195,7 @@ export default function LibroPage() {
                                         
                                        
                                        
-                                        <div className="grid grid-cols-2 sm:grid-cols-2 gap-20 px-36">
+                                        <div className="grid grid-cols-2 sm:grid-cols-2 gap-20 px-2">
                                         
                                             <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">Titolo</h2>

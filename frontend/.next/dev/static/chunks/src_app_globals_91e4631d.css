@@ -878,6 +878,10 @@
     padding-inline: calc(var(--spacing) * 6);
   }
 
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
+
   .px-36 {
     padding-inline: calc(var(--spacing) * 36);
   }
