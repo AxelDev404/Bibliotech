@@ -62,7 +62,7 @@ function Home() {
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex justify-center items-center min-h-screen bg-gradient-to-l from-rose-950  to-rose-950",
+        className: "flex justify-center items-center min-h-screen bg-gradient-to-b from-blue-800 via-blue-950 to-blue-900",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Toaster"], {
                 position: "bottom-right",
@@ -157,7 +157,7 @@ function Home() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 type: "submit",
-                                className: "mt-5 py-3 w-full bg-gray-200 text-black font-medium rounded-xl hover:bg-rose-400 active:scale-[0.98] transition-all duration-200 shadow-sm",
+                                className: "mt-5 py-3 w-full bg-gray-200 text-black font-medium rounded-xl hover:bg-blue-400 active:scale-[0.98] transition-all duration-200 shadow-sm",
                                 children: "Accedi"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.jsx",

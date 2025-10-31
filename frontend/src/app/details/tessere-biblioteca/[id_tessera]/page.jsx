@@ -39,7 +39,6 @@ export default function LibroPage() {
 
     //--------------------------PATCH TESSERA BIBLIOTECA------------------------------//
 
-    //'nome_tesserato' , 'cognome_tesserato' , 'codice_fiscale' , 'data_nascita' , 'telefono' , 'email' , 'indirizzo'
 
     const initialState = {
 
@@ -88,7 +87,6 @@ export default function LibroPage() {
             toast.success("Nessuna modifica da fare");
             return;
         }
-
 
         try {
             
@@ -148,35 +146,26 @@ export default function LibroPage() {
                                 <Toaster position="top-center" reverseOrder={false} />
                                 
                                 <div className="bg-white p-8 rounded-2xl transition-all duration-300 space-y-4">
-
-                                    <div>
-
-                                        <button onClick={() => router.back()} className="bg-rose-900 text-white px-2 py-2 rounded-md hover:bg-rose-800 transition">
-                                            <UndoIcon/>
-                                        </button>
-
-                                        <div className="py-2"></div>
-
-                                        
-                                        <button title="sblocca modifiche" type="button" onClick={() => {setLocked(false); toast.success("Modifiche abilitate");}} className="bg-green-700 text-white px-2 py-2 rounded-md hover:bg-green-400 transition">
-                                            <LockOpenIcon/>
-                                        </button>
-
-                                        <div className="py-2"></div>
-
-                                        <button title="blocca modifiche" type="button" onClick={() => {setLocked(true); toast.error("Modifiche diabilitate")}} className="bg-red-800 text-white px-2 py-2 rounded-md hover:bg-rose-800 transition">
-                                            <LockOutlineIcon/>
-                                        </button>
-
-
-                                        <div className="py-6 flex w-52 ">
-
-                                            <button type="button" onClick={() => handlePatch()} className="bg-rose-900 text-white px-2 py-2 rounded-md hover:bg-rose-800 transition">
-                                                <SaveAltIcon/>
+                                    
+                                    <div className="mb-4">
+                                        <div className="flex flex-row items-center gap-2">
+                                            
+                                            <button onClick={() => router.back()} className="bg-blue-400 text-white px-2 py-2 rounded-md hover:bg-blue-600 transition" >
+                                                <UndoIcon />
                                             </button>
 
-                                        </div>
+                                            <button title="sblocca modifiche" type="button" onClick={() => { setLocked(false); toast.success("Modifiche abilitate"); }} className="bg-green-700 text-white px-2 py-2 rounded-md hover:bg-green-400 transition" >
+                                                <LockOpenIcon />
+                                            </button>
 
+                                            <button title="blocca modifiche" type="button" onClick={() => { setLocked(true); toast.error("Modifiche disabilitate"); }} className="bg-red-800 text-white px-2 py-2 rounded-md hover:bg-rose-800 transition" >
+                                                <LockOutlineIcon />
+                                            </button>
+
+                                            <button type="button" onClick={() => handlePatch()} className="bg-blue-400 text-white px-2 py-2 rounded-md hover:bg-blue-600 transition" >
+                                                <SaveAltIcon />
+                                            </button>
+                                        </div>
                                     </div>
 
                                     <form >
@@ -185,7 +174,7 @@ export default function LibroPage() {
 
                                             <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">ID</h2>
-                                                <p className="text-lg font-medium text-gray-900">{tessera_detail_item?.id_tessera || "----"}</p>
+                                                <p className="text-md font-medium text-gray-900">{tessera_detail_item?.id_tessera || "----"}</p>
                                             </div>
 
                                             <div className="flex justify-between border-b pb-2 flex-col">
@@ -225,7 +214,7 @@ export default function LibroPage() {
 
                                             <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">Registrato dall'operatore </h2>
-                                                <p className="text-lg font-medium text-gray-900">{tessera_detail_item?.utente_operatore || "----"}</p>
+                                                <p className="text-md font-medium text-gray-900">{tessera_detail_item?.utente_operatore || "----"}</p>
                                             </div>
 
                                             <div className="py-6 flex  flex-col w-52 ">

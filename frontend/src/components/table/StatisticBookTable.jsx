@@ -32,7 +32,7 @@ export default function StatisticBookTable(){
             <h2 className="text-2xl font-light mb-4 text-gray-800">Ultimi libri inseriti</h2>
             <div className="overflow-x-auto">
                 <table className="w-full bg-gray-200 shadow-md rounded-lg overflow-hidden">
-                <thead className="bg-rose-900 text-white">
+                <thead className="bg-blue-600 text-white">
                     <tr>
                         <th className="py-3 px-6 text-left">ISBN</th>
                         <th className="py-3 px-6 text-left">Titolo</th>

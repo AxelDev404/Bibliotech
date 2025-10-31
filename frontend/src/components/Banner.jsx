@@ -33,7 +33,7 @@ export default function Banner(){
 
     return(
 
-        <div className="w-full h-20 bg-gradient-to-l from-rose-950 via-rose-900 to-rose-950 fixed">
+        <div className="w-full h-20 bg-gradient-to-l from-blue-950 via-blue-900 to-blue-800 fixed">
             
             <div className="max-w-screen mx-auto px-6 h-full flex items-left justify-left">
                 

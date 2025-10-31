@@ -31,7 +31,7 @@ export default function StatisticCustomerTable(){
 
                 <table className="w-full bg-gray-200 shadow-md rounded-lg overflow-hidden">
 
-                    <thead className="bg-rose-900 text-white">
+                    <thead className="bg-blue-600 text-white">
                         <tr>
                             <th className="py-3 px-6 text-left">ID</th>
                             <th className="py-3 px-6 text-left">Nome</th>

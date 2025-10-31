@@ -38,7 +38,7 @@ export default function SideBar(){
 
         <div className="flex h-screen">
            
-            <div  className={`fixed left-0 top-0 h-screen bg-gradient-to-b from-rose-950 via-rose-900 to-rose-950  border-white shadow-lg flex flex-col transition-all duration-300 z-40 ${isSidebarOpen ? 'w-60' : 'w-16'}`}>
+            <div  className={`fixed left-0 top-0 h-screen bg-gradient-to-b from-blue-800 via-blue-950 to-blue-900  border-white shadow-lg flex flex-col transition-all duration-300 z-40 ${isSidebarOpen ? 'w-60' : 'w-16'}`}>
                 
                 <div className="flex items-center justify-between px-4 h-20 border-b border-white">
                     <a  className={`text-white font-semibold text-lg transition-all duration-200 ${isSidebarOpen ? 'opacity-100' : 'opacity-0 hidden'}`}>

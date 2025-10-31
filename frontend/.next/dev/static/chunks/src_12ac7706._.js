@@ -196,11 +196,11 @@ var _s = __turbopack_context__.k.signature();
 function SideBar() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(88);
-    if ($[0] !== "1a36c86fd452369388e409fd376c040f577148c06a8bf6c3251967ea52a12a93") {
+    if ($[0] !== "51b7f0b8855dcbdf1d2923f9217900966c9e951ff1bac8fecc58ae870b89818f") {
         for(let $i = 0; $i < 88; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1a36c86fd452369388e409fd376c040f577148c06a8bf6c3251967ea52a12a93";
+        $[0] = "51b7f0b8855dcbdf1d2923f9217900966c9e951ff1bac8fecc58ae870b89818f";
     }
     const [isSidebarOpen, setIsSidebarOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     let t0;
@@ -231,7 +231,7 @@ function SideBar() {
         t1 = $[5];
     }
     const HandleLogOut = t1;
-    const t2 = `fixed left-0 top-0 h-screen bg-gradient-to-b from-rose-950 via-rose-900 to-rose-950  border-white shadow-lg flex flex-col transition-all duration-300 z-40 ${isSidebarOpen ? "w-60" : "w-16"}`;
+    const t2 = `fixed left-0 top-0 h-screen bg-gradient-to-b from-blue-800 via-blue-950 to-blue-900  border-white shadow-lg flex flex-col transition-all duration-300 z-40 ${isSidebarOpen ? "w-60" : "w-16"}`;
     const t3 = `text-white font-semibold text-lg transition-all duration-200 ${isSidebarOpen ? "opacity-100" : "opacity-0 hidden"}`;
     let t4;
     if ($[6] !== t3) {
@@ -875,11 +875,11 @@ var _s = __turbopack_context__.k.signature();
 function Banner() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(18);
-    if ($[0] !== "cb6fd742ee3e0df439493b98ddafe9301d571798af9493c2e5388f66d49cf4b5") {
+    if ($[0] !== "3c8e84be12a155d91c022ef15bd472a1237d2b311aa9641b08afa03d40075a71") {
         for(let $i = 0; $i < 18; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "cb6fd742ee3e0df439493b98ddafe9301d571798af9493c2e5388f66d49cf4b5";
+        $[0] = "3c8e84be12a155d91c022ef15bd472a1237d2b311aa9641b08afa03d40075a71";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1053,7 +1053,7 @@ function Banner() {
     let t10;
     if ($[14] !== t5 || $[15] !== t7 || $[16] !== t9) {
         t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "w-full h-20 bg-gradient-to-l from-rose-950 via-rose-900 to-rose-950 fixed",
+            className: "w-full h-20 bg-gradient-to-l from-blue-950 via-blue-900 to-blue-800 fixed",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "max-w-screen mx-auto px-6 h-full flex items-left justify-left",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {

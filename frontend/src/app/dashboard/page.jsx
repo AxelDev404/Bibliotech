@@ -90,31 +90,31 @@ export default function DashBoard()
                                
                                 <div className="max-w-screen-l mx-auto flex flex-row flex-wrap gap-6 sm:gap-8 items-center justify-center px-4">
                                     
-                                    <div className="w-60 sm:w-72 h-28 sm:h-32 bg-white text-black rounded-lg flex flex-col items-center justify-center flex-shrink-0 shadow-md hover:shadow-lg hover:bg-rose-900 hover:text-white transition-all duration-300">
+                                    <div className="w-60 sm:w-72 h-28 sm:h-32 bg-white text-black rounded-lg flex flex-col items-center justify-center flex-shrink-0 shadow-md hover:shadow-lg hover:bg-blue-900 hover:text-white transition-all duration-300">
                                         <AutoStoriesIcon sx={{ fontSize: 50 }} />
                                         <p className="text-2xl sm:text-3xl font-thin">{count}</p>
                                         <p className="text-xs sm:text-sm mt-1">Libri caricati</p>
                                     </div>
 
-                                    <div className="w-60 sm:w-72 h-28 sm:h-32 bg-white text-black rounded-lg flex flex-col items-center justify-center flex-shrink-0 shadow-md hover:shadow-lg hover:bg-rose-900 hover:text-white transition-all duration-300">
+                                    <div className="w-60 sm:w-72 h-28 sm:h-32 bg-white text-black rounded-lg flex flex-col items-center justify-center flex-shrink-0 shadow-md hover:shadow-lg hover:bg-blue-900 hover:text-white transition-all duration-300">
                                         <TableChartIcon sx={{ fontSize: 50 }} />
                                         <p className="text-2xl sm:text-3xl font-thin">{count_postazioni}</p>
                                         <p className="text-xs sm:text-sm mt-1">Postazioni totali</p>
                                     </div>
 
-                                    <div className="w-60 sm:w-72 h-28 sm:h-32 bg-white text-black rounded-lg flex flex-col items-center justify-center flex-shrink-0 shadow-md hover:shadow-lg hover:bg-rose-900 hover:text-white transition-all duration-300">
+                                    <div className="w-60 sm:w-72 h-28 sm:h-32 bg-white text-black rounded-lg flex flex-col items-center justify-center flex-shrink-0 shadow-md hover:shadow-lg hover:bg-blue-900 hover:text-white transition-all duration-300">
                                         <BadgeIcon sx={{ fontSize: 50 }} />
                                         <p className="text-2xl sm:text-3xl font-thin">{count_tessere_biblioteca}</p>
                                         <p className="text-xs sm:text-sm mt-1">Tessere attive</p>
                                     </div>
 
-                                    <div className="w-60 sm:w-72 h-28 sm:h-32 bg-white text-black rounded-lg flex flex-col items-center justify-center flex-shrink-0 shadow-md hover:shadow-lg hover:bg-rose-900 hover:text-white transition-all duration-300">
+                                    <div className="w-60 sm:w-72 h-28 sm:h-32 bg-white text-black rounded-lg flex flex-col items-center justify-center flex-shrink-0 shadow-md hover:shadow-lg hover:bg-blue-900 hover:text-white transition-all duration-300">
                                         <SwipeRightIcon sx={{ fontSize: 50 }} />
                                         <p className="text-2xl sm:text-3xl font-thin">{count_presiti_attivi}</p>
                                         <p className="text-xs sm:text-sm mt-1">Presiti in corso</p>
                                     </div>
 
-                                    <div className="w-60 sm:w-72 h-28 sm:h-32 bg-white text-black rounded-lg flex flex-col items-center justify-center flex-shrink-0 shadow-md hover:shadow-lg hover:bg-rose-900 hover:text-white transition-all duration-300">
+                                    <div className="w-60 sm:w-72 h-28 sm:h-32 bg-white text-black rounded-lg flex flex-col items-center justify-center flex-shrink-0 shadow-md hover:shadow-lg hover:bg-blue-900 hover:text-white transition-all duration-300">
                                         <SwipeLeftIcon sx={{ fontSize: 50 }} />
                                         <p className="text-2xl sm:text-3xl font-thin">{count_prestiti_saldati}</p>
                                         <p className="text-xs sm:text-sm mt-1">Presiti saldati</p>

@@ -25,11 +25,11 @@ var _s = __turbopack_context__.k.signature();
 function Home() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(20);
-    if ($[0] !== "a40a2c58b322bf16a2cdcdfd212fd84f4f51fe6cb67e7c35088c5a4659f5d8c6") {
+    if ($[0] !== "4216db57893e37c52dde2807aa561214b640321f48d3fc3e5491958ebca4d0d8") {
         for(let $i = 0; $i < 20; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "a40a2c58b322bf16a2cdcdfd212fd84f4f51fe6cb67e7c35088c5a4659f5d8c6";
+        $[0] = "4216db57893e37c52dde2807aa561214b640321f48d3fc3e5491958ebca4d0d8";
     }
     const dispatch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDispatch"])();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
@@ -212,7 +212,7 @@ function Home() {
     if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
         t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
             type: "submit",
-            className: "mt-5 py-3 w-full bg-gray-200 text-black font-medium rounded-xl hover:bg-rose-400 active:scale-[0.98] transition-all duration-200 shadow-sm",
+            className: "mt-5 py-3 w-full bg-gray-200 text-black font-medium rounded-xl hover:bg-blue-400 active:scale-[0.98] transition-all duration-200 shadow-sm",
             children: "Accedi"
         }, void 0, false, {
             fileName: "[project]/src/app/page.jsx",
@@ -226,7 +226,7 @@ function Home() {
     let t10;
     if ($[16] !== HandleLogIn || $[17] !== t6 || $[18] !== t8) {
         t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex justify-center items-center min-h-screen bg-gradient-to-l from-rose-950  to-rose-950",
+            className: "flex justify-center items-center min-h-screen bg-gradient-to-b from-blue-800 via-blue-950 to-blue-900",
             children: [
                 t3,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -244,13 +244,13 @@ function Home() {
                         }, void 0, true, {
                             fileName: "[project]/src/app/page.jsx",
                             lineNumber: 126,
-                            columnNumber: 287
+                            columnNumber: 299
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/page.jsx",
                     lineNumber: 126,
-                    columnNumber: 122
+                    columnNumber: 134
                 }, this)
             ]
         }, void 0, true, {
