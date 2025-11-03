@@ -25,7 +25,8 @@ import os
 
 
 from ...models.prestito import Prestito
-
+from ..auth.auth import JWTAuthenticationFromCookie
+from ...serializers.prestito import PrestitoFilterSerializer
 
 #STATISTICS GET VIEW
 
@@ -59,5 +60,28 @@ def get_totale_prestiti_saldati(request):
             count_deactive = Prestito.objects.filter(isRestituito=True).count()
             return Response({'count_deactive' : count_deactive} , status=status.HTTP_200_OK)
         
+        except Prestito.DoesNotExist:
+            return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)
+        
+
+
+#FILTERING VIEW
+@api_view(['GET'])
+@authentication_classes([JWTAuthenticationFromCookie])
+@permission_classes([IsAuthenticated])
+def get_filter_prestito(request , tesserato):
+    
+    if  request.method == 'GET':
+        
+        try:
+
+            model = Prestito.objects.filter(tesserato=tesserato)
+            serializer = PrestitoFilterSerializer(model , many = True)
+
+            if not model.exists():
+                return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)
+            else : 
+                return Response(serializer.data , status=status.HTTP_200_OK)
+
         except Prestito.DoesNotExist:
             return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)

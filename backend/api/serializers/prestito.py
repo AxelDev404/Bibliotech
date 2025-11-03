@@ -7,3 +7,26 @@ from rest_framework.validators import UniqueValidator
 
 from ..models.prestito import Prestito
 
+
+
+class PrestitoFilterSerializer(serializers.ModelSerializer):
+
+    class Meta:
+
+        model = Prestito
+
+        fields = ('tesserato','id_prestito' , 'libro' , 'data_inizio' , 'data_fine' , 'isRestituito' , 'isPrestato')
+
+
+
+class PrestitoPostSerializer(serializers.ModelSerializer):
+
+    class Meta:
+
+        model = Prestito
+
+        fields = ('tesserato' , 'libro' , 'data_inizio' , 'data_fine')
+
+        #KWARGS E DEF VALIDATE 
+
+

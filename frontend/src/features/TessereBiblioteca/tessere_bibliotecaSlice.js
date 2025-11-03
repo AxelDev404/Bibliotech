@@ -119,6 +119,13 @@ const tessere_bibliotecaSlice = createSlice({
             state.requests.tessera_detail_item.tessera_detail_error = null;
             state.requests.tessera_detail_item.tessera_detail_status = null;
             state.requests.tessera_detail_item.tessera_detail_loading = false;
+        },
+
+        clearErrorTessera : (state) => {
+            state.requests.tessera_post_items.tessera_post_error = null;
+            state.requests.tessera_post_items.tessera_post_loading = false;
+            state.requests.tessera_post_items.tessera_post_status = 'idle';
+            //state.data.tessera_post_items = [];
         }
 
     },
@@ -237,5 +244,5 @@ const tessere_bibliotecaSlice = createSlice({
 })
 
 
-export const {clearTessera} = tessere_bibliotecaSlice.actions;
+export const {clearTessera , clearErrorTessera} = tessere_bibliotecaSlice.actions;
 export default tessere_bibliotecaSlice.reducer;

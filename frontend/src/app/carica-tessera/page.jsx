@@ -7,7 +7,7 @@ import Banner from "@/components/Banner";
 import SideBar from "@/components/SideBar";
 
 import { useSelector , useDispatch } from "react-redux";
-import { postTesseraBibliotecaAPI } from "@/features/TessereBiblioteca/tessere_bibliotecaSlice";
+import { clearErrorTessera, postTesseraBibliotecaAPI } from "@/features/TessereBiblioteca/tessere_bibliotecaSlice";
 import { useState } from "react";
 import {Toaster , toast} from "react-hot-toast";
 
@@ -62,6 +62,8 @@ export default function InsertTesseraPage() {
             setFormData(initialState);
             toast.success("Tessera registrata");
 
+            dispatch(clearErrorTessera());
+
         } catch (error) {
             console.log(formData , "error : " , error);
             toast.error("Azione rifiutata");
@@ -107,21 +109,25 @@ export default function InsertTesseraPage() {
                                     <div className="mb-5">
                                         <label className="block text-gray-700 mb-2">Cognome</label>
                                         <input name="cognome_tesserato" value={formData.cognome_tesserato} onChange={handleChange} type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
+                                        {tessera_post_error?.cognome_tesserato && ( <p className="text-red-500 text-sm px-1 mt-1">{tessera_post_error.cognome_tesserato[0]}</p>)}
                                     </div>
 
                                     <div className="mb-5"> 
                                         <label className="block text-gray-700 mb-2">Codice Fiscale</label>
                                         <input name="codice_fiscale" value={formData.codice_fiscale} onChange={handleChange} type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
+                                        {tessera_post_error?.codice_fiscale && ( <p className="text-red-500 text-sm px-1 mt-1">{tessera_post_error.codice_fiscale[0]}</p>)}
                                     </div>
 
                                     <div className="mb-5">
                                         <label className="block text-gray-700 mb-2">Data di nascita</label>
                                         <input name="data_nascita" value={formData.data_nascita} onChange={handleChange} type="date" className="w-full text-gray-700 border bg-gray-100 border-gray-400 rounded px-3 py-2" />
+                                        {tessera_post_error?.data_nascita && ( <p className="text-red-500 text-sm px-1 mt-1">{tessera_post_error.data_nascita[0]}</p>)}
                                     </div>
 
                                     <div className="mb-5">
                                         <label className="block text-gray-700 mb-2">Telefono</label>
                                         <input name="telefono" value={formData.telefono}  onChange={handleChange} type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
+                                        {tessera_post_error?.telefono && ( <p className="text-red-500 text-sm px-1 mt-1">{tessera_post_error.telefono[0]}</p>)}
                                     </div>
 
                                     <div className="mb-5">
@@ -132,6 +138,7 @@ export default function InsertTesseraPage() {
                                     <div className="mb-5">
                                         <label className="block text-gray-700 mb-2">Indirizzo</label>
                                         <input name="indirizzo" value={formData.indirizzo} onChange={handleChange} type="text" className="w-full border text-gray-700 bg-gray-100 border-gray-400 rounded px-3 py-2" />
+                                        {tessera_post_error?.indirizzo && ( <p className="text-red-500 text-sm px-1 mt-1">{tessera_post_error.indirizzo[0]}</p>)}
                                     </div>
 
                                

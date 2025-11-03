@@ -26,7 +26,7 @@ from .postazione.get import (
 
 
 from .prestito.get import (
-    get_totale_prestiti_attivi , get_totale_prestiti_saldati
+    get_totale_prestiti_attivi , get_totale_prestiti_saldati , get_filter_prestito
 )
 
 from .categoria.get import (
@@ -55,6 +55,10 @@ from .postazione.post import (
     post_postazione
 )
 
+from .prestito.post import (
+    post_prestito
+)
+
 from .libro.patch import (
     patch_libro
 )
@@ -62,6 +66,8 @@ from .libro.patch import (
 from .tessera_biblioteca.patch import (
     patch_tessera_biblioteca
 )
+
+
 
 
 
@@ -89,7 +95,7 @@ __all__ = [
 
     #GET PRESTITO
 
-    'get_totale_prestiti_attivi' , 'get_totale_prestiti_saldati',
+    'get_totale_prestiti_attivi' , 'get_totale_prestiti_saldati', 'get_filter_prestito',
 
     #GET CATEGORIA
 
@@ -114,6 +120,10 @@ __all__ = [
     #POST POSTAZIONE
 
     'post_postazione',
+
+    #POST PRESTITO
+
+    'post_prestito',
 
     #PATCH LIBRO
 

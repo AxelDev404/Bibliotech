@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import { useEffect , useState } from "react";
 
 import { getLibroDetailPageAPI , clearLibro, patchLibroAPI } from "@/features/Libri/libriSlice"
+import { getHelperSelectionPostazioni } from "@/features/Postazioni/postazioniSlice";
 import { getHelperAutoriAPI } from "@/features/Autori/autoriSlice";
 import AppWrapper from "@/components/AppWrapper";
 import PrivateRoute from "@/components/PrivateRoute";
@@ -48,6 +49,19 @@ export default function LibroPage() {
 
     } = useSelector((state) => state.autori);
 
+
+    const {
+
+        data : {postazioni_helper_items} , 
+
+        requests : {
+
+            postazioni_helper_items : {}
+        
+        }
+
+    } = useSelector((state) => state.postazioni);
+
     
     const dispatch = useDispatch();
     const {isbn} = useParams();
@@ -63,7 +77,9 @@ export default function LibroPage() {
         data_uscita : "",
         editore : "",
         formato : "",
-        lingua : ""
+        lingua : "",
+        autore : null,
+        postazione : null
     }
 
     const [locked , setLocked] = useState(true);
@@ -74,18 +90,18 @@ export default function LibroPage() {
     const handleChange = (e) => {
 
         const {name , value} = e.target;
+        
+        const integerFields = ['autore']
 
         setFormData({
             ...formData,
-            [name] : value
+            [name] : integerFields.includes(name) ? (value === '' ? null : Number(value)) : value,
         })
 
     }
 
 
     const handlePatch = async() => {
-
-        //e.preventDefault();
 
         setSaving(true);
 
@@ -119,7 +135,7 @@ export default function LibroPage() {
 
                         
         } catch (error) {
-            console.error(error); 
+            console.log(error); 
             toast.error("Azione rifiutata");
         
         } finally{
@@ -141,6 +157,7 @@ export default function LibroPage() {
 
     useEffect(() => {
         dispatch(getHelperAutoriAPI());
+        dispatch(getHelperSelectionPostazioni());
     },[dispatch])
 
 
@@ -218,8 +235,10 @@ export default function LibroPage() {
 
                                                 <h2 className="text-sm text-gray-500">Autore</h2>
                                                 
-                                                <select readOnly={locked} value={libroDetail?.autore ?? ""} className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 ">
-                                                    <option value="">La modifica del autore è work in progress</option>
+                                                <select disabled={locked} name="autore" value={formData?.autore ? String(formData.autore) : ""} onChange={handleChange} className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 ">
+                                                    
+                                                    <option value="">{libroDetail?.autore_libro ?? ""}</option>
+                                                    
                                                     {Array.isArray(autore_helper_items) && autore_helper_items.map(autore => (
                                                         <option  key={autore.id_autore} value={autore.id_autore}>{autore.nome_autore}</option>
                                                     ))}
@@ -257,7 +276,16 @@ export default function LibroPage() {
 
                                             <div className="flex justify-between border-b pb-2 flex-col">
                                                 <h2 className="text-sm text-gray-500">Postazione</h2>
-                                                <p className="text-md w-96 h-7 px-2   font-thin text-gray-900  ">{libroDetail?.postazione ?? ""} </p>
+                                               
+                                                <select disabled={locked} name="postazione" value={formData?.postazione ?? ""} onChange={handleChange} className="text-md w-96 h-7 px-2 rounded-md border-gray-400 border font-thin text-gray-900 bg-slate-50 ">
+
+                                                    <option value="">{libroDetail?.postazione ?? ""}</option>
+                                                    
+                                                    {Array.isArray(postazioni_helper_items) && postazioni_helper_items.map(postazioni => (
+                                                        <option key={postazioni.id_postazione} value={postazioni.id_postazione}>{postazioni.posizione}{postazioni.numerazione}:{postazioni.categoria_nome}</option>
+                                                    ))}
+
+                                                </select>
                                             </div>
 
                                           

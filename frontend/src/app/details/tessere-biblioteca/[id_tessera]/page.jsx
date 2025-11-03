@@ -8,11 +8,14 @@ import { useSelector , useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import {Toaster , toast} from "react-hot-toast";
+import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 import AppWrapper from "@/components/AppWrapper";
 import PrivateRoute from "@/components/PrivateRoute";
 
 import { getDetailTesseraBiblioteca , clearTessera , patchTesseraBibliotecaAPI } from "@/features/TessereBiblioteca/tessere_bibliotecaSlice";
+import { getFilteringPrestitiAPI , clearFilterItems , postPrestito , clearErrorPrestiti} from "@/features/Prestiti/prestitiSlice";
 
 import Banner from "@/components/Banner";
 import SideBar from "@/components/SideBar";
@@ -22,6 +25,9 @@ import UndoIcon from '@mui/icons-material/Undo';
 import SaveAltIcon from '@mui/icons-material/SaveAlt';
 import ZoomInIcon from '@mui/icons-material/ZoomIn';
 import LockOutlineIcon from '@mui/icons-material/LockOutline';
+import AddBoxIcon from '@mui/icons-material/AddBox';
+import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
+import CloseIcon from "@mui/icons-material/Close";
 
 export default function LibroPage() {
   
@@ -30,11 +36,24 @@ export default function LibroPage() {
         data : {tessera_detail_item}
 
     } = useSelector((state) => state.tessere_bibilioteca);
+
+
+    const {
+
+        data : {filtering_presititi_items},
+
+        requests : { 
+            filtering_presititi_items : {filtering_presititi_status , filtering_presititi_error , filtering_presititi_loading}
+        }
+
+    } = useSelector((state) => state.prestiti);
     
     const dispatch = useDispatch();
     const {id_tessera} = useParams();
 
     const router = useRouter();
+
+    const [popUpPrestito , setPopUpPrestito] = useState({open : false});
 
 
     //--------------------------PATCH TESSERA BIBLIOTECA------------------------------//
@@ -104,12 +123,70 @@ export default function LibroPage() {
     }
 
 
+    //--------------------------POST PRESTITO------------------------------//
+
+    //'tesserato' , 'libro' , 'data_inizio' , 'data_fine'
+    const initialStatePrestito = {
+
+        tesserato : id_tessera,
+        libro : "",
+        data_inizio : "",
+        data_fine : ""
+    }
+
+    const [formDataPresitito , setFormDataPresitito] = useState(initialStatePrestito);
+
+    const handleChangePrestito = (e) => {
+
+        const {name , value} = e.target;
+
+        setFormDataPresitito({
+            ...formDataPresitito,
+            [name] : value === "" ? null : value
+        })
+    }
+
+
+    const handleSubmitPrestito = async(e) =>{
+
+        e.preventDefault();
+
+        const payload = { ...formDataPresitito , 
+            tesserato : formDataPresitito.tesserato ? Number(formDataPresitito.tesserato) : null
+        }
+        
+        try {
+            
+            await dispatch(postPrestito(payload)).unwrap();
+
+            setFormDataPresitito(initialStatePrestito);
+            toast.success('Presitito registrato');
+
+            dispatch(clearErrorPrestiti());
+
+        } catch (error) {
+            
+            console.log(error , "dati : " , payload);
+            toast.error("Azione rifiutata");
+        }
+
+    }
+
+
+
+
     useEffect(() => {
         
         dispatch(getDetailTesseraBiblioteca(id_tessera));
+       
         return () => dispatch(clearTessera());
 
     },[id_tessera , dispatch])
+
+    useEffect(() => {
+        dispatch(getFilteringPrestitiAPI(id_tessera));
+        return () => dispatch(clearFilterItems());
+    },[dispatch])
 
 
     useEffect(() => {
@@ -230,6 +307,152 @@ export default function LibroPage() {
                                     </form>
 
                                      
+                                </div>
+
+                                <div className="py-10">
+                                   
+                                    <h2 className="text-2xl font-light mb-4 text-gray-800">Gestione presiti <hr /></h2>
+
+                                     <AnimatePresence>
+
+                                        {popUpPrestito.open && (
+
+                                            <motion.div className="fixed inset-0 flex items-center justify-center bg-black/80 z-50" initial={{ opacity: 0 }} animate={{ opacity: 1 }}exit={{ opacity: 0 }}>
+                                                
+                                                <motion.div  className="bg-white p-6 rounded-xl shadow-lg w-full max-w-xl relative" initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}exit={{ scale: 0.8, opacity: 0 }} transition={{ duration: 0.3 }}>
+                                                    
+                                                    <button className="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onClick={() => { 
+                                                        
+                                                        setPopUpPrestito({ open: false });
+                                                        
+                                                    
+                                                    }}>
+                                                        <CloseIcon />
+                                                    </button>
+                                                    
+                                                    <h2 className="text-xl font-semibold mb-4 text-gray-800">
+                                                        Registra un nuovo presito
+                                                    </h2>
+
+                                                    <form onSubmit={handleSubmitPrestito} className="flex flex-col gap-4">
+                                                        
+                                                        <label className="flex flex-col text-gray-700 text-sm">
+                                                            ISBN
+                                                            <input name="libro" value={formDataPresitito.libro} onChange={handleChangePrestito} type="text" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        </label>
+
+                                                        <label className="flex flex-col text-gray-700 text-sm">
+                                                            Data inizio
+                                                            <input name="data_inizio" value={formDataPresitito.data_inizio} onChange={handleChangePrestito} type="date" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        </label>
+
+                                                        <label className="flex flex-col text-gray-700 text-sm">
+                                                            Data fine
+                                                            <input name="data_fine" value={formDataPresitito.data_fine} onChange={handleChangePrestito} type="date" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                        </label>
+                                                        
+
+                                                        <button  type="submit" className="mt-4 p-2 rounded-md border border-blue-500 text-white bg-blue-900 hover:bg-blue-800 transition-colors text-sm">
+                                                            Salva prestito
+                                                        </button>
+                                                        
+                                                    </form>
+                                                
+                                                </motion.div>
+                                        
+                                            </motion.div>
+                                        )}
+
+                                    </AnimatePresence>
+                                    
+                                    <div className="bg-gray-100   p-2 flex items-center justify-between">
+  
+                                        
+                                        <div className="flex items-center space-x-4">
+                                            <button onClick={() => setPopUpPrestito({open : true})} className="text-green-500 hover:text-green-400 transition-colors">
+                                                <AddBoxIcon sx={{ fontSize: 32 }} /> registra prestito
+                                            </button>
+                                        </div>
+
+                                         
+                                        <div className="flex items-center space-x-6">
+
+                                            <p className="text-gray-600">data inizio</p>
+                                            <input type="date" className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
+
+                                            <p className="text-gray-600">data fine</p>
+                                            <input type="date" className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
+                                            
+                                            <select className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
+                                            
+                                                <option value="">Prestito</option>
+                                                <option value="true">Attivo</option>
+                                                <option value="false">Inattivo</option>
+                                            
+                                            </select>
+
+                                            <select className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito" >
+                                                <option value="">Operatore</option>
+                                            
+                                            </select>
+                                            
+                                           
+                                        </div>
+    
+                                    </div>
+
+                                    
+
+                                    <div className="overflow-x-auto">
+
+                                        <table className="w-full bg-gray-200 shadow-md rounded-lg overflow-hidden">
+
+                                            <thead className="bg-blue-600 text-white">
+                                                <tr>
+                                                    <th className="py-3 px-6 text-left">NR. Prestito</th>
+                                                    <th className="py-3 px-6 text-left">LIBRO</th>
+                                                    <th className="py-3 px-6 text-left">DATA INIZIO</th>
+                                                    <th className="py-3 px-6 text-left">DATA FINE</th>
+                                                    <th className="py-3 px-6 text-left">RESTITUITO</th>
+                                                    <th className="py-3 px-6 text-left">IN PRESTITO</th>
+                                                    <th className="py-3 px-6 text-left">AZIONE</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody className="divide-y divide-gray-200">
+
+                                               {Array.isArray(filtering_presititi_items) && filtering_presititi_items.map(filter_table => (
+
+                                                    <tr key={filter_table.id_prestito} className="hover:bg-white transition-colors">
+
+                                                        <td className="py-3 px-6 text-black">{filter_table.id_prestito}</td>
+
+                                                        <td className="py-3 px-6 text-black">
+                                                            
+                                                            <Link href={`/details/libri/${filter_table.libro}`} className="hover:text-green-800" title="visualizza dettagli">
+                                                                {filter_table.libro} <DoubleArrowIcon sx={{fontSize : 17}}/>
+                                                            </Link>
+                                                            
+                                                        </td>
+
+                                                        <td className="py-3 px-6 text-black">{filter_table.data_inizio}</td>
+                                                        <td className="py-3 px-6 text-black">{filter_table.data_fine}</td>   
+                                                        <td className="py-3 px-6 text-black">{filter_table.isRestituito ? 'Si' : 'No'} </td>
+                                                        <td className="py-3 px-6 text-black">{filter_table.isPrestato ? 'Si' : 'No'} </td>
+                                                        <td className="py-3 px-6 text-black"> </td>
+
+                                                    </tr>
+
+                                                ))}
+                                                    
+                                            </tbody>
+
+                                        </table>
+
+                                    </div>
+
+                                   
+
                                 </div>
 
                             </div>

@@ -3,6 +3,7 @@ from .libro import LibroManageSerializer , LibroStatisticSerializer , LibroPostS
 from .tessera_biblioteca import TesseraBibStatSerializer , TesseraDetailSerializer , TesseraBibliotecaPostSerializer ,TesseraBibliotecaPatchSerializer
 from .postazione import SelectPostazioneSerializer , PostazionePostSerializer
 from .categoria import CategoriaPostSerializer , CategoriaHlperSerializer
+from .prestito import PrestitoFilterSerializer , PrestitoPostSerializer
 
 __all__ = [
 
@@ -34,4 +35,8 @@ __all__ = [
 
     'CategoriaPostSerializer',
     'CategoriaHlperSerializer',
+
+    #PRESTITO
+    'PrestitoFilterSerializer',
+    'PrestitoPostSerializer',
 ]
