@@ -17,6 +17,7 @@ import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import BadgeIcon from '@mui/icons-material/Badge';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 
 //-------------------ICONS-------------------//
 
@@ -70,7 +71,14 @@ export default function SideBar(){
                     <div className="flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white w-full">
                         <button onClick={() => router.replace('/cerca-libro')}  className="w-full text-left h-12 flex items-center">
                             <AutoStoriesIcon titleAccess='Cerca libri'/>
-                            {isSidebarOpen && <span className="px-3">Cerca libro</span>}
+                            {isSidebarOpen && <span className="px-3">Cerca libri</span>}
+                        </button>
+                    </div>
+
+                    <div className="flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white w-full">
+                        <button onClick={() => router.replace('/cerca-libro')}  className="w-full text-left h-12 flex items-center">
+                            <PeopleAltIcon titleAccess='Cerca libri'/>
+                            {isSidebarOpen && <span className="px-3">Cerca tesserati</span>}
                         </button>
                     </div>
 

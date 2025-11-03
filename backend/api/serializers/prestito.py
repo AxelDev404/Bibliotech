@@ -30,3 +30,17 @@ class PrestitoPostSerializer(serializers.ModelSerializer):
         #KWARGS E DEF VALIDATE 
 
 
+class PrestitoPatchStatusSerializer(serializers.ModelSerializer):
+
+    class Meta:
+
+        model = Prestito
+        fields = [ 'id_prestito' , 'isRestituito']
+
+
+class PresittoPatchPendingStatusSerializer(serializers.ModelSerializer):
+
+    class Meta:
+
+        model = Prestito
+        fields = ['id_prestito' , 'isPrestato']

@@ -1,8 +1,4 @@
 'use client';
-
-
-'use client';
-
 import { useParams } from "next/navigation";
 import { useSelector , useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
@@ -15,7 +11,7 @@ import AppWrapper from "@/components/AppWrapper";
 import PrivateRoute from "@/components/PrivateRoute";
 
 import { getDetailTesseraBiblioteca , clearTessera , patchTesseraBibliotecaAPI } from "@/features/TessereBiblioteca/tessere_bibliotecaSlice";
-import { getFilteringPrestitiAPI , clearFilterItems , postPrestito , clearErrorPrestiti} from "@/features/Prestiti/prestitiSlice";
+import { getFilteringPrestitiAPI , clearFilterItems , postPrestito , clearErrorPrestiti , deletePrestitoAPI , patchStatusPrestitoAPI , patchPendingPrestitoAPI} from "@/features/Prestiti/prestitiSlice";
 
 import Banner from "@/components/Banner";
 import SideBar from "@/components/SideBar";
@@ -28,6 +24,9 @@ import LockOutlineIcon from '@mui/icons-material/LockOutline';
 import AddBoxIcon from '@mui/icons-material/AddBox';
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 import CloseIcon from "@mui/icons-material/Close";
+import BackspaceIcon from '@mui/icons-material/Backspace';
+
+
 
 export default function LibroPage() {
   
@@ -163,6 +162,7 @@ export default function LibroPage() {
             toast.success('Presitito registrato');
 
             dispatch(clearErrorPrestiti());
+            dispatch(getFilteringPrestitiAPI(id_tessera));
 
         } catch (error) {
             
@@ -173,6 +173,95 @@ export default function LibroPage() {
     }
 
 
+    //--------------------------DELETE PRESTITO------------------------------//
+
+    const deletePrestito = async(id_prestito)=> {
+
+        try {
+            
+            await dispatch(deletePrestitoAPI(id_prestito)).unwrap();
+            toast.success("Eliminato");
+
+            dispatch(getFilteringPrestitiAPI(id_tessera));
+
+            return ()=> dispatch(clearFilterItems());
+
+        } catch (error) {
+            
+            console.log(error , "id: " , id_prestito);
+            toast.error("Azione rifiutata");
+        }
+
+    }
+
+
+    //--------------------------PATCH PRESTITO------------------------------//
+
+    const [restituito_set , setRestituito] = useState(false);
+    
+
+    const patchPrestito = async(e , id_prestito , restituito_set) => {
+
+        e.preventDefault();
+
+        try {
+            
+            await dispatch(patchStatusPrestitoAPI({
+                id_prestito : id_prestito , updateData : {isRestituito : restituito_set}
+            })).unwrap();
+
+            if(restituito_set == false){
+                toast.success('Da restituire');
+            }
+            else{
+                toast.success("Restituito")
+            }
+            
+            
+            dispatch(getFilteringPrestitiAPI(id_tessera));
+
+        } catch (error) {
+            
+            console.log(error);
+            toast.error("Azione rifiutata");
+        }
+
+    }
+
+    //--------------------------PATCH PENDING------------------------------//
+
+    const [prestato_set , setPrestato] = useState(false);
+
+    const patchPrestitoPending = async(e, id_prestito , prestato_set) => {
+
+        e.preventDefault();
+
+        try {
+            
+            await dispatch(patchPendingPrestitoAPI({
+
+                id_prestito : id_prestito ,
+                updateData : {isPrestato : prestato_set}
+
+            })).unwrap();
+
+            if(prestato_set === false){
+                toast.success("In presitito")
+            }
+            else{
+                toast.success("Saldato")
+            }
+            
+
+            dispatch(getFilteringPrestitiAPI(id_tessera));
+
+        } catch (error) {
+            
+            console.log(error);
+            toast.error("Azione rifiutata");
+        }
+
+    }
 
 
     useEffect(() => {
@@ -375,7 +464,13 @@ export default function LibroPage() {
                                         </div>
 
                                          
-                                        <div className="flex items-center space-x-6">
+                                        <div className="flex items-center space-x-5">
+
+                                            <label className="flex items-center space-x-1 cursor-pointer text-gray-700 font-medium">
+                                                <p className="text-gray-600">ISBN</p>
+                                                <input type="text" className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
+                                                <button className="text-white rounded-md hover:bg-blue-500 bg-blue-700"><ZoomInIcon sx={{fontSize:35}}/></button>
+                                            </label>
 
                                             <p className="text-gray-600">data inizio</p>
                                             <input type="date" className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
@@ -385,9 +480,17 @@ export default function LibroPage() {
                                             
                                             <select className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
                                             
-                                                <option value="">Prestito</option>
-                                                <option value="true">Attivo</option>
-                                                <option value="false">Inattivo</option>
+                                                <option value="">Restituito</option>
+                                                <option value="true">Si</option>
+                                                <option value="false">No</option>
+                                            
+                                            </select>
+
+                                            <select className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
+                                            
+                                                <option value="">In prestito</option>
+                                                <option value="true">Si</option>
+                                                <option value="false">No</option>
                                             
                                             </select>
 
@@ -395,8 +498,11 @@ export default function LibroPage() {
                                                 <option value="">Operatore</option>
                                             
                                             </select>
+
+                                            <button className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all">
+                                                <BackspaceIcon/>
+                                            </button>
                                             
-                                           
                                         </div>
     
                                     </div>
@@ -437,9 +543,52 @@ export default function LibroPage() {
 
                                                         <td className="py-3 px-6 text-black">{filter_table.data_inizio}</td>
                                                         <td className="py-3 px-6 text-black">{filter_table.data_fine}</td>   
-                                                        <td className="py-3 px-6 text-black">{filter_table.isRestituito ? 'Si' : 'No'} </td>
-                                                        <td className="py-3 px-6 text-black">{filter_table.isPrestato ? 'Si' : 'No'} </td>
-                                                        <td className="py-3 px-6 text-black"> </td>
+                                                        <td className="py-3 px-6 text-black">{filter_table.isRestituito ? 
+                                                            
+                                                            <div className="w-20 bg-green-800 rounded-full text-center"><span className=" w-20 h-10  text-green-500">SI</span></div> 
+                                                            
+                                                            : 
+
+                                                            <div className="w-20 bg-red-800 rounded-full text-center"><span className=" w-20 h-10  text-red-300">NO</span></div>
+                                                            
+                                                            } 
+                                                        
+                                                        </td>
+                                                        <td className="py-3 px-6 text-black">{filter_table.isPrestato ? 
+                                                            
+                                                            <div className="w-20 bg-green-800 rounded-full text-center"><span className=" w-20 h-10  text-green-500">SI</span></div> 
+                                                            
+                                                            : 
+                                                            
+                                                            <div className="w-20 bg-red-800 rounded-full text-center"><span className=" w-20 h-10  text-red-300">NO</span></div>
+                                                        
+                                                        
+                                                            } 
+
+                                                        </td>
+
+                                                        <td className="py-3 px-6 text-black">
+                                                           
+                                                            <div className="flex flex-col sm:flex-row items-center gap-2">
+                                                                
+                                                                 
+                                                                <label className="flex items-center space-x-2 cursor-pointer text-gray-700 font-medium">
+                                                                    <span>restituito</span>
+                                                                    <input checked={!!filter_table.isRestituito} onChange={(e) => patchPrestito(e , filter_table.id_prestito , e.target.checked)}  type="checkbox"   className="w-5 h-5 rounded border-gray-400 text-green-600 focus:ring-2 focus:ring-green-400 transition-all" />
+                                                                </label>
+
+                                                                <label className="flex items-center space-x-2 cursor-pointer text-gray-700 font-medium">
+                                                                    <span>in prestito</span>
+                                                                    <input checked={!!filter_table.isPrestato} onChange={(e) => patchPrestitoPending(e , filter_table.id_prestito , e.target.checked)}  type="checkbox"   className="w-5 h-5 rounded border-gray-400 text-green-600 focus:ring-2 focus:ring-green-400 transition-all" />
+                                                                </label>
+                                                            
+                                                                <button onClick={() => deletePrestito(filter_table.id_prestito) } type="button" className="bg-red-500 hover:bg-red-600 text-white font-medium px-4 py-2 rounded-md shadow-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-1">
+                                                                    Rimuovi
+                                                                </button>
+
+                                                            </div>
+
+                                                        </td>
 
                                                     </tr>
 

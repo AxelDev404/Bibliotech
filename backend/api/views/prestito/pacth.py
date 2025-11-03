@@ -1,0 +1,79 @@
+from django.shortcuts import render
+from rest_framework.response import Response
+from rest_framework import status
+from rest_framework.decorators import api_view , permission_classes , parser_classes ,authentication_classes
+from django.shortcuts import get_object_or_404
+from rest_framework.permissions import IsAuthenticated
+from django.db.models import Q
+from django.contrib.auth.models import User 
+from rest_framework.parsers import MultiPartParser, FormParser
+from django.http import FileResponse
+from django.http import HttpResponse
+import mimetypes
+from io import BytesIO
+import zipfile
+from rest_framework_simplejwt.authentication import JWTAuthentication
+from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework.permissions import BasePermission
+from django.contrib.auth import authenticate
+from django.db.models import Prefetch
+from rest_framework.authentication import SessionAuthentication
+from rest_framework_simplejwt.authentication import JWTAuthentication
+from django.views.decorators.csrf import csrf_exempt
+import traceback
+import os
+
+from ..auth.auth import JWTAuthenticationFromCookie
+
+from ...models.prestito import Prestito
+from ...serializers.prestito import PrestitoPatchStatusSerializer , PresittoPatchPendingStatusSerializer
+
+
+@api_view(['PATCH'])
+@permission_classes([IsAuthenticated])
+@authentication_classes([JWTAuthenticationFromCookie])
+def pacth_status_prestito(request , id_prestito):
+
+    if request.method == 'PATCH':
+
+        try:
+
+            model = get_object_or_404(Prestito ,id_prestito = id_prestito)
+            serializer = PrestitoPatchStatusSerializer(model , data = request.data , partial = True)
+
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data , status=status.HTTP_200_OK)
+            
+            else:
+                return Response(serializer.errors , status=status.HTTP_400_BAD_REQUEST)
+
+        except Exception as e:
+
+            traceback.print_exc()
+            return Response({'Message' : 'Internal Server Error'} , status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        
+
+
+@api_view(['PATCH'])
+@authentication_classes([JWTAuthenticationFromCookie])
+@permission_classes([IsAuthenticated])
+def patch_pendig_prestiti(request , id_prestito):
+
+    if request.method == 'PATCH':
+
+        try:
+            
+            instance = get_object_or_404(Prestito , id_prestito = id_prestito)
+            serializer = PresittoPatchPendingStatusSerializer(instance , data = request.data , partial=True)
+
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data , status=status.HTTP_200_OK)
+            else:
+                return Response(serializer.errors , status=status.HTTP_400_BAD_REQUEST)
+
+        except Exception as e:
+
+            traceback.print_exc()
+            return Response({'Message' : 'Internal Server Error'} , status=status.HTTP_500_INTERNAL_SERVER_ERROR)

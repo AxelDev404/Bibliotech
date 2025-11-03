@@ -7,3 +7,8 @@ export const fetchCountStatPrestitiSaldati = () => apiClient.get('prestiti/stati
 export const fetchFilteringPrestiti = (tesserato) => apiClient.get(`prestiti/filtering-table-prestiti/${tesserato}/`);
 
 export const createPrestito = (formData) => apiClient.post('prestiti/post-prestito/' , formData);
+
+export const destroyPrestito = (id_prestito) => apiClient.delete(`prestiti/delete-prestito/${id_prestito}/`);
+
+export const modifyPrestito = (id_prestito , updateData) => apiClient.patch(`prestiti/patch-prestito-status/${id_prestito}/` , updateData).then(res => res.data);
+export const modifyPendingPrestito = (id_prestito , updateData) => apiClient.patch(`prestiti/patch-pending-prestito/${id_prestito}/` , updateData).then(res => res.data);

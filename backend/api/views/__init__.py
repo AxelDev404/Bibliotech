@@ -67,8 +67,13 @@ from .tessera_biblioteca.patch import (
     patch_tessera_biblioteca
 )
 
+from .prestito.pacth import (
+    pacth_status_prestito , patch_pendig_prestiti
+)
 
-
+from .prestito.delete import (
+    delete_prestito
+)
 
 
 __all__ = [
@@ -132,4 +137,13 @@ __all__ = [
     #PATCH TESSERA BIBLIOTECA
 
     'patch_tessera_biblioteca',
+    'patch_pendig_prestiti',
+
+    #PATCH PRESTITO
+
+    'pacth_status_prestito',
+
+    #DELETE PRESTITO
+
+    'delete_prestito',
 ]
