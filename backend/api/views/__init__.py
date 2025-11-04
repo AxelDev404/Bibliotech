@@ -33,6 +33,9 @@ from .categoria.get import (
     get_categorie_helper
 )
 
+from .customuser.get import (
+    get_user_helper_select
+)
 
 from .libro.post import (
     post_libro
@@ -105,6 +108,10 @@ __all__ = [
     #GET CATEGORIA
 
     'get_categorie_helper',
+
+    #GET CUSTOMUSER
+
+    'get_user_helper_select',
 
     #POST LIBRO
     

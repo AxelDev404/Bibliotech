@@ -38,11 +38,11 @@ export const getCountStatPresititiSaldatiAPI = createAsyncThunk('presitit/presti
 //-----------------------------------------------------------GESTIONE FILTRAGGIO-----------------------------------------------------------//
 
 
-export const getFilteringPrestitiAPI = createAsyncThunk('prestiti/filtering/' , async(tesserato , {rejectWithValue}) => {
+export const getFilteringPrestitiAPI = createAsyncThunk('prestiti/filtering/' , async({tesserato , params } , {rejectWithValue}) => {
 
     try {
         
-        const response = await fetchFilteringPrestiti(tesserato);
+        const response = await fetchFilteringPrestiti(tesserato , params);
         return response.data;
 
     } catch (err) {

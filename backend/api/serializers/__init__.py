@@ -4,6 +4,7 @@ from .tessera_biblioteca import TesseraBibStatSerializer , TesseraDetailSerializ
 from .postazione import SelectPostazioneSerializer , PostazionePostSerializer
 from .categoria import CategoriaPostSerializer , CategoriaHlperSerializer
 from .prestito import PrestitoFilterSerializer , PrestitoPostSerializer , PrestitoPatchStatusSerializer , PresittoPatchPendingStatusSerializer
+from .customuser import CustomUserFilterHelperSerializer
 
 __all__ = [
 
@@ -41,4 +42,7 @@ __all__ = [
     'PrestitoPostSerializer',
     'PrestitoPatchStatusSerializer',
     'PresittoPatchPendingStatusSerializer',
+
+    #CUSTOM USER
+    'CustomUserFilterHelperSerializer',
 ]

@@ -8,6 +8,7 @@ import tessere_bibliotecaSlice from '@/features/TessereBiblioteca/tessere_biblio
 import prestitiSlice from '@/features/Prestiti/prestitiSlice';
 import autoriSlice from '@/features/Autori/autoriSlice';
 import categorieSlice from '@/features/Categorie/categorieSlice';
+import customuserSlice from '@/features/CustomUser/customuserSlice';
 
 const store = configureStore({
 
@@ -20,6 +21,7 @@ const store = configureStore({
         prestiti : prestitiSlice,
         autori : autoriSlice,
         categorie : categorieSlice,
+        customuser : customuserSlice,
 
     },
 });

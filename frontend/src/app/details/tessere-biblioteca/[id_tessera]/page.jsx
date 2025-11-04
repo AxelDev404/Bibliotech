@@ -2,7 +2,7 @@
 import { useParams } from "next/navigation";
 import { useSelector , useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {Toaster , toast} from "react-hot-toast";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
@@ -12,6 +12,7 @@ import PrivateRoute from "@/components/PrivateRoute";
 
 import { getDetailTesseraBiblioteca , clearTessera , patchTesseraBibliotecaAPI } from "@/features/TessereBiblioteca/tessere_bibliotecaSlice";
 import { getFilteringPrestitiAPI , clearFilterItems , postPrestito , clearErrorPrestiti , deletePrestitoAPI , patchStatusPrestitoAPI , patchPendingPrestitoAPI} from "@/features/Prestiti/prestitiSlice";
+import { getHelperSelectionUserAPI } from "@/features/CustomUser/customuserSlice";
 
 import Banner from "@/components/Banner";
 import SideBar from "@/components/SideBar";
@@ -46,6 +47,18 @@ export default function LibroPage() {
         }
 
     } = useSelector((state) => state.prestiti);
+
+    
+    const {
+
+        data : {customuser_helper_selection_items},
+
+        requests : {
+            customuser_helper_selection_items : { customuser_helper_selection_status , customuser_helper_selection_error , customuser_helper_selection_loading},
+        }
+
+    } = useSelector((state) => state.customuser);
+
     
     const dispatch = useDispatch();
     const {id_tessera} = useParams();
@@ -162,7 +175,7 @@ export default function LibroPage() {
             toast.success('Presitito registrato');
 
             dispatch(clearErrorPrestiti());
-            dispatch(getFilteringPrestitiAPI(id_tessera));
+            dispatch(getFilteringPrestitiAPI({tesserato : id_tessera , params : filtrazione}));
 
         } catch (error) {
             
@@ -173,6 +186,20 @@ export default function LibroPage() {
     }
 
 
+   
+    //-------------------------VARS DI FILTRAGGIO-----------------------------//
+
+
+    const [filtrazione , setFiltrazione] = useState({
+        
+        libro : null,
+        isRestituito : null,
+        isPrestato : null,
+        data_inizio : null,
+        data_fine : null
+
+    });
+
     //--------------------------DELETE PRESTITO------------------------------//
 
     const deletePrestito = async(id_prestito)=> {
@@ -182,7 +209,7 @@ export default function LibroPage() {
             await dispatch(deletePrestitoAPI(id_prestito)).unwrap();
             toast.success("Eliminato");
 
-            dispatch(getFilteringPrestitiAPI(id_tessera));
+            dispatch(getFilteringPrestitiAPI({tesserato : id_tessera , params : filtrazione}));
 
             return ()=> dispatch(clearFilterItems());
 
@@ -218,7 +245,7 @@ export default function LibroPage() {
             }
             
             
-            dispatch(getFilteringPrestitiAPI(id_tessera));
+            dispatch(getFilteringPrestitiAPI({tesserato : id_tessera , params : filtrazione}));
 
         } catch (error) {
             
@@ -253,7 +280,7 @@ export default function LibroPage() {
             }
             
 
-            dispatch(getFilteringPrestitiAPI(id_tessera));
+            dispatch(getFilteringPrestitiAPI({tesserato : id_tessera , params : filtrazione}));
 
         } catch (error) {
             
@@ -264,18 +291,34 @@ export default function LibroPage() {
     }
 
 
+    //----------------------FILTERING DATA--------------------------//
+
+
+
     useEffect(() => {
         
         dispatch(getDetailTesseraBiblioteca(id_tessera));
-       
         return () => dispatch(clearTessera());
 
     },[id_tessera , dispatch])
 
     useEffect(() => {
-        dispatch(getFilteringPrestitiAPI(id_tessera));
+
+        dispatch(getFilteringPrestitiAPI({tesserato : id_tessera , params : filtrazione}));
+        console.log(filtrazione);
+
+    },[filtrazione , dispatch])
+
+    useEffect(() => {
         return () => dispatch(clearFilterItems());
+    }, [dispatch]);
+
+    useEffect(() => {
+
+        dispatch(getHelperSelectionUserAPI());
+    
     },[dispatch])
+
 
 
     useEffect(() => {
@@ -468,17 +511,17 @@ export default function LibroPage() {
 
                                             <label className="flex items-center space-x-1 cursor-pointer text-gray-700 font-medium">
                                                 <p className="text-gray-600">ISBN</p>
-                                                <input type="text" className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
-                                                <button className="text-white rounded-md hover:bg-blue-500 bg-blue-700"><ZoomInIcon sx={{fontSize:35}}/></button>
+                                                <input value={filtrazione.libro ?? ""} onChange={(e) => setFiltrazione({...filtrazione , libro : e.target.value})} type="text" className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
+                                               
                                             </label>
 
                                             <p className="text-gray-600">data inizio</p>
-                                            <input type="date" className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
+                                            <input value={filtrazione.data_inizio ?? ""} onChange={(e) => setFiltrazione({...filtrazione , data_inizio : e.target.value})} type="date" className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
 
                                             <p className="text-gray-600">data fine</p>
-                                            <input type="date" className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
+                                            <input value={filtrazione.data_fine ?? ""} onChange={(e) => setFiltrazione({...filtrazione , data_fine : e.target.value})} type="date" className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
                                             
-                                            <select className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
+                                            <select value={filtrazione.isRestituito == null ? "" : filtrazione.isRestituito ? "true" : "false"} onChange={(e) => setFiltrazione({...filtrazione , isRestituito : e.target.value === "" ? null : e.target.value === "true" ? true : false})} className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
                                             
                                                 <option value="">Restituito</option>
                                                 <option value="true">Si</option>
@@ -486,9 +529,9 @@ export default function LibroPage() {
                                             
                                             </select>
 
-                                            <select className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
+                                            <select value={filtrazione.isPrestato == null ? "" : filtrazione.isPrestato ? "true" : "false"} onChange={(e) =>  setFiltrazione({...filtrazione , isPrestato : e.target.value === "" ? null : e.target.value === "true" ? true : false})} className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
                                             
-                                                <option value="">In prestito</option>
+                                                <option value="">Prestato</option>
                                                 <option value="true">Si</option>
                                                 <option value="false">No</option>
                                             
@@ -496,10 +539,22 @@ export default function LibroPage() {
 
                                             <select className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito" >
                                                 <option value="">Operatore</option>
+
+                                                {Array.isArray(customuser_helper_selection_items) && customuser_helper_selection_items.map(usernames => (
+
+                                                    <option key={usernames.id} value={usernames.id}>{usernames.username}</option>
+
+                                                ))}
                                             
                                             </select>
 
-                                            <button className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all">
+                                            <button onClick={() => setFiltrazione({
+                                                libro : null,
+                                                data_fine : null,
+                                                data_inizio : null,
+                                                isPrestato : null,
+                                                isRestituito : null
+                                            })} className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all">
                                                 <BackspaceIcon/>
                                             </button>
                                             

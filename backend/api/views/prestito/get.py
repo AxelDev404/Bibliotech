@@ -75,13 +75,33 @@ def get_filter_prestito(request , tesserato):
         
         try:
 
-            model = Prestito.objects.filter(tesserato=tesserato)
-            serializer = PrestitoFilterSerializer(model , many = True)
+            libro = request.GET.get('libro')
 
-            if not model.exists():
-                return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)
-            else : 
-                return Response(serializer.data , status=status.HTTP_200_OK)
+            isRestituito = request.GET.get('isRestituito')
+            isPrestato = request.GET.get('isPrestato')
+            data_inizio = request.GET.get('data_inizio')
+            data_fine = request.GET.get('data_fine')
+
+
+            model = Prestito.objects.filter(tesserato=tesserato)
+            
+            
+            if libro:
+                model = Prestito.objects.filter(libro__isbn = libro)
+
+            if isRestituito:
+                isRestituito__bool = isRestituito.lower() == 'true'
+                model = Prestito.objects.filter(isRestituito=isRestituito__bool)
+
+            if isPrestato:
+                isPrestato__bool = isPrestato.lower() == 'true'
+                model = Prestito.objects.filter(isPrestato = isPrestato__bool)
+            
+            if data_inizio and data_fine:
+                model = Prestito.objects.filter(data_inizio__range = [data_inizio,data_fine])
+
+            serializer = PrestitoFilterSerializer(model , many = True)
+            return Response(serializer.data , status=status.HTTP_200_OK)
 
         except Prestito.DoesNotExist:
             return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)

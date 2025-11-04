@@ -11,4 +11,5 @@ urlpatterns = [
     path('tessere-biblioteca/' , include('api.urls.tessera_biblioteca')),
     path('prestiti/' , include('api.urls.prestito')),
     path('categorie/' , include('api.urls.categoria')),
+    path('user/' , include('api.urls.customuser')),
 ]
