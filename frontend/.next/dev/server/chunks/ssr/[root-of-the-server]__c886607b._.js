@@ -107,7 +107,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Logout$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/Logout.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$FormatListBulleted$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/FormatListBulleted.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Dashboard$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/Dashboard.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$AutoStories$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/AutoStories.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Badge$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/Badge.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$PeopleAlt$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/PeopleAlt.js [app-ssr] (ecmascript)");
 'use client';
@@ -245,65 +244,33 @@ function SideBar() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white w-full",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: ()=>router.replace('/cerca-libro'),
-                                    className: "w-full text-left h-12 flex items-center",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$AutoStories$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            titleAccess: "Cerca libri"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/SideBar.jsx",
-                                            lineNumber: 73,
-                                            columnNumber: 29
-                                        }, this),
-                                        isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "px-3",
-                                            children: "Cerca libri"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/SideBar.jsx",
-                                            lineNumber: 74,
-                                            columnNumber: 47
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/SideBar.jsx",
-                                    lineNumber: 72,
-                                    columnNumber: 25
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/SideBar.jsx",
-                                lineNumber: 71,
-                                columnNumber: 21
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white w-full",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: ()=>router.replace('/cerca-libro'),
+                                    onClick: ()=>router.replace('/cerca-tesserato'),
                                     className: "w-full text-left h-12 flex items-center",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$PeopleAlt$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            titleAccess: "Cerca libri"
+                                            titleAccess: "Cerca tesserati"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SideBar.jsx",
-                                            lineNumber: 80,
+                                            lineNumber: 75,
                                             columnNumber: 29
                                         }, this),
                                         isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "px-3",
-                                            children: "Cerca tesserati"
+                                            children: "Gestione tesserati"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SideBar.jsx",
-                                            lineNumber: 81,
+                                            lineNumber: 76,
                                             columnNumber: 47
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SideBar.jsx",
-                                    lineNumber: 79,
+                                    lineNumber: 74,
                                     columnNumber: 25
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SideBar.jsx",
-                                lineNumber: 78,
+                                lineNumber: 73,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -316,7 +283,7 @@ function SideBar() {
                                             titleAccess: "carica tesserato"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SideBar.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 82,
                                             columnNumber: 29
                                         }, this),
                                         isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -324,18 +291,18 @@ function SideBar() {
                                             children: "Registra tesserato"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SideBar.jsx",
-                                            lineNumber: 88,
+                                            lineNumber: 83,
                                             columnNumber: 47
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SideBar.jsx",
-                                    lineNumber: 86,
+                                    lineNumber: 81,
                                     columnNumber: 25
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SideBar.jsx",
-                                lineNumber: 85,
+                                lineNumber: 80,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -348,7 +315,7 @@ function SideBar() {
                                             titleAccess: "carica libro"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SideBar.jsx",
-                                            lineNumber: 94,
+                                            lineNumber: 89,
                                             columnNumber: 29
                                         }, this),
                                         isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -356,18 +323,18 @@ function SideBar() {
                                             children: "Carica libro"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SideBar.jsx",
-                                            lineNumber: 95,
+                                            lineNumber: 90,
                                             columnNumber: 47
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SideBar.jsx",
-                                    lineNumber: 93,
+                                    lineNumber: 88,
                                     columnNumber: 25
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SideBar.jsx",
-                                lineNumber: 92,
+                                lineNumber: 87,
                                 columnNumber: 21
                             }, this)
                         ]
@@ -388,7 +355,7 @@ function SideBar() {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SideBar.jsx",
-                                        lineNumber: 105,
+                                        lineNumber: 100,
                                         columnNumber: 25
                                     }, this),
                                     isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -396,13 +363,13 @@ function SideBar() {
                                         children: "Impostazioni"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SideBar.jsx",
-                                        lineNumber: 106,
+                                        lineNumber: 101,
                                         columnNumber: 43
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SideBar.jsx",
-                                lineNumber: 104,
+                                lineNumber: 99,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -415,7 +382,7 @@ function SideBar() {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SideBar.jsx",
-                                        lineNumber: 110,
+                                        lineNumber: 105,
                                         columnNumber: 25
                                     }, this),
                                     isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -423,19 +390,19 @@ function SideBar() {
                                         children: "Logout"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SideBar.jsx",
-                                        lineNumber: 111,
+                                        lineNumber: 106,
                                         columnNumber: 43
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SideBar.jsx",
-                                lineNumber: 109,
+                                lineNumber: 104,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SideBar.jsx",
-                        lineNumber: 102,
+                        lineNumber: 97,
                         columnNumber: 17
                     }, this)
                 ]
@@ -451,7 +418,7 @@ function SideBar() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/SideBar.jsx",
-                lineNumber: 118,
+                lineNumber: 113,
                 columnNumber: 13
             }, this)
         ]
@@ -648,8 +615,7 @@ function GestioneLibri() {
     const { data: { filter_book_items }, requests: { filter_book_items: {} } } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSelector"])((state)=>state.libri);
     const { data: { customuser_helper_selection_items }, requests: { customuser_helper_selection_items: {} } } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSelector"])((state)=>state.customuser);
     const { data: { autore_helper_items }, requests: { autore_helper_items: {} } } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSelector"])((state)=>state.autori);
-    const { data: {}, requests: {} } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSelector"])((state)=>state.postazioni);
-    //'isbn' , 'titolo' , 'data_uscita' , 'editore' , 'formato' , 'lingua' ,'autore', 'autore_libro' , 'postazione' , 'posizione_libro' , 'poszione_libro_numerazione' , 'utente'
+    const { data: { postazioni_helper_items }, requests: { postazioni_helper_items: {} } } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSelector"])((state)=>state.postazioni);
     const [filtrazione, setFiltrazione] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
         isbn: null,
         data_uscita: null,
@@ -657,8 +623,21 @@ function GestioneLibri() {
         formato: null,
         autore: null,
         postazione: null,
-        utente: null
+        utente: null,
+        lingua: null
     });
+    const restoreFilters = ()=>{
+        setFiltrazione({
+            isbn: null,
+            data_uscita: null,
+            editore: null,
+            formato: null,
+            autore: null,
+            postazione: null,
+            utente: null,
+            lingua: null
+        });
+    };
     const dispatch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useDispatch"])();
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$Libri$2f$libriSlice$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getFilterBookAPI"])({
@@ -672,6 +651,7 @@ function GestioneLibri() {
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$CustomUser$2f$customuserSlice$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getHelperSelectionUserAPI"])());
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$Autori$2f$autoriSlice$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getHelperAutoriAPI"])());
+        dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$Postazioni$2f$postazioniSlice$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getHelperSelectionPostazioni"])());
     }, [
         dispatch
     ]);
@@ -682,7 +662,7 @@ function GestioneLibri() {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SideBar$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                        lineNumber: 101,
+                        lineNumber: 120,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -690,7 +670,7 @@ function GestioneLibri() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Banner$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                lineNumber: 106,
+                                lineNumber: 125,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -708,24 +688,24 @@ function GestioneLibri() {
                                                         }
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                        lineNumber: 113,
+                                                        lineNumber: 132,
                                                         columnNumber: 93
                                                     }, this),
                                                     " Gestione libri ",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {}, void 0, false, {
                                                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                        lineNumber: 113,
+                                                        lineNumber: 132,
                                                         columnNumber: 150
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                lineNumber: 113,
+                                                lineNumber: 132,
                                                 columnNumber: 37
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                            lineNumber: 112,
+                                            lineNumber: 131,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -733,41 +713,54 @@ function GestioneLibri() {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
                                                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                    lineNumber: 119,
+                                                    lineNumber: 138,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "flex items-center space-x-5 py-5 rounded-2xl",
                                                     children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                            className: "flex items-center space-x-1 cursor-pointer text-gray-700 font-medium",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "text-white",
-                                                                    children: "ISBN"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 124,
-                                                                    columnNumber: 45
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                    value: filtrazione.isbn ?? "",
-                                                                    onChange: (e)=>setFiltrazione({
-                                                                            ...filtrazione,
-                                                                            isbn: e.target.value
-                                                                        }),
-                                                                    type: "text",
-                                                                    className: "bg-white h-8 border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all",
-                                                                    name: "prestito"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 125,
-                                                                    columnNumber: 45
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-white",
+                                                            children: "ISBN"
+                                                        }, void 0, false, {
                                                             fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                            lineNumber: 123,
+                                                            lineNumber: 143,
+                                                            columnNumber: 41
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                            value: filtrazione.isbn ?? "",
+                                                            onChange: (e)=>setFiltrazione({
+                                                                    ...filtrazione,
+                                                                    isbn: e.target.value
+                                                                }),
+                                                            type: "text",
+                                                            className: "bg-white h-8 border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all",
+                                                            name: "prestito"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/gestione-libri/page.jsx",
+                                                            lineNumber: 144,
+                                                            columnNumber: 41
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-white",
+                                                            children: "Lingua"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/gestione-libri/page.jsx",
+                                                            lineNumber: 146,
+                                                            columnNumber: 41
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                            value: filtrazione.lingua ?? "",
+                                                            onChange: (e)=>setFiltrazione({
+                                                                    ...filtrazione,
+                                                                    lingua: e.target.value
+                                                                }),
+                                                            type: "text",
+                                                            className: "bg-white h-9 border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all",
+                                                            name: "prestito"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/gestione-libri/page.jsx",
+                                                            lineNumber: 147,
                                                             columnNumber: 41
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -775,7 +768,7 @@ function GestioneLibri() {
                                                             children: "Data uscita"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                            lineNumber: 129,
+                                                            lineNumber: 149,
                                                             columnNumber: 41
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -789,10 +782,15 @@ function GestioneLibri() {
                                                             name: "prestito"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                            lineNumber: 130,
+                                                            lineNumber: 150,
                                                             columnNumber: 41
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                                            value: filtrazione.postazione ?? "",
+                                                            onChange: (e)=>setFiltrazione({
+                                                                    ...filtrazione,
+                                                                    postazione: Number(e.target.value)
+                                                                }),
                                                             className: "bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all",
                                                             name: "stato",
                                                             children: [
@@ -801,29 +799,26 @@ function GestioneLibri() {
                                                                     children: "Postazione"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 135,
+                                                                    lineNumber: 155,
                                                                     columnNumber: 45
                                                                 }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                                    value: "true",
-                                                                    children: "Si"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 136,
-                                                                    columnNumber: 45
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                                    value: "false",
-                                                                    children: "No"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 137,
-                                                                    columnNumber: 45
-                                                                }, this)
+                                                                Array.isArray(postazioni_helper_items) && postazioni_helper_items.map((postazioni)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                                        value: postazioni.id_postazione,
+                                                                        children: [
+                                                                            postazioni.posizione,
+                                                                            postazioni.numerazione,
+                                                                            ":",
+                                                                            postazioni.categoria_nome
+                                                                        ]
+                                                                    }, postazioni.id_postazione, true, {
+                                                                        fileName: "[project]/src/app/gestione-libri/page.jsx",
+                                                                        lineNumber: 158,
+                                                                        columnNumber: 49
+                                                                    }, this))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                            lineNumber: 133,
+                                                            lineNumber: 153,
                                                             columnNumber: 41
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -840,7 +835,7 @@ function GestioneLibri() {
                                                                     children: "Autore"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 143,
+                                                                    lineNumber: 165,
                                                                     columnNumber: 45
                                                                 }, this),
                                                                 Array.isArray(autore_helper_items) && autore_helper_items.map((autore)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -852,81 +847,29 @@ function GestioneLibri() {
                                                                         ]
                                                                     }, autore.id_autore, true, {
                                                                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                        lineNumber: 146,
+                                                                        lineNumber: 168,
                                                                         columnNumber: 49
                                                                     }, this))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                            lineNumber: 141,
+                                                            lineNumber: 163,
                                                             columnNumber: 41
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                                                             className: "bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all",
                                                             name: "stato",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                                    value: "",
-                                                                    children: "Editore"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 153,
-                                                                    columnNumber: 45
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                                    value: "true",
-                                                                    children: "Si"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 154,
-                                                                    columnNumber: 45
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                                    value: "false",
-                                                                    children: "No"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 155,
-                                                                    columnNumber: 45
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                                value: "",
+                                                                children: "Editore"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/gestione-libri/page.jsx",
+                                                                lineNumber: 175,
+                                                                columnNumber: 45
+                                                            }, this)
+                                                        }, void 0, false, {
                                                             fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                            lineNumber: 151,
-                                                            columnNumber: 41
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                                                            className: "bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all",
-                                                            name: "stato",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                                    value: "",
-                                                                    children: "Lingua"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 161,
-                                                                    columnNumber: 45
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                                    value: "true",
-                                                                    children: "Si"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 162,
-                                                                    columnNumber: 45
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                                    value: "false",
-                                                                    children: "No"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 163,
-                                                                    columnNumber: 45
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                            lineNumber: 159,
+                                                            lineNumber: 173,
                                                             columnNumber: 41
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -943,7 +886,7 @@ function GestioneLibri() {
                                                                     children: "Operatore"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 168,
+                                                                    lineNumber: 180,
                                                                     columnNumber: 45
                                                                 }, this),
                                                                 Array.isArray(customuser_helper_selection_items) && customuser_helper_selection_items.map((utente)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -951,37 +894,38 @@ function GestioneLibri() {
                                                                         children: utente.username
                                                                     }, utente.id, false, {
                                                                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                        lineNumber: 171,
+                                                                        lineNumber: 183,
                                                                         columnNumber: 49
                                                                     }, this))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                            lineNumber: 167,
+                                                            lineNumber: 179,
                                                             columnNumber: 41
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                            onClick: ()=>restoreFilters(),
                                                             className: "bg-white border  border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Backspace$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                lineNumber: 178,
+                                                                lineNumber: 190,
                                                                 columnNumber: 45
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                            lineNumber: 177,
+                                                            lineNumber: 189,
                                                             columnNumber: 41
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                    lineNumber: 121,
+                                                    lineNumber: 140,
                                                     columnNumber: 37
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                            lineNumber: 117,
+                                            lineNumber: 136,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -998,7 +942,7 @@ function GestioneLibri() {
                                                                     children: "ISBN"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 191,
+                                                                    lineNumber: 203,
                                                                     columnNumber: 49
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1006,7 +950,7 @@ function GestioneLibri() {
                                                                     children: "Titolo"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 192,
+                                                                    lineNumber: 204,
                                                                     columnNumber: 49
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1014,7 +958,7 @@ function GestioneLibri() {
                                                                     children: "Data d'uscita"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 193,
+                                                                    lineNumber: 205,
                                                                     columnNumber: 49
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1022,7 +966,7 @@ function GestioneLibri() {
                                                                     children: "Editore"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 194,
+                                                                    lineNumber: 206,
                                                                     columnNumber: 49
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1030,7 +974,7 @@ function GestioneLibri() {
                                                                     children: "Formato"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 195,
+                                                                    lineNumber: 207,
                                                                     columnNumber: 49
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1038,7 +982,7 @@ function GestioneLibri() {
                                                                     children: "Lingua"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 196,
+                                                                    lineNumber: 208,
                                                                     columnNumber: 49
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1046,7 +990,7 @@ function GestioneLibri() {
                                                                     children: "Autore"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 197,
+                                                                    lineNumber: 209,
                                                                     columnNumber: 49
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1054,7 +998,7 @@ function GestioneLibri() {
                                                                     children: "Postazione"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 198,
+                                                                    lineNumber: 210,
                                                                     columnNumber: 49
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1062,7 +1006,7 @@ function GestioneLibri() {
                                                                     children: "Inserito da"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 199,
+                                                                    lineNumber: 211,
                                                                     columnNumber: 49
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1070,18 +1014,18 @@ function GestioneLibri() {
                                                                     children: "Interagisci"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                    lineNumber: 200,
+                                                                    lineNumber: 212,
                                                                     columnNumber: 49
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                            lineNumber: 190,
+                                                            lineNumber: 202,
                                                             columnNumber: 45
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                        lineNumber: 189,
+                                                        lineNumber: 201,
                                                         columnNumber: 41
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -1094,7 +1038,7 @@ function GestioneLibri() {
                                                                         children: book_filters.isbn
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                        lineNumber: 211,
+                                                                        lineNumber: 223,
                                                                         columnNumber: 53
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1102,7 +1046,7 @@ function GestioneLibri() {
                                                                         children: book_filters.titolo
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                        lineNumber: 212,
+                                                                        lineNumber: 224,
                                                                         columnNumber: 53
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1110,7 +1054,7 @@ function GestioneLibri() {
                                                                         children: book_filters.data_uscita
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                        lineNumber: 213,
+                                                                        lineNumber: 225,
                                                                         columnNumber: 53
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1118,7 +1062,7 @@ function GestioneLibri() {
                                                                         children: book_filters.editore
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                        lineNumber: 214,
+                                                                        lineNumber: 226,
                                                                         columnNumber: 53
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1126,7 +1070,7 @@ function GestioneLibri() {
                                                                         children: book_filters.formato
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                        lineNumber: 215,
+                                                                        lineNumber: 227,
                                                                         columnNumber: 53
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1134,7 +1078,7 @@ function GestioneLibri() {
                                                                         children: book_filters.lingua
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                        lineNumber: 216,
+                                                                        lineNumber: 228,
                                                                         columnNumber: 53
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1142,7 +1086,7 @@ function GestioneLibri() {
                                                                         children: book_filters.autore_libro
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                        lineNumber: 217,
+                                                                        lineNumber: 229,
                                                                         columnNumber: 53
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1153,15 +1097,15 @@ function GestioneLibri() {
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                        lineNumber: 218,
+                                                                        lineNumber: 230,
                                                                         columnNumber: 53
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                                         className: "py-3 px-6 text-black",
-                                                                        children: book_filters.utente
+                                                                        children: book_filters.username
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                        lineNumber: 219,
+                                                                        lineNumber: 231,
                                                                         columnNumber: 53
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1170,72 +1114,72 @@ function GestioneLibri() {
                                                                             href: `/details/libri/${book_filters.isbn}`,
                                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Build$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                                                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                                lineNumber: 224,
+                                                                                lineNumber: 236,
                                                                                 columnNumber: 61
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                            lineNumber: 223,
+                                                                            lineNumber: 235,
                                                                             columnNumber: 57
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                        lineNumber: 221,
+                                                                        lineNumber: 233,
                                                                         columnNumber: 53
                                                                     }, this)
                                                                 ]
                                                             }, book_filters.isbn, true, {
                                                                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                                lineNumber: 209,
+                                                                lineNumber: 221,
                                                                 columnNumber: 49
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                        lineNumber: 205,
+                                                        lineNumber: 217,
                                                         columnNumber: 41
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                                lineNumber: 187,
+                                                lineNumber: 199,
                                                 columnNumber: 37
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                            lineNumber: 185,
+                                            lineNumber: 197,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                    lineNumber: 110,
+                                    lineNumber: 129,
                                     columnNumber: 29
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                lineNumber: 108,
+                                lineNumber: 127,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                        lineNumber: 104,
+                        lineNumber: 123,
                         columnNumber: 21
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                lineNumber: 99,
+                lineNumber: 118,
                 columnNumber: 17
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 97,
+            lineNumber: 116,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/gestione-libri/page.jsx",
-        lineNumber: 95,
+        lineNumber: 114,
         columnNumber: 9
     }, this);
 }

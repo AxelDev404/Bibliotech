@@ -68,17 +68,12 @@ export default function SideBar(){
                         </button>
                     </div>
                     
-                    <div className="flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white w-full">
-                        <button onClick={() => router.replace('/cerca-libro')}  className="w-full text-left h-12 flex items-center">
-                            <AutoStoriesIcon titleAccess='Cerca libri'/>
-                            {isSidebarOpen && <span className="px-3">Cerca libri</span>}
-                        </button>
-                    </div>
+                 
 
                     <div className="flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white w-full">
-                        <button onClick={() => router.replace('/cerca-libro')}  className="w-full text-left h-12 flex items-center">
-                            <PeopleAltIcon titleAccess='Cerca libri'/>
-                            {isSidebarOpen && <span className="px-3">Cerca tesserati</span>}
+                        <button onClick={() => router.replace('/cerca-tesserato')}  className="w-full text-left h-12 flex items-center">
+                            <PeopleAltIcon titleAccess='Cerca tesserati'/>
+                            {isSidebarOpen && <span className="px-3">Gestione tesserati</span>}
                         </button>
                     </div>
 

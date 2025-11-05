@@ -16,14 +16,14 @@ class LibroManageSerializer(serializers.ModelSerializer):
     autore_libro = serializers.CharField(source = 'autore.nome_autore' , read_only=True)
     posizione_libro = serializers.CharField(source = 'postazione.posizione' , read_only = True)
     poszione_libro_numerazione = serializers.CharField(source = 'postazione.numerazione' , read_only = True)
-
+    username = serializers.CharField(source = 'utente.username' , read_only = True)
     #RICORDA DI INSERIRE QUESTI ALIAS NEL FRONTEND
 
     class Meta:
 
         model = Libro
 
-        fields = ('isbn' , 'titolo' , 'data_uscita' , 'editore' , 'formato' , 'lingua' ,'autore', 'autore_libro' , 'postazione' , 'posizione_libro' , 'poszione_libro_numerazione' , 'utente')
+        fields = ('isbn' , 'titolo' , 'data_uscita' , 'editore' , 'formato' , 'lingua' ,'autore', 'autore_libro' , 'postazione' , 'posizione_libro' , 'poszione_libro_numerazione' , 'utente' , 'username')
 
 
 

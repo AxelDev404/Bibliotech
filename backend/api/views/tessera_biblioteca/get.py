@@ -23,6 +23,7 @@ from django.views.decorators.csrf import csrf_exempt
 import traceback
 import os
 
+from ..auth.auth import JWTAuthenticationFromCookie
 
 from ...models.tessera_biblioteca import TesseraBiblioteca
 from ...serializers.tessera_biblioteca import TesseraBibStatSerializer , TesseraDetailSerializer
@@ -31,6 +32,8 @@ from ...serializers.tessera_biblioteca import TesseraBibStatSerializer , Tessera
 #GET STATISTICA VIEW
 
 @api_view(['GET'])
+@authentication_classes([JWTAuthenticationFromCookie])
+@permission_classes([IsAuthenticated])
 def get_totale_tessere(request):
 
     if request.method == 'GET':
@@ -51,6 +54,8 @@ def get_totale_tessere(request):
 
 
 @api_view(['GET'])
+@authentication_classes([JWTAuthenticationFromCookie])
+@permission_classes([IsAuthenticated])
 def get_ultime_tessere(request):
 
     if request.method == 'GET':
@@ -74,6 +79,8 @@ def get_ultime_tessere(request):
 #GET DETAIL VIEW
 
 @api_view(['GET'])
+@authentication_classes([JWTAuthenticationFromCookie])
+@permission_classes([IsAuthenticated])
 def get_detail_tessera_biblioteca(request , id_tessera):
 
     if request.method == 'GET':
@@ -92,3 +99,47 @@ def get_detail_tessera_biblioteca(request , id_tessera):
         
         except TesseraBiblioteca.DoesNotExist:
             return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)
+        
+
+
+#FILTRAGGIO TESSERA
+
+@api_view(['GET'])
+@authentication_classes([JWTAuthenticationFromCookie])
+@permission_classes([IsAuthenticated])
+def get_filter_tesserati_table(request):
+
+    if request.method == 'GET':
+
+        try:
+
+            id_tessera = request.GET.get('id_tessera')
+            codice_fiscale = request.GET.get('codice_fiscale')
+            email = request.GET.get('email')
+            data_nascita = request.GET.get('data_nascita')
+            utente = request.GET.get('utente')   
+            
+            model = TesseraBiblioteca.objects.all()
+
+
+            if id_tessera:
+                model = TesseraBiblioteca.objects.filter(id_tessera = int(id_tessera))
+
+            if codice_fiscale:
+                model = TesseraBiblioteca.objects.filter(codice_fiscale = codice_fiscale)
+
+            if email:
+                model = TesseraBiblioteca.objects.filter(email = email)
+
+            if data_nascita:
+                model = TesseraBiblioteca.objects.filter(data_nascita = data_nascita)
+
+            if utente:
+                model = TesseraBiblioteca.objects.filter(utente__id = int(utente))
+
+            serializer = TesseraDetailSerializer(model , many = True)
+            return Response(serializer.data , status=status.HTTP_200_OK)
+
+
+        except TesseraBiblioteca.DoesNotExist:
+            return Response({'Messages' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)

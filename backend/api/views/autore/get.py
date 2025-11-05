@@ -23,19 +23,24 @@ from django.views.decorators.csrf import csrf_exempt
 import traceback
 import os
 
+from ..auth.auth import JWTAuthenticationFromCookie
+
 from ...models import Autore
 from ...serializers import AutoreGetSerializer
 
 
 @api_view(['GET'])
+@authentication_classes([JWTAuthenticationFromCookie])
+@permission_classes([IsAuthenticated])
 def get_autori(request):
 
-    try:
+    if request.method == 'GET':
+        try:
 
-        model = Autore.objects.all()
-        serializer = AutoreGetSerializer(model , many=True)
+            model = Autore.objects.all()
+            serializer = AutoreGetSerializer(model , many=True)
 
-        return Response(serializer.data , status=status.HTTP_200_OK)
+            return Response(serializer.data , status=status.HTTP_200_OK)
 
-    except Autore.DoesNotExist:
-        return Response({'Message' : 'obj not found'} ,status=status.HTTP_400_BAD_REQUEST)
+        except Autore.DoesNotExist:
+            return Response({'Message' : 'obj not found'} ,status=status.HTTP_400_BAD_REQUEST)

@@ -174,7 +174,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Logout$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/Logout.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$FormatListBulleted$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/FormatListBulleted.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Dashboard$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/Dashboard.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$AutoStories$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/AutoStories.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Badge$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/Badge.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$PeopleAlt$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/PeopleAlt.js [app-client] (ecmascript)");
 ;
@@ -197,12 +196,12 @@ var _s = __turbopack_context__.k.signature();
 ;
 function SideBar() {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(97);
-    if ($[0] !== "2aaf5a890adf19789e8e67239177f9382a9e8e75167e1b4ee20612525dd65a10") {
-        for(let $i = 0; $i < 97; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(88);
+    if ($[0] !== "00d403fd87638b5f2dc73229ee8d7fd8e80a961983be37d13bb864c5e7451eed") {
+        for(let $i = 0; $i < 88; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "2aaf5a890adf19789e8e67239177f9382a9e8e75167e1b4ee20612525dd65a10";
+        $[0] = "00d403fd87638b5f2dc73229ee8d7fd8e80a961983be37d13bb864c5e7451eed";
     }
     const [isSidebarOpen, setIsSidebarOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     let t0;
@@ -444,8 +443,8 @@ function SideBar() {
     }
     let t17;
     if ($[34] === Symbol.for("react.memo_cache_sentinel")) {
-        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$AutoStories$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            titleAccess: "Cerca libri"
+        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$PeopleAlt$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            titleAccess: "Cerca tesserati"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
             lineNumber: 178,
@@ -459,7 +458,7 @@ function SideBar() {
     if ($[35] !== isSidebarOpen) {
         t18 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             className: "px-3",
-            children: "Cerca libri"
+            children: "Cerca tesserati"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
             lineNumber: 185,
@@ -500,7 +499,7 @@ function SideBar() {
     let t20;
     if ($[40] !== router) {
         t20 = ({
-            "SideBar[<button>.onClick]": ()=>router.replace("/cerca-libro")
+            "SideBar[<button>.onClick]": ()=>router.replace("/carica-tessera")
         })["SideBar[<button>.onClick]"];
         $[40] = router;
         $[41] = t20;
@@ -509,8 +508,8 @@ function SideBar() {
     }
     let t21;
     if ($[42] === Symbol.for("react.memo_cache_sentinel")) {
-        t21 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$PeopleAlt$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            titleAccess: "Cerca libri"
+        t21 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Badge$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            titleAccess: "carica tesserato"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
             lineNumber: 212,
@@ -524,7 +523,7 @@ function SideBar() {
     if ($[43] !== isSidebarOpen) {
         t22 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             className: "px-3",
-            children: "Cerca tesserati"
+            children: "Registra tesserato"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
             lineNumber: 219,
@@ -538,7 +537,7 @@ function SideBar() {
     let t23;
     if ($[45] !== t20 || $[46] !== t22) {
         t23 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white w-full",
+            className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white  w-full",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 onClick: t20,
                 className: "w-full text-left h-12 flex items-center",
@@ -549,7 +548,7 @@ function SideBar() {
             }, void 0, true, {
                 fileName: "[project]/src/components/SideBar.jsx",
                 lineNumber: 227,
-                columnNumber: 124
+                columnNumber: 125
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
@@ -565,7 +564,7 @@ function SideBar() {
     let t24;
     if ($[48] !== router) {
         t24 = ({
-            "SideBar[<button>.onClick]": ()=>router.replace("/carica-tessera")
+            "SideBar[<button>.onClick]": ()=>router.replace("/carica-libro")
         })["SideBar[<button>.onClick]"];
         $[48] = router;
         $[49] = t24;
@@ -574,8 +573,8 @@ function SideBar() {
     }
     let t25;
     if ($[50] === Symbol.for("react.memo_cache_sentinel")) {
-        t25 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Badge$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            titleAccess: "carica tesserato"
+        t25 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ImportContacts$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            titleAccess: "carica libro"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
             lineNumber: 246,
@@ -589,7 +588,7 @@ function SideBar() {
     if ($[51] !== isSidebarOpen) {
         t26 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             className: "px-3",
-            children: "Registra tesserato"
+            children: "Carica libro"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
             lineNumber: 253,
@@ -628,100 +627,91 @@ function SideBar() {
         t27 = $[55];
     }
     let t28;
-    if ($[56] !== router) {
-        t28 = ({
-            "SideBar[<button>.onClick]": ()=>router.replace("/carica-libro")
-        })["SideBar[<button>.onClick]"];
-        $[56] = router;
-        $[57] = t28;
-    } else {
-        t28 = $[57];
-    }
-    let t29;
-    if ($[58] === Symbol.for("react.memo_cache_sentinel")) {
-        t29 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ImportContacts$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            titleAccess: "carica libro"
-        }, void 0, false, {
-            fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 280,
-            columnNumber: 11
-        }, this);
-        $[58] = t29;
-    } else {
-        t29 = $[58];
-    }
-    let t30;
-    if ($[59] !== isSidebarOpen) {
-        t30 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-            className: "px-3",
-            children: "Carica libro"
-        }, void 0, false, {
-            fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 287,
-            columnNumber: 28
-        }, this);
-        $[59] = isSidebarOpen;
-        $[60] = t30;
-    } else {
-        t30 = $[60];
-    }
-    let t31;
-    if ($[61] !== t28 || $[62] !== t30) {
-        t31 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white  w-full",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                onClick: t28,
-                className: "w-full text-left h-12 flex items-center",
-                children: [
-                    t29,
-                    t30
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/SideBar.jsx",
-                lineNumber: 295,
-                columnNumber: 125
-            }, this)
-        }, void 0, false, {
-            fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 295,
-            columnNumber: 11
-        }, this);
-        $[61] = t28;
-        $[62] = t30;
-        $[63] = t31;
-    } else {
-        t31 = $[63];
-    }
-    let t32;
-    if ($[64] !== t11 || $[65] !== t15 || $[66] !== t19 || $[67] !== t23 || $[68] !== t27 || $[69] !== t31) {
-        t32 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    if ($[56] !== t11 || $[57] !== t15 || $[58] !== t19 || $[59] !== t23 || $[60] !== t27) {
+        t28 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "flex flex-col items-start gap-6 p-4 text-sm text-gray-300 flex-1 overflow-y-auto",
             children: [
                 t11,
                 t15,
                 t19,
                 t23,
-                t27,
-                t31
+                t27
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 304,
+            lineNumber: 270,
             columnNumber: 11
         }, this);
-        $[64] = t11;
-        $[65] = t15;
-        $[66] = t19;
-        $[67] = t23;
-        $[68] = t27;
-        $[69] = t31;
-        $[70] = t32;
+        $[56] = t11;
+        $[57] = t15;
+        $[58] = t19;
+        $[59] = t23;
+        $[60] = t27;
+        $[61] = t28;
     } else {
-        t32 = $[70];
+        t28 = $[61];
+    }
+    let t29;
+    if ($[62] === Symbol.for("react.memo_cache_sentinel")) {
+        t29 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Settings$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            sx: {
+                fontSize: 20
+            }
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 282,
+            columnNumber: 11
+        }, this);
+        $[62] = t29;
+    } else {
+        t29 = $[62];
+    }
+    let t30;
+    if ($[63] !== isSidebarOpen) {
+        t30 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "px-3",
+            children: "Impostazioni"
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 291,
+            columnNumber: 28
+        }, this);
+        $[63] = isSidebarOpen;
+        $[64] = t30;
+    } else {
+        t30 = $[64];
+    }
+    let t31;
+    if ($[65] !== t30) {
+        t31 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+            className: "flex items-center gap-4 font-light rounded-md px-2 h-12 w-full text-left text-white hover:text-black hover:bg-white",
+            children: [
+                t29,
+                t30
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 299,
+            columnNumber: 11
+        }, this);
+        $[65] = t30;
+        $[66] = t31;
+    } else {
+        t31 = $[66];
+    }
+    let t32;
+    if ($[67] !== HandleLogOut) {
+        t32 = ({
+            "SideBar[<button>.onClick]": ()=>HandleLogOut()
+        })["SideBar[<button>.onClick]"];
+        $[67] = HandleLogOut;
+        $[68] = t32;
+    } else {
+        t32 = $[68];
     }
     let t33;
-    if ($[71] === Symbol.for("react.memo_cache_sentinel")) {
-        t33 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Settings$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+    if ($[69] === Symbol.for("react.memo_cache_sentinel")) {
+        t33 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Logout$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             sx: {
                 fontSize: 20
             }
@@ -730,29 +720,30 @@ function SideBar() {
             lineNumber: 317,
             columnNumber: 11
         }, this);
-        $[71] = t33;
+        $[69] = t33;
     } else {
-        t33 = $[71];
+        t33 = $[69];
     }
     let t34;
-    if ($[72] !== isSidebarOpen) {
+    if ($[70] !== isSidebarOpen) {
         t34 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             className: "px-3",
-            children: "Impostazioni"
+            children: "Logout"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
             lineNumber: 326,
             columnNumber: 28
         }, this);
-        $[72] = isSidebarOpen;
-        $[73] = t34;
+        $[70] = isSidebarOpen;
+        $[71] = t34;
     } else {
-        t34 = $[73];
+        t34 = $[71];
     }
     let t35;
-    if ($[74] !== t34) {
+    if ($[72] !== t32 || $[73] !== t34) {
         t35 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-            className: "flex items-center gap-4 font-light rounded-md px-2 h-12 w-full text-left text-white hover:text-black hover:bg-white",
+            onClick: t32,
+            className: "flex items-center gap-4 font-light rounded-md px-2 h-12 w-full text-left text-white hover:text-black hover:bg-white ",
             children: [
                 t33,
                 t34
@@ -762,150 +753,91 @@ function SideBar() {
             lineNumber: 334,
             columnNumber: 11
         }, this);
-        $[74] = t34;
-        $[75] = t35;
+        $[72] = t32;
+        $[73] = t34;
+        $[74] = t35;
     } else {
-        t35 = $[75];
+        t35 = $[74];
     }
     let t36;
-    if ($[76] !== HandleLogOut) {
-        t36 = ({
-            "SideBar[<button>.onClick]": ()=>HandleLogOut()
-        })["SideBar[<button>.onClick]"];
-        $[76] = HandleLogOut;
+    if ($[75] !== t31 || $[76] !== t35) {
+        t36 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "p-4 mt-auto",
+            children: [
+                t31,
+                t35
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 343,
+            columnNumber: 11
+        }, this);
+        $[75] = t31;
+        $[76] = t35;
         $[77] = t36;
     } else {
         t36 = $[77];
     }
     let t37;
-    if ($[78] === Symbol.for("react.memo_cache_sentinel")) {
-        t37 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Logout$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            sx: {
-                fontSize: 20
-            }
-        }, void 0, false, {
+    if ($[78] !== t2 || $[79] !== t28 || $[80] !== t36 || $[81] !== t7) {
+        t37 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: t2,
+            children: [
+                t7,
+                t28,
+                t36
+            ]
+        }, void 0, true, {
             fileName: "[project]/src/components/SideBar.jsx",
             lineNumber: 352,
             columnNumber: 11
         }, this);
-        $[78] = t37;
+        $[78] = t2;
+        $[79] = t28;
+        $[80] = t36;
+        $[81] = t7;
+        $[82] = t37;
     } else {
-        t37 = $[78];
+        t37 = $[82];
     }
-    let t38;
-    if ($[79] !== isSidebarOpen) {
-        t38 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-            className: "px-3",
-            children: "Logout"
+    const t38 = isSidebarOpen ? "13rem" : "2.2rem";
+    let t39;
+    if ($[83] !== t38) {
+        t39 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex-1 p-2 overflow-y-auto transition-all duration-300",
+            style: {
+                marginLeft: t38
+            }
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 361,
-            columnNumber: 28
-        }, this);
-        $[79] = isSidebarOpen;
-        $[80] = t38;
-    } else {
-        t38 = $[80];
-    }
-    let t39;
-    if ($[81] !== t36 || $[82] !== t38) {
-        t39 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-            onClick: t36,
-            className: "flex items-center gap-4 font-light rounded-md px-2 h-12 w-full text-left text-white hover:text-black hover:bg-white ",
-            children: [
-                t37,
-                t38
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 369,
+            lineNumber: 364,
             columnNumber: 11
         }, this);
-        $[81] = t36;
-        $[82] = t38;
-        $[83] = t39;
+        $[83] = t38;
+        $[84] = t39;
     } else {
-        t39 = $[83];
+        t39 = $[84];
     }
     let t40;
-    if ($[84] !== t35 || $[85] !== t39) {
+    if ($[85] !== t37 || $[86] !== t39) {
         t40 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "p-4 mt-auto",
+            className: "flex h-screen",
             children: [
-                t35,
+                t37,
                 t39
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 378,
+            lineNumber: 374,
             columnNumber: 11
         }, this);
-        $[84] = t35;
-        $[85] = t39;
-        $[86] = t40;
+        $[85] = t37;
+        $[86] = t39;
+        $[87] = t40;
     } else {
-        t40 = $[86];
+        t40 = $[87];
     }
-    let t41;
-    if ($[87] !== t2 || $[88] !== t32 || $[89] !== t40 || $[90] !== t7) {
-        t41 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: t2,
-            children: [
-                t7,
-                t32,
-                t40
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 387,
-            columnNumber: 11
-        }, this);
-        $[87] = t2;
-        $[88] = t32;
-        $[89] = t40;
-        $[90] = t7;
-        $[91] = t41;
-    } else {
-        t41 = $[91];
-    }
-    const t42 = isSidebarOpen ? "13rem" : "2.2rem";
-    let t43;
-    if ($[92] !== t42) {
-        t43 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex-1 p-2 overflow-y-auto transition-all duration-300",
-            style: {
-                marginLeft: t42
-            }
-        }, void 0, false, {
-            fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 399,
-            columnNumber: 11
-        }, this);
-        $[92] = t42;
-        $[93] = t43;
-    } else {
-        t43 = $[93];
-    }
-    let t44;
-    if ($[94] !== t41 || $[95] !== t43) {
-        t44 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex h-screen",
-            children: [
-                t41,
-                t43
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 409,
-            columnNumber: 11
-        }, this);
-        $[94] = t41;
-        $[95] = t43;
-        $[96] = t44;
-    } else {
-        t44 = $[96];
-    }
-    return t44;
+    return t40;
 }
 _s(SideBar, "1PuzZxVlvw9vfU6vfGwaDrYwzr4=", false, function() {
     return [

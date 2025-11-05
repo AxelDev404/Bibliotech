@@ -29,6 +29,7 @@ import BackspaceIcon from '@mui/icons-material/Backspace';
 
 
 
+
 export default function LibroPage() {
   
     const {
@@ -40,10 +41,11 @@ export default function LibroPage() {
 
     const {
 
-        data : {filtering_presititi_items},
+        data : {filtering_presititi_items , post_prestiti_items},
 
         requests : { 
-            filtering_presititi_items : {filtering_presititi_status , filtering_presititi_error , filtering_presititi_loading}
+            filtering_presititi_items : {filtering_presititi_status , filtering_presititi_error , filtering_presititi_loading},
+            post_prestiti_items : {post_prestiti_status , post_prestiti_error}
         }
 
     } = useSelector((state) => state.prestiti);
@@ -465,16 +467,19 @@ export default function LibroPage() {
                                                         <label className="flex flex-col text-gray-700 text-sm">
                                                             ISBN
                                                             <input name="libro" value={formDataPresitito.libro} onChange={handleChangePrestito} type="text" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                            {post_prestiti_error?.libro && ( <p className="text-red-500 text-sm px-1 mt-1">{post_prestiti_error.libro[0]}</p>)}
                                                         </label>
 
                                                         <label className="flex flex-col text-gray-700 text-sm">
                                                             Data inizio
                                                             <input name="data_inizio" value={formDataPresitito.data_inizio} onChange={handleChangePrestito} type="date" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
-                                                        </label>
+                                                            {post_prestiti_error?.data_inizio && ( <p className="text-red-500 text-sm px-1 mt-1">{post_prestiti_error.data_inizio[0]}</p>)}
+                                                        </label>    
 
                                                         <label className="flex flex-col text-gray-700 text-sm">
                                                             Data fine
                                                             <input name="data_fine" value={formDataPresitito.data_fine} onChange={handleChangePrestito} type="date" className="mt-2 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-400" />
+                                                            {post_prestiti_error?.data_fine && ( <p className="text-red-500 text-sm px-1 mt-1">{post_prestiti_error.data_fine[0]}</p>)}
                                                         </label>
                                                         
 
@@ -587,7 +592,7 @@ export default function LibroPage() {
                                                         <td className="py-3 px-6 text-black">
                                                             
                                                             <Link href={`/details/libri/${filter_table.libro}`} className="hover:text-green-800" title="visualizza dettagli">
-                                                                {filter_table.libro} <DoubleArrowIcon sx={{fontSize : 17}}/>
+                                                                {filter_table.libro} <ZoomInIcon sx={{fontSize : 30}}/>
                                                             </Link>
                                                             
                                                         </td>

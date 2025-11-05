@@ -1,7 +1,9 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
   "/carica-libro/page": "app/carica-libro/page.js",
   "/carica-tessera/page": "app/carica-tessera/page.js",
   "/cerca-libro/page": "app/cerca-libro/page.js",
+  "/cerca-tesserato/page": "app/cerca-tesserato/page.js",
   "/dashboard/page": "app/dashboard/page.js",
   "/details/libri/[isbn]/page": "app/details/libri/[isbn]/page.js",
   "/details/tessere-biblioteca/[id_tessera]/page": "app/details/tessere-biblioteca/[id_tessera]/page.js",

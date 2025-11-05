@@ -27,9 +27,10 @@ from ...models.libro import Libro
 from ...serializers.libro import LibroManageSerializer , LibroStatisticSerializer
 from ..auth.auth import JWTAuthenticationFromCookie
 
-#ultimi_10 = MioModello.objects.order_by('-id')[:10]
 
 @api_view(['GET'])
+@authentication_classes([JWTAuthenticationFromCookie])
+@permission_classes([IsAuthenticated])
 def get_libri_table(request):
 
     if request.method == 'GET':
@@ -51,6 +52,8 @@ def get_libri_table(request):
 
 
 @api_view(['GET'])
+@authentication_classes([JWTAuthenticationFromCookie])
+@permission_classes([IsAuthenticated])
 def get_libro_pagina(request , isbn):
 
     if request.method == 'GET':
@@ -73,6 +76,8 @@ def get_libro_pagina(request , isbn):
 #GET STAT VIEW'S
 
 @api_view(['GET'])
+@authentication_classes([JWTAuthenticationFromCookie])
+@permission_classes([IsAuthenticated])
 def get_totale_libri(request):
 
     if request.method == 'GET':
@@ -93,6 +98,8 @@ def get_totale_libri(request):
 
 
 @api_view(['GET'])
+@authentication_classes([JWTAuthenticationFromCookie])
+@permission_classes([IsAuthenticated])
 def get_ultimi_libri(request):
 
     if request.method == 'GET':
@@ -126,6 +133,7 @@ def get_filter_libro_table(request):
             editore = request.GET.get('editore')
             autore = request.GET.get('autore')
             formato = request.GET.get('formato')
+            postazione = request.GET.get('postazione')
             utente = request.GET.get('utente')
             isbn = request.GET.get('isbn')
             lingua = request.GET.get('lingua')
@@ -153,6 +161,9 @@ def get_filter_libro_table(request):
 
             if lingua:
                 model = Libro.objects.filter(lingua = lingua)
+
+            if postazione:
+                model = Libro.objects.filter(postazione__id_postazione = int(postazione))
 
 
             serializer = LibroManageSerializer(model , many = True)

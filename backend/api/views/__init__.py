@@ -16,7 +16,7 @@ from .libro.get import (
 
 
 from .tessera_biblioteca.get import (
-    get_detail_tessera_biblioteca , get_totale_tessere , get_ultime_tessere
+    get_detail_tessera_biblioteca , get_totale_tessere , get_ultime_tessere , get_filter_tesserati_table
 )
 
 
@@ -95,7 +95,7 @@ __all__ = [
 
     #GET TESSERA BIBLIOTECA
 
-    'get_detail_tessera_biblioteca' , 'get_totale_tessere' , 'get_ultime_tessere',
+    'get_detail_tessera_biblioteca' , 'get_totale_tessere' , 'get_ultime_tessere', 'get_filter_tesserati_table',
 
     #GET POSTAZIONE
 

@@ -1,5 +1,5 @@
 import { createAsyncThunk , createSlice } from "@reduxjs/toolkit";
-import { fetchCounStatTesseraBiblioteca , fetchLastTessereBibliotecaInsert , fetchDetailTesseraBiblioteca , createTessersBiblioteca , modifyTesseraBiblioteca} from "@/api/apiTessereBiblioteca";
+import { fetchCounStatTesseraBiblioteca , fetchLastTessereBibliotecaInsert , fetchDetailTesseraBiblioteca , createTessersBiblioteca , modifyTesseraBiblioteca , filterTesseraBibliotecaTable} from "@/api/apiTessereBiblioteca";
 
 
 //-----------------------------------------------------------GESTIONE STATISTICA-----------------------------------------------------------//
@@ -52,6 +52,21 @@ export const getDetailTesseraBiblioteca = createAsyncThunk('tessera-biblioteca/g
 })
 
 
+export const getFilterTableTesseraBibliotecaAPI = createAsyncThunk('tessera-biblioteca/filter-table-tessera/' , async({params} , {rejectWithValue}) => { // metti {params} poi
+
+
+    try {
+        
+        const response = await filterTesseraBibliotecaTable(params);
+        return response.data;
+
+    } catch (err) {
+
+        return rejectWithValue(err.response?.data || {"error" : "Si è verificato un problema"});
+    }
+})
+
+
 //-----------------------------------------------------------INSERIMENTO TESSERA-----------------------------------------------------------//
 
 
@@ -99,6 +114,7 @@ const tessere_bibliotecaSlice = createSlice({
             last_tessere_biblioteca_insert : [],
             tessera_post_items : [],
             tessera_patch_items : [],
+            filter_tessera_items : [],
         },
 
         requests : {
@@ -107,7 +123,8 @@ const tessere_bibliotecaSlice = createSlice({
             count_tessere_biblioteca : { count_tessra_status : 'idle' , count_tessra_error : null ,count_tessra_loading : false},
             last_tessere_biblioteca_insert : { last_tessere_biblioteca_status : 'idle' , last_tessere_biblioteca_error : null , last_tessere_biblioteca_loading : false},
             tessera_post_items : {tessera_post_status : 'idle' , tessera_post_error : null , tessera_post_loading : false},
-            tessera_patch_items : { tessera_patch_status : 'idle' , tessera_patch_error : null , tessera_patch_loading : false}
+            tessera_patch_items : { tessera_patch_status : 'idle' , tessera_patch_error : null , tessera_patch_loading : false},
+            filter_tessera_items : { filter_tessera_status : 'idle' , filter_tessera_error : null , filter_tessera_loading : false},
         }
 
     },
@@ -195,6 +212,26 @@ const tessere_bibliotecaSlice = createSlice({
             state.requests.tessera_detail_item.tessera_detail_loading = false;
             state.requests.tessera_detail_item.tessera_detail_status = 'failed';
             state.requests.tessera_detail_item.tessera_detail_error = action.payload || {detail : 'errore sconosciuto'};
+        })
+
+
+        //GET DI FILTRAGGIO DATI
+
+        .addCase(getFilterTableTesseraBibliotecaAPI.pending , (state) => {
+            state.requests.filter_tessera_items.filter_tessera_loading = true;
+            state.requests.filter_tessera_items.filter_tessera_status = 'loading';
+        })
+
+        .addCase(getFilterTableTesseraBibliotecaAPI.fulfilled , (state , action) => {
+            state.requests.filter_tessera_items.filter_tessera_loading = false;
+            state.requests.filter_tessera_items.filter_tessera_status = 'succeeded';
+            state.data.filter_tessera_items = action.payload;
+        })
+
+        .addCase(getFilterTableTesseraBibliotecaAPI.rejected , (state , action) => {
+            state.requests.filter_tessera_items.filter_tessera_loading = false;
+            state.requests.filter_tessera_items.filter_tessera_status = 'failed';
+            state.requests.filter_tessera_items.filter_tessera_error = action.payload || {detail : 'errore sconosciuto'};
         })
 
         //THUNK POST TESSERA BIBLIOTECA

@@ -145,12 +145,12 @@ export default function InsertTesseraPage() {
 
                                     <div className="mt-6 flex justify-center gap-4 col-span-full">
                                         
-                                        <button type="submit" className="bg-rose-900 text-white px-6 py-2 rounded hover:bg-rose-800">
+                                        <button type="submit" className="bg-blue-900 text-white px-6 py-2 rounded hover:bg-blue-800">
                                         Salva
                                         </button>
 
-                                        <button type="button" onClick={() => router.push('/dashboard')} className="bg-gray-200 px-6 py-2 rounded text-gray-700 hover:bg-gray-300">
-                                        Torna alla lista
+                                        <button type="button" onClick={() => router.push('/cerca-tesserato')} className="bg-gray-200 px-6 py-2 rounded text-gray-700 hover:bg-gray-300">
+                                            Vai alla lista
                                         </button>
 
                                     </div>

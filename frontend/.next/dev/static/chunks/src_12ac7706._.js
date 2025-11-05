@@ -174,7 +174,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Logout$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/Logout.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$FormatListBulleted$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/FormatListBulleted.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Dashboard$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/Dashboard.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$AutoStories$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/AutoStories.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Badge$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/Badge.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$PeopleAlt$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@mui/icons-material/esm/PeopleAlt.js [app-client] (ecmascript)");
 ;
@@ -197,12 +196,12 @@ var _s = __turbopack_context__.k.signature();
 ;
 function SideBar() {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(97);
-    if ($[0] !== "2aaf5a890adf19789e8e67239177f9382a9e8e75167e1b4ee20612525dd65a10") {
-        for(let $i = 0; $i < 97; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(88);
+    if ($[0] !== "97bfdf149901b49023f558089d8021e33310049c7f0f496aec060c258b871a96") {
+        for(let $i = 0; $i < 88; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "2aaf5a890adf19789e8e67239177f9382a9e8e75167e1b4ee20612525dd65a10";
+        $[0] = "97bfdf149901b49023f558089d8021e33310049c7f0f496aec060c258b871a96";
     }
     const [isSidebarOpen, setIsSidebarOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     let t0;
@@ -435,7 +434,7 @@ function SideBar() {
     let t16;
     if ($[32] !== router) {
         t16 = ({
-            "SideBar[<button>.onClick]": ()=>router.replace("/cerca-libro")
+            "SideBar[<button>.onClick]": ()=>router.replace("/cerca-tesserato")
         })["SideBar[<button>.onClick]"];
         $[32] = router;
         $[33] = t16;
@@ -444,8 +443,8 @@ function SideBar() {
     }
     let t17;
     if ($[34] === Symbol.for("react.memo_cache_sentinel")) {
-        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$AutoStories$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            titleAccess: "Cerca libri"
+        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$PeopleAlt$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            titleAccess: "Cerca tesserati"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
             lineNumber: 178,
@@ -459,7 +458,7 @@ function SideBar() {
     if ($[35] !== isSidebarOpen) {
         t18 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             className: "px-3",
-            children: "Cerca libri"
+            children: "Gestione tesserati"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
             lineNumber: 185,
@@ -500,7 +499,7 @@ function SideBar() {
     let t20;
     if ($[40] !== router) {
         t20 = ({
-            "SideBar[<button>.onClick]": ()=>router.replace("/cerca-libro")
+            "SideBar[<button>.onClick]": ()=>router.replace("/carica-tessera")
         })["SideBar[<button>.onClick]"];
         $[40] = router;
         $[41] = t20;
@@ -509,8 +508,8 @@ function SideBar() {
     }
     let t21;
     if ($[42] === Symbol.for("react.memo_cache_sentinel")) {
-        t21 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$PeopleAlt$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            titleAccess: "Cerca libri"
+        t21 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Badge$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            titleAccess: "carica tesserato"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
             lineNumber: 212,
@@ -524,7 +523,7 @@ function SideBar() {
     if ($[43] !== isSidebarOpen) {
         t22 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             className: "px-3",
-            children: "Cerca tesserati"
+            children: "Registra tesserato"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
             lineNumber: 219,
@@ -538,7 +537,7 @@ function SideBar() {
     let t23;
     if ($[45] !== t20 || $[46] !== t22) {
         t23 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white w-full",
+            className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white  w-full",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 onClick: t20,
                 className: "w-full text-left h-12 flex items-center",
@@ -549,7 +548,7 @@ function SideBar() {
             }, void 0, true, {
                 fileName: "[project]/src/components/SideBar.jsx",
                 lineNumber: 227,
-                columnNumber: 124
+                columnNumber: 125
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
@@ -565,7 +564,7 @@ function SideBar() {
     let t24;
     if ($[48] !== router) {
         t24 = ({
-            "SideBar[<button>.onClick]": ()=>router.replace("/carica-tessera")
+            "SideBar[<button>.onClick]": ()=>router.replace("/carica-libro")
         })["SideBar[<button>.onClick]"];
         $[48] = router;
         $[49] = t24;
@@ -574,8 +573,8 @@ function SideBar() {
     }
     let t25;
     if ($[50] === Symbol.for("react.memo_cache_sentinel")) {
-        t25 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Badge$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            titleAccess: "carica tesserato"
+        t25 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ImportContacts$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            titleAccess: "carica libro"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
             lineNumber: 246,
@@ -589,7 +588,7 @@ function SideBar() {
     if ($[51] !== isSidebarOpen) {
         t26 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             className: "px-3",
-            children: "Registra tesserato"
+            children: "Carica libro"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
             lineNumber: 253,
@@ -628,100 +627,91 @@ function SideBar() {
         t27 = $[55];
     }
     let t28;
-    if ($[56] !== router) {
-        t28 = ({
-            "SideBar[<button>.onClick]": ()=>router.replace("/carica-libro")
-        })["SideBar[<button>.onClick]"];
-        $[56] = router;
-        $[57] = t28;
-    } else {
-        t28 = $[57];
-    }
-    let t29;
-    if ($[58] === Symbol.for("react.memo_cache_sentinel")) {
-        t29 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ImportContacts$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            titleAccess: "carica libro"
-        }, void 0, false, {
-            fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 280,
-            columnNumber: 11
-        }, this);
-        $[58] = t29;
-    } else {
-        t29 = $[58];
-    }
-    let t30;
-    if ($[59] !== isSidebarOpen) {
-        t30 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-            className: "px-3",
-            children: "Carica libro"
-        }, void 0, false, {
-            fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 287,
-            columnNumber: 28
-        }, this);
-        $[59] = isSidebarOpen;
-        $[60] = t30;
-    } else {
-        t30 = $[60];
-    }
-    let t31;
-    if ($[61] !== t28 || $[62] !== t30) {
-        t31 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex items-center gap-4 font-light rounded-md hover:px-1 hover:text-black hover:bg-white  w-full",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                onClick: t28,
-                className: "w-full text-left h-12 flex items-center",
-                children: [
-                    t29,
-                    t30
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/SideBar.jsx",
-                lineNumber: 295,
-                columnNumber: 125
-            }, this)
-        }, void 0, false, {
-            fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 295,
-            columnNumber: 11
-        }, this);
-        $[61] = t28;
-        $[62] = t30;
-        $[63] = t31;
-    } else {
-        t31 = $[63];
-    }
-    let t32;
-    if ($[64] !== t11 || $[65] !== t15 || $[66] !== t19 || $[67] !== t23 || $[68] !== t27 || $[69] !== t31) {
-        t32 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    if ($[56] !== t11 || $[57] !== t15 || $[58] !== t19 || $[59] !== t23 || $[60] !== t27) {
+        t28 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "flex flex-col items-start gap-6 p-4 text-sm text-gray-300 flex-1 overflow-y-auto",
             children: [
                 t11,
                 t15,
                 t19,
                 t23,
-                t27,
-                t31
+                t27
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 304,
+            lineNumber: 270,
             columnNumber: 11
         }, this);
-        $[64] = t11;
-        $[65] = t15;
-        $[66] = t19;
-        $[67] = t23;
-        $[68] = t27;
-        $[69] = t31;
-        $[70] = t32;
+        $[56] = t11;
+        $[57] = t15;
+        $[58] = t19;
+        $[59] = t23;
+        $[60] = t27;
+        $[61] = t28;
     } else {
-        t32 = $[70];
+        t28 = $[61];
+    }
+    let t29;
+    if ($[62] === Symbol.for("react.memo_cache_sentinel")) {
+        t29 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Settings$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            sx: {
+                fontSize: 20
+            }
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 282,
+            columnNumber: 11
+        }, this);
+        $[62] = t29;
+    } else {
+        t29 = $[62];
+    }
+    let t30;
+    if ($[63] !== isSidebarOpen) {
+        t30 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "px-3",
+            children: "Impostazioni"
+        }, void 0, false, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 291,
+            columnNumber: 28
+        }, this);
+        $[63] = isSidebarOpen;
+        $[64] = t30;
+    } else {
+        t30 = $[64];
+    }
+    let t31;
+    if ($[65] !== t30) {
+        t31 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+            className: "flex items-center gap-4 font-light rounded-md px-2 h-12 w-full text-left text-white hover:text-black hover:bg-white",
+            children: [
+                t29,
+                t30
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 299,
+            columnNumber: 11
+        }, this);
+        $[65] = t30;
+        $[66] = t31;
+    } else {
+        t31 = $[66];
+    }
+    let t32;
+    if ($[67] !== HandleLogOut) {
+        t32 = ({
+            "SideBar[<button>.onClick]": ()=>HandleLogOut()
+        })["SideBar[<button>.onClick]"];
+        $[67] = HandleLogOut;
+        $[68] = t32;
+    } else {
+        t32 = $[68];
     }
     let t33;
-    if ($[71] === Symbol.for("react.memo_cache_sentinel")) {
-        t33 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Settings$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+    if ($[69] === Symbol.for("react.memo_cache_sentinel")) {
+        t33 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Logout$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             sx: {
                 fontSize: 20
             }
@@ -730,29 +720,30 @@ function SideBar() {
             lineNumber: 317,
             columnNumber: 11
         }, this);
-        $[71] = t33;
+        $[69] = t33;
     } else {
-        t33 = $[71];
+        t33 = $[69];
     }
     let t34;
-    if ($[72] !== isSidebarOpen) {
+    if ($[70] !== isSidebarOpen) {
         t34 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             className: "px-3",
-            children: "Impostazioni"
+            children: "Logout"
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
             lineNumber: 326,
             columnNumber: 28
         }, this);
-        $[72] = isSidebarOpen;
-        $[73] = t34;
+        $[70] = isSidebarOpen;
+        $[71] = t34;
     } else {
-        t34 = $[73];
+        t34 = $[71];
     }
     let t35;
-    if ($[74] !== t34) {
+    if ($[72] !== t32 || $[73] !== t34) {
         t35 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-            className: "flex items-center gap-4 font-light rounded-md px-2 h-12 w-full text-left text-white hover:text-black hover:bg-white",
+            onClick: t32,
+            className: "flex items-center gap-4 font-light rounded-md px-2 h-12 w-full text-left text-white hover:text-black hover:bg-white ",
             children: [
                 t33,
                 t34
@@ -762,150 +753,91 @@ function SideBar() {
             lineNumber: 334,
             columnNumber: 11
         }, this);
-        $[74] = t34;
-        $[75] = t35;
+        $[72] = t32;
+        $[73] = t34;
+        $[74] = t35;
     } else {
-        t35 = $[75];
+        t35 = $[74];
     }
     let t36;
-    if ($[76] !== HandleLogOut) {
-        t36 = ({
-            "SideBar[<button>.onClick]": ()=>HandleLogOut()
-        })["SideBar[<button>.onClick]"];
-        $[76] = HandleLogOut;
+    if ($[75] !== t31 || $[76] !== t35) {
+        t36 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "p-4 mt-auto",
+            children: [
+                t31,
+                t35
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/SideBar.jsx",
+            lineNumber: 343,
+            columnNumber: 11
+        }, this);
+        $[75] = t31;
+        $[76] = t35;
         $[77] = t36;
     } else {
         t36 = $[77];
     }
     let t37;
-    if ($[78] === Symbol.for("react.memo_cache_sentinel")) {
-        t37 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Logout$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            sx: {
-                fontSize: 20
-            }
-        }, void 0, false, {
+    if ($[78] !== t2 || $[79] !== t28 || $[80] !== t36 || $[81] !== t7) {
+        t37 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: t2,
+            children: [
+                t7,
+                t28,
+                t36
+            ]
+        }, void 0, true, {
             fileName: "[project]/src/components/SideBar.jsx",
             lineNumber: 352,
             columnNumber: 11
         }, this);
-        $[78] = t37;
+        $[78] = t2;
+        $[79] = t28;
+        $[80] = t36;
+        $[81] = t7;
+        $[82] = t37;
     } else {
-        t37 = $[78];
+        t37 = $[82];
     }
-    let t38;
-    if ($[79] !== isSidebarOpen) {
-        t38 = isSidebarOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-            className: "px-3",
-            children: "Logout"
+    const t38 = isSidebarOpen ? "13rem" : "2.2rem";
+    let t39;
+    if ($[83] !== t38) {
+        t39 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex-1 p-2 overflow-y-auto transition-all duration-300",
+            style: {
+                marginLeft: t38
+            }
         }, void 0, false, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 361,
-            columnNumber: 28
-        }, this);
-        $[79] = isSidebarOpen;
-        $[80] = t38;
-    } else {
-        t38 = $[80];
-    }
-    let t39;
-    if ($[81] !== t36 || $[82] !== t38) {
-        t39 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-            onClick: t36,
-            className: "flex items-center gap-4 font-light rounded-md px-2 h-12 w-full text-left text-white hover:text-black hover:bg-white ",
-            children: [
-                t37,
-                t38
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 369,
+            lineNumber: 364,
             columnNumber: 11
         }, this);
-        $[81] = t36;
-        $[82] = t38;
-        $[83] = t39;
+        $[83] = t38;
+        $[84] = t39;
     } else {
-        t39 = $[83];
+        t39 = $[84];
     }
     let t40;
-    if ($[84] !== t35 || $[85] !== t39) {
+    if ($[85] !== t37 || $[86] !== t39) {
         t40 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "p-4 mt-auto",
+            className: "flex h-screen",
             children: [
-                t35,
+                t37,
                 t39
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 378,
+            lineNumber: 374,
             columnNumber: 11
         }, this);
-        $[84] = t35;
-        $[85] = t39;
-        $[86] = t40;
+        $[85] = t37;
+        $[86] = t39;
+        $[87] = t40;
     } else {
-        t40 = $[86];
+        t40 = $[87];
     }
-    let t41;
-    if ($[87] !== t2 || $[88] !== t32 || $[89] !== t40 || $[90] !== t7) {
-        t41 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: t2,
-            children: [
-                t7,
-                t32,
-                t40
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 387,
-            columnNumber: 11
-        }, this);
-        $[87] = t2;
-        $[88] = t32;
-        $[89] = t40;
-        $[90] = t7;
-        $[91] = t41;
-    } else {
-        t41 = $[91];
-    }
-    const t42 = isSidebarOpen ? "13rem" : "2.2rem";
-    let t43;
-    if ($[92] !== t42) {
-        t43 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex-1 p-2 overflow-y-auto transition-all duration-300",
-            style: {
-                marginLeft: t42
-            }
-        }, void 0, false, {
-            fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 399,
-            columnNumber: 11
-        }, this);
-        $[92] = t42;
-        $[93] = t43;
-    } else {
-        t43 = $[93];
-    }
-    let t44;
-    if ($[94] !== t41 || $[95] !== t43) {
-        t44 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex h-screen",
-            children: [
-                t41,
-                t43
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/SideBar.jsx",
-            lineNumber: 409,
-            columnNumber: 11
-        }, this);
-        $[94] = t41;
-        $[95] = t43;
-        $[96] = t44;
-    } else {
-        t44 = $[96];
-    }
-    return t44;
+    return t40;
 }
 _s(SideBar, "1PuzZxVlvw9vfU6vfGwaDrYwzr4=", false, function() {
     return [
@@ -1215,12 +1147,12 @@ var _s = __turbopack_context__.k.signature();
 ;
 function GestioneLibri() {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(64);
-    if ($[0] !== "836cb3b1d6b125825685616c8aaf72eb5cbb229448a270c71ba3e746c3c850a8") {
-        for(let $i = 0; $i < 64; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(81);
+    if ($[0] !== "128b0ac9d9cba6fb909276bbcfbbbb861d2f2862a9475e528ce4db9da2080e3a") {
+        for(let $i = 0; $i < 81; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "836cb3b1d6b125825685616c8aaf72eb5cbb229448a270c71ba3e746c3c850a8";
+        $[0] = "128b0ac9d9cba6fb909276bbcfbbbb861d2f2862a9475e528ce4db9da2080e3a";
     }
     const { data: t0 } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSelector"])(_GestioneLibriUseSelector);
     const { filter_book_items } = t0;
@@ -1228,27 +1160,50 @@ function GestioneLibri() {
     const { customuser_helper_selection_items } = t1;
     const { data: t2 } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSelector"])(_GestioneLibriUseSelector3);
     const { autore_helper_items } = t2;
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSelector"])(_GestioneLibriUseSelector4);
-    let t3;
+    const { data: t3 } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSelector"])(_GestioneLibriUseSelector4);
+    const { postazioni_helper_items } = t3;
+    let t4;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
-        t3 = {
+        t4 = {
             isbn: null,
             data_uscita: null,
             editore: null,
             formato: null,
             autore: null,
             postazione: null,
-            utente: null
+            utente: null,
+            lingua: null
         };
-        $[1] = t3;
+        $[1] = t4;
     } else {
-        t3 = $[1];
+        t4 = $[1];
     }
-    const [filtrazione, setFiltrazione] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(t3);
+    const [filtrazione, setFiltrazione] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(t4);
+    let t5;
+    if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+        t5 = ({
+            "GestioneLibri[restoreFilters]": ()=>{
+                setFiltrazione({
+                    isbn: null,
+                    data_uscita: null,
+                    editore: null,
+                    formato: null,
+                    autore: null,
+                    postazione: null,
+                    utente: null,
+                    lingua: null
+                });
+            }
+        })["GestioneLibri[restoreFilters]"];
+        $[2] = t5;
+    } else {
+        t5 = $[2];
+    }
+    const restoreFilters = t5;
     const dispatch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDispatch"])();
-    let t4;
-    if ($[2] !== dispatch || $[3] !== filter_book_items || $[4] !== filtrazione) {
-        t4 = ({
+    let t6;
+    if ($[3] !== dispatch || $[4] !== filter_book_items || $[5] !== filtrazione) {
+        t6 = ({
             "GestioneLibri[useEffect()]": ()=>{
                 dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$Libri$2f$libriSlice$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFilterBookAPI"])({
                     params: filtrazione
@@ -1256,523 +1211,536 @@ function GestioneLibri() {
                 console.log(filter_book_items);
             }
         })["GestioneLibri[useEffect()]"];
-        $[2] = dispatch;
-        $[3] = filter_book_items;
-        $[4] = filtrazione;
-        $[5] = t4;
+        $[3] = dispatch;
+        $[4] = filter_book_items;
+        $[5] = filtrazione;
+        $[6] = t6;
     } else {
-        t4 = $[5];
+        t6 = $[6];
     }
-    let t5;
-    if ($[6] !== dispatch || $[7] !== filtrazione) {
-        t5 = [
+    let t7;
+    if ($[7] !== dispatch || $[8] !== filtrazione) {
+        t7 = [
             filtrazione,
             dispatch
         ];
-        $[6] = dispatch;
-        $[7] = filtrazione;
-        $[8] = t5;
+        $[7] = dispatch;
+        $[8] = filtrazione;
+        $[9] = t7;
     } else {
-        t5 = $[8];
-    }
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t4, t5);
-    let t6;
-    let t7;
-    if ($[9] !== dispatch) {
-        t6 = ({
-            "GestioneLibri[useEffect()]": ()=>{
-                dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$CustomUser$2f$customuserSlice$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getHelperSelectionUserAPI"])());
-                dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$Autori$2f$autoriSlice$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getHelperAutoriAPI"])());
-            }
-        })["GestioneLibri[useEffect()]"];
-        t7 = [
-            dispatch
-        ];
-        $[9] = dispatch;
-        $[10] = t6;
-        $[11] = t7;
-    } else {
-        t6 = $[10];
-        t7 = $[11];
+        t7 = $[9];
     }
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t6, t7);
     let t8;
-    if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
-        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SideBar$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-            fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 112,
-            columnNumber: 10
-        }, this);
-        $[12] = t8;
-    } else {
-        t8 = $[12];
-    }
     let t9;
-    if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
-        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Banner$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-            fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 119,
-            columnNumber: 10
-        }, this);
-        $[13] = t9;
+    if ($[10] !== dispatch) {
+        t8 = ({
+            "GestioneLibri[useEffect()]": ()=>{
+                dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$CustomUser$2f$customuserSlice$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getHelperSelectionUserAPI"])());
+                dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$Autori$2f$autoriSlice$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getHelperAutoriAPI"])());
+                dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$Postazioni$2f$postazioniSlice$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getHelperSelectionPostazioni"])());
+            }
+        })["GestioneLibri[useEffect()]"];
+        t9 = [
+            dispatch
+        ];
+        $[10] = dispatch;
+        $[11] = t8;
+        $[12] = t9;
     } else {
-        t9 = $[13];
+        t8 = $[11];
+        t9 = $[12];
     }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t8, t9);
     let t10;
+    if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
+        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SideBar$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            fileName: "[project]/src/app/gestione-libri/page.jsx",
+            lineNumber: 140,
+            columnNumber: 11
+        }, this);
+        $[13] = t10;
+    } else {
+        t10 = $[13];
+    }
+    let t11;
     if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
-        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ManageHistory$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Banner$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            fileName: "[project]/src/app/gestione-libri/page.jsx",
+            lineNumber: 147,
+            columnNumber: 11
+        }, this);
+        $[14] = t11;
+    } else {
+        t11 = $[14];
+    }
+    let t12;
+    if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
+        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ManageHistory$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             sx: {
                 fontSize: 35
             }
         }, void 0, false, {
             fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 126,
+            lineNumber: 154,
             columnNumber: 11
         }, this);
-        $[14] = t10;
+        $[15] = t12;
     } else {
-        t10 = $[14];
+        t12 = $[15];
     }
-    let t11;
-    if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
-        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t13;
+    if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
+        t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                 className: "text-2xl font-light mb-4  text-gray-800",
                 children: [
-                    t10,
+                    t12,
                     " Gestione libri ",
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {}, void 0, false, {
                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                        lineNumber: 135,
+                        lineNumber: 163,
                         columnNumber: 93
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                lineNumber: 135,
+                lineNumber: 163,
                 columnNumber: 16
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 135,
+            lineNumber: 163,
             columnNumber: 11
         }, this);
-        $[15] = t11;
+        $[16] = t13;
     } else {
-        t11 = $[15];
+        t13 = $[16];
     }
-    let t12;
-    if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
-        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
-            fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 142,
-            columnNumber: 11
-        }, this);
-        $[16] = t12;
-    } else {
-        t12 = $[16];
-    }
-    let t13;
+    let t14;
     if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
-        t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+        t14 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
+            fileName: "[project]/src/app/gestione-libri/page.jsx",
+            lineNumber: 170,
+            columnNumber: 11
+        }, this);
+        $[17] = t14;
+    } else {
+        t14 = $[17];
+    }
+    let t15;
+    if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
+        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
             className: "text-white",
             children: "ISBN"
         }, void 0, false, {
             fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 149,
+            lineNumber: 177,
             columnNumber: 11
         }, this);
-        $[17] = t13;
+        $[18] = t15;
     } else {
-        t13 = $[17];
+        t15 = $[18];
     }
-    const t14 = filtrazione.isbn ?? "";
-    let t15;
-    if ($[18] !== filtrazione) {
-        t15 = ({
+    const t16 = filtrazione.isbn ?? "";
+    let t17;
+    if ($[19] !== filtrazione) {
+        t17 = ({
             "GestioneLibri[<input>.onChange]": (e)=>setFiltrazione({
                     ...filtrazione,
                     isbn: e.target.value
                 })
         })["GestioneLibri[<input>.onChange]"];
-        $[18] = filtrazione;
-        $[19] = t15;
+        $[19] = filtrazione;
+        $[20] = t17;
     } else {
-        t15 = $[19];
+        t17 = $[20];
     }
-    let t16;
-    if ($[20] !== t14 || $[21] !== t15) {
-        t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-            className: "flex items-center space-x-1 cursor-pointer text-gray-700 font-medium",
-            children: [
-                t13,
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                    value: t14,
-                    onChange: t15,
-                    type: "text",
-                    className: "bg-white h-8 border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all",
-                    name: "prestito"
-                }, void 0, false, {
-                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                    lineNumber: 170,
-                    columnNumber: 104
-                }, this)
-            ]
-        }, void 0, true, {
+    let t18;
+    if ($[21] !== t16 || $[22] !== t17) {
+        t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+            value: t16,
+            onChange: t17,
+            type: "text",
+            className: "bg-white h-8 border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all",
+            name: "prestito"
+        }, void 0, false, {
             fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 170,
+            lineNumber: 198,
             columnNumber: 11
         }, this);
-        $[20] = t14;
-        $[21] = t15;
-        $[22] = t16;
+        $[21] = t16;
+        $[22] = t17;
+        $[23] = t18;
     } else {
-        t16 = $[22];
+        t18 = $[23];
     }
-    let t17;
-    if ($[23] === Symbol.for("react.memo_cache_sentinel")) {
-        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+    let t19;
+    if ($[24] === Symbol.for("react.memo_cache_sentinel")) {
+        t19 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+            className: "text-white",
+            children: "Lingua"
+        }, void 0, false, {
+            fileName: "[project]/src/app/gestione-libri/page.jsx",
+            lineNumber: 207,
+            columnNumber: 11
+        }, this);
+        $[24] = t19;
+    } else {
+        t19 = $[24];
+    }
+    const t20 = filtrazione.lingua ?? "";
+    let t21;
+    if ($[25] !== filtrazione) {
+        t21 = ({
+            "GestioneLibri[<input>.onChange]": (e_0)=>setFiltrazione({
+                    ...filtrazione,
+                    lingua: e_0.target.value
+                })
+        })["GestioneLibri[<input>.onChange]"];
+        $[25] = filtrazione;
+        $[26] = t21;
+    } else {
+        t21 = $[26];
+    }
+    let t22;
+    if ($[27] !== t20 || $[28] !== t21) {
+        t22 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+            value: t20,
+            onChange: t21,
+            type: "text",
+            className: "bg-white h-9 border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all",
+            name: "prestito"
+        }, void 0, false, {
+            fileName: "[project]/src/app/gestione-libri/page.jsx",
+            lineNumber: 228,
+            columnNumber: 11
+        }, this);
+        $[27] = t20;
+        $[28] = t21;
+        $[29] = t22;
+    } else {
+        t22 = $[29];
+    }
+    let t23;
+    if ($[30] === Symbol.for("react.memo_cache_sentinel")) {
+        t23 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
             className: "text-white",
             children: "Data uscita"
         }, void 0, false, {
             fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 179,
+            lineNumber: 237,
             columnNumber: 11
         }, this);
-        $[23] = t17;
+        $[30] = t23;
     } else {
-        t17 = $[23];
+        t23 = $[30];
     }
-    const t18 = filtrazione.data_uscita ?? "";
-    let t19;
-    if ($[24] !== filtrazione) {
-        t19 = ({
-            "GestioneLibri[<input>.onChange]": (e_0)=>setFiltrazione({
+    const t24 = filtrazione.data_uscita ?? "";
+    let t25;
+    if ($[31] !== filtrazione) {
+        t25 = ({
+            "GestioneLibri[<input>.onChange]": (e_1)=>setFiltrazione({
                     ...filtrazione,
-                    data_uscita: e_0.target.value
+                    data_uscita: e_1.target.value
                 })
         })["GestioneLibri[<input>.onChange]"];
-        $[24] = filtrazione;
-        $[25] = t19;
+        $[31] = filtrazione;
+        $[32] = t25;
     } else {
-        t19 = $[25];
+        t25 = $[32];
     }
-    let t20;
-    if ($[26] !== t18 || $[27] !== t19) {
-        t20 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-            value: t18,
-            onChange: t19,
+    let t26;
+    if ($[33] !== t24 || $[34] !== t25) {
+        t26 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+            value: t24,
+            onChange: t25,
             type: "date",
             className: "bg-white h-9 border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all",
             name: "prestito"
         }, void 0, false, {
             fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 200,
+            lineNumber: 258,
             columnNumber: 11
         }, this);
-        $[26] = t18;
-        $[27] = t19;
-        $[28] = t20;
+        $[33] = t24;
+        $[34] = t25;
+        $[35] = t26;
     } else {
-        t20 = $[28];
+        t26 = $[35];
     }
-    let t21;
-    if ($[29] === Symbol.for("react.memo_cache_sentinel")) {
-        t21 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+    const t27 = filtrazione.postazione ?? "";
+    let t28;
+    if ($[36] !== filtrazione) {
+        t28 = ({
+            "GestioneLibri[<select>.onChange]": (e_2)=>setFiltrazione({
+                    ...filtrazione,
+                    postazione: Number(e_2.target.value)
+                })
+        })["GestioneLibri[<select>.onChange]"];
+        $[36] = filtrazione;
+        $[37] = t28;
+    } else {
+        t28 = $[37];
+    }
+    let t29;
+    if ($[38] === Symbol.for("react.memo_cache_sentinel")) {
+        t29 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+            value: "",
+            children: "Postazione"
+        }, void 0, false, {
+            fileName: "[project]/src/app/gestione-libri/page.jsx",
+            lineNumber: 281,
+            columnNumber: 11
+        }, this);
+        $[38] = t29;
+    } else {
+        t29 = $[38];
+    }
+    let t30;
+    if ($[39] !== postazioni_helper_items) {
+        t30 = Array.isArray(postazioni_helper_items) && postazioni_helper_items.map(_GestioneLibriPostazioni_helper_itemsMap);
+        $[39] = postazioni_helper_items;
+        $[40] = t30;
+    } else {
+        t30 = $[40];
+    }
+    let t31;
+    if ($[41] !== t27 || $[42] !== t28 || $[43] !== t30) {
+        t31 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+            value: t27,
+            onChange: t28,
             className: "bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all",
             name: "stato",
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                    value: "",
-                    children: "Postazione"
-                }, void 0, false, {
-                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                    lineNumber: 209,
-                    columnNumber: 202
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                    value: "true",
-                    children: "Si"
-                }, void 0, false, {
-                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                    lineNumber: 209,
-                    columnNumber: 238
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                    value: "false",
-                    children: "No"
-                }, void 0, false, {
-                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                    lineNumber: 209,
-                    columnNumber: 270
-                }, this)
+                t29,
+                t30
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 209,
+            lineNumber: 296,
             columnNumber: 11
         }, this);
-        $[29] = t21;
+        $[41] = t27;
+        $[42] = t28;
+        $[43] = t30;
+        $[44] = t31;
     } else {
-        t21 = $[29];
+        t31 = $[44];
     }
-    const t22 = filtrazione.autore ?? "";
-    let t23;
-    if ($[30] !== filtrazione) {
-        t23 = ({
-            "GestioneLibri[<select>.onChange]": (e_1)=>setFiltrazione({
+    const t32 = filtrazione.autore ?? "";
+    let t33;
+    if ($[45] !== filtrazione) {
+        t33 = ({
+            "GestioneLibri[<select>.onChange]": (e_3)=>setFiltrazione({
                     ...filtrazione,
-                    autore: Number(e_1.target.value)
+                    autore: Number(e_3.target.value)
                 })
         })["GestioneLibri[<select>.onChange]"];
-        $[30] = filtrazione;
-        $[31] = t23;
+        $[45] = filtrazione;
+        $[46] = t33;
     } else {
-        t23 = $[31];
+        t33 = $[46];
     }
-    let t24;
-    if ($[32] === Symbol.for("react.memo_cache_sentinel")) {
-        t24 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+    let t34;
+    if ($[47] === Symbol.for("react.memo_cache_sentinel")) {
+        t34 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
             value: "",
             children: "Autore"
         }, void 0, false, {
             fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 230,
+            lineNumber: 320,
             columnNumber: 11
         }, this);
-        $[32] = t24;
+        $[47] = t34;
     } else {
-        t24 = $[32];
+        t34 = $[47];
     }
-    let t25;
-    if ($[33] !== autore_helper_items) {
-        t25 = Array.isArray(autore_helper_items) && autore_helper_items.map(_GestioneLibriAutore_helper_itemsMap);
-        $[33] = autore_helper_items;
-        $[34] = t25;
+    let t35;
+    if ($[48] !== autore_helper_items) {
+        t35 = Array.isArray(autore_helper_items) && autore_helper_items.map(_GestioneLibriAutore_helper_itemsMap);
+        $[48] = autore_helper_items;
+        $[49] = t35;
     } else {
-        t25 = $[34];
+        t35 = $[49];
     }
-    let t26;
-    if ($[35] !== t22 || $[36] !== t23 || $[37] !== t25) {
-        t26 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-            value: t22,
-            onChange: t23,
+    let t36;
+    if ($[50] !== t32 || $[51] !== t33 || $[52] !== t35) {
+        t36 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+            value: t32,
+            onChange: t33,
             className: "bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all",
             name: "stato",
             children: [
-                t24,
-                t25
+                t34,
+                t35
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 245,
+            lineNumber: 335,
             columnNumber: 11
         }, this);
-        $[35] = t22;
-        $[36] = t23;
-        $[37] = t25;
-        $[38] = t26;
+        $[50] = t32;
+        $[51] = t33;
+        $[52] = t35;
+        $[53] = t36;
     } else {
-        t26 = $[38];
+        t36 = $[53];
     }
-    let t27;
-    if ($[39] === Symbol.for("react.memo_cache_sentinel")) {
-        t27 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+    let t37;
+    if ($[54] === Symbol.for("react.memo_cache_sentinel")) {
+        t37 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
             className: "bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all",
             name: "stato",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                    value: "",
-                    children: "Editore"
-                }, void 0, false, {
-                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                    lineNumber: 255,
-                    columnNumber: 202
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                    value: "true",
-                    children: "Si"
-                }, void 0, false, {
-                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                    lineNumber: 255,
-                    columnNumber: 235
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                    value: "false",
-                    children: "No"
-                }, void 0, false, {
-                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                    lineNumber: 255,
-                    columnNumber: 267
-                }, this)
-            ]
-        }, void 0, true, {
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                value: "",
+                children: "Editore"
+            }, void 0, false, {
+                fileName: "[project]/src/app/gestione-libri/page.jsx",
+                lineNumber: 345,
+                columnNumber: 202
+            }, this)
+        }, void 0, false, {
             fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 255,
+            lineNumber: 345,
             columnNumber: 11
         }, this);
-        $[39] = t27;
+        $[54] = t37;
     } else {
-        t27 = $[39];
+        t37 = $[54];
     }
-    let t28;
-    if ($[40] === Symbol.for("react.memo_cache_sentinel")) {
-        t28 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-            className: "bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all",
-            name: "stato",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                    value: "",
-                    children: "Lingua"
-                }, void 0, false, {
-                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                    lineNumber: 262,
-                    columnNumber: 202
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                    value: "true",
-                    children: "Si"
-                }, void 0, false, {
-                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                    lineNumber: 262,
-                    columnNumber: 234
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                    value: "false",
-                    children: "No"
-                }, void 0, false, {
-                    fileName: "[project]/src/app/gestione-libri/page.jsx",
-                    lineNumber: 262,
-                    columnNumber: 266
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 262,
-            columnNumber: 11
-        }, this);
-        $[40] = t28;
-    } else {
-        t28 = $[40];
-    }
-    const t29 = filtrazione.utente ?? "";
-    let t30;
-    if ($[41] !== filtrazione) {
-        t30 = ({
-            "GestioneLibri[<select>.onChange]": (e_2)=>setFiltrazione({
+    const t38 = filtrazione.utente ?? "";
+    let t39;
+    if ($[55] !== filtrazione) {
+        t39 = ({
+            "GestioneLibri[<select>.onChange]": (e_4)=>setFiltrazione({
                     ...filtrazione,
-                    utente: Number(e_2.target.value)
+                    utente: Number(e_4.target.value)
                 })
         })["GestioneLibri[<select>.onChange]"];
-        $[41] = filtrazione;
-        $[42] = t30;
+        $[55] = filtrazione;
+        $[56] = t39;
     } else {
-        t30 = $[42];
+        t39 = $[56];
     }
-    let t31;
-    if ($[43] === Symbol.for("react.memo_cache_sentinel")) {
-        t31 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+    let t40;
+    if ($[57] === Symbol.for("react.memo_cache_sentinel")) {
+        t40 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
             value: "",
             children: "Operatore"
         }, void 0, false, {
             fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 283,
+            lineNumber: 366,
             columnNumber: 11
         }, this);
-        $[43] = t31;
+        $[57] = t40;
     } else {
-        t31 = $[43];
+        t40 = $[57];
     }
-    let t32;
-    if ($[44] !== customuser_helper_selection_items) {
-        t32 = Array.isArray(customuser_helper_selection_items) && customuser_helper_selection_items.map(_GestioneLibriCustomuser_helper_selection_itemsMap);
-        $[44] = customuser_helper_selection_items;
-        $[45] = t32;
+    let t41;
+    if ($[58] !== customuser_helper_selection_items) {
+        t41 = Array.isArray(customuser_helper_selection_items) && customuser_helper_selection_items.map(_GestioneLibriCustomuser_helper_selection_itemsMap);
+        $[58] = customuser_helper_selection_items;
+        $[59] = t41;
     } else {
-        t32 = $[45];
+        t41 = $[59];
     }
-    let t33;
-    if ($[46] !== t29 || $[47] !== t30 || $[48] !== t32) {
-        t33 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-            value: t29,
-            onChange: t30,
+    let t42;
+    if ($[60] !== t38 || $[61] !== t39 || $[62] !== t41) {
+        t42 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+            value: t38,
+            onChange: t39,
             className: "bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all",
             name: "prestito",
             children: [
-                t31,
-                t32
+                t40,
+                t41
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 298,
+            lineNumber: 381,
             columnNumber: 11
         }, this);
-        $[46] = t29;
-        $[47] = t30;
-        $[48] = t32;
-        $[49] = t33;
+        $[60] = t38;
+        $[61] = t39;
+        $[62] = t41;
+        $[63] = t42;
     } else {
-        t33 = $[49];
+        t42 = $[63];
     }
-    let t34;
-    if ($[50] === Symbol.for("react.memo_cache_sentinel")) {
-        t34 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+    let t43;
+    if ($[64] === Symbol.for("react.memo_cache_sentinel")) {
+        t43 = ({
+            "GestioneLibri[<button>.onClick]": ()=>restoreFilters()
+        })["GestioneLibri[<button>.onClick]"];
+        $[64] = t43;
+    } else {
+        t43 = $[64];
+    }
+    let t44;
+    if ($[65] === Symbol.for("react.memo_cache_sentinel")) {
+        t44 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+            onClick: t43,
             className: "bg-white border  border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Backspace$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                lineNumber: 308,
-                columnNumber: 190
+                lineNumber: 400,
+                columnNumber: 204
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 308,
+            lineNumber: 400,
             columnNumber: 11
         }, this);
-        $[50] = t34;
+        $[65] = t44;
     } else {
-        t34 = $[50];
+        t44 = $[65];
     }
-    let t35;
-    if ($[51] !== t16 || $[52] !== t20 || $[53] !== t26 || $[54] !== t33) {
-        t35 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t45;
+    if ($[66] !== t18 || $[67] !== t22 || $[68] !== t26 || $[69] !== t31 || $[70] !== t36 || $[71] !== t42) {
+        t45 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "bg-sky-600 rounded-t-md  px-10 flex items-center justify-between",
             children: [
-                t12,
+                t14,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex items-center space-x-5 py-5 rounded-2xl",
                     children: [
-                        t16,
-                        t17,
-                        t20,
-                        t21,
+                        t15,
+                        t18,
+                        t19,
+                        t22,
+                        t23,
                         t26,
-                        t27,
-                        t28,
-                        t33,
-                        t34
+                        t31,
+                        t36,
+                        t37,
+                        t42,
+                        t44
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                    lineNumber: 315,
+                    lineNumber: 407,
                     columnNumber: 98
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 315,
+            lineNumber: 407,
             columnNumber: 11
         }, this);
-        $[51] = t16;
-        $[52] = t20;
-        $[53] = t26;
-        $[54] = t33;
-        $[55] = t35;
+        $[66] = t18;
+        $[67] = t22;
+        $[68] = t26;
+        $[69] = t31;
+        $[70] = t36;
+        $[71] = t42;
+        $[72] = t45;
     } else {
-        t35 = $[55];
+        t45 = $[72];
     }
-    let t36;
-    if ($[56] === Symbol.for("react.memo_cache_sentinel")) {
-        t36 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
+    let t46;
+    if ($[73] === Symbol.for("react.memo_cache_sentinel")) {
+        t46 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
             className: "bg-blue-600 text-white",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
                 children: [
@@ -1781,7 +1749,7 @@ function GestioneLibri() {
                         children: "ISBN"
                     }, void 0, false, {
                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                        lineNumber: 326,
+                        lineNumber: 420,
                         columnNumber: 57
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1789,7 +1757,7 @@ function GestioneLibri() {
                         children: "Titolo"
                     }, void 0, false, {
                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                        lineNumber: 326,
+                        lineNumber: 420,
                         columnNumber: 102
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1797,7 +1765,7 @@ function GestioneLibri() {
                         children: "Data d'uscita"
                     }, void 0, false, {
                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                        lineNumber: 326,
+                        lineNumber: 420,
                         columnNumber: 149
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1805,7 +1773,7 @@ function GestioneLibri() {
                         children: "Editore"
                     }, void 0, false, {
                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                        lineNumber: 326,
+                        lineNumber: 420,
                         columnNumber: 203
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1813,7 +1781,7 @@ function GestioneLibri() {
                         children: "Formato"
                     }, void 0, false, {
                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                        lineNumber: 326,
+                        lineNumber: 420,
                         columnNumber: 251
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1821,7 +1789,7 @@ function GestioneLibri() {
                         children: "Lingua"
                     }, void 0, false, {
                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                        lineNumber: 326,
+                        lineNumber: 420,
                         columnNumber: 299
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1829,7 +1797,7 @@ function GestioneLibri() {
                         children: "Autore"
                     }, void 0, false, {
                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                        lineNumber: 326,
+                        lineNumber: 420,
                         columnNumber: 346
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1837,7 +1805,7 @@ function GestioneLibri() {
                         children: "Postazione"
                     }, void 0, false, {
                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                        lineNumber: 326,
+                        lineNumber: 420,
                         columnNumber: 393
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1845,7 +1813,7 @@ function GestioneLibri() {
                         children: "Inserito da"
                     }, void 0, false, {
                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                        lineNumber: 326,
+                        lineNumber: 420,
                         columnNumber: 444
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1853,126 +1821,126 @@ function GestioneLibri() {
                         children: "Interagisci"
                     }, void 0, false, {
                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                        lineNumber: 326,
+                        lineNumber: 420,
                         columnNumber: 496
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                lineNumber: 326,
+                lineNumber: 420,
                 columnNumber: 53
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 326,
+            lineNumber: 420,
             columnNumber: 11
         }, this);
-        $[56] = t36;
+        $[73] = t46;
     } else {
-        t36 = $[56];
+        t46 = $[73];
     }
-    let t37;
-    if ($[57] !== filter_book_items) {
-        t37 = Array.isArray(filter_book_items) && filter_book_items.map(_GestioneLibriFilter_book_itemsMap);
-        $[57] = filter_book_items;
-        $[58] = t37;
+    let t47;
+    if ($[74] !== filter_book_items) {
+        t47 = Array.isArray(filter_book_items) && filter_book_items.map(_GestioneLibriFilter_book_itemsMap);
+        $[74] = filter_book_items;
+        $[75] = t47;
     } else {
-        t37 = $[58];
+        t47 = $[75];
     }
-    let t38;
-    if ($[59] !== t37) {
-        t38 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t48;
+    if ($[76] !== t47) {
+        t48 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "overflow-x-auto",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
                 className: "w-full bg-gray-200 shadow-md rounded-b-lg overflow-hidden",
                 children: [
-                    t36,
+                    t46,
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
                         className: "divide-y divide-gray-300",
-                        children: t37
+                        children: t47
                     }, void 0, false, {
                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                        lineNumber: 341,
+                        lineNumber: 435,
                         columnNumber: 126
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                lineNumber: 341,
+                lineNumber: 435,
                 columnNumber: 44
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 341,
+            lineNumber: 435,
             columnNumber: 11
         }, this);
-        $[59] = t37;
-        $[60] = t38;
+        $[76] = t47;
+        $[77] = t48;
     } else {
-        t38 = $[60];
+        t48 = $[77];
     }
-    let t39;
-    if ($[61] !== t35 || $[62] !== t38) {
-        t39 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AppWrapper$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+    let t49;
+    if ($[78] !== t45 || $[79] !== t48) {
+        t49 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AppWrapper$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$PrivateRoute$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex min-h-screen bg-white text-white",
                     children: [
-                        t8,
+                        t10,
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex-1 flex flex-col  transition-all duration-300",
                             children: [
-                                t9,
+                                t11,
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex flex-wrap gap-4 py-10 px-6",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "py-20 w-full",
                                         children: [
-                                            t11,
-                                            t35,
-                                            t38
+                                            t13,
+                                            t45,
+                                            t48
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                        lineNumber: 349,
-                                        columnNumber: 216
+                                        lineNumber: 443,
+                                        columnNumber: 218
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                                    lineNumber: 349,
-                                    columnNumber: 167
+                                    lineNumber: 443,
+                                    columnNumber: 169
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/gestione-libri/page.jsx",
-                            lineNumber: 349,
-                            columnNumber: 96
+                            lineNumber: 443,
+                            columnNumber: 97
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                    lineNumber: 349,
+                    lineNumber: 443,
                     columnNumber: 37
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                lineNumber: 349,
+                lineNumber: 443,
                 columnNumber: 23
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/gestione-libri/page.jsx",
-            lineNumber: 349,
+            lineNumber: 443,
             columnNumber: 11
         }, this);
-        $[61] = t35;
-        $[62] = t38;
-        $[63] = t39;
+        $[78] = t45;
+        $[79] = t48;
+        $[80] = t49;
     } else {
-        t39 = $[63];
+        t49 = $[80];
     }
-    return t39;
+    return t49;
 }
-_s(GestioneLibri, "VXwzCRKrDlcRJssXtR/LA6PC7T4=", false, function() {
+_s(GestioneLibri, "Lf84dPop2P5rD1m1NU3gzRLwAWs=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSelector"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSelector"],
@@ -1991,7 +1959,7 @@ function _GestioneLibriFilter_book_itemsMap(book_filters) {
                 children: book_filters.isbn
             }, void 0, false, {
                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                lineNumber: 359,
+                lineNumber: 453,
                 columnNumber: 83
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1999,7 +1967,7 @@ function _GestioneLibriFilter_book_itemsMap(book_filters) {
                 children: book_filters.titolo
             }, void 0, false, {
                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                lineNumber: 359,
+                lineNumber: 453,
                 columnNumber: 144
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -2007,7 +1975,7 @@ function _GestioneLibriFilter_book_itemsMap(book_filters) {
                 children: book_filters.data_uscita
             }, void 0, false, {
                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                lineNumber: 359,
+                lineNumber: 453,
                 columnNumber: 207
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -2015,7 +1983,7 @@ function _GestioneLibriFilter_book_itemsMap(book_filters) {
                 children: book_filters.editore
             }, void 0, false, {
                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                lineNumber: 359,
+                lineNumber: 453,
                 columnNumber: 275
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -2023,7 +1991,7 @@ function _GestioneLibriFilter_book_itemsMap(book_filters) {
                 children: book_filters.formato
             }, void 0, false, {
                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                lineNumber: 359,
+                lineNumber: 453,
                 columnNumber: 339
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -2031,7 +1999,7 @@ function _GestioneLibriFilter_book_itemsMap(book_filters) {
                 children: book_filters.lingua
             }, void 0, false, {
                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                lineNumber: 359,
+                lineNumber: 453,
                 columnNumber: 403
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -2039,7 +2007,7 @@ function _GestioneLibriFilter_book_itemsMap(book_filters) {
                 children: book_filters.autore_libro
             }, void 0, false, {
                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                lineNumber: 359,
+                lineNumber: 453,
                 columnNumber: 466
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -2050,15 +2018,15 @@ function _GestioneLibriFilter_book_itemsMap(book_filters) {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                lineNumber: 359,
+                lineNumber: 453,
                 columnNumber: 535
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                 className: "py-3 px-6 text-black",
-                children: book_filters.utente
+                children: book_filters.username
             }, void 0, false, {
                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                lineNumber: 359,
+                lineNumber: 453,
                 columnNumber: 648
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -2067,23 +2035,23 @@ function _GestioneLibriFilter_book_itemsMap(book_filters) {
                     href: `/details/libri/${book_filters.isbn}`,
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Build$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/src/app/gestione-libri/page.jsx",
-                        lineNumber: 359,
-                        columnNumber: 799
+                        lineNumber: 453,
+                        columnNumber: 801
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/gestione-libri/page.jsx",
-                    lineNumber: 359,
-                    columnNumber: 748
+                    lineNumber: 453,
+                    columnNumber: 750
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/gestione-libri/page.jsx",
-                lineNumber: 359,
-                columnNumber: 711
+                lineNumber: 453,
+                columnNumber: 713
             }, this)
         ]
     }, book_filters.isbn, true, {
         fileName: "[project]/src/app/gestione-libri/page.jsx",
-        lineNumber: 359,
+        lineNumber: 453,
         columnNumber: 10
     }, this);
 }
@@ -2093,7 +2061,7 @@ function _GestioneLibriCustomuser_helper_selection_itemsMap(utente) {
         children: utente.username
     }, utente.id, false, {
         fileName: "[project]/src/app/gestione-libri/page.jsx",
-        lineNumber: 362,
+        lineNumber: 456,
         columnNumber: 10
     }, this);
 }
@@ -2107,7 +2075,22 @@ function _GestioneLibriAutore_helper_itemsMap(autore) {
         ]
     }, autore.id_autore, true, {
         fileName: "[project]/src/app/gestione-libri/page.jsx",
-        lineNumber: 365,
+        lineNumber: 459,
+        columnNumber: 10
+    }, this);
+}
+function _GestioneLibriPostazioni_helper_itemsMap(postazioni) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+        value: postazioni.id_postazione,
+        children: [
+            postazioni.posizione,
+            postazioni.numerazione,
+            ":",
+            postazioni.categoria_nome
+        ]
+    }, postazioni.id_postazione, true, {
+        fileName: "[project]/src/app/gestione-libri/page.jsx",
+        lineNumber: 462,
         columnNumber: 10
     }, this);
 }

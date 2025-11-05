@@ -56,13 +56,15 @@ export default function GestioneLibri(){
 
     const {
 
-        data : {},
+        data : {postazioni_helper_items},
         
-        requests : {}
+        requests : {
+            postazioni_helper_items:{}
+        }
 
     } = useSelector((state) => state.postazioni);
 
-    //'isbn' , 'titolo' , 'data_uscita' , 'editore' , 'formato' , 'lingua' ,'autore', 'autore_libro' , 'postazione' , 'posizione_libro' , 'poszione_libro_numerazione' , 'utente'
+
     const [filtrazione , setFiltrazione] = useState({
 
         isbn : null,
@@ -71,8 +73,24 @@ export default function GestioneLibri(){
         formato : null,
         autore : null,
         postazione : null,
-        utente : null
+        utente : null,
+        lingua : null
     });
+
+    const restoreFilters = () => {
+
+        setFiltrazione({
+            isbn : null,
+            data_uscita : null,
+            editore : null,
+            formato : null,
+            autore : null,
+            postazione : null,
+            utente : null,
+            lingua : null
+
+        })
+    }
 
 
     const dispatch = useDispatch();
@@ -86,6 +104,7 @@ export default function GestioneLibri(){
 
         dispatch(getHelperSelectionUserAPI());
         dispatch(getHelperAutoriAPI());
+        dispatch(getHelperSelectionPostazioni());
 
     },[dispatch])
 
@@ -120,21 +139,24 @@ export default function GestioneLibri(){
   
                                     <div className="flex items-center space-x-5 py-5 rounded-2xl">
 
-                                        <label className="flex items-center space-x-1 cursor-pointer text-gray-700 font-medium">
-                                            <p className="text-white">ISBN</p>
-                                            <input value={filtrazione.isbn ?? ""} onChange={(e) => setFiltrazione({...filtrazione , isbn : e.target.value})} type="text" className="bg-white h-8 border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
-                                               
-                                        </label>
+                                        
+                                        <p className="text-white">ISBN</p>
+                                        <input value={filtrazione.isbn ?? ""} onChange={(e) => setFiltrazione({...filtrazione , isbn : e.target.value})} type="text" className="bg-white h-8 border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
+                                        
+                                        <p className="text-white">Lingua</p>
+                                        <input value={filtrazione.lingua ?? ""} onChange={(e) => setFiltrazione({...filtrazione , lingua : e.target.value})} type="text" className="bg-white h-9 border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
 
                                         <p className="text-white">Data uscita</p>
                                         <input value={filtrazione.data_uscita ?? ""} onChange={(e) => setFiltrazione({...filtrazione , data_uscita : e.target.value})} type="date" className="bg-white h-9 border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
 
                                             
-                                        <select className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
+                                        <select value={filtrazione.postazione ?? ""} onChange={(e) => setFiltrazione({...filtrazione , postazione : Number(e.target.value)})} className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
                                             
                                             <option value="">Postazione</option>
-                                            <option value="true">Si</option>
-                                            <option value="false">No</option>
+                                            
+                                            {Array.isArray(postazioni_helper_items) && postazioni_helper_items.map(postazioni => (
+                                                <option key={postazioni.id_postazione} value={postazioni.id_postazione}>{postazioni.posizione}{postazioni.numerazione}:{postazioni.categoria_nome}</option>
+                                            ))}
                                             
                                         </select>
 
@@ -151,16 +173,6 @@ export default function GestioneLibri(){
                                         <select  className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
                                             
                                             <option value="">Editore</option>
-                                            <option value="true">Si</option>
-                                            <option value="false">No</option>
-                                            
-                                        </select>
-
-                                        <select className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
-                                            
-                                            <option value="">Lingua</option>
-                                            <option value="true">Si</option>
-                                            <option value="false">No</option>
                                             
                                         </select>
 
@@ -174,7 +186,7 @@ export default function GestioneLibri(){
                                             
                                         </select>
 
-                                        <button  className="bg-white border  border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all">
+                                        <button onClick={() => restoreFilters()} className="bg-white border  border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all">
                                             <BackspaceIcon/>
                                         </button>
                                             
@@ -216,7 +228,7 @@ export default function GestioneLibri(){
                                                     <td className="py-3 px-6 text-black">{book_filters.lingua}</td>
                                                     <td className="py-3 px-6 text-black">{book_filters.autore_libro}</td>
                                                     <td className="py-3 px-6 text-black">{book_filters.posizione_libro}{book_filters.poszione_libro_numerazione}</td>
-                                                    <td className="py-3 px-6 text-black">{book_filters.utente}</td>
+                                                    <td className="py-3 px-6 text-black">{book_filters.username}</td>
                                                     
                                                     <td className="py-3 px-6 text-black">
                                                     

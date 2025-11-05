@@ -23,6 +23,7 @@ from django.views.decorators.csrf import csrf_exempt
 import traceback
 import os
 
+from ..auth.auth import JWTAuthenticationFromCookie
 
 from ...models.postazione import Postazione
 from ...serializers.postazione import SelectPostazioneSerializer
@@ -31,6 +32,8 @@ from ...serializers.postazione import SelectPostazioneSerializer
 #STATISTICA VIEW
 
 @api_view(['GET'])
+@authentication_classes([JWTAuthenticationFromCookie])
+@permission_classes([IsAuthenticated])
 def get_totale_postazioni(request):
     
     if request.method == 'GET':
@@ -52,6 +55,8 @@ def get_totale_postazioni(request):
 
 #SELECTION HELPER VIEW
 @api_view(['GET'])
+@authentication_classes([JWTAuthenticationFromCookie])
+@permission_classes([IsAuthenticated])
 def get_selection_postazione(request):
 
     if request.method == 'GET':

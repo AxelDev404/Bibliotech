@@ -407,7 +407,7 @@ export default function InsertLibroPage() {
 
                                                     </label>
 
-                                                    <button  type="submit" className="mt-4 p-2 rounded-md border border-rose-500 text-white bg-rose-900 hover:bg-rose-800 transition-colors text-sm">
+                                                    <button  type="submit" className="mt-4 p-2 rounded-md border border-blue-500 text-white bg-blue-900 hover:bg-blue-800 transition-colors text-sm">
                                                         Salva Autore
                                                     </button>
                                                     
@@ -458,7 +458,7 @@ export default function InsertLibroPage() {
 
                                                     </label>
 
-                                                    <button  type="submit" className="mt-4 p-2 rounded-md border border-rose-500 text-white bg-rose-900 hover:bg-rose-800 transition-colors text-sm">
+                                                    <button  type="submit" className="mt-4 p-2 rounded-md border border-blue-500 text-white bg-blue-900 hover:bg-blue-800 transition-colors text-sm">
                                                         Salva Categoria
                                                     </button>
                                                     
@@ -529,7 +529,7 @@ export default function InsertLibroPage() {
                                                         {postazioni_post_error?.capacita && ( <p className="text-red-500 text-sm px-1 mt-1">{postazioni_post_error.capacita[0]}</p>)}
                                                     </label>
 
-                                                    <button  type="submit" className="mt-4 p-2 rounded-md border border-rose-500 text-white bg-rose-900 hover:bg-rose-800 transition-colors text-sm">
+                                                    <button  type="submit" className="mt-4 p-2 rounded-md border border-blue-500 text-white bg-blue-900 hover:bg-blue-800 transition-colors text-sm">
                                                         Salva Postazione
                                                     </button>
                                                     
@@ -619,12 +619,12 @@ export default function InsertLibroPage() {
 
                                     <div className="mt-6 flex justify-center gap-4 col-span-full">
 
-                                        <button type="submit" className="bg-rose-900 text-white px-6 py-2 rounded hover:bg-rose-800">
+                                        <button type="submit" className="bg-blue-900 text-white px-6 py-2 rounded hover:bg-blue-800">
                                             Salva
                                         </button>
 
-                                        <button type="button" onClick={() => router.push('/dashboard')} className="bg-gray-200 px-6 py-2 rounded text-gray-700 hover:bg-gray-300">
-                                            Torna alla lista
+                                        <button type="button" onClick={() => router.push('/gestione-libri')} className="bg-gray-200 px-6 py-2 rounded text-gray-700 hover:bg-gray-300">
+                                            Vai alla lista
                                         </button>
 
                                     </div>

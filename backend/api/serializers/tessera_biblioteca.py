@@ -26,7 +26,7 @@ class TesseraDetailSerializer(serializers.ModelSerializer):
 
         model = TesseraBiblioteca
 
-        fields = ('id_tessera' , 'nome_tesserato' , 'cognome_tesserato' , 'codice_fiscale' , 'data_nascita' , 'telefono' , 'email' , 'indirizzo' , 'utente_operatore')
+        fields = ('id_tessera' , 'nome_tesserato' , 'cognome_tesserato' , 'codice_fiscale' , 'data_nascita' , 'telefono' , 'email' , 'indirizzo' , 'utente' , 'utente_operatore')
 
 
 

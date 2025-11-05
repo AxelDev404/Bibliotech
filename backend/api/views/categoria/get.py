@@ -30,6 +30,8 @@ from ...serializers.categoria import CategoriaHlperSerializer
 
 
 @api_view(['GET'])
+@authentication_classes([JWTAuthenticationFromCookie])
+@permission_classes([IsAuthenticated])
 def get_categorie_helper(request):
 
     try:

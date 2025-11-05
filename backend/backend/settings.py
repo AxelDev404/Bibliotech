@@ -22,7 +22,7 @@ DATETIME_FORMAT = "d/m/Y H:i"
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-463&9if%f0(s8v9y811f9+0eowr-4*^-se@y@9b!z#g-3=%1!y'
+SECRET_KEY = 'YOUR KEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -120,12 +120,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mssql',
-        'NAME': 'biblioteca',
+        'ENGINE': '',
+        'NAME': '',
         'HOST': 'localhost',     #DESKTOP-P3QTN25\SQLEXPRESS 
         'PORT': '',            
-        'USER': 'SA',       
-        'PASSWORD': 'alex2003A03',    
+        'USER': '',       
+        'PASSWORD': '',    
         'OPTIONS': {
             'driver': 'ODBC Driver 18 for SQL Server',
             'trusted_connection': 'yes',
@@ -211,7 +211,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000", "http://10.78.33.55:3000", "http://127.0.0.1:3000",  "http://192.168.1.35:3000"
+    "http://localhost:3000", "http://127.0.0.1:3000",  "http://192.168.1.35:3000"
 ]
 
 
@@ -220,7 +220,6 @@ CORS_ALLOW_CREDENTIALS = True
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "http://10.78.33.55:3000",
     "http://192.168.1.35:3000",
 ]
 

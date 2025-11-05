@@ -31,6 +31,8 @@ from ...serializers.prestito import PrestitoFilterSerializer
 #STATISTICS GET VIEW
 
 @api_view(['GET'])
+@authentication_classes([JWTAuthenticationFromCookie])
+@permission_classes([IsAuthenticated])
 def get_totale_prestiti_attivi(request):
 
     if request.method == 'GET':
@@ -51,6 +53,8 @@ def get_totale_prestiti_attivi(request):
 
 
 @api_view(['GET'])
+@authentication_classes([JWTAuthenticationFromCookie])
+@permission_classes([IsAuthenticated])
 def get_totale_prestiti_saldati(request):
 
     if request.method == 'GET':
