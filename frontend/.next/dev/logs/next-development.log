@@ -1,10 +1,6 @@
-[00:00:00.524] Server  LOG      ✓ Ready in 355ms
-[00:00:02.729] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:02.976] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[00:01:21.901] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:21.953] Server  LOG      ✓ Compiled in 61ms
-[00:01:22.074] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:23.360] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:00.745] Server  LOG      ✓ Ready in 514ms
+[00:05:33.841] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:33.948] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -22,7 +18,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/details/t..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -42,81 +38,38 @@ It can also happen if the client has a browser extension installed which messes 
                             >
                   ...
 
-[00:01:23.360] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[00:02:02.971] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:03.213] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[00:02:03.681] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:03.931] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[00:04:49.384] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:04:49.401] Server  LOG      ✓ Compiled in 138ms
-[00:04:49.644] Server  ERROR    ⨯ TypeError: nextCreate is not a function
-[00:04:49.735] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:50.364] Browser ERROR   uncaughtError: TypeError: nextCreate is not a function
-[00:05:11.748] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:05:11.795] Server  LOG      ✓ Compiled in 73ms
-[00:05:11.906] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:12.363] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[00:05:15.650] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:05:15.714] Server  LOG      ✓ Compiled in 47ms
-[00:05:15.765] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:01.863] Server  LOG      ✓ Compiled in 52ms
-[00:06:02.361] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. select
-[00:06:40.658] Server  LOG      ✓ Compiled in 65ms
-[00:06:41.361] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:07:23.441] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:07:23.496] Server  LOG      ✓ Compiled in 90ms
-[00:07:23.562] Server  ERROR    ⨯ ReferenceError: e is not defined
-[00:07:23.649] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:24.363] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:07:40.705] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:07:40.751] Server  LOG      ✓ Compiled in 58ms
-[00:07:40.806] Server  ERROR    ⨯ ReferenceError: e is not defined
-[00:07:40.873] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:41.362] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:07:44.366] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:07:44.426] Server  ERROR    ⨯ ReferenceError: e is not defined
-[00:07:44.431] Server  LOG      ✓ Compiled in 54ms
-[00:07:44.485] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:45.361] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:10:01.873] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:10:01.940] Server  LOG      ✓ Compiled in 78ms
-[00:10:02.006] Server  ERROR    ⨯ ReferenceError: e is not defined
-[00:10:02.091] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:02.362] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:10:05.807] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:10:05.875] Server  ERROR    ⨯ ReferenceError: e is not defined
-[00:10:05.880] Server  LOG      ✓ Compiled in 53ms
-[00:10:05.938] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:06.361] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:10:10.273] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:10:10.337] Server  ERROR    ⨯ ReferenceError: e is not defined
-[00:10:10.342] Server  LOG      ✓ Compiled in 61ms
-[00:10:10.407] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:11.361] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:10:33.909] Server  LOG      ✓ Compiled in 18ms
-[00:10:34.360] Browser ERROR   ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx:517:98
-Parsing ecmascript source code failed
-  515 |                                             <input type="date" className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
-  516 |                                             
-> 517 |                                             <select value={filters.isRestituito} onChange={(e) =>} className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
-      |                                                                                                  ^
-  518 |                                             
-  519 |                                                 <option value="">Restituito</option>
-  520 |                                                 <option value="true">Si</option>
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Client Component Browser]
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Client Component SSR]
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Server Component]
-[00:11:28.916] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:11:29.081] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:29.360] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:05:41.201] Browser LOG     0
+[00:05:41.201] Browser LOG     0
+[00:05:41.201] Browser LOG     0
+[00:05:41.201] Browser LOG     0
+[00:05:41.201] Browser LOG     0
+[00:05:41.201] Browser LOG     0
+[00:05:41.201] Browser LOG     0
+[00:05:41.201] Browser LOG     0
+[00:05:41.201] Browser LOG     3
+[00:05:41.201] Browser LOG     3
+[00:05:41.201] Browser LOG     3
+[00:05:41.201] Browser LOG     3
+[00:05:41.201] Browser LOG     3
+[00:05:41.201] Browser LOG     3
+[00:05:41.201] Browser LOG     3
+[00:05:41.201] Browser LOG     3
+[00:05:41.201] Browser LOG     3
+[00:05:41.201] Browser LOG     3
+[00:05:41.201] Browser LOG     3
+[00:05:41.201] Browser LOG     3
+[00:05:41.201] Browser LOG     3
+[00:05:41.201] Browser LOG     3
+[00:05:41.201] Browser LOG     3
+[00:05:41.201] Browser LOG     3
+[00:05:44.893] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:45.485] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:45.612] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:45.766] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:45.932] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:20.342] Server  LOG      ✓ Compiled in 73ms
+[00:06:23.172] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:23.278] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -134,7 +87,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/details/t..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/gestione-..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -154,99 +107,24 @@ It can also happen if the client has a browser extension installed which messes 
                             >
                   ...
 
-[00:11:29.360] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. select
-[00:11:59.190] Server  LOG      ✓ Compiled in 36ms
-[00:11:59.360] Browser ERROR   ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx:517:148
-Parsing ecmascript source code failed
-  515 |                                             <input type="date" className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
-  516 |                                             
-> 517 |                                             <select value={filtrazione.isRestituito} onChange={(e) => setFiltrazione(...filtrazione , isRestituito ; )} className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
-      |                                                                                                                                                    ^
-  518 |                                             
-  519 |                                                 <option value="">Restituito</option>
-  520 |                                                 <option value="true">Si</option>
-
-Expected '</', got ';'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Client Component Browser]
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Client Component SSR]
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Server Component]
-[00:12:00.360] Browser ERROR   ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx:517:148
-Parsing ecmascript source code failed
-  515 |                                             <input type="date" className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
-  516 |                                             
-> 517 |                                             <select value={filtrazione.isRestituito} onChange={(e) => setFiltrazione(...filtrazione , isRestituito ; )} className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
-      |                                                                                                                                                    ^
-  518 |                                             
-  519 |                                                 <option value="">Restituito</option>
-  520 |                                                 <option value="true">Si</option>
-
-Expected '</', got ';'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Client Component Browser]
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Client Component SSR]
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Server Component]
-[00:12:00.360] Browser ERROR   ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx:517:148
-Parsing ecmascript source code failed
-  515 |                                             <input type="date" className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
-  516 |                                             
-> 517 |                                             <select value={filtrazione.isRestituito} onChange={(e) => setFiltrazione(...filtrazione , isRestituito ; )} className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
-      |                                                                                                                                                    ^
-  518 |                                             
-  519 |                                                 <option value="">Restituito</option>
-  520 |                                                 <option value="true">Si</option>
-
-Expected '</', got ';'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Client Component Browser]
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Client Component SSR]
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Server Component]
-[00:12:00.361] Browser ERROR   ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx:517:148
-Parsing ecmascript source code failed
-  515 |                                             <input type="date" className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
-  516 |                                             
-> 517 |                                             <select value={filtrazione.isRestituito} onChange={(e) => setFiltrazione(...filtrazione , isRestituito ; )} className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
-      |                                                                                                                                                    ^
-  518 |                                             
-  519 |                                                 <option value="">Restituito</option>
-  520 |                                                 <option value="true">Si</option>
-
-Expected '</', got ';'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Client Component Browser]
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Client Component SSR]
-    ./src/app/details/tessere-biblioteca/[id_tessera]/page.jsx [Server Component]
-[00:13:43.446] Server  LOG      ✓ Compiled in 66ms
-[00:13:46.515] Server  LOG      ✓ Compiled in 43ms
-[00:14:36.568] Server  LOG      ✓ Compiled in 48ms
-[00:14:46.153] Server  LOG      ✓ Compiled in 27ms
-[00:14:52.805] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:53.084] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:55.648] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'value')
-[00:16:28.520] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:16:28.601] Server  LOG      ✓ Compiled in 99ms
-[00:16:28.740] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:16:29.360] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:06:23.796] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:23.925] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:24.086] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:24.255] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:24.396] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:34.721] Server  LOG      ✓ Compiled in 69ms
+[00:06:36.742] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:37.227] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:37.365] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:37.522] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:37.667] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:37.816] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:37.944] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:51.780] Server  LOG      ✓ Compiled in 58ms
+[00:06:57.542] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:57.665] Browser LOG     []
+[00:08:00.221] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:00.349] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -264,7 +142,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/details/t..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/gestione-..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -284,9 +162,95 @@ It can also happen if the client has a browser extension installed which messes 
                             >
                   ...
 
-[00:16:59.641] Server  LOG      ✓ Compiled in 74ms
-[00:17:47.064] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:17:47.172] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:08:00.349] Browser LOG     []
+[00:08:00.518] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:00.605] Browser LOG     []
+[00:08:00.723] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:00.835] Browser LOG     []
+[00:08:05.423] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:05.535] Browser LOG     []
+[00:08:08.936] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:09.055] Browser LOG     []
+[00:08:09.252] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:09.366] Browser LOG     []
+[00:08:24.436] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:24.492] Browser LOG     []
+[00:08:24.554] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:24.645] Browser LOG     []
+[00:08:24.715] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:24.818] Browser LOG     []
+[00:08:33.630] Browser LOG     0
+[00:08:33.630] Browser LOG     0
+[00:08:33.630] Browser LOG     0
+[00:08:33.630] Browser LOG     0
+[00:08:33.630] Browser LOG     0
+[00:08:33.630] Browser LOG     0
+[00:08:33.630] Browser LOG     0
+[00:08:33.630] Browser LOG     0
+[00:08:33.630] Browser LOG     3
+[00:08:33.630] Browser LOG     3
+[00:08:33.630] Browser LOG     3
+[00:08:33.630] Browser LOG     3
+[00:08:33.630] Browser LOG     3
+[00:08:33.630] Browser LOG     3
+[00:08:33.630] Browser LOG     3
+[00:08:33.630] Browser LOG     3
+[00:08:33.630] Browser LOG     3
+[00:08:33.630] Browser LOG     3
+[00:08:33.630] Browser LOG     3
+[00:08:33.630] Browser LOG     3
+[00:08:33.630] Browser LOG     3
+[00:08:33.630] Browser LOG     3
+[00:08:33.630] Browser LOG     3
+[00:08:33.630] Browser LOG     3
+[00:08:35.811] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null,"utente":null}
+[00:08:35.811] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null,"utente":null}
+[00:08:40.648] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
+[00:08:42.137] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:42.138] Browser LOG     3
+[00:08:47.917] Browser LOG     []
+[00:08:47.917] Browser LOG     []
+[00:09:15.410] Server  LOG      ✓ Compiled in 43ms
+[00:09:17.610] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:17.717] Browser LOG     []
+[00:09:18.125] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:18.191] Browser LOG     []
+[00:09:18.261] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:18.353] Browser LOG     []
+[00:09:18.415] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:18.520] Browser LOG     []
+[00:09:18.621] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:18.727] Browser LOG     []
+[00:09:26.197] Server  LOG      ✓ Compiled in 69ms
+[00:09:30.229] Server  LOG      ✓ Compiled in 71ms
+[00:09:33.425] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:33.532] Browser LOG     []
+[00:09:33.659] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:33.765] Browser LOG     []
+[00:29:23.508] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:23.621] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -304,7 +268,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/details/t..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/gestione-..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -324,68 +288,462 @@ It can also happen if the client has a browser extension installed which messes 
                             >
                   ...
 
-[00:17:47.302] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:17:52.729] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:20:04.656] Server  LOG      ✓ Compiled in 98ms
-[00:20:08.941] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:20:12.513] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:20:33.466] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:20:38.962] Server  LOG      ✓ Compiled in 85ms
-[00:23:46.460] Server  LOG      ✓ Compiled in 112ms
-[00:23:47.361] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+[00:29:23.621] Browser LOG     []
+[00:29:24.113] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:24.173] Browser LOG     []
+[00:29:24.236] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:24.339] Browser LOG     []
+[00:29:24.412] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:24.509] Browser LOG     []
+[00:29:24.566] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:24.670] Browser LOG     []
+[00:29:35.826] Server  LOG      ✓ Compiled in 77ms
+[00:29:38.380] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:38.485] Browser LOG     []
+[00:29:38.595] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:38.693] Browser LOG     []
+[00:29:38.757] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:38.860] Browser LOG     []
+[00:31:24.222] Server  LOG      ✓ Compiled in 12ms
+[00:31:25.048] Browser LOG     []
+[00:35:43.824] Server  LOG      ✓ Compiled in 53ms
+[00:36:14.569] Server  LOG      ✓ Compiled in 62ms
+[00:36:17.766] Server  LOG      ✓ Compiled in 42ms
+[00:36:21.231] Server  LOG      ✓ Compiled in 52ms
+[00:36:24.881] Server  LOG      ✓ Compiled in 38ms
+[00:36:33.791] Server  LOG      ✓ Compiled in 71ms
+[00:36:40.693] Server  LOG      ✓ Compiled in 27ms
+[00:36:51.792] Server  LOG      ✓ Compiled in 27ms
+[00:36:55.177] Server  LOG      ✓ Compiled in 69ms
+[00:37:02.142] Server  LOG      ✓ Compiled in 57ms
+[00:37:45.808] Server  LOG      ✓ Compiled in 29ms
+[00:37:52.013] Server  LOG      ✓ Compiled in 53ms
+[00:38:03.091] Server  LOG      ✓ Compiled in 42ms
+[00:38:11.049] Server  LOG      ✓ Compiled in 41ms
+[00:38:23.432] Server  LOG      ✓ Compiled in 48ms
+[00:38:36.897] Server  LOG      ✓ Compiled in 50ms
+[00:39:10.159] Server  LOG      ✓ Compiled in 83ms
+[00:39:11.049] Browser ERROR   uncaughtError: ReferenceError: poszione_libro_numerazione is not defined
+[00:39:17.955] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:39:18.026] Server  LOG      ✓ Compiled in 54ms
+[00:39:18.163] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:18.765] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/gestione-..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
+                        <RootLayout params={Promise}>
+                          <html lang="en">
+                            <body
+                              className={" bg-white text-white"}
+-                             cz-shortcut-listen="true"
+                            >
+                  ...
+
+[00:39:18.765] Browser LOG     []
+[00:39:30.718] Server  LOG      ✓ Compiled in 27ms
+[00:39:46.985] Server  LOG      ✓ Compiled in 50ms
+[00:40:01.751] Server  LOG      ✓ Compiled in 28ms
+[00:40:13.840] Server  LOG      ✓ Compiled in 51ms
+[00:40:18.893] Server  LOG      ✓ Compiled in 38ms
+[00:40:36.761] Server  LOG      ✓ Compiled in 52ms
+[00:41:08.592] Server  LOG      ✓ Compiled in 54ms
+[00:41:20.429] Server  LOG      ✓ Compiled in 102ms
+[00:41:59.506] Server  LOG      ✓ Compiled in 86ms
+[00:42:00.048] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
+Open your browser's console to view the Component stack trace.
+[00:43:04.860] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:43:04.934] Server  LOG      ✓ Compiled in 69ms
+[00:43:05.065] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:43:06.050] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/gestione-..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
+                        <RootLayout params={Promise}>
+                          <html lang="en">
+                            <body
+                              className={" bg-white text-white"}
+-                             cz-shortcut-listen="true"
+                            >
+                  ...
+
+[00:43:06.050] Browser LOG     []
+[00:43:10.813] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:43:10.813] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:43:14.369] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:43:14.369] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:43:17.470] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:43:17.470] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:43:23.469] Server  LOG      ✓ Compiled in 51ms
+[00:43:28.062] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:43:28.062] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:43:34.128] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:43:34.128] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:43:42.331] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:43:42.408] Browser LOG     []
+[00:43:42.470] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:43:42.576] Browser LOG     []
+[00:43:42.655] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:43:42.750] Browser LOG     []
+[00:43:42.818] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:43:42.910] Browser LOG     []
+[00:43:42.979] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:43:43.082] Browser LOG     []
+[00:43:54.524] Browser LOG     0
+[00:43:54.524] Browser LOG     0
+[00:43:54.524] Browser LOG     0
+[00:43:54.524] Browser LOG     0
+[00:43:54.524] Browser LOG     0
+[00:43:54.524] Browser LOG     0
+[00:43:54.524] Browser LOG     3
+[00:43:54.524] Browser LOG     3
+[00:43:54.524] Browser LOG     3
+[00:43:54.524] Browser LOG     3
+[00:43:54.524] Browser LOG     3
+[00:43:54.524] Browser LOG     3
+[00:43:54.524] Browser LOG     3
+[00:43:54.524] Browser LOG     3
+[00:43:54.524] Browser LOG     3
+[00:43:54.524] Browser LOG     3
+[00:43:54.524] Browser LOG     3
+[00:43:54.524] Browser LOG     3
+[00:43:54.524] Browser LOG     3
+[00:43:54.524] Browser LOG     3
+[00:43:54.524] Browser LOG     3
+[00:43:54.524] Browser LOG     3
+[00:43:54.871] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:43:54.871] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:44:02.366] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:44:02.366] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:44:25.465] Server  LOG      ✓ Compiled in 70ms
+[00:44:36.970] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:44:37.077] Browser LOG     []
+[00:44:37.463] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:44:37.527] Browser LOG     []
+[00:44:37.594] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:44:37.694] Browser LOG     []
+[00:44:37.759] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:44:37.864] Browser LOG     []
+[00:44:46.038] Server  LOG      ✓ Compiled in 54ms
+[00:44:48.557] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:44:48.661] Browser LOG     []
+[00:45:02.754] Server  LOG      ✓ Compiled in 66ms
+[00:45:05.712] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:05.821] Browser LOG     []
+[00:45:06.308] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:06.393] Browser LOG     []
+[00:45:06.458] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:06.563] Browser LOG     []
+[00:45:06.759] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:06.805] Browser LOG     []
+[00:45:06.859] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:06.929] Browser LOG     []
+[00:45:06.990] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:07.083] Browser LOG     []
+[00:45:07.141] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:07.247] Browser LOG     []
+[00:45:23.006] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:45:23.006] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:46:15.661] Server  LOG      ✓ Compiled in 90ms
+[00:46:21.191] Server  LOG      ✓ Compiled in 53ms
+[00:46:40.641] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:46:40.641] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:46:44.588] Browser LOG     0
+[00:46:44.588] Browser LOG     0
+[00:46:44.588] Browser LOG     0
+[00:46:44.588] Browser LOG     0
+[00:46:44.588] Browser LOG     0
+[00:46:44.588] Browser LOG     0
+[00:46:44.588] Browser LOG     0
+[00:46:44.588] Browser LOG     0
+[00:46:44.588] Browser LOG     0
+[00:46:44.588] Browser LOG     0
+[00:46:44.588] Browser LOG     3
+[00:46:44.588] Browser LOG     3
+[00:46:44.588] Browser LOG     3
+[00:46:44.588] Browser LOG     3
+[00:46:44.588] Browser LOG     3
+[00:46:44.588] Browser LOG     3
+[00:46:44.588] Browser LOG     3
+[00:46:44.588] Browser LOG     3
+[00:46:44.588] Browser LOG     3
+[00:46:44.588] Browser LOG     3
+[00:46:44.588] Browser LOG     3
+[00:46:44.588] Browser LOG     3
+[00:46:45.560] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:46:45.560] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:46:54.816] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:46:54.816] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:55.963] Browser LOG     3
+[00:46:59.669] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:46:59.669] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:47:02.787] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:47:02.787] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:05.230] Browser LOG     3
+[00:47:09.112] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null,"utente":null}
+[00:47:09.112] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null,"utente":null}
+[00:47:19.140] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:19.141] Browser LOG     3
+[00:47:38.676] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:47:38.676] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:48:20.589] Server  LOG      ✓ Compiled in 82ms
+[00:48:21.048] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:49:12.551] Server  LOG      ✓ Compiled in 66ms
+[00:49:51.588] Server  LOG      ✓ Compiled in 56ms
+[00:49:52.860] Server  LOG      ✓ Compiled in 65ms
+[00:49:54.420] Server  LOG      ✓ Compiled in 57ms
+[00:50:03.612] Server  LOG      ✓ Compiled in 10ms
+[00:50:04.048] Browser LOG     []
+[00:50:08.174] Server  LOG      ✓ Compiled in 10ms
+[00:50:09.047] Browser LOG     []
+[00:50:21.619] Server  LOG      ✓ Compiled in 87ms
+[00:50:22.046] Browser LOG     []
+[00:50:24.404] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:50:24.517] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/gestione-..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
+                        <RootLayout params={Promise}>
+                          <html lang="en">
+                            <body
+                              className={" bg-white text-white"}
+-                             cz-shortcut-listen="true"
+                            >
+                  ...
+
+[00:50:24.517] Browser LOG     []
+[00:50:24.949] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:50:25.020] Browser LOG     []
+[00:50:25.085] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:50:25.177] Browser LOG     []
+[00:50:25.241] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:50:25.332] Browser LOG     []
+[00:50:25.395] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:50:25.499] Browser LOG     []
+[00:51:27.555] Server  LOG      ✓ Compiled in 67ms
+[00:51:28.047] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:52:03.731] Server  LOG      ✓ Compiled in 77ms
+[00:52:04.049] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
 
 Previous: %s
-Incoming: %s useEffect [[object Object], (...a)=>!window.__REDUX_DEVTOOLS_EXTENSION_LOCKED__&&o.dispatch(...a)] [1, [object Object], (...a)=>!window.__REDUX_DEVTOOLS_EXTENSION_LOCKED__&&o.dispatch(...a)]
-[00:24:41.210] Server  LOG      ✓ Compiled in 66ms
-[00:25:08.768] Server  LOG      ✓ Compiled in 46ms
-[00:25:15.661] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:26:14.577] Server  LOG      ✓ Compiled in 37ms
-[00:26:21.471] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:26:23.114] Server  LOG      ✓ Compiled in 55ms
-[00:28:38.149] Server  LOG      ✓ Compiled in 96ms
-[00:29:26.927] Server  LOG      ✓ Compiled in 77ms
-[00:31:15.999] Server  LOG      ✓ Compiled in 76ms
-[00:31:16.360] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
-
-Previous: %s
-Incoming: %s useEffect [1, [object Object], (...a)=>!window.__REDUX_DEVTOOLS_EXTENSION_LOCKED__&&o.dispatch(...a)] [[object Object], (...a)=>!window.__REDUX_DEVTOOLS_EXTENSION_LOCKED__&&o.dispatch(...a)]
-[00:31:32.357] Browser LOG     0
-[00:31:32.357] Browser LOG     0
-[00:31:32.357] Browser LOG     0
-[00:31:32.357] Browser LOG     0
-[00:31:32.357] Browser LOG     0
-[00:31:32.357] Browser LOG     0
-[00:31:32.357] Browser LOG     0
-[00:31:32.357] Browser LOG     0
-[00:31:32.357] Browser LOG     3
-[00:31:32.357] Browser LOG     3
-[00:31:32.357] Browser LOG     3
-[00:31:32.357] Browser LOG     3
-[00:31:32.357] Browser LOG     3
-[00:31:32.357] Browser LOG     3
-[00:31:32.357] Browser LOG     3
-[00:31:32.357] Browser LOG     3
-[00:31:32.357] Browser LOG     3
-[00:31:32.357] Browser LOG     3
-[00:31:32.357] Browser LOG     3
-[00:31:32.357] Browser LOG     3
-[00:31:32.357] Browser LOG     3
-[00:31:32.357] Browser LOG     3
-[00:32:21.814] Server  LOG      ✓ Compiled in 79ms
-[00:32:45.724] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:32:49.799] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:36:50.057] Server  LOG      ✓ Compiled in 93ms
-[00:37:15.695] Server  LOG      ✓ Compiled in 43ms
-[00:37:33.178] Server  LOG      ✓ Compiled in 94ms
-[00:40:57.157] Server  LOG      ✓ Compiled in 101ms
-[00:41:36.313] Server  LOG      ✓ Compiled in 66ms
-[00:41:48.457] Server  LOG      ✓ Compiled in 47ms
-[00:42:48.174] Server  LOG      ✓ Compiled in 45ms
-[00:43:10.774] Server  LOG      ✓ Compiled in 48ms
-[00:43:36.740] Server  LOG      ✓ Compiled in 43ms
-[00:43:49.320] Server  LOG      ✓ Compiled in 53ms
-[00:44:07.051] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:44:07.150] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+Incoming: %s useEffect [(...a)=>!window.__REDUX_DEVTOOLS_EXTENSION_LOCKED__&&o.dispatch(...a)] [[object Object], (...a)=>!window.__REDUX_DEVTOOLS_EXTENSION_LOCKED__&&o.dispatch(...a)]
+[00:52:04.049] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:52:06.677] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1}]
+[00:52:07.321] Browser LOG     []
+[00:52:07.696] Browser LOG     []
+[00:52:07.831] Browser LOG     []
+[00:52:07.981] Browser LOG     []
+[00:52:08.656] Browser LOG     []
+[00:52:09.511] Browser LOG     []
+[00:52:09.645] Browser LOG     []
+[00:52:09.795] Browser LOG     []
+[00:52:09.947] Browser LOG     []
+[00:52:10.079] Browser LOG     []
+[00:52:10.228] Browser LOG     []
+[00:52:10.381] Browser LOG     []
+[00:52:11.476] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:52:12.168] Browser LOG     []
+[00:52:13.036] Browser LOG     []
+[00:52:13.244] Browser LOG     []
+[00:52:14.342] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:52:14.458] Browser LOG     []
+[00:52:14.654] Browser LOG     []
+[00:52:14.910] Browser LOG     []
+[00:52:15.060] Browser LOG     []
+[00:52:15.240] Browser LOG     []
+[00:52:19.445] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:52:19.591] Browser LOG     []
+[00:52:19.996] Browser LOG     []
+[00:52:20.161] Browser LOG     []
+[00:52:20.387] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:52:20.686] Browser LOG     []
+[00:52:20.986] Browser LOG     []
+[00:52:21.194] Browser LOG     []
+[00:52:21.857] Browser LOG     []
+[00:52:21.973] Browser LOG     []
+[00:52:22.184] Browser LOG     []
+[00:52:22.409] Browser LOG     []
+[00:52:22.666] Browser LOG     []
+[00:52:22.936] Browser LOG     []
+[00:52:23.296] Browser LOG     []
+[00:52:24.274] Browser LOG     []
+[00:52:24.393] Browser LOG     []
+[00:52:25.128] Browser LOG     []
+[00:52:25.349] Browser LOG     []
+[00:52:43.721] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1}]
+[00:52:43.721] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1}]
+[00:53:10.761] Server  LOG      ✓ Compiled in 71ms
+[00:53:32.228] Server  LOG      ✓ Compiled in 50ms
+[00:53:33.048] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:54:07.899] Server  LOG      ✓ Compiled in 63ms
+[00:54:28.078] Server  LOG      ✓ Compiled in 41ms
+[00:54:29.047] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:54:33.408] Server  LOG      ✓ Compiled in 55ms
+[00:54:35.538] Server  LOG      ✓ Compiled in 30ms
+[00:55:33.046] Server  LOG      ✓ Compiled in 111ms
+[00:55:34.047] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:56:31.375] Server  LOG      ✓ Compiled in 73ms
+[00:56:35.480] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:56:38.296] Browser LOG     []
+[00:57:39.413] Server  LOG      ✓ Compiled in 93ms
+[00:58:02.019] Server  LOG      ✓ Compiled in 66ms
+[00:58:03.047] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:58:15.642] Server  LOG      ✓ Compiled in 83ms
+[00:58:32.376] Server  LOG      ✓ Compiled in 89ms
+[00:58:45.071] Server  LOG      ✓ Compiled in 68ms
+[00:58:46.559] Server  LOG      ✓ Compiled in 70ms
+[00:59:47.670] Server  LOG      ✓ Compiled in 70ms
+[00:59:48.048] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[00:59:49.702] Server  LOG      ✓ Compiled in 34ms
+[01:00:41.160] Server  LOG      ✓ Compiled in 79ms
+[01:00:47.698] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[01:00:49.916] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[01:00:54.680] Server  LOG      ✓ Compiled in 104ms
+[01:01:00.174] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:00.259] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -403,7 +761,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/details/t..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/gestione-..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -423,148 +781,24 @@ It can also happen if the client has a browser extension installed which messes 
                             >
                   ...
 
-[00:44:07.224] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:46:23.394] Server  LOG      ✓ Compiled in 100ms
-[00:46:33.006] Browser LOG     {"isPrestato":true,"isRestituito":false}
-[00:46:36.185] Browser LOG     {"isPrestato":true,"isRestituito":true}
-[00:47:05.244] Browser LOG     {"isPrestato":true,"isRestituito":false}
-[00:47:07.427] Browser LOG     {"isPrestato":false,"isRestituito":false}
-[00:48:14.695] Browser LOG     {"isPrestato":true,"isRestituito":false}
-[00:48:17.768] Browser LOG     {"isPrestato":false,"isRestituito":false}
-[00:48:36.374] Browser LOG     {"isPrestato":false,"isRestituito":true}
-[00:48:39.370] Browser LOG     {"isPrestato":true,"isRestituito":true}
-[00:48:43.179] Browser LOG     {"isPrestato":false,"isRestituito":true}
-[00:48:46.667] Browser LOG     {"isPrestato":false,"isRestituito":false}
-[00:48:47.774] Browser LOG     {"isPrestato":true,"isRestituito":false}
-[00:48:53.679] Browser LOG     {"isPrestato":false,"isRestituito":false}
-[00:48:58.155] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:48:58.275] Browser LOG     {"isPrestato":null,"isRestituito":null}
-[00:49:39.327] Browser LOG     {"isPrestato":true,"isRestituito":null}
-[00:49:40.930] Browser LOG     {"isPrestato":false,"isRestituito":null}
-[00:49:43.753] Browser LOG     {"isPrestato":false,"isRestituito":true}
-[00:49:47.262] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:49:47.382] Browser LOG     {"isPrestato":null,"isRestituito":null}
-[00:50:01.798] Browser LOG     {"isPrestato":null,"isRestituito":null}
-[00:50:01.798] Browser LOG     {"isPrestato":null,"isRestituito":null}
-[00:50:04.246] Browser LOG     0
-[00:50:04.246] Browser LOG     0
-[00:50:04.246] Browser LOG     0
-[00:50:04.246] Browser LOG     0
-[00:50:04.246] Browser LOG     0
-[00:50:04.246] Browser LOG     0
-[00:50:04.246] Browser LOG     3
-[00:50:04.246] Browser LOG     3
-[00:50:04.246] Browser LOG     3
-[00:50:04.246] Browser LOG     3
-[00:50:04.246] Browser LOG     3
-[00:50:04.246] Browser LOG     3
-[00:50:04.246] Browser LOG     3
-[00:50:04.246] Browser LOG     3
-[00:50:04.246] Browser LOG     3
-[00:50:04.246] Browser LOG     3
-[00:50:04.246] Browser LOG     3
-[00:50:04.246] Browser LOG     3
-[00:50:04.246] Browser LOG     3
-[00:50:04.246] Browser LOG     3
-[00:50:04.246] Browser LOG     3
-[00:50:04.246] Browser LOG     3
-[00:50:04.246] Browser LOG     3
-[00:50:04.246] Browser LOG     3
-[00:50:05.747] Browser LOG     {"isPrestato":null,"isRestituito":null}
-[00:50:05.748] Browser LOG     {"isPrestato":null,"isRestituito":null}
-[00:50:07.826] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:50:07.947] Browser LOG     {"isPrestato":null,"isRestituito":null}
-[00:50:08.878] Browser LOG     0
-[00:50:08.878] Browser LOG     0
-[00:50:08.878] Browser LOG     0
-[00:50:08.878] Browser LOG     0
-[00:50:08.878] Browser LOG     3
-[00:50:08.878] Browser LOG     3
-[00:50:08.878] Browser LOG     3
-[00:50:08.878] Browser LOG     3
-[00:50:08.878] Browser LOG     3
-[00:50:08.878] Browser LOG     3
-[00:50:08.878] Browser LOG     3
-[00:50:08.878] Browser LOG     3
-[00:50:08.878] Browser LOG     3
-[00:50:08.878] Browser LOG     3
-[00:50:08.878] Browser LOG     3
-[00:50:08.878] Browser LOG     3
-[00:50:08.878] Browser LOG     3
-[00:50:08.878] Browser LOG     3
-[00:50:08.878] Browser LOG     3
-[00:50:08.878] Browser LOG     3
-[00:50:08.878] Browser LOG     3
-[00:50:08.878] Browser LOG     3
-[00:50:10.216] Browser LOG     {"isPrestato":null,"isRestituito":null}
-[00:50:10.216] Browser LOG     {"isPrestato":null,"isRestituito":null}
-[00:51:35.623] Server  LOG      ✓ Compiled in 77ms
-[00:51:36.361] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":null}
-[00:52:14.720] Server  LOG      ✓ Compiled in 62ms
-[00:52:15.361] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:52:45.469] Server  LOG      ✓ Compiled in 64ms
-[00:53:39.441] Server  LOG      ✓ Compiled in 70ms
-[00:53:53.151] Browser LOG     3
-[00:53:53.151] Browser LOG     3
-[00:53:53.151] Browser LOG     3
-[00:53:53.151] Browser LOG     3
-[00:53:53.151] Browser LOG     3
-[00:53:53.151] Browser LOG     3
-[00:53:53.151] Browser LOG     3
-[00:53:53.151] Browser LOG     3
-[00:53:53.152] Browser LOG     3
-[00:53:53.152] Browser LOG     3
-[00:53:53.152] Browser LOG     3
-[00:53:53.152] Browser LOG     3
-[00:53:53.152] Browser LOG     3
-[00:53:53.152] Browser LOG     3
-[00:53:53.152] Browser LOG     3
-[00:53:53.152] Browser LOG     3
-[00:53:53.152] Browser LOG     3
-[00:53:53.152] Browser LOG     3
-[00:53:53.152] Browser LOG     3
-[00:53:53.152] Browser LOG     3
-[00:53:53.152] Browser LOG     3
-[00:53:53.152] Browser LOG     3
-[00:53:53.152] Browser LOG     3
-[00:53:53.152] Browser LOG     3
-[00:53:57.718] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":null}
-[00:53:57.718] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":null}
-[00:54:10.582] Browser LOG     {"data_fine":["La data è in un formato errato. Usa uno dei seguenti formati: YYYY-MM-DD."],"data_inizio":["La data è in un formato errato. Usa uno dei seguenti formati: YYYY-MM-DD."],"libro":["Il campo non può essere nullo."]} dati :  {"data_fine":"","data_inizio":"","libro":"","tesserato":1}
-[00:54:14.004] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:54:14.188] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":null}
-[00:54:14.188] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:54:26.634] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:54:26.795] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":null}
-[00:54:26.795] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:54:36.592] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:37.392] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:41.405] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:41.565] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:41.734] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:41.902] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:42.134] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:42.318] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:42.476] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:43.336] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:43.534] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:43.771] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:43.956] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:44.131] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:44.324] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:44.499] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:44.709] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:44.877] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:45.068] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:45.236] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:45.387] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:45.546] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:54:46.315] Browser ERROR   uncaughtError: ReferenceError: e is not defined
-[00:55:04.141] Server  LOG      ✓ Compiled in 78ms
-[00:55:07.118] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:55:07.118] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":""}
-[00:55:08.854] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:55:09.016] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[01:01:00.259] Browser LOG     []
+[01:01:00.337] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:00.409] Browser LOG     []
+[01:01:00.473] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:00.578] Browser LOG     []
+[01:01:02.670] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[01:01:04.927] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[01:01:07.570] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[01:01:10.376] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:10.395] Browser LOG     []
+[01:01:10.462] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:10.562] Browser LOG     []
+[01:01:10.627] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:10.730] Browser LOG     []
+[01:02:20.168] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[01:02:21.900] Browser LOG     [{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1}]
+[01:02:27.998] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:02:28.103] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -582,7 +816,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/details/t..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/gestione-..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -602,34 +836,22 @@ It can also happen if the client has a browser extension installed which messes 
                             >
                   ...
 
-[00:55:09.016] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":null}
-[00:55:09.016] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:55:10.090] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:55:10.090] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN129854122"}
-[00:55:12.696] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN12985412"}
-[00:55:12.963] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN129854122"}
-[00:55:14.059] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN12985412"}
-[00:55:14.253] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN1298541"}
-[00:55:14.461] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN129854"}
-[00:55:15.182] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN1298541"}
-[00:55:15.347] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN12985412"}
-[00:55:15.571] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN129854122"}
-[00:55:30.222] Server  LOG      ✓ Compiled in 45ms
-[00:55:36.814] Server  LOG      ✓ Compiled in 39ms
-[00:55:39.781] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN12985412"}
-[00:55:39.925] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN129854122"}
-[00:55:40.465] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN12985412"}
-[00:55:40.636] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN1298541"}
-[00:55:40.803] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN129854"}
-[00:55:41.236] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN1298541"}
-[00:55:41.552] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN12985412"}
-[00:55:41.731] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN129854122"}
-[00:55:42.653] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN12985412"}
-[00:55:43.321] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN129854122"}
-[00:56:10.572] Server  LOG      ✓ Compiled in 42ms
-[00:56:20.656] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":""}
-[00:56:34.944] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:56:35.028] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[01:02:28.103] Browser LOG     []
+[01:02:28.167] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:02:28.272] Browser LOG     []
+[01:02:28.355] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:02:28.465] Browser LOG     []
+[01:02:33.118] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:02:33.177] Browser LOG     []
+[01:02:33.234] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:02:33.339] Browser LOG     []
+[01:02:33.402] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:02:33.505] Browser LOG     []
+[01:04:50.433] Server  LOG      ✓ Compiled in 88ms
+[01:04:51.048] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
+[01:04:58.012] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[01:05:03.867] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:05:03.973] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -647,7 +869,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/details/t..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/gestione-..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -667,325 +889,10 @@ It can also happen if the client has a browser extension installed which messes 
                             >
                   ...
 
-[00:56:35.028] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":null}
-[00:56:35.028] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:56:35.095] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:56:35.232] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":null}
-[00:56:35.232] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:56:35.323] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:56:35.488] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":null}
-[00:56:35.488] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:56:37.438] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:56:37.438] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN129854122"}
-[00:56:38.206] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN12985412"}
-[00:56:38.371] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN1298541"}
-[00:56:38.581] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN129854"}
-[00:56:40.023] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN1298541"}
-[00:56:40.338] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN12985418"}
-[00:56:40.863] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN129854185"}
-[00:56:41.553] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN12985418"}
-[00:56:41.717] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN1298541"}
-[00:56:43.246] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":""}
-[00:56:48.545] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN12345678"}
-[00:56:49.292] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":"ISBN123456785"}
-[00:56:54.905] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":""}
-[00:56:57.094] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:56:57.250] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":null}
-[00:56:57.250] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:56:57.627] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:56:57.717] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":null}
-[00:56:57.717] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:56:57.781] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:56:57.916] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":null}
-[00:56:57.916] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:56:57.992] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:56:58.124] Browser LOG     {"isPrestato":null,"isRestituito":null,"libro":null}
-[00:56:58.124] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:57:27.706] Server  LOG      ✓ Compiled in 34ms
-[00:57:28.361] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[00:57:39.140] Server  LOG      ✓ Compiled in 35ms
-[00:57:47.011] Server  LOG      ✓ Compiled in 46ms
-[00:58:03.914] Server  LOG      ✓ Compiled in 93ms
-[01:02:01.251] Server  LOG      ✓ Compiled in 65ms
-[01:02:31.119] Server  LOG      ✓ Compiled in 38ms
-[01:02:54.941] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[01:02:54.941] Browser LOG     {"data_fine":null,"data_inizio":"2025-11-04","isPrestato":null,"isRestituito":null,"libro":null}
-[01:03:00.209] Browser LOG     {"data_fine":"2025-11-30","data_inizio":"2025-11-04","isPrestato":null,"isRestituito":null,"libro":null}
-[01:03:23.154] Browser LOG     {"data_fine":"2025-11-30","data_inizio":"2025-11-03","isPrestato":null,"isRestituito":null,"libro":null}
-[01:03:25.588] Browser LOG     {"data_fine":"2025-12-01","data_inizio":"2025-11-03","isPrestato":null,"isRestituito":null,"libro":null}
-[01:03:28.979] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:03:29.007] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/details/t..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.jsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
-                        <RootLayout params={Promise}>
-                          <html lang="en">
-                            <body
-                              className={" bg-white text-white"}
--                             cz-shortcut-listen="true"
-                            >
-                  ...
-
-[01:03:29.007] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:03:29.088] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:03:29.181] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:03:29.181] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[01:03:29.253] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:03:29.406] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:03:29.406] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[01:03:32.469] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[01:03:32.469] Browser LOG     {"data_fine":null,"data_inizio":"2025-11-04","isPrestato":null,"isRestituito":null,"libro":null}
-[01:03:34.483] Browser LOG     {"data_fine":"2025-11-30","data_inizio":"2025-11-04","isPrestato":null,"isRestituito":null,"libro":null}
-[01:05:16.983] Browser LOG     {"data_fine":"2025-11-30","data_inizio":"2025-10-28","isPrestato":null,"isRestituito":null,"libro":null}
-[01:05:19.729] Browser LOG     {"data_fine":"2025-10-29","data_inizio":"2025-10-28","isPrestato":null,"isRestituito":null,"libro":null}
-[01:05:23.818] Browser LOG     {"data_fine":"2025-10-29","data_inizio":"2025-10-04","isPrestato":null,"isRestituito":null,"libro":null}
-[01:05:27.335] Browser LOG     {"data_fine":"2025-10-30","data_inizio":"2025-10-04","isPrestato":null,"isRestituito":null,"libro":null}
-[01:05:33.814] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:05:33.978] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:05:33.978] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[01:05:39.246] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[01:05:39.246] Browser LOG     {"data_fine":null,"data_inizio":"2025-10-27","isPrestato":null,"isRestituito":null,"libro":null}
-[01:05:41.167] Browser LOG     {"data_fine":"2025-10-28","data_inizio":"2025-10-27","isPrestato":null,"isRestituito":null,"libro":null}
-[01:05:45.576] Browser LOG     {"data_fine":"2025-10-28","data_inizio":"2025-11-27","isPrestato":null,"isRestituito":null,"libro":null}
-[01:05:48.469] Browser LOG     {"data_fine":"2025-10-28","data_inizio":"2025-11-04","isPrestato":null,"isRestituito":null,"libro":null}
-[01:05:52.015] Browser LOG     {"data_fine":"2025-11-28","data_inizio":"2025-11-04","isPrestato":null,"isRestituito":null,"libro":null}
-[01:05:54.016] Browser LOG     {"data_fine":"2025-11-30","data_inizio":"2025-11-04","isPrestato":null,"isRestituito":null,"libro":null}
-[01:05:56.981] Browser LOG     {"data_fine":"2025-11-06","data_inizio":"2025-11-04","isPrestato":null,"isRestituito":null,"libro":null}
-[01:06:01.700] Browser LOG     {"data_fine":"2025-11-04","data_inizio":"2025-11-04","isPrestato":null,"isRestituito":null,"libro":null}
-[01:06:04.899] Browser LOG     {"data_fine":"2025-10-28","data_inizio":"2025-11-04","isPrestato":null,"isRestituito":null,"libro":null}
-[01:06:08.780] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:06:08.825] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/details/t..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.jsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
-                        <RootLayout params={Promise}>
-                          <html lang="en">
-                            <body
-                              className={" bg-white text-white"}
--                             cz-shortcut-listen="true"
-                            >
-                  ...
-
-[01:06:08.825] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:06:08.909] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:06:08.991] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:06:08.991] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[01:06:09.058] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:06:09.193] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:06:09.193] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[01:11:26.088] Server  LOG      ✓ Compiled in 76ms
-[01:11:31.650] Server  LOG      ✓ Compiled in 34ms
-[01:11:46.609] Server  LOG      ✓ Compiled in 104ms
-[01:11:49.886] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":true,"libro":null}
-[01:11:51.482] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'libro')
-[01:12:20.721] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:12:20.838] Server  LOG      ✓ Compiled in 38ms
-[01:12:21.029] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:12:21.362] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/details/t..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.jsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
-                        <RootLayout params={Promise}>
-                          <html lang="en">
-                            <body
-                              className={" bg-white text-white"}
--                             cz-shortcut-listen="true"
-                            >
-                  ...
-
-[01:12:21.362] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:12:24.743] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":true,"isRestituito":null,"libro":null}
-[01:12:26.480] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'libro')
-[01:12:49.198] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:12:49.267] Server  LOG      ✓ Compiled in 49ms
-[01:12:49.417] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:12:50.360] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:12:56.537] Server  LOG      ✓ Compiled in 33ms
-[01:13:03.340] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":false,"libro":null}
-[01:13:05.126] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":true,"isRestituito":false,"libro":null}
-[01:13:06.340] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":false,"isRestituito":false,"libro":null}
-[01:13:07.529] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'libro')
-[01:13:23.645] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:13:23.772] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/details/t..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.jsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
-                        <RootLayout params={Promise}>
-                          <html lang="en">
-                            <body
-                              className={" bg-white text-white"}
--                             cz-shortcut-listen="true"
-                            >
-                  ...
-
-[01:13:23.773] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:13:23.918] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:13:24.036] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:13:25.795] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'libro')
-[01:14:35.963] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:14:36.039] Server  LOG      ✓ Compiled in 70ms
-[01:14:36.202] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:14:36.359] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/details/t..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.jsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <ClientSegmentRoot Component={function RootLayout} slots={{...}} ...>
-                        <RootLayout params={Promise}>
-                          <html lang="en">
-                            <body
-                              className={" bg-white text-white"}
--                             cz-shortcut-listen="true"
-                            >
-                  ...
-
-[01:14:36.359] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:14:39.361] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:14:39.696] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:14:39.863] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:14:42.782] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":true,"isRestituito":null,"libro":null}
-[01:14:44.265] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":true,"isRestituito":false,"libro":null}
-[01:14:45.111] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:14:46.942] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":false,"libro":null}
-[01:14:47.932] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":false,"isRestituito":false,"libro":null}
-[01:14:48.953] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:14:53.025] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:14:53.078] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:14:53.151] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:14:53.256] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:14:53.320] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:14:53.437] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:15:05.739] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:15:05.816] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:15:05.879] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:15:05.988] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
-[01:15:06.056] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:15:06.170] Browser LOG     {"data_fine":null,"data_inizio":null,"isPrestato":null,"isRestituito":null,"libro":null}
+[01:05:03.973] Browser LOG     []
+[01:05:04.041] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:05:04.145] Browser LOG     []
+[01:07:40.431] Server  LOG      ✓ Compiled in 113ms
+[01:08:05.296] Server  LOG      ✓ Compiled in 70ms
+[01:08:06.048] Browser LOG     [{"autore":4,"autore_libro":"Ungaretti","data_uscita":"2025-10-10","editore":"Alex","formato":"epub","isbn":"ISBN123456782","lingua":"RUSSO","posizione_libro":"A0","postazione":2,"poszione_libro_numerazione":"2","titolo":"databaseER","utente":1},{"autore":5,"autore_libro":"aaa","data_uscita":"2025-10-30","editore":"Alex","formato":"pdf","isbn":"ISBN123456785","lingua":"italiano","posizione_libro":"A0","postazione":1,"poszione_libro_numerazione":"1","titolo":"Se questo è un alunnod","utente":1},{"autore":6,"autore_libro":"aaa","data_uscita":"2010-01-15","editore":"Feltrinelli","formato":"pdfd","isbn":"ISBN129854122","lingua":"italiano","posizione_libro":"AB","postazione":1002,"poszione_libro_numerazione":"1","titolo":"Il Signore dei anelli","utente":1}]
+[01:08:15.705] Server  LOG      ✓ Compiled in 80ms

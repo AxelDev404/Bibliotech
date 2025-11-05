@@ -11,7 +11,7 @@ from .autore.get import (
 
 
 from .libro.get import (
-    get_libri_table , get_libro_pagina , get_totale_libri , get_ultimi_libri
+    get_libri_table , get_libro_pagina , get_totale_libri , get_ultimi_libri , get_filter_libro_table
 )
 
 
@@ -91,7 +91,7 @@ __all__ = [
 
     #GET LIBRI
 
-    'get_libri_table' , 'get_libro_pagina' , 'get_totale_libri' , 'get_ultimi_libri',
+    'get_libri_table' , 'get_libro_pagina' , 'get_totale_libri' , 'get_ultimi_libri', 'get_filter_libro_table',
 
     #GET TESSERA BIBLIOTECA
 

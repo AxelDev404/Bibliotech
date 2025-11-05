@@ -81,6 +81,7 @@ def get_filter_prestito(request , tesserato):
             isPrestato = request.GET.get('isPrestato')
             data_inizio = request.GET.get('data_inizio')
             data_fine = request.GET.get('data_fine')
+            utente = request.GET.get('utente')
 
 
             model = Prestito.objects.filter(tesserato=tesserato)
@@ -99,6 +100,10 @@ def get_filter_prestito(request , tesserato):
             
             if data_inizio and data_fine:
                 model = Prestito.objects.filter(data_inizio__range = [data_inizio,data_fine])
+
+            if utente:
+                model = Prestito.objects.filter(utente__id = int(utente))
+            
 
             serializer = PrestitoFilterSerializer(model , many = True)
             return Response(serializer.data , status=status.HTTP_200_OK)

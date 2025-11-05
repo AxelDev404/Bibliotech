@@ -187,7 +187,7 @@ export default function LibroPage() {
 
 
    
-    //-------------------------VARS DI FILTRAGGIO-----------------------------//
+    //-------------------------VARIABILI DI FILTRAGGIO-----------------------------//
 
 
     const [filtrazione , setFiltrazione] = useState({
@@ -196,7 +196,8 @@ export default function LibroPage() {
         isRestituito : null,
         isPrestato : null,
         data_inizio : null,
-        data_fine : null
+        data_fine : null,
+        utente : null
 
     });
 
@@ -291,22 +292,17 @@ export default function LibroPage() {
     }
 
 
-    //----------------------FILTERING DATA--------------------------//
 
 
 
     useEffect(() => {
-        
         dispatch(getDetailTesseraBiblioteca(id_tessera));
         return () => dispatch(clearTessera());
-
     },[id_tessera , dispatch])
 
     useEffect(() => {
-
         dispatch(getFilteringPrestitiAPI({tesserato : id_tessera , params : filtrazione}));
         console.log(filtrazione);
-
     },[filtrazione , dispatch])
 
     useEffect(() => {
@@ -314,9 +310,7 @@ export default function LibroPage() {
     }, [dispatch]);
 
     useEffect(() => {
-
         dispatch(getHelperSelectionUserAPI());
-    
     },[dispatch])
 
 
@@ -521,7 +515,8 @@ export default function LibroPage() {
                                             <p className="text-gray-600">data fine</p>
                                             <input value={filtrazione.data_fine ?? ""} onChange={(e) => setFiltrazione({...filtrazione , data_fine : e.target.value})} type="date" className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito"/>
                                             
-                                            <select value={filtrazione.isRestituito == null ? "" : filtrazione.isRestituito ? "true" : "false"} onChange={(e) => setFiltrazione({...filtrazione , isRestituito : e.target.value === "" ? null : e.target.value === "true" ? true : false})} className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
+                                            <select value={filtrazione.isRestituito == null ? "" : filtrazione.isRestituito ? "true" : "false"} 
+                                            onChange={(e) => setFiltrazione({...filtrazione , isRestituito : e.target.value === "" ? null : e.target.value === "true" ? true : false})} className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
                                             
                                                 <option value="">Restituito</option>
                                                 <option value="true">Si</option>
@@ -529,7 +524,8 @@ export default function LibroPage() {
                                             
                                             </select>
 
-                                            <select value={filtrazione.isPrestato == null ? "" : filtrazione.isPrestato ? "true" : "false"} onChange={(e) =>  setFiltrazione({...filtrazione , isPrestato : e.target.value === "" ? null : e.target.value === "true" ? true : false})} className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
+                                            <select value={filtrazione.isPrestato == null ? "" : filtrazione.isPrestato ? "true" : "false"} 
+                                            onChange={(e) =>  setFiltrazione({...filtrazione , isPrestato : e.target.value === "" ? null : e.target.value === "true" ? true : false})} className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="stato" >
                                             
                                                 <option value="">Prestato</option>
                                                 <option value="true">Si</option>
@@ -537,7 +533,7 @@ export default function LibroPage() {
                                             
                                             </select>
 
-                                            <select className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito" >
+                                            <select value={filtrazione.utente ?? ""} onChange={(e) => setFiltrazione({...filtrazione , utente : Number(e.target.value)})} className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all" name="prestito" >
                                                 <option value="">Operatore</option>
 
                                                 {Array.isArray(customuser_helper_selection_items) && customuser_helper_selection_items.map(usernames => (

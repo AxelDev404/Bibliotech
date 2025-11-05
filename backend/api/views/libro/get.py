@@ -25,6 +25,7 @@ import os
 
 from ...models.libro import Libro
 from ...serializers.libro import LibroManageSerializer , LibroStatisticSerializer
+from ..auth.auth import JWTAuthenticationFromCookie
 
 #ultimi_10 = MioModello.objects.order_by('-id')[:10]
 
@@ -105,6 +106,58 @@ def get_ultimi_libri(request):
                 return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)
             else:
                 return Response(serializer.data , status=status.HTTP_200_OK)
+
+        except Libro.DoesNotExist:
+            return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)
+        
+
+
+#FILTER TABLE 
+@api_view(['GET'])
+@authentication_classes([JWTAuthenticationFromCookie])
+@permission_classes([IsAuthenticated])
+def get_filter_libro_table(request):
+
+    if request.method == 'GET':
+
+        try:
+
+            data_uscita = request.GET.get('data_uscita')
+            editore = request.GET.get('editore')
+            autore = request.GET.get('autore')
+            formato = request.GET.get('formato')
+            utente = request.GET.get('utente')
+            isbn = request.GET.get('isbn')
+            lingua = request.GET.get('lingua')
+
+            model = Libro.objects.all()
+
+
+            if data_uscita:
+                model = Libro.objects.filter(data_uscita=data_uscita)
+
+            if editore:
+                model = Libro.objects.filter(editore=editore)
+
+            if autore:
+                model = Libro.objects.filter(autore__id_autore = int(autore))
+
+            if formato:
+                model = Libro.objects.filter(formato=formato)
+            
+            if utente:
+                model = Libro.objects.filter(utente__id = int(utente))
+
+            if isbn:
+                model = Libro.objects.filter(isbn = isbn)
+
+            if lingua:
+                model = Libro.objects.filter(lingua = lingua)
+
+
+            serializer = LibroManageSerializer(model , many = True)
+            return Response(serializer.data , status=status.HTTP_200_OK)
+            
 
         except Libro.DoesNotExist:
             return Response({'Message' : 'obj not found'} , status=status.HTTP_400_BAD_REQUEST)

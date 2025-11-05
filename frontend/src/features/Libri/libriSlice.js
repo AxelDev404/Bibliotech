@@ -1,5 +1,5 @@
 import { createAsyncThunk , createSlice, isRejectedWithValue } from "@reduxjs/toolkit";
-import { fetchTableLibri , fetchCountSatat, fetchLastInsertBookStat , fetchLibroDetailPage , createLibro , modifyLibro } from "@/api/apiLibri";
+import { fetchTableLibri , fetchCountSatat, fetchLastInsertBookStat , fetchLibroDetailPage , createLibro , modifyLibro , filterBookFetch} from "@/api/apiLibri";
 
 
 
@@ -30,6 +30,21 @@ export const getLibroDetailPageAPI = createAsyncThunk('libti/get_book_detail/' ,
     try {
         
         const response = await fetchLibroDetailPage(isbn);
+        return response.data;
+
+    } catch (err) {
+        
+        return rejectWithValue(err.response?.data || {"error" : "Si è verificato un problema"});
+    }
+
+})
+
+
+export const getFilterBookAPI = createAsyncThunk('libri/filter-book/' , async({params} , {rejectWithValue})=> { //{params}
+
+    try {
+        
+        const response = await filterBookFetch(params);
         return response.data;
 
     } catch (err) {
@@ -122,6 +137,7 @@ const libriSlice = createSlice({
             book_patch_items : [],
             libroDetail : [],
             last_insert_book : [],
+            filter_book_items : [],
             count : 0
         },
 
@@ -131,7 +147,8 @@ const libriSlice = createSlice({
             libroDetail : {statusLibroDetail : null , errorLibroDetail : null, loadingDetail : false},
             count : { count_status : 'idle' , count_error : null , count_loading : false},
             last_insert_book : {last_insert_book_status : 'idle' , last_insert_book_error : null , last_insert_book_loading : false},
-            book_patch_items : { book_patch_status : 'idle' , book_patch_error : null , book_patch_loading : false}
+            book_patch_items : { book_patch_status : 'idle' , book_patch_error : null , book_patch_loading : false},
+            filter_book_items : { filter_book_status : 'idle' , filter_book_error : null , filter_book_loading : false},
         }
     },
 
@@ -235,6 +252,26 @@ const libriSlice = createSlice({
             state.requests.last_insert_book.last_insert_book_loading = false;
             state.requests.last_insert_book.last_insert_book_status = 'failed';
             state.requests.last_insert_book.last_insert_book_error = action.payload || {detail : 'errore sconosciuto'};
+        })
+
+
+        //GET TABELLA DI FILTRAGGIO
+
+        .addCase(getFilterBookAPI.pending , (state , action) => {
+            state.requests.filter_book_items.filter_book_loading = true;
+            state.requests.filter_book_items.filter_book_status = 'pending';
+        })
+
+        .addCase(getFilterBookAPI.fulfilled , (state , action) => {
+            state.requests.filter_book_items.filter_book_loading = false;
+            state.requests.filter_book_items.filter_book_status = 'succeeded';
+            state.data.filter_book_items = action.payload;
+        })
+
+        .addCase(getFilterBookAPI.rejected , (state , action) => {
+            state.requests.filter_book_items.filter_book_loading = false;
+            state.requests.filter_book_items.filter_book_status = 'failed';
+            state.requests.filter_book_items.filter_book_error = action.payload || {detail : 'errore sconosciuto'};
         })
 
 
