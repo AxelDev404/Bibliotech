@@ -23,3 +23,16 @@ Bibliotech nasce come esercizio pratico per:
 - 🧩 Routing automatico e gestione stato client-side
 
 ---
+
+## 🧰 Stack Tecnologico
+
+| Livello | Tecnologia | Descrizione |
+|----------|-------------|-------------|
+| **Frontend** | Next.js (React, Axios, TailwindCSS) | Rendering , UI moderna e performante |
+| **Backend** | Django + Django REST Framework | Gestione dati, autenticazione JWT, logica server |
+| **Database** | MSSQL | Persistenza dati relazionale |
+| **API** | RESTful (JSON) | Comunicazione tra front-end e back-end |
+| **Auth** | JWT | Token-based authentication |
+| **Tools** | Git, GitHub, Postman | Versionamento, test e documentazione API |
+
+---
