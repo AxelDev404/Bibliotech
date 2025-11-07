@@ -28,7 +28,7 @@ Bibliotech nasce come esercizio pratico per:
 
 | Livello | Tecnologia | Descrizione |
 |----------|-------------|-------------|
-| **Frontend** | Next.js (React, Axios, TailwindCSS) | Rendering , UI moderna e performante |
+| **Frontend** | Next.js (React, Axios, TailwindCSS) | Rendering , UI moderna e performante , centralizzazione e destrutturizzazione degli state redux, interceptor apiClient axios |
 | **Backend** | Django + Django REST Framework | Gestione dati, autenticazione JWT, logica server |
 | **Database** | MSSQL | Persistenza dati relazionale |
 | **API** | RESTful (JSON) | Comunicazione tra front-end e back-end |
