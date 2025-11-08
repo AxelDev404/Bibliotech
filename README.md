@@ -1,5 +1,5 @@
 **Bibliotech** è una **web app full-stack** basata su **Next.js** (frontend) e **Django REST Framework** (backend).  
-Permette di gestire in maniera digitalizzata una Bibliotca — con autenticazione, creazione, modifica e ricerca di libri , creazione tessere, prestiti ecc.. — tramite **API RESTful** sicure e performanti.
+Permette di gestire in maniera digitalizzata una Bibliotca e consolidare lo stack tecnico usato — con autenticazione, creazione, modifica e ricerca di libri , creazione tessere, prestiti ecc.. — tramite **API RESTful** sicure e performanti.
 
 ---
 
