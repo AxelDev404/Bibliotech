@@ -56,9 +56,7 @@
     --color-blue-900: #1c398e;
     --color-blue-950: #162456;
     --color-rose-200: #ffccd3;
-    --color-rose-500: #ff2357;
     --color-rose-800: #a30037;
-    --color-rose-900: #8b0836;
     --color-slate-50: #f8fafc;
     --color-slate-500: #62748e;
     --color-gray-100: #f3f4f6;
@@ -108,34 +106,32 @@
 
   @supports (color: lab(0% 0 0)) {
     :root, :host {
-      --color-red-300: lab(76.5514% 36.422 15.5335);
-      --color-red-400: lab(63.7053% 60.745 31.3109);
+      --color-red-300: lab(76.5514% 36.4219 15.5335);
+      --color-red-400: lab(63.7053% 60.7449 31.3109);
       --color-red-500: lab(55.4814% 75.0732 48.8528);
       --color-red-600: lab(48.4493% 77.4328 61.5452);
       --color-red-800: lab(33.7174% 55.8993 41.0293);
       --color-green-400: lab(78.503% -64.9265 39.7492);
-      --color-green-500: lab(70.5521% -66.5147 45.8073);
+      --color-green-500: lab(70.5521% -66.5147 45.8072);
       --color-green-600: lab(59.0978% -58.6621 41.2579);
       --color-green-700: lab(47.0329% -47.0239 31.4788);
       --color-green-800: lab(37.4616% -36.7971 22.9692);
-      --color-sky-600: lab(51.7754% -11.4712 -49.8349);
-      --color-blue-400: lab(65.0361% -1.42065 -56.9802);
-      --color-blue-500: lab(54.1736% 13.3369 -74.6839);
+      --color-sky-600: lab(51.7754% -11.4713 -49.8349);
+      --color-blue-400: lab(65.0361% -1.42062 -56.9803);
+      --color-blue-500: lab(54.1736% 13.3368 -74.6839);
       --color-blue-600: lab(44.0605% 29.0279 -86.0352);
-      --color-blue-800: lab(30.2514% 27.7853 -70.2699);
+      --color-blue-800: lab(30.2514% 27.7854 -70.2699);
       --color-blue-900: lab(26.1542% 15.7545 -51.5504);
-      --color-blue-950: lab(15.6723% 8.86232 -32.2945);
+      --color-blue-950: lab(15.6723% 8.86233 -32.2945);
       --color-rose-200: lab(86.806% 19.1909 4.07754);
-      --color-rose-500: lab(56.101% 79.4328 31.4532);
       --color-rose-800: lab(34.6481% 60.802 20.1957);
-      --color-rose-900: lab(29.7104% 51.514 12.6253);
-      --color-slate-50: lab(98.1434% -.369519 -1.05966);
+      --color-slate-50: lab(98.1434% -.369549 -1.05968);
       --color-slate-500: lab(48.0876% -2.03595 -16.5814);
-      --color-gray-100: lab(96.1596% -.0823438 -1.13575);
-      --color-gray-200: lab(91.6229% -.159115 -2.26791);
+      --color-gray-100: lab(96.1596% -.082314 -1.13575);
+      --color-gray-200: lab(91.6229% -.159085 -2.26791);
       --color-gray-300: lab(85.1236% -.612259 -3.7138);
-      --color-gray-400: lab(65.9269% -.832707 -8.17473);
-      --color-gray-500: lab(47.7841% -.393182 -10.0268);
+      --color-gray-400: lab(65.9269% -.832707 -8.17474);
+      --color-gray-500: lab(47.7841% -.393212 -10.0268);
       --color-gray-600: lab(35.6337% -1.58697 -10.8425);
       --color-gray-700: lab(27.1134% -.956401 -12.3224);
       --color-gray-800: lab(16.1051% -1.18239 -11.7533);
@@ -509,10 +505,6 @@
     display: none;
   }
 
-  .h-4 {
-    height: calc(var(--spacing) * 4);
-  }
-
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -823,10 +815,6 @@
     border-color: var(--color-rose-200);
   }
 
-  .border-rose-500 {
-    border-color: var(--color-rose-500);
-  }
-
   .border-white {
     border-color: var(--color-white);
   }
@@ -879,10 +867,6 @@
 
   .bg-red-800 {
     background-color: var(--color-red-800);
-  }
-
-  .bg-rose-900 {
-    background-color: var(--color-rose-900);
   }
 
   .bg-sky-600 {

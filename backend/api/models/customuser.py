@@ -22,15 +22,6 @@ class CustomUser(AbstractUser):
     def save(self , *args, **kwargs):
 
 
-        if len(self.nome) < 4 or len(self.nome) > 20:
-
-            raise ValidationError("Nome non valido")
-
-
-        if len(self.cognome) < 2 or len(self.cognome) > 50:
-
-            raise ValidationError("Cognome non valido")
-
 
         return super().save(*args, **kwargs)
     
