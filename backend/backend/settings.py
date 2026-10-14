@@ -29,9 +29,9 @@ DATETIME_FORMAT = "d/m/Y H:i"
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost" ]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost" , "app.lab.internal"]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
@@ -210,7 +210,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000", "http://127.0.0.1:3000"
+    "http://localhost:3000", "http://127.0.0.1:3000", "http://app.lab.internal"
 ]
 
 
@@ -218,6 +218,7 @@ CORS_ALLOW_CREDENTIALS = True
 
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
-    "http://127.0.0.1:3000"
+    "http://127.0.0.1:3000",
+    "http://app.lab.internal"
 ]
 
